@@ -1,0 +1,41 @@
+<center><div style="width:50em; border-width: 1px; border-style: solid; border-color:#AAFFFF; background:#EEFFFF">
+<b>[[:Category:keywords|Twelf keywords]]</b><br/><hr style="height:1px; color:#AAFFFF; background-color:#AAFFFF" />
+<tt>[[%.]]
+[[abbrev declaration|%abbrev]]
+[[%assert]]
+[[%block]]
+[[%clause]]
+[[%covers]]
+[[define declaration|%define]]
+[[deterministic declaration|%deterministic]]
+[[%establish]]
+[[%freeze]]
+[[fixity declaration|%infix]]
+[[fixity declaration|%prefix]]
+[[fixity declaration|%postfix]]
+[[%mode]]
+[[%name]]
+[[%prove]]
+[[%query]]
+[[%querytabled]]
+[[%reduces]]
+[[%solve]]
+[[%subord]]
+[[%tabled]]
+[[%terminates]]
+[[%thaw]]
+[[%theorem]]
+[[%total]]
+[[%trustme]]
+[[%unique]]
+[[%use]]
+[[%worlds]]</tt>
+</div></center>
+<noinclude>
+This template is intended for the bottom of articles about Twelf keywords, as an index. It also includes the article in the [[:category:keywords|keywords category]]. Use it as <nowiki>{{keyword|key=name}}</nowiki>, where ''name'' is the name by which the keyword should be sorted.
+
+The file <tt>twelf/src/frontend/lexer.fun</tt> in the Twelf sources contains the full list.
+</noinclude>
+<includeonly>
+{{{nocat|[[Category:keywords|{{{key|{{{PAGENAME}}}}}}]]}}}
+</includeonly>

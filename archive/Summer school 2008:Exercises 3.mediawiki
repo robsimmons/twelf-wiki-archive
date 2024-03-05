@@ -1,0 +1,25 @@
+== Polymorphic MinML [[Summer school 2008:Type safety for polymorphic MinML (intrinsic encoding)|(solution)]]==
+
+Add explicit polymorphism to MinML and prove type safety:
+
+# Add a type <math>\forall \alpha.\tau</math>
+# Add terms <math>\Lambda \alpha.e</math> and <math>e [\tau]</math>, with the appropriate typing rules and dynamic semantics
+# Extend the type safety proof to cover the new cases.
+
+You can start from either encoding:
+* [[Summer school 2008:Type safety for MinML (intrinsic encoding)|The intrinsic encoding]] will be easier, because it takes full advantage of dependent types.
+* [[Summer school 2008:Type safety for MinML (extrinsic encoding)|The extrinsic encoding]] is closer to what people usually write on paper.
+
+== Monadic Effects [[Summer school 2008:Type safety for MinML with monadic effects|(solution)]]==
+
+Add monadically encapsulated effects (i.e., an <tt>IO</tt> monad) to MinML, following [http://www.cs.cmu.edu/~rwh/plbook/book.pdf PFPL Chapter 39].  
+
+If you're feeling ambitious, add the following specific effects [[Summer school 2008:Type safety for MinML with monadic effects (putngetn)|(solution)]]:
+* <tt>getn ; x.m</tt> reads a natural number from an input buffer (i.e., stdin).  <tt>x</tt> stands for the number in <tt>m</tt>.
+* <tt>putn(e) ; m</tt> writes a natural number, the value of <tt>e</tt> to an output buffer (i.e., stdout).  
+
+These primitives are simpler than full mutable references because their dynamic semantics can be given as a labeled transition system with labels <tt>read n</tt> and <tt>write n</tt>---you do not need a store as part of the judgement form. 
+
+== Determinacy of Evaluation == 
+
+Prove that the dynamic semantics of MinML are deterministic (every expression steps to at most one other expression).  Hint: you will need to use [[equality]] to state the theorem.  See the discussion of [[uniqueness lemma]]s for a proof of determinacy for the simply-typed λ-calculus.

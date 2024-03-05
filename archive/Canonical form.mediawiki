@@ -1,0 +1,59 @@
+: ''This page describes the canonical forms of the LF type theory.  You might also be looking for the [[canonical forms lemma]] used to prove the [[progress]] theorem about a programming language.
+
+'''Canonical forms''' are terms in a type theory that are both [[beta-equivalence|β-normal]] and [[eta-equivalence|η-long]].
+
+The [[LF]] type theory is defined so that all well-typed terms are '''canonical forms'''.  This is useful because the LF methodology for representing object languages consists of creating an isomorphic representation of the object language as the canonical forms of particular LF types.  Defining the type theory with only canonical forms  uses an algorithm called [[hereditary substitution]].   
+
+== Syntax of LF == 
+
+<math>
+K ::= \texttt{type} \, | \, \Pi x:A. K 
+</math>
+
+<math>
+A ::= b \, | \, A \, M \, | \, \Pi x:A_1. A_2 
+</math>
+
+<math>
+R ::= c \, | \, x \, | \, R \, M 
+</math>
+
+<math>
+M ::= R \, | \, \lambda x. M
+</math>
+
+In Twelf's concrete syntax, the type <math>\texttt{}\Pi x:A_1.A_2</math> is written <tt>{x:A1} A2</tt>, the kind <math>\texttt{}\Pi x:A.K</math> is written <tt>{x:A} K</tt>, and the term <math>\texttt{}\lambda x.M</math> is written <tt>[x] M</tt>.  The type families include both dependent function types and applications <math>A \, M</math> of type families to terms.  The kind level classifies type families. Type families of kind <math>\texttt{type}</math> classify terms. Type families that are not yet fully instantiated have kinds <math> \{x:A\} K</math>.  In both types and kinds, we use <tt>-></tt> as an abbreviation when the argument is not free in the result.  
+
+== Motivation for canonical forms ==
+
+The above syntax describes what we call ''[[canonical form]]s''.  Note what is ''not'' a canonical form: there is no syntactic way to apply a lambda-abstraction <math>\texttt{}\lambda x.M</math> to an argument.  Based on your past experience with programming languages, it may seem strange to define LF so that only canonical forms exist—we are not allowed to write down any programs that have any computation left to do.  However, this restriction makes sense if you think about our methodology for representing object languages in LF.  For example, we represent [[natural numbers]] with the following LF signature:
+<twelf>
+nat : type.
+z   : nat.
+s   : nat -> nat.
+</twelf>
+For this representation to be [[adequate]], the only LF terms of type <tt>nat</tt> must be <tt>z</tt>, <tt>s z</tt>, <tt>s (s z)</tt>, and so on.  It is easy to see that non-canonical LF terms interfere with this encoding.  For example, the LF term <math>(\lambda x. \texttt{s} \, x) \, \texttt{z}</math> would have type <tt>nat</tt>, but it is not the representation of any informal natural number. 
+
+== Canonical LF ==
+
+If you have encountered [[beta-reduction]] and [[eta-expansion]] before in your study of programming languages, it may help your intuition to know that the canonical forms of LF coincide with the beta-normal, eta-long terms of the lambda calculus.  What we were saying above is that the syntax of canonical forms forces them to be beta-normal,  and that the typing rules for canonical forms ensure that they are eta-long.  In logic, canonical forms correspond to normal and neutral natural deduction proofs and cut-free sequent calculus proofs.
+
+We do not present the typing rules for canonical forms here (see, e.g., ''Mechanizing Metatheory''<ref>{{bibtex:hl07mechanizing}}</ref>).  However, we note two details:
+
+Terms <math>\texttt{}R</math> are only canonical at base type <math>\texttt{}a</math>, not at function type.  For example, the constant <tt>s</tt> is ''not'' a canonical form of type <tt>nat -> nat</tt>.  However, the term <math>\lambda x.\texttt{s} x</math>, which is equivalent, is a canonical form.  
+
+In a dependently typed language, the application typing rules must substitute the argument into the body of the dependent function type:
+
+<math>
+{R : \Pi x : A. B \;\;\;\; M : A \over R \; M : [M/x]B}
+</math>
+
+In LF, this substitution is in fact a [[hereditary substitution]], ensuring that the terms embedded in the result of the substitution are in canonical form.  The typing rule for family applications <math>\mathsf{}A \; M</math> has a similar substitution into the result kind.
+
+== See also ==
+* See the [[introductions to Twelf]] to learn how object languages are represented as the canonical forms of LF.
+
+== References ==
+<references/>
+
+{{stub}}

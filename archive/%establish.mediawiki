@@ -1,0 +1,8 @@
+The '''<tt>%establish</tt>''' directive attempts to prove a theorem specified by a <tt>[[%theorem]]</tt> directive using the [[theorem prover]]. It is therefore similar to the <tt>[[%prove]]</tt> directive. However, unlike the <tt>%prove</tt> directive, theorems shown to be true by the <tt>%establish</tt> directive are not used to prove other theorems.
+
+== See also ==
+
+* [[Theorem prover]]
+* {{guide|title=Theorem Prover|chapter=10|section=57}}
+
+{{keyword|key=establish}}

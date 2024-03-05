@@ -1,0 +1,1 @@
+$1KB, MIME type: <tt>$2</tt>

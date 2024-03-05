@@ -1,0 +1,10 @@
+A '''<tt>%use</tt>''' directive adds a [[constraint domain]] to the current Twelf [[signature]]. 
+
+Like some other directives, for instance <tt>[[%clause]]</tt>, it is incompatible with Twelf's ability to verify [[totality assertions]] and [[metatheorems]].
+
+== See also ==
+
+* [[Constraint domains]]
+* {{guide|chapter=6|section=32|title=Constraint domains}}
+
+{{keyword|key=use}}

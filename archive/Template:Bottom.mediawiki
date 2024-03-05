@@ -1,0 +1,5 @@
+<font face="Lucida Sans Unicode">⊥</font><noinclude>
+
+This template renders the ''bottom'' (latex \bot) symbol, with workarounds for Internet Explorer. Use it by typing <nowiki>{{bottom}}</nowiki> in an article.
+
+</noinclude>

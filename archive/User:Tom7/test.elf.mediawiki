@@ -1,0 +1,20 @@
+AJALF test!
+
+<nowiki><twelf>this is no-wikied</twelf>
+
+</nowiki>
+
+<twelf>% Here's some twelf.
+
+theorem : type.
+yes : theorem.
+%mode theorem.
+</twelf>
+
+
+some "literate twelf" here...
+
+<twelf>
+%worlds () (theorem).
+%total {} (theorem).
+</twelf>

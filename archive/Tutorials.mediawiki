@@ -1,0 +1,50 @@
+:''If you are not already familiar with Twelf, you should read the [[introductions to Twelf]] before reading the tutorials on this page.  See the [[documentation]] page for other resources.''
+
+Types of tutorials:
+* '''[[#Proof techniques|Proof techniques]]:''' learn helpful and common Twelf devices.
+* '''[[#Troubleshooting|Troubleshooting]]:''' learn how to diagnose and fix Twelf errors. 
+
+Feel free to write new tutorials and add them to this page.__NOTOC__
+
+These tutorials are also gathered in the [[:Category:tutorials|tutorial category]].  
+
+== Proof techniques ==
+
+<!-- DRL says: header 2 has too much visual weight here -->
+
+==== Beginner ====
+
+* [[Reformulating languages to use hypothetical judgements]] - how to present judgements in a way that's easy to encode in LF.
+* [[Holes in metatheorems]] - how to assume lemmas while developing proofs.
+* [[Equality]] - how to represent equality of LF terms as a type family.
+* [[Respects lemma]]s - how to prove that other families and constants respect equality and other relations.
+* [[Uniqueness lemma]]s - how to prove that the inputs to a relation determine an output uniquely.
+* [[Effectiveness lemma]]s - how to prove [[totality assertion]]s explicitly.
+* [[Output factoring]] - how to reason from a disjunction.  Illustrates proving the progress theorem for a programming language.                            
+* [[Reasoning from false]] - how to do proofs by contradiction.
+* [[Catch-all case]]s - how to avoid putting a theorem case in the LF context.
+* [[Mutual induction]] - how to prove mutually inductive theorems
+* [[Converting between implicit and explicit parameters]] - how to convert between implicit and explicit quantification of the parameters of a type family.
+
+==== Advanced ====
+
+* [[Strengthening]] - how to convince Twelf that a term does not depend on some assumptions.
+* Explicit termination metrics - how to use a termination metric other than the subderivation ordering.
+** [[Numeric termination metrics]] - how to use numbers to induct on the size of some argument.
+** [[Structural termination metrics]] - how to use fancier termination metrics that capture the structure of an argument directly.
+* [[Simplifying dynamic clauses]] - how to streamline certain proofs about relations that introduce hypotheses. 
+* [[Canonical forms lemma]] for a progress theorem - how to get this lemma for free when you can, and how to prove it explicitly using [[equality]] when you can't.
+* Structural properties of a [[hypothetical judgement]] - how to get structural properties for free when you can, and how to prove them explicitly when you can't.
+** [[Weakening]]
+** [[Exchange]] 
+** [[Substitution]]
+* [[Evaluation contexts]] - how to represent evaluation contexts as LF functions
+* [[User-defined constraint domain]]s - how to make encodings more [[Intrinsic and extrinsic encodings|intrinsic]] by replacing predicates with indexing, and how to use Church-encodings to create special index types that are similar to constraint domains in that they admit non-trivial equations on their elements.
+For larger examples of Twelf in action, see see the [[case studies]].
+
+== Troubleshooting ==
+
+* [[Error messages]] - brief explanations of (and remedies for) common Twelf error messages.
+* [[Output freeness|Understanding output freeness]] - understanding a subtle part of output coverage checking.
+* [[Debugging coverage errors]] - techniques for finding coverage errors.
+* [[Constraint domains and coverage checking]] - in general, you can't use them in the same [[signature]].

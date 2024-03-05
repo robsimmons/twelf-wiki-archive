@@ -1,0 +1,24 @@
+{{undocumented}}
+The '''<tt>%thaw</tt>''' directive allows previously [[frozen]] type families to be extended with new [[canonical forms]]. Because this can easily be used to invalidate [[metatheorem]]s, it is a directive that can only be used in [[unsafe mode]].
+
+If Twelf is in unsafe mode, the following code can be run to demonstrate '''<tt>%thaw</tt>''':
+
+<twelf>
+nat : type.
+z : nat.
+s : nat -> nat.
+
+%freeze nat.
+
+% Right here I could not declare a new constant of type nat
+
+%thaw nat.
+
+% Now I can define a wacky new natural number
+q : nat.
+</twelf>
+
+== See also ==
+
+* [[Auto-freezing]]
+{{keyword|key=thaw}}

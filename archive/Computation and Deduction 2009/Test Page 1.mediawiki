@@ -1,0 +1,9 @@
+
+
+%{ Notes }%
+
+nat : type.
+z: nat.
+s: nat -> nat.
+
+plus : nat -> type.

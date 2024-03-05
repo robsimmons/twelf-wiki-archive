@@ -1,0 +1,30 @@
+'''Higher-order abstract syntax''' is a technique for the representation of [[abstract syntax]] trees for languages with [[bound variable]]s. It is often abbreviated as '''HOAS'''. In the context of mechanizing metatheory, HOAS refers to a specific technique where binding constructs in the [[object language]] are represented by the binding construct of the [[meta-language]]. When the meta language is Twelf, this is the λ construct.
+
+An abstract syntax tree is ''abstract'' because it is a mathematical object that has certain structure by its very nature. For instance, in first-order abstract syntax (FOAS) trees, as commonly used in compilers, the tree structure implies the subexpression relation, meaning that no parentheses are required to disambiguate programs (as they are in the [[concrete syntax]]). HOAS exposes additional structure: the relationship between variables and their binding sites. In FOAS representations, a variable is typically represented with an identifier and the relation between binding site and use is indicated by the use of the ''same'' identifier. FOAS representations thus need to formalize the rules of identifier lookup, and often need to formalize other conventions of language metatheory, such as [[alpha-equivalence]], [[weakening]], [[exchange]], and type-preserving [[substitution]]. When it can be used, HOAS is powerful because the metalanguage can provide these properties for free, reducing the amount of boilerplate code in an encoding.
+
+== Example ==
+For example, LF has a λ construct, which has arrow (→) type. A first-order encoding of an object language construct <tt>let</tt> might be (using Twelf syntax):
+<twelf>exp : type.
+var : type.
+v   : var -> exp.
+let : exp -> var -> exp -> exp.</twelf>
+
+Here, <tt>exp</tt> is the family of object language expressions. The family <tt>var</tt> is the representation of variables (implemented perhaps as natural numbers, which is not shown); the constant <tt>v</tt> witnesses the fact that variables are expressions. The constant <tt>let</tt> is an expression that takes three arguments: an expression (that is being bound), a variable (that it is bound to) and another expression (that the variable is bound within).
+
+The natural HOAS representation of the same object language would be:
+<twelf>exp : type.
+let : exp -> (exp -> exp) -> exp.</twelf>
+In this representation, object level variables do not appear explicitly. The constant <tt>let</tt> takes an expression (that is being bound) and a meta-level function <tt>exp</tt> → <tt>exp</tt> (the body of the let). This function is the ''higher-order'' part: an expression with a free variable is represented as an expression with ''holes'' that are filled in by the meta-level function when applied. As a concrete example, we would construct the object level expression
+
+ let x = 1 + 2
+ in x + 3
+
+(assuming the natural constructors for numbers and addition) using the HOAS signature above as
+<twelf>let (plus 1 2) ([y] plus y 3)</twelf>
+where <tt>[y] e</tt> is Twelf's syntax for the function ''λy.e''.
+
+Because this technique reuses the mechanism of the meta-language to encode a concept in the object language, it is generally only applicable when the meta-language and object-language notions of binding coincide. This is often the case, but not always: for instance, it is unlikely that a HOAS encoding of dynamic scope such as in Lisp would be possible in a statically-scoped language like LF.
+
+== See also ==
+* [[Higher-order judgment]]s: a related LF representation technique, in which object-language [[hypothetical judgment]]s are represented using LF binding.
+* [[Equality]]: when an object language is represented using HOAS, equality of LF terms corresponds with [[alpha-equivalence|α-equivalence]] of object language terms.

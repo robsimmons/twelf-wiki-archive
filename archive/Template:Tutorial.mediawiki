@@ -1,0 +1,4 @@
+<hr>
+<small>Read more Twelf [[tutorial]]s and other Twelf [[documentation]].</small>
+
+<includeonly><!-- template isn't in the category, only uses of it -->[[Category:Tutorials]]</includeonly>

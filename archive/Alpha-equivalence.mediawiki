@@ -1,0 +1,13 @@
+Alpha-equivalence is a notion of equivalence on terms with binding structure.  It captures the notion that the names of bound variables are unimportant; all that matters is the binding structure they induce.
+
+Consider the untyped lambda-calculus.
+
+<math>e ::= x \mid \lambda x.\, e \mid e_1\ e_2</math>
+
+Alpha-equivalence for terms <math>\texttt{}e</math> is the least [[congruence relation]] <math>\texttt{}e_1 =_\alpha e_2</math> closed under the <math>\texttt{}\alpha</math> axiom:
+
+<math>{(y \not = x \,and\, y \not\in \mathit{FV}(e)) \over \lambda x.\, e =_\alpha \lambda y.\,  [y/x]e}\alpha</math>
+
+Alpha-equivalence generalizes in a straightforward manner to any term language with binding structure.
+
+Twelf's notion of term equality respects alpha-equivalence; when an object-language is represented using [[higher-order abstract syntax]], the representation enjoys alpha-equivalence for free.

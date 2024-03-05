@@ -1,0 +1,15 @@
+<!-- Text here will be shown below edit and upload forms. -->
+<!-- nb. the charinsert extension doesn't work, so these have to be copy and pasted manually. we should probably install charinsert. -->
+<div id="editpage-specialchars" class="plainlinks" style="margin-top: 15px; border-width: 1px; border-style: solid; border-color: #aaaaaa; padding: 2px;">
+'''Logic:''' <charinsert>← → λ Π Σ α β γ Γ Δ η θ σ Ψ Ω ≡ ¬ ∧ ∨ ∩ ∪ ⊃ ⊂</charinsert>
+
+'''Workarounds:''' {<nowiki>{vdash}</nowiki>} {<nowiki>{dia}</nowiki>} {<nowiki>{box}</nowiki>} {<nowiki>{lolli}</nowiki>} {<nowiki>{otimes}</nowiki>} {<nowiki>{top}</nowiki>} {<nowiki>{darrow}</nowiki>} {<nowiki>{forall}</nowiki>} {<nowiki>{exists}</nowiki>} {<nowiki>{oplus}</nowiki>} {<nowiki>{bottom}</nowiki>}
+
+'''Symbols:'''  <charinsert>~ | ¡ ¿ † ‡ ↔ ↑ ↓ •</charinsert> &nbsp; <charinsert>– — … ° ≈ ± − × ÷ ← → · §</charinsert>  &nbsp;  <charinsert># ¹ ² ³ ½ ⅓ ⅔ ¼ ¾ ⅛ ⅜ ⅝ ⅞</charinsert>  &nbsp;  <charinsert>¢ $ € £ ¥</charinsert>
+
+'''Letters:''' <span class="latinx"> Á á Ć ć É é Í í Ĺ ĺ Ń ń Ó ó Ŕ ŕ Ś ś Ú ú Ý ý Ź ź  &nbsp;  À à È è Ì ì Ò ò Ù ù  &nbsp;  Â â Ĉ ĉ Ê ê Ĝ ĝ Ĥ ĥ Î î Ĵ ĵ Ô ô Ŝ ŝ Û û Ŵ ŵ Ŷ ŷ  &nbsp;  Ä ä Ë ë Ï ï Ö ö Ü ü Ÿ ÿ  &nbsp;  ß  &nbsp;  Ã ã Ẽ ẽ Ĩ ĩ Ñ ñ Õ õ Ũ ũ Ỹ ỹ &nbsp;  Ç ç Ģ ģ Ķ ķ Ļ ļ Ņ ņ Ŗ ŗ Ş ş Ţ ţ  &nbsp;  Đ đ  &nbsp;  Ů ů  &nbsp;  Ǎ ǎ Č č Ď ď Ě ě Ǐ ǐ Ľ ľ Ň ň Ǒ ǒ Ř ř Š š Ť ť Ǔ ǔ Ž ž  &nbsp;  Ā ā Ē ē Ī ī Ō ō Ū ū  &nbsp;  ǖ ǘ ǚ ǜ  &nbsp;  Ă ă Ĕ ĕ Ğ ğ Ĭ ĭ Ŏ ŏ Ŭ ŭ  &nbsp;  Ċ ċ Ė ė Ġ ġ İ ı Ż ż  &nbsp;  Ł ł  &nbsp;  Ő ő Ű ű  &nbsp;  Ŀ ŀ  &nbsp;  Ħ ħ  &nbsp;  Ð ð Þ þ  &nbsp;  Œ œ  &nbsp;  Æ æ Ø ø Å å  &nbsp;  Ə ə </span>
+
+'''Greek:''' <charinsert>Α α Β β Γ γ Δ δ</charinsert> &nbsp; <charinsert>Ε ε Ζ ζ Η η Θ θ</charinsert>  &nbsp;  <charinsert>Ι ι Κ κ Λ λ Μ μ</charinsert>  &nbsp;  <charinsert>Ν ν Ξ ξ Ο ο Π π</charinsert>  &nbsp;  <charinsert>Ρ ρ Σ σ ς Τ τ Υ υ</charinsert>  &nbsp;  <charinsert>Φ φ Χ χ Ψ ψ Ω ω</charinsert>
+</div>
+
+On '''talk pages''', please sign your comment by typing four tildes (<nowiki>~~~~</nowiki>).

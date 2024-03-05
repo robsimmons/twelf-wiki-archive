@@ -1,0 +1,166 @@
+== Uninhabited type flame war goes here ==
+
+I noticed there was some discussion about this in another place, but while I believe it would be a good idea to standardize on the name of the uninhabited type, "void" is not really standard or "common practice" yet. (I've seen false, falsity, absurd, and void. I use "uninhabited"). We probably need to have a "standards"/style guide meeting to decide these sorts of issues. 
+--[[User:DanielKLee|DanielKLee]] 23:33, 6 September 2006 (MST)
+:: The spirit of the thing was to put something down and then we can argue about it. It will be expedient to any sort of "standards"/style guide if we have a document to argue from. Tom recommended <tt>void</tt>, I use <tt>absurd</tt>, we should pick something. I think <tt>void</tt> is best from a type-theory point of view, I think <tt>false</tt> is best from a readability point of view, I think <tt>uninhabited</tt> is best from a idiot-proof point of view. — this is a [[User:rsimmons|rob]] (a [[User talk:rsimmons|what?]]) 05:26, 7 September 2006 (MST)
+::: I think <tt>false</tt> is bad, because it is the most natural judgment to use when defining classical logic. &nbsp;&mdash;&nbsp;[[User:Tom7|Tom 7]] 07:28, 7 September 2006 (MST)
+
+== Note: you *can* use uppercase identifiers ==
+
+The following twelf code checks (1.5R1) (and in fact syntax highlights much more correctly than it does under the wiki syntax highlighter. I won't bother fixing the wiki syntax highlighting modules - the syntax module only needs to highlight code that is well-styled for me to be happy.
+
+<twelf>NAT : type.
+
+Z : NAT.
+S : NAT -> NAT.
+
+SIX = (S (S (S (S (S (S Z)))))).</twelf>
+
+So we should not say the parser doesn't allow it, we should say that the parser doesn't allow it but ''use is punishable by '''eternal damnation'''''. — this is a [[User:rsimmons|rob]] (a [[User talk:rsimmons|what?]]) 05:42, 7 September 2006 (MST)
+
+== %abbrev ==
+
+Is there really any sense in which %abbrev is "local"? It seems to me that if you ever say <tt>%abbrev s nat/s</tt> you might as well have called it <tt>s</tt> in the first place. &nbsp;&mdash;&nbsp;[[User:Tom7|Tom 7]] 09:11, 7 September 2006 (MST)
+: I'm thinking about using libraries - if you're pulling in someone else's <tt>nat</tt>, you expect things to be named <tt>nat/s</tt> and <tt>nat/z</tt>. Also, if you define <tt>s</tt> with %abbrev as the successor to a natural number, and someone else defines it as the successor to an integer with <tt>%abbrev s = int/s.</tt>, then both users can use their conceptual definition of <tt>s</tt> in their files without interfering with their ability to refer to <tt>nat/s</tt> and <tt>int/s</tt> directly. Or if I really like referring to the zero and successor constants as <tt>0</tt> and <tt>++</tt>, then I can do that without interfering with anyone elses definition - as long as everyone else follows the naming convention those definitions will never shadow anything else. — this is a [[User:rsimmons|rob]] (a [[User talk:rsimmons|what?]]) 10:13, 7 September 2006 (MST)
+
+== Terms judgments with "/" ==
+
+This occured to me during the presentation with Karl. His proofs would have been much more bulky if he had used the full "/" notation for his language (though you could argue either way as to whether it would have been more clear to represent what kind of object each piece of syntax belonged to). 
+
+In general, it seems to me like we use Twelf at three different levels. This is I (think) the best way to classify the groups.
+
+# Object language (tp, nat, set, exp) - Constant defintions use forward arrows (<tt>abs : (exp T1 -> exp T2) -> exp (arr T1 T2)</tt>). I don't think there is consensus for using the /-notation for type constants here.
+# Judgments and relations (typed,plus,in-set, selfify) - Constants use backwards arrows. I don't think there's strong opposition to using the /-notation for type constants here.
+# Meta-judgments (progress,associative-plus,superset-trans) - The <tt>%total</tt> call is used in order to prove a meta theorem. Contstants here are all called "<tt>-</tt>", so the /-notation is besides the point.
+
+The problem with using "/" in object language notation is that you'd need to use <tt>exp/abs</tt> instead of <tt>abs</tt>. If you did this, what would the evaluation rules be called? <tt>eval-e/abs</tt> or <tt>eval-e/exp/abs</tt>?
+
+Perhaps this isn't an entirely complete thought, hopefully the point I'm making is somewhat evident. — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 13:04, 10 September 2006 (MST)
+
+: Using a "/" in the object language notation is probably not necessary if you are working in a small language without many strata. Karl's example was limited to the singleton calculus, so managing different strata wasn't necessary for him. In my own work, I've got lots of strata (5 different things called "unit", and pair/projection at 3 different levels, 2 different things called sigma etc) so I need to do what I can to organize things. In response to the <tt>eval-e/exp/abs</tt> issue, I've been known to pun it and call the judgment something like <tt>eval-exp</tt> and then the cases are <tt>eval-exp/abs</tt>. --[[User:DanielKLee|DanielKLee]] 08:52, 23 September 2006 (MST)
+
+:: What do you think about what I put there yesterday, then? It seems pretty compatible from my perspective - i.e. "feel free to use single identifiers at your own risk in an outermost strata." I think <tt>eval-exp/abs</tt> makes a great deal of sense - <tt>eval-exp/abs</tt> is reasonably close to <tt>eval-e-exp/abs</tt>, which is what I was trying to recommend yesterday. However, since I put that section in the context of judgment factoring, the only situation I've encounterd it in, that section would probably greatly benefit from a rewrite by you (the whole document would :) - but that section especially). — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 09:00, 23 September 2006 (MST)
+
+::: Yeah, that looks fine. --[[User:DanielKLee|DanielKLee]] 09:58, 23 September 2006 (MST)
+
+== Jargonwatch and types of equality ==
+
+I was trying to write a section under "specific naming conventions" that talked about the [[Main_Page#Rephrasing_.22equality.22|two ways]] to describe [[equality]] - they should have standard, and different, names. It seems to me that <tt>eq1</tt> (''syntatic equality''? ''default equality''? ''meta-equality''?) from the example should be the default equality (i.e. should get the distinction <tt>eq-nat</tt>, but what about the other kind (''definitional equality''? ''inductive equality''? ''structrual equality''?)? 
+
+What should its designation be? I want to avoid the use of <tt>eq'-nat</tt> or <tt>eq-nat'</tt>, because previous experience with apostrophies in identifiers are that they are a terrible mistake. — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 15:54, 22 September 2006 (MST)
+* I believe that ''shallow'' and ''deep'' are other common terms. I think to call the first "equality" and the other "deep" or "structural" equality sounds good. &nbsp;&mdash;&nbsp;[[User:Tom7|Tom 7]] 18:47, 23 September 2006 (MST)
+:* So an identifer "deq" for deep equailty instead of "eq" for shallow inequality might be in order? — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 17:51, 27 September 2006 (MST)
+::* Dan Licata (and by transitivity me) has used "deq" for declarative/definitional equality in the past, and aeq for algorithmic equality. These equalties were type equalities in systems where you could have equivalent types that were written differently. I tend to use eq/seq for syntactic equality (what you call shallow). I've seen others use "id". Usually seq. What do you plan on writing about "deep" equality? Maybe there are object logics where it might be useful, but at the meta-level shallow equality is very flexible and all you need. --[[User:DanielKLee|DanielKLee]] 18:15, 27 September 2006 (MST)
+:* "Shallow" vs. "deep" equality already has a meaning in Lisp and imperative languages that copy this meaning from Lisp.  The distinction is basically irrelevant in ML/Twelf.   Semantic equality and syntactic/structural equality is what we're talking about here.  And doesn't an "adequate" representation ensure that these kinds of equality co-incide?  So maybe "semantic equality" should instead be called an "equivalence" ? [[User:Boyland|Boyland]] 01:44, 12 March 2007 (EDT)
+::* Since "identity" is what we mean most of the time, I think that calling it "equivalence" of a certain sort when that is what we mean is the right solution. — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 11:20, 12 March 2007 (EDT)
+
+== Whitespace ==
+
+This is nitpicking, but if I have a really stupid lemma I may just want to get it out of the way as quickly as possible: <twelf>nat-neq-symm : nat-neq N1 N2 -> nat-neq N2 N1 -> type.
+%mode nat-neq-symm +D1 -D2.
+- : nat-neq-symm nat-neq/gt nat-neq/lt.
+- : nat-neq-symm nat-neq/lt nat-neq/gt.
+- : nat-neq-symm (nat-neq/s N1) (nat-neq/s N2)
+     <- nat-neq-symm N1 N2.
+%worlds () (nat-neq-symm _ _).
+%total T (nat-neq-symm T _).</twelf> 
+Do you think the whitespace currently recommended in the document is necessary in these cases? — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 16:15, 22 September 2006 (MST)
+
+
+: Necessary to make the proof understandable? Probably not. Necessary to keep the structure of the code-base uniform? Probably. I try not to differentiate between how I format stupid lemmas and lemmas that make me feel stupid, out of karmic fear that the lemmas will catch on and I'll have to do more of the second kind. --[[User:DanielKLee|DanielKLee]] 09:58, 23 September 2006 (MST)
+
+:: I'll buy it. So is this the style we're going for? — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 12:49, 23 September 2006 (MST)
+<twelf>nat-neq-symm : nat-neq N1 N2 -> nat-neq N2 N1 -> type.
+%mode nat-neq-symm +D1 -D2.
+
+- : nat-neq-symm nat-neq/gt nat-neq/lt.
+
+- : nat-neq-symm nat-neq/lt nat-neq/gt.
+
+- : nat-neq-symm (nat-neq/s N1) (nat-neq/s N2)
+     <- nat-neq-symm N1 N2.
+
+%worlds () (nat-neq-symm _ _).
+%total T (nat-neq-symm T _).</twelf>
+
+
+:: Yes. --[[User:DanielKLee|DanielKLee]] 12:57, 23 September 2006 (MST)
+
+: I actually prefer the less-space version.  I wrote the rational signature with 200+ theorems. By omitting blank lines except between theorems, it easily parses into a series of chunks.  If I used two blank lines between each theorem and one line between each case, the whole thing would turn into a horrid mess. [[User:Boyland|Boyland]] 23:55, 11 March 2007 (EDT)
+
+: After some testing, I realize I was wrong.  It looks fine with more whitespace.  [[User:Boyland|Boyland]] 19:06, 25 April 2007 (EDT)
+
+== Word order ==
+
+I'm going to just start the word order argument now. I'm not positive if the style guide should be making suggestions about word order. If there is a consensus that the style guide should be making such suggestions, then I'll detail my preferences (which happen to deviate from the guidelines given). --[[User:DanielKLee|DanielKLee]] 09:58, 23 September 2006 (MST)
+
+: My motivation on word order is code reuse in general, and this floaty idea of a Twelf Standard Library in specific. If we're going to ever have something that approaches a common base version of <tt>nat</tt>, there needs to be clarity over whether it's <tt>nat-plus</tt> or <tt>plus-nat</tt>, and whether it's <tt>nat-plus-assoc</tt>, <tt>assoc-plus-nat</tt>, <tt>plus-nat-assoc</tt>, or <tt>assoc-nat-plus</tt>. Furthermore, it would be helpful if there were ''predective'' guidelines by which someone could then figure out, with a high degree of accuracy, what the metatheorem establishing the associtivity property for lists of natural numbers is (by my rules I beleive it would be <tt>append-list-nat-assoc</tt>). ''However'', and I probably can't emphasize this enough, I see no reason to go with ''my'' preferences - if by writing down my preferences I get you to write down yours in disagreement, I'm, in general, peachy keen on going with yours (especially if it's somewhat predictive). I also hold the belief that if we can point to where the rationale for our naming conventions is, it will make our proofs more readable by others. 
+
+: 'Consensus' is going to be a funny animal in this world - unless by ''consensus'' you mean ''Tom, could you weigh in'' ;-) — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 12:40, 23 September 2006 (MST)
+
+:: I'll concede for a Twelf Standard Library, naming conventions would make it more organized. 
+
+:: My preferences for the naming judgments is to usually do what best "organizes" things in the absence of a module system. For operations over natural numbers, I like to frontload the nat, so <tt>nat-plus</tt> instead of <tt>plus-nat</tt>. That way, all my definitions about arithmetic over natural numbers begins with <tt>nat-</tt> and I can sort of pretend its a nice little module. 
+
+:: But I'll deviate from this if there is a family of judgments that is mutually recursively defined over two levels of an object language. So I would prefer <tt>step-exp</tt> and <tt>step-md</tt> over <tt>exp-step</tt> and <tt>md-step</tt> because I sort of consider the family of step judgments to be their own module. I personally fluctuate between whether - or / is the correct seperator in these cases. As a result, my ML stuff is actually a little inconsistent between - and / and at some point I need to go back and clean that up.
+
+:: Theorems can be pretty hard to name, especially when you have lots of them that don't really have canonical names. My rationale with them is whatever "organizes" them best, but that is subjective and not necessarily consistent from day to day. --[[User:DanielKLee|DanielKLee]] 13:33, 23 September 2006 (MST)
+
+:: I actually don't have much opinion on this at all. For the standard library we will need a naming convention, in the absense of a module system; with a module system the convention will be less important. For code written by programmers at the leaves, I don't think there is any particular need to enforce a naming convention. But, if we had to choose something, I would suggest that we use least general to most general, as if the / were . in the SML module system. &nbsp;&mdash;&nbsp;[[User:Tom7|Tom 7]] 18:46, 23 September 2006 (MST)
+
+== Forking off naming conventions ==
+
+I was looking over the style guide, and I noticed the stuff about "word-order" and "specific naming conventions" really throws off the flow of the article. In particular, it pushes the stuff on whitespace pretty low on the page. Karl-style whitespace makes Twelf code a lot easier to read, so I feel it shouldn't get pushed too low on the article. Any disagreement on this? --[[User:DanielKLee|DanielKLee]] 15:30, 27 September 2006 (MST)
+
+: None - I'd leave the "naming convention" stuff about using hyphens instead of underscores and the forward slash to present individual cases, so we have two large sections: "Identifiers" and "Whitespace" - the details can get moved to the artice on [[Twelf naming conventions]]. This has the added advantage of putting largely non-controversial stuff in this article. You'll probably get around to this before me but I may try to do it before the weekend if you don't. Another thought is that it's not necessarily a bad idea to move whitespace up above the section on identifiers. — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 17:49, 27 September 2006 (MST)
+
+== Anticipating modules ==
+
+I'd like to use a naming convention that simulates modules: short names that are then abbrev'ed at the end to have a name like SIG.name, except that of course you can't use ".".  Any opinions on what character would be used as a module separator, should modules ever be added?  It'd be nice if the character were low-impact (ink-wise). Currently I'm experimenting with backquote.  
+<twelf>
+%%%% Imports
+
+%abbrev nat = nat`nat.
+%abbrev rat = rat`rat.
+%abbrev equ = rat`equ.
+%abbrev gre = rat`gre.
+
+
+%%%% Definitions
+
+
+frv : type.
+
+one : rat -> nat -> frv.
+
+
+eq : frv -> frv -> type.
+
+eq/ : frv_eq F F.
+
+
+ge : frv -> frv -> type.
+
+ge/ : frv_ge (one X O) (one Y O')
+    <- nat`eq O O'           %% abbreviated import not necessary
+    <- gre X Y.
+
+...
+
+%%%% Exports
+
+%abbrev frv`frv = frv.
+%abbrev frv`eq = eq.
+%abbrev frv`ge = ge.
+</twelf>
+(Module names can't be UPPERCASE without a lot of pain.)
+To those abbrev-sceptics, it makes a difference because identifiers (like "eq") can be reused between "modules" if there is an "abbrev"iated (!) long name. [[User:Boyland|Boyland]] 00:18, 12 March 2007 (EDT)
+: Just need to add that slash (the character recommended by the existing style guide for this purpose) doesn't seem like a good idea since it is already (over-)used for other things. [[User:Boyland|Boyland]] 00:23, 12 March 2007 (EDT)
+
+:: In the current planned concrete syntax for the module system, the separator will in fact be "." (and, just like in SML, whitespace won't be permitted in long identifiers, so you'll be able to tell it from the declaration-ending period, which must be followed by whitespace).  [[User:Drl|Drl]] 00:33, 12 March 2007 (EDT)
+
+::: I think it was an idea to use the slash for roughly this purpose; however if it seems overused, I think <tt>`-_+/\</tt> all make equally decent separators, so I would say do whatever works in terms of this.
+::: I've used an "abbrev import" style before myself, but not quite the same way. If you use short names (<tt>eq</tt>) and then re-declare them as long names with abbrev (<tt>frv`eq</tt>) as you do, then the emacs buffer is going to be filled with shadowed <tt>%eq%</tt>, and you may have to go back into your "module" to export 50 more things like <tt>gt/</tt> in order to prove metatheorems later. If, alternatively, you write things in "long style" and then try to abbrev them down when you need them in a particular place (so you do "abbrev import" but not "abbrev export"), you don't have that metatheorem problem (you can always access anything with the long name). From my experience trying this, it is sometimes hard to read error messages when you write down as <tt>(s (s (s (s z))))</tt> and the emacs buffer displays <tt>(nat/s (nat/s (nat/s (nat/s nat/z))))</tt> - but you may find that this is not a significant problem for you. — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 11:16, 12 March 2007 (EDT)
+:::: Of <tt>`-_+/\,</tt> only <tt>`-/,</tt> can be typed on a US keyboard without modifiers, so I think those are to be slightly preferred. I use / since I like - as a word separator. &nbsp;&mdash;&nbsp;[[User:Tom7|Tom 7]] 14:05, 12 March 2007 (EDT)
+::::: Right, I'd forgotten that that was why <tt>_</tt> fell out of favor, good point. — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 19:06, 12 March 2007 (EDT)
+:::: Regarding the need the reload a whole buffer to export an additional thing; in my current code where I use this convention, I use a perl script to export *everything*.  Regarding ` vs. / vs -: I also use '-' as a word separator in theorems.  I don't want / since I want something that can clearly be substituted with <tt>.</tt> (the character shouldn't be overloaded) when real modules arrive.  (It seems modules have been heralded since 2001.  What's their status?).  [[User:Boyland|Boyland]] 20:50, 12 March 2007 (EDT)

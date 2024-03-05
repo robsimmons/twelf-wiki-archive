@@ -1,0 +1,110 @@
+The '''simply-typed lambda calculus''' is a common example of a simple typed programming language. This article discusses its encoding in Twelf. 
+
+If you're trying to learn Twelf from this example, you may wish to read the discussion starting in {{proving|title=Representing the syntax of the STLC}}.  That introductory guide discusses this representation of the STLC and why it works in more detail.  This page summarizes the judgements of the STLC and the corresponding LF code for reference, but does not explain them in detail.
+
+== What is illustrated by this example? ==
+
+There are simpler examples of LF representations (see, e.g., the [[natural numbers]]). However, the STLC is a good first example of a representation that uses [[higher-order abstract syntax]] and [[higher-order judgment]]s.  These two representation techniques drastically simplify the process of representing and proving theorems about 
+many programming languages and logics.  The idea is that the binding structure of LF is used to represent the binding structure of the object language.  At the level of syntax, this gives [[alpha-equivalence]] and capture-avoiding substitution "for free" from the representation.  At the level of judgements, this gives the properties of a [[hypothetical judgement]], such as weakening and substitution, for free.
+
+This encoding of the STLC is adapted from ''Mechanizing Metatheory in a Logical Framework''<ref name="hl07mechanizing">{{bibtex:hl07mechanizing}}</ref>.  Section 3 of that paper exhaustively discusses the [[adequacy]] of this encoding.
+
+== Encoding of syntax == 
+
+The types of the simply typed lambda calculus are simply the unit type and the arrow or function type.
+
+<math>\texttt{}\tau ::= \texttt{unit} \,|\, \tau_1 \rightarrow \tau_2</math>
+
+<twelf>
+tp : type.
+arrow : tp -> tp -> tp.
+unit : tp.
+</twelf>
+
+The terms are the variable <math>x</math>, the empty pair (which has type <tt>unit</tt>), lambda abstraction (with a type annotation), and application.
+
+<math>\texttt{}e ::= x \,|\, \langle\rangle \,|\, \lambda x :\tau . e \,|\, e_1 e_2</math>
+<twelf>
+tm : type.
+empty : tm.
+app : tm -> tm -> tm.
+lam : tp -> (tm -> tm) -> tm.
+</twelf>
+
+== Encoding of judgments ==
+
+=== Static semantics ===
+
+The typing rules for the simply typed lambda calculus use a typing context <math>\texttt{}\gamma</math> to record the type annotations that have been encountered at lambda-bindings. 
+
+<math>{ \; \over \gamma \vdash \langle\rangle : \texttt{unit}}\,\mbox{of-empty}</math>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<math>{ \; \over \gamma, x : \tau, \gamma' \vdash x : \tau}\,\mbox{of-var}</math>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<math>{ \gamma , x : \tau_2 \vdash e : \tau \over \gamma \vdash \lambda x.e:(\tau_2 \rightarrow \tau)}\,\mbox{of-lam}</math>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<math>{ \gamma \vdash e_1 : (\tau_2 \rightarrow \tau) \qquad \gamma \vdash e_2 : \tau_2 \over \gamma \vdash e_1 e_2 : \tau}\,\mbox{of-app}</math>
+
+This judgement is represented by the following LF signature:
+
+<twelf>
+of : tm -> tp -> type.
+of-empty : of empty unit.
+of-lam : of (lam T2 ([x] E x)) (arrow T2 T)
+          <- ({x: tm} of x T2 -> of (E x) T).
+of-app : of (app E1 E2) T
+          <- of E1 (arrow T2 T)
+          <- of E2 T2.
+</twelf>
+
+Assumptions <math>\texttt{}x:\tau</math> in the typing context <math>\texttt{}\gamma</math> are represented as a pair of objects <tt>x:tm</tt> and <tt>d:of&nbsp;x&nbsp;T</tt> in the LF context <math>\texttt{}\Gamma</math> (<tt>T</tt> is the LF representation of the type <math>\texttt{}\tau</math>). This can be seen in the encoding of the judgment <tt>of_lam</tt>. There is no need to write out the equivalent of the of-var rule, becuase the necessary judgment is directly assumed by the <tt>of-lam</tt> rule. This method avoids the need for a [[substitution lemma]], and the article on that subject discusses the matter further.
+
+=== Dynamic semantics ===
+
+We define the dynamic semantics of the STLC by a call-by-value, left-to-right structural operational semantics on closed terms.  
+
+The judgement <math>e \; \mathsf{value}</math> identifies the values:
+
+<math>{ \; \over \mathsf{empty} \; \mathsf{value}} \, \mbox{value-empty}</math>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<math>{ \; \over \lambda x:\tau.e \; \mathsf{value}} \, \mbox{value-empty}</math>
+
+Next, we define the operational semantics with a judgement <math>e \mapsto e'</math>:
+
+<math>{e_1 \mapsto e_1' \over e_1 \, e_2 \mapsto e_1' \, e_2} \, \mbox{step-app-1}</math>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<math>{e_1 \; \mathsf{value} \;\;\; e_2 \mapsto e_2' \over e_1 \, e_2 \mapsto e_1 \, e_2'} \, \mbox{step-app-2}</math>
+
+<math>{e_2 \; \mathsf{value} \over (\lambda x:\tau.e) \, e_2 \mapsto \{e_2/x\} e } \mbox{step-app-beta}</math>
+
+These judgments are represented by the following Twelf signature:
+
+<twelf>
+value : tm -> type.
+value-empty : value empty.
+value-lam : value (lam T ([x] E x)).
+
+step : tm -> tm -> type.
+step-app-1 : step (app E1 E2) (app E1' E2)
+              <- step E1 E1'.
+step-app-2 : step (app E1 E2) (app E1 E2') 
+              <- value E1
+              <- step E2 E2'.
+step-app-beta : step (app (lam T2 ([x] E x)) E2) (E E2)
+                 <- value E2.
+</twelf>
+
+You can <twelflink>see or download the full Twelf source</twelflink>, which is almost exactly that of Figure 7 and Figure 13 of ''Mechanizing Metatheory'' <ref name="hl07mechanizing" />.  You can also <twelflink check="true">see Twelf's output</twelflink>, which is closer to the LF code in Figure 7 and Figure 10 of that paper, because it makes the [[implicit parameter|implicit parameters]] explicit. Note that in Twelf's concrete syntax, curly brackets (<tt>{}</tt>) are used for pi-bindings instead of the <math>\Pi</math> symbol.
+
+== Metatheorems ==
+
+Several metatheorems about this formulation of the simply typed lambda-calculus are proved on this wiki.  See, for example:
+* [[Proving metatheorems:Proving metatheorems about the STLC|Proving metatheorems about the STLC]] for a proof of type preservation
+* [[Output factoring]] for a proof of progress
+* [[Uniqueness lemma]]s for a proof of determinacy of the operational semantics
+* [[Proving metatheorems:Proving totality assertions in non-empty contexts|Proving totality assertions in non-empty contexts]] for a height judgement
+* [[Proving metatheorems:Proving metatheorems in non-empty contexts|Proving metatheorems in non-empty contexts]] for a proof that the height of a term can only be increased by substitution.
+
+== References ==
+
+<references/>

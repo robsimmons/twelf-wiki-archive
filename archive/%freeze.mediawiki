@@ -1,0 +1,66 @@
+{{undocumented|article}}
+The '''<tt>%freeze</tt>''' declaration ''freezes'' a set of type families. A frozen family cannot be extended: new constants at that type cannot be added, nor can the [[subordination]] relation be extended such that the family could depend on other types. The <tt>[[%thaw]]</tt> declaration can be used to reenable the extension of a type family.
+
+== Syntax ==
+
+The syntax is as follows:
+
+<tt>%freeze t1 t2 ... tn.</tt>
+
+The type families <tt>t1</tt>&ndash;<tt>tn</tt> are frozen.
+
+== Example ==
+
+Suppose we define addition in the natural way:
+
+<twelf>
+nat : type.
+z : nat. 
+s : nat -> nat.    %prefix 9999 s.
+
+plus : nat -> nat -> nat -> type.
+%mode plus +N +M -O.
+
+plus/z : plus z N N.
+plus/s : plus (s N) M (s P)
+      <- plus N M P.
+</twelf>
+
+At this point, we may still extend the definition of addition:
+
+<twelf check=decl>
+plus/zz : plus M z M.
+</twelf>
+
+However, if we freeze <tt>plus</tt> then this will not be allowed:
+
+<twelf check=decl discard=true>
+%freeze plus.
+plus/zzz : plus z z z.
+</twelf>
+
+More subtly, we will not be able to extend the [[subordination]] relation for <tt>plus</tt>:
+
+<twelf check=decl discard=true>
+%freeze plus.
+thing : type.
+
+oops : (thing -> plus _ _ _) -> type.
+</twelf>
+
+The subordination relation can be extended such that other non-frozen types depend on a frozen type, of course:
+
+<twelf check=decl discard=true>
+%freeze plus.
+thing : type.
+
+okay : (plus _ _ _ -> thing) -> type.
+</twelf>
+
+Because types are automatically frozen in common cases (see below), one may occasionally need to induce subordination relations in anticipation of code that follows freezing. This can be done as in the type <tt>oops</tt> above, before using <tt>%freeze</tt> or metatheory like <tt>%worlds</tt>.
+
+== Autofreeze ==
+
+Twelf CVS{{discuss|Version}} automatically freezes any family for which there has been a <tt>[[%worlds]]</tt> declaration. This prevents mistakes where a metatheorem is proved for a type family but then that type family is extended, invalidating the theorem.{{discuss|Soundness}}
+
+{{keyword|key=freeze}}

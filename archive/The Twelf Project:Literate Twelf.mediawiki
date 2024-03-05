@@ -1,0 +1,48 @@
+The Literate Twelf extension is a relatively simple modification of [[TwelfTag]] intended to facilitate both offline editing, as well as direct use, of pages on this wiki. Literate Twelf pages interperet text inside of multi-line comments as are automatically run through Twelf by the Literate Twelf extension, and Twelf's output ("%% OK %%" or "%% ABORT %%") is displayed in a box at the top of the page.
+
+== Using Literate Twelf ==
+
+If a file on the wiki starts with the string <tt>%{</tt>, a preprocesser is invoked that (essentially) turns all instances of <tt>%{</tt> to <tt><nowiki></twelf></nowiki></tt> and all instances of <tt>}%</tt> into <tt><nowiki><twelf></nowiki></tt>, transforming the Twelf file with comments into a Mediawiki file with escaped TwelfTag sequences. 
+
+Furthermore, if a pipe characther <tt>|</tt> appears on the same line as the <tt>}%</tt> symbol, the text between the <tt>|</tt> and the <tt>}%</tt> will be interpreted as options to the <nowiki><twelf></nowiki> tag.
+
+=== Limitations ===
+
+* Multi-line comments cannot be nested within a Literate Twelf file.
+* Section editing is disabled for Literate Twelf files on the wiki, as this could potentially lead to unpredictable results.
+
+== Demo ==
+
+The following Literate Twelf page is demonstrated [[Project:Literate Twelf/Sample Page|here]]. Notice that because a <tt>|</tt> appears on the second line, the comment cannot be closed on that line or the entire segment <tt>Literate Twelf]].</tt> would be interpreted as TwelfTag options.
+
+<code>%{ 
+Some natural numbers; a demo of [[Project:Literate Twelf|Literate Twelf]]. 
+}%
+ 
+%{ == Syntax == }%
+ 
+nat: type.
+z : nat.
+s : nat -> nat.
+ 
+%{ == Judgments == }%
+ 
+%{ === Equality === }%
+ 
+id-nat : nat -> nat -> type.
+id-nat/refl : id-nat N N.
+ 
+%{ === Addition === |}%
+ 
+plus : nat -> nat -> nat -> type.
+plus/z : plus z N N.
+plus/s : plus N1 N2 N3 -> plus (s N1) N2 (s N3).
+
+%{ Now we can see what it looks like to run a query: |check=decl}%
+
+%solve _ : plus (s (s (s z))) (s (s z)) N.
+ 
+%. 
+ 
+This is a pretty boring presentation of the natural numbers;
+it is roughly like all the other ones, like the article on [[natural numbers]].</code>

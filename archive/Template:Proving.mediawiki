@@ -1,0 +1,13 @@
+[[Proving metatheorems:{{{title}}}|{{{title}}}]] in the tutorial [[Proving metatheorems with Twelf]]<noinclude>
+
+----
+
+'''Documentation:''' This template wiki-links to the [[User:Drl]]'s tutorial [[Proving metatheorems with Twelf]]. As an example,:
+
+::<nowiki>{{proving|title=Full LF}}</nowiki>
+
+yields
+
+::[[Proving metatheorems:Full LF|Full LF]] in the tutorial [[Proving metatheorems with Twelf]]
+
+</noinclude>

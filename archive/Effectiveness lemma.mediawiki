@@ -1,0 +1,123 @@
+We use the term '''effectiveness lemma''' for a lemma that explicitly proves a [[totality assertion]] for an LF type family using another LF type family.  
+
+There are two reasons to prove an effectiveness lemma:
+# A type family may satisfy a totality assertion but not be written in such a way that Twelf can verify its totality automatically with a [[%total]] declaration.  For example, justifying the induction might require an [[structural metrics|explicit termination metric]], or knowing that the type family covers all possible inputs might require some sophisticated reasoning (such as [[reasoning from false]]).
+# As an artifact of the way totality checking works, it is sometimes necessary to prove an effectiveness lemma even when Twelf has already verified the corresponding [[%total]] declaration.  
+
+We discuss these motivations in more detail after presenting an example effectiveness lemma.
+
+==Example effectiveness lemma==
+
+Consider the relation that negates a bit:
+
+<twelf>
+bit : type.
+bit/0 : bit.
+bit/1 : bit.
+ 
+bit-flip : bit -> bit -> type.
+ 
+bit-flip/01 : bit-flip bit/0 bit/1.
+bit-flip/10 : bit-flip bit/1 bit/0.
+</twelf>
+
+We can ask Twelf to prove the following totality assertion:
+
+: For all <tt>B : bit</tt>, there exists a <tt>B' : bit</tt> and <tt>D : bit-flip B B'</tt>.
+
+as follows:
+
+<twelf check="true">
+%mode bit-flip +B -B'.
+%worlds () (bit-flip _ _).
+%total {} (bit-flip _ _).
+</twelf>
+
+However, we can also prove the totality relation explicitly as an effectiveness lemma <tt>can-bit-flip</tt>:
+
+<twelf check="true">
+can-bit-flip : {B:bit}
+                bit-flip B B'
+                -> type.
+%mode can-bit-flip +D1 -D2.
+
+- : can-bit-flip bit/0 bit-flip/01.
+
+- : can-bit-flip bit/1 bit-flip/10.
+
+%worlds () (can-bit-flip _ _).
+%total {} (can-bit-flip _ _).
+</twelf>
+
+When processing the <tt>%total</tt>, Twelf verifies the following totality assertion:
+: For all <tt>B : bit</tt>, there exists a <tt>B' : bit</tt> and <tt>D : bit-flip B B'</tt> and a <tt>D' : can-bit-flip B D</tt>.
+
+==Motivating scenario==
+
+This particular example is clearly not motivated by the first consideration mentioned above, as Twelf was able to prove the totality assertion directly.  For such an example, see the tutorial on [[structural metrics|explicit termination metrics]].
+
+However, this effectiveness lemma is motivated by the second consideration, as the following example demonstrates.  Consider a programming language that includes primitive bits and a negation operation on them:
+<twelf>
+tp     : type.
+tp/bit : tp.
+
+tm  : type.
+bt  : bit -> tm.
+neg : tm -> tm.
+
+of : tm -> tp -> type.
+of-bt : of (bt _) tp/bit.
+of-neg : of (neg E) tp/bit
+          <- of E tp/bit.
+
+eval     : tm -> tm -> type.
+eval-bt  : eval (bt B) (bt B).
+eval-neg : eval (neg E) (bt B')
+             <- eval E (bt B)
+             <- bit-flip B B'.
+</twelf>
+We elide the parts of the language that are not relevant to this example.
+
+For simplicity, assume the language is manifestly terminating, so the progress theorem can be proved by a simple inductive argument that shows that all terms evaluate to a value:
+
+<twelf discard=true>
+progress : of E T -> eval E V -> type.
+%mode progress +D1 -D2.
+%worlds () (progress _ _).
+</twelf>
+<twelf hidden=true>
+progress : of E T -> eval E V -> type.
+%mode progress +D1 -D2.
+</twelf>
+
+Now, consider the case of progress for <tt>of-neg</tt>:
+
+<twelf check=decl discard=true>
+- : {Dflip : bit-flip B B'}
+     progress 
+     (of-neg (Dof : of E tp/bit)) 
+     (eval-neg Dflip DevalE)
+     <- progress Dof (DevalE : eval E (bt B)).
+</twelf>
+
+By induction, we come up with a derivation <tt>DevalE</tt>, which, by the value inversion lemma, must result in a value of the form <tt>(bt B)</tt>.  To finish the case, we need a derivation <tt>Dflip : bit-flip B X1</tt> for some <tt>B':bit</tt>.  
+
+You might think that this case should be accepted as is.  After all, the totality assertion proved by the above <tt>%total</tt> shows that such a <tt>Dflip</tt> must exist.  
+
+Unfortunately, the current Twelf implementation rejects this case as ill-moded.  In logic programming terms, variables bound in braces like <tt>{Dflip}</tt> are treated as unification variables, so they must be filled in by unification if they are not already part of an input term.  On the other hand, [[subgoal]]s, which are the premises that are searched for using logic programming, must be written with an <tt>-></tt>.  This means that there is no way to '''name''' the derivation resulting from the appeal to the totality assertion for <tt>plus</tt>.  In metatheorem terms, this means that we cannot appeal to the totality assertion for a type family to come up with a derivation of the type family itself, only the output indices of the family.  
+
+The work-around is to prove the effectiveness lemma.  Using the above effectiveness lemma, we can finish this case as follows:
+
+<twelf check=decl>
+- : progress 
+     (of-neg (Dof : of E tp/bit)) 
+     (eval-neg Dflip DevalE)
+     <- progress Dof (DevalE : eval E (bt B))
+     <- can-bit-flip B Dflip.
+</twelf>
+
+Because the derivation of <tt> bit-flip B B'</tt> is an index to <tt>can-flip-bit</tt>, the case is mode-correct.
+
+This limitation of Twelf could conceivably be addressed in a future release.  For now, it is straightforward to work around it using effectiveness lemmas to prove totality assertions explicitly.
+
+{{tutorial}}

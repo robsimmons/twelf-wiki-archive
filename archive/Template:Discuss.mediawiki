@@ -1,0 +1,10 @@
+[[Talk:{{PAGENAME}}#{{{1}}}|<sup>[?]</sup>]]<noinclude>
+
+
+This template places a discussion link in an article. The link takes the user to a supplied section on the talk page for the same article. (It does not work for pages outside the article namespace). To use it, write:
+
+:<nowiki>{{discuss|</nowiki>''description of issue''<nowiki>}}</nowiki>
+
+where ''description of issue'' is an informative section header for the talk page. You should then create that section on the talk page. The link looks like this.[[Talk:Main Page#Test of discuss template|<sup>[?]</sup>]]
+
+</noinclude>

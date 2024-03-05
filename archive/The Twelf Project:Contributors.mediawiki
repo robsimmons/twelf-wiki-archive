@@ -1,0 +1,21 @@
+If you have a question or need assistance, your best bet is probably to [http://twelf.plparty.org/w/index.php?title=User_talk:Rsimmons&action=edit&section=new leave a message for Rob] or [http://twelf.plparty.org/w/index.php?title=User_talk:Tom7&action=edit&section=new leave a message for Tom]. 
+
+* [[User:Aleffert]] - Akiva Leffert
+* [[User:Boyland]] - John Boyland (Bureaucrat: can change user privileges)
+* [[User:Crary]] - Karl Crary
+* [[User:DanielKLee]] - Daniel K. Lee
+* [[User:Drdreyer]] - Derek R. Dreyer
+* [[User:Drl]] - Daniel R. Licata (Bureaucrat: can change user privileges)
+* [[User:JakeD]] - Jacob Donham
+* [[User:Jcreed]] - Jason C. Reed
+* [[User:Neel]] - Neel Krishnaswami
+* [[User:Rsimmons]] Robert J. Simmons (Bureaucrat: can change user privileges)
+* [[User:Rwh]] - Robert Harper
+* [[User:Spoons]] - Daniel Spoonhower
+* [[User:Tom7]] - Tom Murphy VII (Bureaucrat: can change user privileges)
+* [[User:Twilson]] - J. Todd Wilson
+* [[User:Varming]] - Carsten Varming
+* [[User:William Lovas]] - William Lovas
+
+== See also ==
+* [[Special:Listusers]] is always up-to-date, but has no explanatory text.

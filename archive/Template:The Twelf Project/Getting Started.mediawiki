@@ -1,0 +1,11 @@
+[[Download]] Twelf or [[Twelf Live|try it online]].
+
+Learn Twelf:
+* Read the [[introductions to Twelf]] first.
+* The [[tutorials]] explain common Twelf tricks and techniques.
+* The [[case studies]] present interesting applications of Twelf.
+* The [[glossary]] defines Twelf terminology.
+* Have a question? [[Ask Twelf Elf]]!
+<!-- style guide will go here eventually, but it's not ready yet -->
+
+See the [[documentation]] page for more resources.

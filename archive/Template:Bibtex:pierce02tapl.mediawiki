@@ -1,0 +1,8 @@
+<bibtex>@book{pierce02tapl,
+  author = 	 {Benjamin C. Pierce},
+  title = 	 {Types and Programming Languages},
+  publisher =    {MIT Press},
+  month = 	 {February},
+  isbn =         {978-0-262-16209-8},
+  year = 	 {2002},
+}</bibtex>

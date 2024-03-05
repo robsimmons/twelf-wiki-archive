@@ -1,0 +1,106 @@
+Recall from the previous section the signature for representing the days of the week, the "next day" function, and the "day after tomorrow" function:
+<twelf>
+% Days of the week
+day : type.
+
+sunday    : day.
+monday    : day.
+tuesday   : day.
+wednesday : day.
+thursday  : day.
+friday    : day.
+saturday  : day.
+
+
+% Next day function
+next_day : day -> day -> type.
+
+next_day_sun : next_day sunday monday.
+next_day_mon : next_day monday tuesday.
+next_day_tue : next_day tuesday wednesday.
+next_day_wed : next_day wednesday thursday.
+next_day_thu : next_day thursday friday.
+next_day_fri : next_day friday saturday.
+next_day_sat : next_day saturday sunday.
+
+
+% Day after tomorrow function
+dat : day -> day -> type.
+
+dat_def : next_day D1 D2 -> next_day D2 D3 -> dat D1 D3.
+</twelf>
+Readers familiar with logic programming may have noticed a strong similarity between this signature and how the relations "next day" and "day after tomorrow" might be defined in Prolog.  This is no coincidence.  Indeed, consider the following Prolog definitions for these two relations:
+<pre>
+% Prolog definitions of next_day and dat
+next_day(sunday, monday).
+next_day(monday, tuesday).
+next_day(tuesday, wednesday).
+next_day(wednesday, thursday).
+next_day(thursday, friday).
+next_day(friday, saturday).
+next_day(saturday, sunday).
+
+dat(D1, D3) :- next_day(D1, D2), next_day(D2, D3).
+</pre>
+No types are involved here; the logical constants are introduced when they are needed, rather than declared in advance; and <tt>D1</tt>, <tt>D2</tt>, and <tt>D3</tt> are logic variables.  The Twelf declarations for these relations have essentially the same form, except that they are curried and associate an identifier with each clause (<tt>next_day_sun</tt>, <tt>next_day_mon</tt>, etc., and <tt>dat_def</tt>), making a Twelf signature a kind of "labeled" logic program.  It may thus be said that, in the analogy between Prolog and Twelf, Prolog is concerned only with which instances of relations are "true", whereas Twelf is concerned with ''how'' they are true&mdash;i.e., what constitutes evidence for them.  Each successful Prolog search for a satisfying substitution to a goal query corresponds to a Twelf term of the type associated with the instantiated goal.  Prolog searches can only succeed or fail, but Twelf terms are concrete certificates of successful searches that can be further manipulated.
+
+Another way of making this point is to say that every logic program has both a ''declarative'' reading, in which we are asserting some facts about certain relations, and an ''operational'' reading, which specifies how the clause "database" is searched when a query is given.  Twelf signatures have similar readings: on the one hand, we can view a Twelf signature as specifying certain families of types and elements, representing data structures and relations with evidence; on the other, we can view a Twelf signature as a labeled logic program that specifies how to search for terms of a given type.
+
+The Twelf server, besides being able to check Twelf source files for type-correctness, also has a logic-programming engine that can be used in three different ways:
+* It can be run stand-alone or as an inferior process as part of the Emacs interface and be used interactively, as a top-level loop, like most Prolog interpreters.  In this mode, you type in queries&mdash;which are just types, possibly with free variables (upper-case identifiers or, as we might call them, "logic variables")&mdash;and the Twelf server ''solves'' them, i.e., looks for elements of the given type.  If it finds any elements, it will print out a satisfying substitution for the free variables and give you the option of looking for more solutions.
+* As part of a Twelf source file, you can use a <tt>%query</tt> directive to search, in "batch mode", for a given number of solutions to a query, printing out satisfying substitutions if they exist.
+* Also as part of a Twelf source file, you can use a <tt>%solve</tt> directive to search for an element of a given type and define an identifier to be the first such element found.  You can also, with an accompanying <tt>%define</tt> directive, define identifiers to be the elements that get substituted for particular logic variables in the satisfying solution.
+See the Twelf [[User's Guide]] for more information on interacting with the Twelf server using the top-level loop.  Here we will give some examples of using <tt>%query</tt>, <tt>%solve</tt>, and <tt>%define</tt>.  
+
+=== The <tt>%query</tt> directive ===
+
+The format of a <tt>%query</tt> declaration is <tt>%query</tt>&nbsp;''solns''&nbsp;''tries''&nbsp;''type'', where ''solns'' is the expected number of solutions, ''tries'' is a limit to the number of solutions that will be listed (or "<tt>*</tt>" if there is no limit), and ''type'' is the type, possibly containing logic variables, of which Twelf will search for elements.  Of course, it only makes sense to speak of elements of real types, without free variables&mdash;we call them ''ground'' types&mdash;but the point is that, searching for elements of the given type using the declarations in the signature will cause these logic variables to be instantiated to particular terms, and it is discovering these substitutions that are the main purpose of the <tt>%query</tt> declaration.  Here are some examples:
+<twelf discard="true" check="decl">
+%query 1 1 dat sunday tuesday.   % Check that "dat sunday tuesday" has exactly one solution
+%query 1 1 dat monday X.         % Check that "dat monday X" has exactly one solution, and report the value of X
+%query 1 1 dat X monday.         % Same for the inverse relation
+%query 7 7 dat X Y.              % Check that "dat X Y" has exactly seven solutions
+%query 1 * dat X X.              % Look for at least one solution to "dat X X", FAILS!
+</twelf>
+
+=== The <tt>%solve</tt> and <tt>%define</tt> directives ===
+
+The format of a <tt>%solve</tt> declaration is <tt>%solve</tt>&nbsp;''ident''&nbsp;<tt>:</tt>&nbsp;''type''.  This directive will search for a solution to the query (i.e., an element of the type) ''type'', and define ''ident'' to be this element.  Any logic variables in ''type'' will be instantiated, and you can seen them in the type when Twelf echoes the definition in its output, but they are not reported separately, as they are with the <tt>%query</tt> directive.  If you want to capture these instantiations of free variables as definitions, you can prefix the <tt>%solve</tt> directive with one or more <tt>%define</tt> directives, the format of which is <tt>%define</tt>&nbsp;''ident''&nbsp;<tt>=</tt>&nbsp;''var''&nbsp;<tt>:</tt>&nbsp;''type'', where ''ident'' is the identifier to be defined, ''var'' is the free variable in the subsequent <tt>%solve</tt> declaration whose instantiation you want to capture, and ''type'' is the type of that variable.  Please note that the <tt>%define</tt> directives do not end in a period ("<tt>.</tt>") but are the beginning part of a single <tt>%solve</tt> directive.  Here are some examples, the first of which repeats the definition of <tt>dat_sunday</tt> above, except that Twelf figures out the element (or "evidence") itself:
+<twelf discard="true" check="decl">
+%solve dat_sunday : dat sunday tuesday.
+
+%solve dat_monday : dat monday X.
+
+%define d = X : day
+%solve dat_tuesday : dat tuesday X.
+
+%define first_day = X : day
+%define second_day = Y : day
+%solve dat_first_second : dat X Y.
+</twelf>
+In the first <tt>%solve</tt>, the identifier <tt>dat_sunday</tt> gets bound to <tt>dat_def&nbsp;next_day_sun&nbsp;next_day_mon</tt>.  In the second, <tt>X</tt> gets instantiated to <tt>wednesday</tt> (which we can see in the type <tt>dat&nbsp;monday&nbsp;wednesday</tt>) and <tt>dat_monday</tt> gets bound to <tt>dat_def&nbsp;next_day_mon&nbsp;next_day_tue</tt>.  In the next query, <tt>d</tt> gets bound to <tt>thursday</tt>, since this is what <tt>X</tt> gets instantiated to in the <tt>%solve</tt>, and <tt>dat_tuesday</tt> gets bound to <tt>dat_def&nbsp;next_day_tue&nbsp;next_day_wed</tt>.  Finally, in the last query, <tt>X</tt> and <tt>Y</tt> get instantiated to <tt>saturday</tt> and <tt>monday</tt> respectively, and <tt>first_day</tt> and <tt>second_day</tt> get bound to these, while <tt>dat_first_second</tt> gets bound to <tt>dat_def&nbsp;next_day_sat&nbsp;next_day_sun</tt>.
+
+=== Operational Semantics ===
+
+Let's look more closely at what Twelf does to solve a query, for this will clarify the operational meaning of a Twelf signature (see Section 5.5 of the [[User's Guide]] for more information).  First, some terminology.  A ''goal'' is a type, possibly involving free variables, for which we are interested in finding an element.  There are three kinds of goal:
+* an ''atomic'' goal, which is a fully-applied type family, i.e., a type constructor with a declaration like <tt>a&nbsp;:&nbsp;B1&nbsp;->&nbsp;...&nbsp;->&nbsp;Bm&nbsp;->&nbsp;type</tt> applied to <tt>m</tt> terms, such as <tt>a&nbsp;M1&nbsp;...&nbsp;Mm</tt>, resulting in a type;
+* a ''hypothetical'' goal, which is a type of the form <tt>A -> B</tt>, with <tt>A</tt> and <tt>B</tt> types; and
+* a ''parametric'' goal, which is a type of the form <tt>{x:A} B</tt>, where <tt>x</tt> occurs in <tt>B</tt> (if it does not, then <tt>{x:A}&nbsp;B</tt> is just <tt>A&nbsp;->&nbsp;B</tt>, and it is treated as a hypothetical goal).
+The type families used in such goals are called ''predicates''. A value declaration in a signature that is available during search is called a ''clause''.  A clause will always have the form
+ c : An -> ... -> A1 -> a M1 ... Mm.    % or, equivalently, c : a M1 ... Mm <- A1 <- ... <- An.
+where the atomic type <tt>a M1 ... Mm</tt> is the ''head'' of the clause and the atomic, hypothetical, or parametric types <tt>A1</tt> through <tt>An</tt> are the ''subgoals''.  Note, as mentioned in the comment, that Twelf allows us to write the arrows in these types in either orientation, with <tt>-></tt> associating to the right and <tt>&lt;-</tt> associating to the left.  The latter is especially useful from a logic-programming perspective, because it puts the head of the clause at the front and the subgoals linearly afterward, as is the case in Prolog (read the first back-arrow as <tt>:-</tt>, and read the rest of the back-arrows as commas).
+
+How does Twelf go about solving a goal?  That is, given a type, possibly involving free variables, how does Twelf find a substitution instance for these variables and an element of the resulting type?  Here is a simplified description of the algorithm.  Throughout the search process, Twelf maintains several pieces of information:
+* a ''current substitution'' and ''element trace'', which are, respectively, a partial instantiation of the free variables in the query and a partial term of the resulting type;
+* a list of ''subgoals'', whose joint solution entails a solution to the original query; and
+* the ''context'', a list of both ''local assumptions'', which are goals that are temporarily assumed during the search, and ''local parameters'', which are new constants that are introduced during the search.
+Twelf also maintains a list of equational ''constraints'' that arise during unification and a stack of backtrack points that it will use to find alternate solutions, but we will not go into detail about these here.  Initially, the current substitution, element trace, and context are all empty, and the list of subgoals consists of a single element, namely the query itself.  The first element of the list of subgoals is the ''current subgoal''.  The search process consists of repeating the following steps:
+# if the list of subgoals is emtpy, then the current substitution and element trace are complete and provide a solution to the query;
+# otherwise, consider the current subgoal:
+#* if it is a hypothetical subgoal, of the form <tt>A -> B</tt>, then add <tt>A</tt> to the context as a local assumption and take <tt>B</tt> as the new current subgoal;
+#* if it is a parametric subgoal, of the form <tt>{x:A} B</tt>, then choose a new constant, say <tt>c</tt>, add <tt>c:A</tt> to the context as a local parameter, and take as the new current subgoal the result of replacing every instance of <tt>x</tt> in <tt>B</tt> with <tt>c</tt>;
+#* if it is an atomic subgoal, of the form <tt>a&nbsp;M1&nbsp;...&nbsp;Mm</tt>, then perform ''backchaining'':  look for a clause with a head that unifies with the subgoal; the resulting substitution is then "composed" with the current substitution, the element trace is updated using the constructor for the clause, and the current subgoal is replaced by the list of subgoals of the clause, in order from "inside out" (for example, in the clause for <tt>c</tt> displayed above, the order of subgoals is <tt>A1</tt>, ..., <tt>An</tt>, i.e., the order they appear when the clause is written with back-arrows, Prolog-style).  Clauses in the local assumptions are tried first, starting with the most recent assumption and proceeding to the earlier assumptions, and then the clauses from the signature are tried, in the order they appear in the input file.  As a result,
+#*# If a unifying clause is found, it is pushed onto the stack of backtrack points, so that if backtracking later reaches this point, a later unifying clause can be sought.
+#*# If no more clauses can be found to match the current subgoal, then backtrack: pop the stack of backtrack points and resume the previous search for a clause from that point;
+#*# If the stack of backtracking points is empty, then fail.
+Note, again, that this method is very similar to the method Prolog uses to solve a query.  The main difference is that each clause that gets used in a search results in its constructor becoming part of the partial term that is being constructed, so that when the search succeeds, we not only have an instantiation of the free variables in the query but also a term of the given type.

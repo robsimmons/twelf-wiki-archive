@@ -1,0 +1,25 @@
+'''LF''' is the abbreviation commonly used for the '''Edinburgh Logical Framework''' presented by Harper, Honsell, and Plotkin in ''A Framework for Defining Logics''<ref>{{bibtex:hhp93lf}}</ref>. Harper, Honsell, and Plotkin introduce both LF, which is a [[dependent types|dependently typed]] lambda-calculus, and a systematic methodology for representing [[deductive system]]s, such as programming languages and logics, in this lambda-calculus.  This methodology is often called the [[judgments as types]] principle, because a judgment in a deductive system is represented as an LF type family classifiying (the representations of) derivations of the judgement.  Derivations in a deductive system can be checked by type checking their LF representations.  An LF representation is [[adequate]] iff it is isomorphic to the original description of the deductive system.
+
+Twelf includes:
+* an implementation of the LF logical framework, which can be used to type check LF representations
+* a [[logic programming]] language based on LF
+* a [[metatheorem]] checker, which can be used to verify proofs of theorems about LF representations
+
+
+== See also ==
+
+* Read the  [[Introductions to Twelf]] to learn more about LF and Twelf.
+* [[Canonical form]]s: describes the modern way of thinking about the LF type theory.
+* [[Higher-order abstract syntax]]
+* [[Judgments as types]]
+* [[Higher-order judgements]]
+* [[Bibliography of LF]]
+* [[w:LF (logical framework)|LF (logical framework)]] on Wikipedia
+
+
+== References ==
+
+<references />
+
+
+{{stub}}

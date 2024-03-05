@@ -1,0 +1,3 @@
+== Guide gets updated and... ==
+
+Won't this template be a problem if the section numbers in the guide change? Ideally this template should be <nowiki>{{guide4}}</nowiki> or something, I would think... — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 17:35, 27 September 2006 (MST)

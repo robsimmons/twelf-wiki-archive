@@ -1,0 +1,634 @@
+[
+  [
+    "%infix",
+    "Fixity declaration"
+  ],
+  [
+    "%postfix",
+    "Fixity declaration"
+  ],
+  [
+    "%prefix",
+    "Fixity declaration"
+  ],
+  [
+    "Adequate",
+    "Adequacy"
+  ],
+  [
+    "Ask Twelf Elf:Short Answers",
+    "Ask Twelf Elf:Short answers"
+  ],
+  [
+    "Auto-freezing",
+    "%freeze"
+  ],
+  [
+    "Autofreeze",
+    "%freeze"
+  ],
+  [
+    "Beta-equivalent",
+    "Beta-equivalence"
+  ],
+  [
+    "Beta-normal",
+    "Beta-equivalence"
+  ],
+  [
+    "Beta-reduction",
+    "Beta-equivalence"
+  ],
+  [
+    "Beta equivalence",
+    "Beta-equivalence"
+  ],
+  [
+    "Beta equivalent",
+    "Beta-equivalence"
+  ],
+  [
+    "Block",
+    "%block"
+  ],
+  [
+    "Blocks",
+    "%block"
+  ],
+  [
+    "Canonical forms",
+    "Canonical form"
+  ],
+  [
+    "Church-Rosser via Complete Development",
+    "Church-Rosser via complete development"
+  ],
+  [
+    "Compatibility lemma",
+    "Respects lemma"
+  ],
+  [
+    "Compositional bijection",
+    "Adequacy"
+  ],
+  [
+    "Concrete representations",
+    "Concrete representation"
+  ],
+  [
+    "Congruence lemma",
+    "Respects lemma"
+  ],
+  [
+    "Congruence lemmas",
+    "Respects lemma"
+  ],
+  [
+    "Constraint domains",
+    "Constraint domain"
+  ],
+  [
+    "Cut",
+    "Admissibility of cut"
+  ],
+  [
+    "Cut elimination",
+    "Admissibility of cut"
+  ],
+  [
+    "Deductive system",
+    "Object logic"
+  ],
+  [
+    "Deductive systems",
+    "Object logic"
+  ],
+  [
+    "Deep equality",
+    "Equality"
+  ],
+  [
+    "Dense lexicographical orderings",
+    "Lexicographical orderings with density"
+  ],
+  [
+    "Dependent type",
+    "Dependent types"
+  ],
+  [
+    "Developers",
+    "About The Twelf Project"
+  ],
+  [
+    "Editing Summer school 2008:Alternate typed arithmetic expressions with sums",
+    "Summer school 2008:Alternate typed arithmetic expressions with sums"
+  ],
+  [
+    "Effectiveness",
+    "Effectiveness lemma"
+  ],
+  [
+    "Effectiveness lemmas",
+    "Effectiveness lemma"
+  ],
+  [
+    "Equivalence relations",
+    "Equality"
+  ],
+  [
+    "Eta-expansion",
+    "Eta-equivalence"
+  ],
+  [
+    "Eta-long",
+    "Eta-equivalence"
+  ],
+  [
+    "Eta-long form",
+    "Eta-equivalence"
+  ],
+  [
+    "Exchange",
+    "Exchange lemma"
+  ],
+  [
+    "Explicit parameter",
+    "Implicit and explicit parameters"
+  ],
+  [
+    "Extrinsic encoding",
+    "Intrinsic and extrinsic encodings"
+  ],
+  [
+    "Factoring",
+    "Output factoring"
+  ],
+  [
+    "Freeze",
+    "%freeze"
+  ],
+  [
+    "Frozen",
+    "%freeze"
+  ],
+  [
+    "Function (relation)",
+    "Function"
+  ],
+  [
+    "General Description of Twelf",
+    "General description of Twelf"
+  ],
+  [
+    "Hauptsatz",
+    "Admissibility of cut"
+  ],
+  [
+    "Hereditary substitution with zippers",
+    "Hereditary substitution with a zipper"
+  ],
+  [
+    "Heterogeneous lists",
+    "Lists"
+  ],
+  [
+    "Higher-order judgement",
+    "Higher-order judgements"
+  ],
+  [
+    "Higher-order judgment",
+    "Higher-order judgements"
+  ],
+  [
+    "Higher-order judgments",
+    "Higher-order judgements"
+  ],
+  [
+    "Holes in metatheorems",
+    "Incremental metatheorem development"
+  ],
+  [
+    "Homogeneous lists",
+    "Indexed lists"
+  ],
+  [
+    "Hypothetical judgement",
+    "Hypothetical judgment"
+  ],
+  [
+    "Identity",
+    "Equality"
+  ],
+  [
+    "Implicit parameter",
+    "Implicit and explicit parameters"
+  ],
+  [
+    "Implicit parameters",
+    "Implicit and explicit parameters"
+  ],
+  [
+    "Input coverage",
+    "Coverage checking"
+  ],
+  [
+    "Intrinsic encoding",
+    "Intrinsic and extrinsic encodings"
+  ],
+  [
+    "Judgement",
+    "Judgment"
+  ],
+  [
+    "Judgments",
+    "Judgment"
+  ],
+  [
+    "Judgments as types",
+    "Judgment"
+  ],
+  [
+    "Language with references",
+    "Mutable state"
+  ],
+  [
+    "Let*",
+    "Iterated Let Bindings"
+  ],
+  [
+    "Logic program",
+    "Logic programming"
+  ],
+  [
+    "Main page",
+    "Main Page"
+  ],
+  [
+    "Manipulating proof witnesses",
+    "Manipulating proof witnesses as inputs"
+  ],
+  [
+    "Meta-language",
+    "Meta-logic"
+  ],
+  [
+    "Metatheorems",
+    "Metatheorem"
+  ],
+  [
+    "Mode",
+    "%mode"
+  ],
+  [
+    "Mode checking",
+    "%mode"
+  ],
+  [
+    "Natural number",
+    "Natural numbers"
+  ],
+  [
+    "Numeric termination metric",
+    "Numeric termination metrics"
+  ],
+  [
+    "Object language",
+    "Object logic"
+  ],
+  [
+    "Object logic syntax",
+    "Syntax (Object logic)"
+  ],
+  [
+    "Output coverage",
+    "Coverage checking"
+  ],
+  [
+    "POPL Tutorial/Church Rosser",
+    "Church-Rosser (w/ identity reduction)"
+  ],
+  [
+    "POPL Tutorial/Combinators Starter",
+    "POPL Tutorial/Combinators Support"
+  ],
+  [
+    "POPL Tutorial/Cost Semantics",
+    "POPL Tutorial/Cost semantics"
+  ],
+  [
+    "POPL Tutorial/MinML Encoding",
+    "POPL Tutorial/MinML encoding"
+  ],
+  [
+    "POPL Tutorial/MinML Preservation Theorem Answer",
+    "POPL Tutorial/MinML Preservation Theorem: Solution"
+  ],
+  [
+    "POPL Tutorial/Nat Starter",
+    "POPL Tutorial/Basics Starter"
+  ],
+  [
+    "POPL Tutorial/Pattern Matching",
+    "POPL Tutorial/Pattern matching"
+  ],
+  [
+    "POPL Tutorial/Session2",
+    "POPL Tutorial/Session 2 Answer"
+  ],
+  [
+    "Pattern Matching (Case Study)",
+    "Pattern matching"
+  ],
+  [
+    "Polarized PCF Better",
+    "Polarized PCF"
+  ],
+  [
+    "Progress",
+    "Canonical forms lemma"
+  ],
+  [
+    "Proofs by reductio ad absurdum",
+    "Reasoning from false"
+  ],
+  [
+    "Quick introduction",
+    "General description of Twelf"
+  ],
+  [
+    "Real-world binding structures",
+    "Ad hoc binding structures"
+  ],
+  [
+    "Real World Binding Structures",
+    "Ad hoc binding structures"
+  ],
+  [
+    "Reasoning from equality",
+    "Equality"
+  ],
+  [
+    "Regular world",
+    "%worlds"
+  ],
+  [
+    "Regular worlds",
+    "%worlds"
+  ],
+  [
+    "Respects lemmas",
+    "Respects lemma"
+  ],
+  [
+    "Revision history",
+    "Release history"
+  ],
+  [
+    "Shallow equality",
+    "Equality"
+  ],
+  [
+    "Signature",
+    "Twelf signature"
+  ],
+  [
+    "Software",
+    "Download"
+  ],
+  [
+    "Structural metric",
+    "Structural metrics"
+  ],
+  [
+    "Structural termination metrics",
+    "Structural metrics"
+  ],
+  [
+    "Style guide",
+    "Twelf style guide"
+  ],
+  [
+    "Substitution",
+    "Substitution lemma"
+  ],
+  [
+    "Substitution Lemma",
+    "Substitution lemma"
+  ],
+  [
+    "Summer school 2008:Arithmetic expressions with pairs (value)",
+    "Summer school 2008:Typed arithmetic expressions (value)"
+  ],
+  [
+    "Summer school 2008: Exercise: Typed arithmetic expressions with pairs",
+    "Summer school 2008:Typed arithmetic expressions with pairs"
+  ],
+  [
+    "Termination analysis",
+    "%terminates"
+  ],
+  [
+    "Termination checking",
+    "%terminates"
+  ],
+  [
+    "Tethered Modal Logic",
+    "Tethered modal logic"
+  ],
+  [
+    "The two Twelfs",
+    "Modes of use"
+  ],
+  [
+    "Totality assertions",
+    "Totality assertion"
+  ],
+  [
+    "Try Twelf now",
+    "Twelf Live"
+  ],
+  [
+    "Tutorial",
+    "Tutorials"
+  ],
+  [
+    "Twelf-list",
+    "Mailing lists"
+  ],
+  [
+    "Twelf glossary",
+    "Glossary"
+  ],
+  [
+    "Twelf naming conventions",
+    "Naming conventions"
+  ],
+  [
+    "Type families",
+    "Type family"
+  ],
+  [
+    "Unary numbers",
+    "Natural numbers"
+  ],
+  [
+    "Uniqueness lemmas",
+    "Uniqueness lemma"
+  ],
+  [
+    "Universal quantification",
+    "Implicit and explicit parameters"
+  ],
+  [
+    "Universally quantified",
+    "Implicit and explicit parameters"
+  ],
+  [
+    "Using a metric",
+    "Structural metrics"
+  ],
+  [
+    "Weakening",
+    "Weakening lemma"
+  ],
+  [
+    "What's new?",
+    "What's new"
+  ],
+  [
+    "Working with higher-order judgements",
+    "Reformulating languages to use hypothetical judgements"
+  ],
+  [
+    "World",
+    "%worlds"
+  ],
+  [
+    "Talk:% define",
+    "Talk:Define declaration"
+  ],
+  [
+    "Talk:Congruence lemma",
+    "Talk:Respects lemma"
+  ],
+  [
+    "Talk:General Description of Twelf",
+    "Talk:General description of Twelf"
+  ],
+  [
+    "Talk:Get started",
+    "Talk:Introductions to Twelf"
+  ],
+  [
+    "Talk:Heterogeneous lists",
+    "Talk:Lists"
+  ],
+  [
+    "Talk:Holes in metatheorems",
+    "Talk:Incremental metatheorem development"
+  ],
+  [
+    "Talk:Language with references",
+    "Talk:Mutable state"
+  ],
+  [
+    "Talk:Quick introduction",
+    "Talk:General description of Twelf"
+  ],
+  [
+    "Talk:Software",
+    "Talk:Download"
+  ],
+  [
+    "Talk:The two Twelfs",
+    "Talk:Modes of use"
+  ],
+  [
+    "Talk:Try Twelf now",
+    "Talk:Twelf Live"
+  ],
+  [
+    "Talk:UserGuide",
+    "Talk:User's Guide"
+  ],
+  [
+    "Talk:Working with higher-order judgements",
+    "Talk:Reformulating languages to use hypothetical judgements"
+  ],
+  [
+    "User:Rsimmons/Lecture20",
+    "User:Rsimmons/Lecture 20: Logic Programming"
+  ],
+  [
+    "User:Rsimmons/Lecture 22: Proofs In Twelf",
+    "User:Rsimmons/Homework 7: Proofs In Twelf"
+  ],
+  [
+    "User:Rsimmons/Lecture 23: Proofs In Twelf",
+    "User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf"
+  ],
+  [
+    "The Twelf Project:About",
+    "About The Twelf Project"
+  ],
+  [
+    "The Twelf Project:Administrators",
+    "The Twelf Project:Contributors"
+  ],
+  [
+    "The Twelf Project:Bureaucrats",
+    "The Twelf Project:Contributors"
+  ],
+  [
+    "The Twelf Project:Copyrights",
+    "The Twelf Project:Copyright"
+  ],
+  [
+    "The Twelf Project:GNU Free Documentation License",
+    "The Twelf Project:GFDL"
+  ],
+  [
+    "The Twelf Project:MIT",
+    "The Twelf Project:MIT license"
+  ],
+  [
+    "The Twelf Project:Syntax Highlighting",
+    "The Twelf Project:Syntax highlighting"
+  ],
+  [
+    "Template:Front-Blog Updates",
+    "What's new"
+  ],
+  [
+    "Template:Multimap",
+    "Template:Lolli"
+  ],
+  [
+    "Template:The Twelf Project/Blog Updates",
+    "What's new"
+  ],
+  [
+    "Template:The Twelf Project/Learning Twelf",
+    "Template:The Twelf Project/Getting Started"
+  ],
+  [
+    "Template:The Twelf Project/Release History",
+    "Template:Front-Release History"
+  ],
+  [
+    "Template:The Twelf Project/What's new",
+    "Template:Front-What's new"
+  ],
+  [
+    "Template talk:Front-Blog Updates",
+    "Talk:What's new"
+  ],
+  [
+    "Help:Contents",
+    "The Twelf Project:Style guide"
+  ],
+  [
+    "Proving metatheorems:Natural numbers:Answers to exercises",
+    "Proving metatheorems:Natural numbers: Answers to exercises"
+  ]
+]

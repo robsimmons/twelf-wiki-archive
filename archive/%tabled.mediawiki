@@ -1,0 +1,8 @@
+The <tt>'''%tabled'''</tt> directive informs Twelf's [[tabled logic programming]] engine to record derivations for a certain type family ''at most once'' during a query started with a <tt>[[%querytabled]]</tt> directive. It is therefore a bit like <tt>[[Deterministic declaration|%deterministic]]</tt> in that it changes Twelf's search behavior for a single type family.
+
+== See also ==
+
+* [[Tabled logic programming]]
+* {{guide|chapter=5|section=31|title=Tabled Logic Programming}}
+
+{{keyword|key=querytabled}}

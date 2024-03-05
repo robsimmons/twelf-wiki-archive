@@ -1,0 +1,16 @@
+In this session, you'll get a flavor for the experience of defining systems and proving theorems in Twelf.  Break into small groups and pick an interesting problem or two to work on.  If you get stuck, ask a TA!  Refer to the solutions to check your work (though Server OK from Twelf should be assurance enough!)
+
+<big>'''''Please fill [https://spreadsheets.google.com/viewform?key=p0-89EvFXQhUXF827jjk_Dg feedback form]'''''</big>
+
+== Beginner problems (Recommended) ==
+* [[POPL Tutorial/Sequent vs Natural Deduction|Sequent calculus vs. natural deduction]] -- Prove the logical equivalence of Gentzen's intuitionistic sequent calculus and intuitionistic natural deduction. ([[POPL Tutorial/Sequent vs Natural Deduction: Solution|Solution]])
+* [[POPL Tutorial/Big step, small step|Big-step evaluation vs. small-step transition semantics]] -- Prove the operational equivalence of the big-step and small-step views of operational semantics.  ([[POPL Tutorial/Big step, small step: Solution|Solution]])
+
+== Intermediate problems ==
+* [[POPL Tutorial/cps-problem|Call-by-value CPS transform, with administrative redexes]] -- Define an algorithm for converting lambda terms to continuation-passing style ([[POPL Tutorial/CPS Solutions|Solution]])
+* [[POPL Tutorial/cps-problem2|Higher-order call-by-value CPS transform, no administrative redexes]] -- Define a higher-order variant of the CPS conversion that never creates administrative redexes ([[POPL Tutorial/CPS Solution2|Solution]])
+* [[POPL Tutorial/Typed bracket abstraction|Lambda calculus and combinators]] -- Explore the relation between the simply-typed lambda calculus and combinatory logic using Curry's classic bracket abstraction algorithm.  ([[POPL Tutorial/Typed bracket abstraction (solution)|Solution]])
+* [[POPL Tutorial/Church Rosser (Problem)|Church-Rosser]] -- Prove Church and Rosser's seminal result via a Diamond Lemma for the untyped lambda calculus. ([[POPL Tutorial/Church Rosser|Solution]])
+
+== Advanced problems ==
+* [[POPL Tutorial/Exceptions-problem|MinML with exceptions]] -- Prove type safety for an extension of MinML with exceptions defined using structural operational semantics with a "raises" judgement.  ([[POPL Tutorial/Exceptions|Solution]])

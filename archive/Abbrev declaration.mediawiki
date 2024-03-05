@@ -1,0 +1,30 @@
+The '''<tt>%abbrev</tt>''' keyword can be placed before any [[definition]] in a Twelf [[signature]] to cause the definition to, in the future, act as syntatic shorthand for some other term.
+
+== Example ==
+
+Say, for some reason, we had extremely verbose names for the syntax of the [[natural numbers]].
+
+<twelf>
+this-is-a-long-name-for-nat : type.
+this-is-a-long-name-for-z : this-is-a-long-name-for-nat.
+this-is-a-long-name-for-s : this-is-a-long-name-for-nat -> this-is-a-long-name-for-nat.
+</twelf>
+
+We can define <tt>nat</tt> and <tt>z</tt> from their long names using <tt>%abbrev</tt>, and <tt>s</tt> without <tt>%abbrev</tt>.
+
+<twelf>
+%abbrev nat = this-is-a-long-name-for-nat.
+%abbrev z   = this-is-a-long-name-for-z.
+s   = this-is-a-long-name-for-s.
+</twelf>
+
+We can see the difference here - while definitions like <tt>s</tt> will be expanded only if they have to be, definitions made with the <tt>%abbrev</tt> keyword are always expanded by Twelf.
+
+<twelf check=decl>
+three = s (s (s z)).
+</twelf>
+
+== See also ==
+
+* {{guide|title=Definitions|chapter=3|section=10}}
+{{keyword|key=abbrev}}

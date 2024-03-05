@@ -1,0 +1,65 @@
+If you have suggestions for an audience that is not addressed by the existing tutorials, please leave them here.
+
+I'd like to add a page with the following on how to run twelf programs. How can I do this? Note that this is for non-emacs users. If there are similar (quick and easy) instructions on how to run twelf on emacs, let me know and I'll link them from this page. [[User:Giselle|Giselle]] ([[User talk:Giselle|talk]]) 19:47, 12 December 2016 (UTC)
+
+Great!  Thanks.  I started making a new page and discovered we have a page already for this.
+Take a look at [[Twelf without Emacs]].  Perhaps you can use your examples to make it
+more concrete? [[User:Boyland|Boyland]] ([[User talk:Boyland|talk]]) 00:24, 13 December 2016 (UTC)
+
+----
+
+== Running your first program ==
+
+Now that you have installed Twelf, it is time to run your first program. Open a file (in any text editor of your choice) and type the following:
+
+ nat : type.
+ z : nat.
+ s : nat -> nat. <br>
+ add : nat -> nat -> nat -> type.
+ add/z : add z N N.
+ add/s : add M N P -> add (s M) N (s P). <br>
+ %mode add +M +N -P.
+ %worlds () (add _ _ _).
+ %total {M N} (add M N _).
+
+Save this file as <code>my_first_twelf.elf</code> (twelf files have the extension <code>.elf</code>). Now go to a terminal, preferably to the directory where you have the twelf file and start the twelf-server by running <code>twelf-server</code> if it is in your path or <code>/path/to/twelf/bin/twelf-server</code>. You should see something like this:
+
+ Twelf 1.7.1+ (rUnversioned directory, built 12/05/16 at 12:27:57 on narnia)
+ %% OK %%
+
+This is twelf's [https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop repl]. You can see a list of available commands by typing <code>help</code> following by ''Enter''. To load the file you have just created, type: <code>loadFile my_first_twelf.elf</code> (if this is in a different directory, make sure to type with the right path). Twelf typechecks the code and returns successfully, which you can see by the <code>%% OK %%</code> at the end.
+
+ %% OK %%
+ loadFile my_first_twelf.elf
+ [Opening file my_first_twelf.elf]
+ nat : type.
+ z : nat.
+ s : nat -> nat.
+ add : nat -> nat -> nat -> type.
+ add/z : {N:nat} add z N N.
+ add/s : {M:nat} {N:nat} {P:nat} add M N P -> add (s M) N (s P).
+ %mode +{M:nat} +{N:nat} -{P:nat} (add M N P).
+ %worlds () (add _ _ _).
+ %total {M N} (add M N _).
+ [Closing file my_first_twelf.elf]
+ %% OK %%
+
+You can enter in querying mode by typing <code>top</code> following by ''Enter'' in the repl. This is indicated by the symbol <code>?-</code>. In this mode, you can ask twelf to compute things in a prolog-like manner. Note that this is independent of the <code>%mode</code> declared in the source file. Typing <code>Ctrl+c</code> exits the querying mode. Here's an example of querying twelf:
+
+ %% OK %%
+ top
+ ?- add (s z) (s (s z)) X.
+ Solving...
+ X = s (s (s z)).
+ More? y
+ No more solutions
+ ?- add X (s z) (s (s z)).
+ Solving...
+ X = s z.
+ More? y
+ No more solutions
+ ?- ^C
+ interrupt
+ %% OK %%
+
+To understand better what just happened and what all the words in this file represent, move on to [[Proving_metatheorems_with_Twelf]].

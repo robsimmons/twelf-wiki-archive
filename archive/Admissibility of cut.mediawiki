@@ -1,0 +1,201 @@
+The '''admissibility of cut''' (also called '''cut elimination''') is one of the most important metatheorems of an [[object logic]] sequent calculus. It is the key theorem for showing the equivalence of natural deduction and the cut-free sequent calculus, which has several corollaries, including the existence of normal forms for every natural deduction term, and the consistency of the logic. This [[tutorials|tutorial]] shows how to prove admissibility of cut for a simple intuitionistic sequent calculus in Twelf. We will make use of lexicographic orderings in the [[%terminates|termination]] argument. <!-- and other tricks? -->
+
+== Cut ==
+
+For a sequent calculus Γ {{darrow}} C, where Γ holds hypotheses and the proposition C is the conclusion, the statement of cut is as follows: If Γ {{darrow}} A and Γ,A {{darrow}} C then Γ {{darrow}} C.
+
+Often, logicians will include cut in the sequent calculus as a rule:
+
+<math>{ { \Gamma \Rightarrow A \qquad \Gamma, A \Rightarrow C }\over{ \Gamma \Rightarrow C  } }{\quad \rm cut }</math>
+
+They then prove that any proof that uses the cut rule can be transformed into a proof without cut (thus, "cut elimination"). In Twelf, it will be simpler to prove cut as a metatheorem ("admissibility of cut") over a sequent calculus with no cut rule.
+
+== Sequent calculus ==
+
+Suppose we have the following sequent calculus:
+
+<!-- nb. in this math code we use \supset for implication -->
+<table style="margin-left:auto;margin-right:auto" cellpadding="24">
+<tr><td>
+<math>{ { \qquad }\over{ \Gamma, C \Rightarrow C  } }{\quad \rm init }</math>
+</td><td>
+<math>{ { \qquad }\over{\Gamma \Rightarrow \top} }{\quad \top\rm R}</math>
+</td></tr>
+<tr><td>
+<math>{ { \Gamma \Rightarrow A \qquad \Gamma \Rightarrow B }\over{ \Gamma \Rightarrow A \land B  } }{\quad \land\rm R  }</math>
+</td><td>
+<math>{ { \Gamma, A \land B, A, B \Rightarrow C }\over{ \Gamma, A \land B \Rightarrow C  } }{\quad \land\rm L  }</math>
+</td></tr>
+<tr><td>
+<math>{ { \Gamma, A \Rightarrow B }\over{ \Gamma \Rightarrow A \supset B  } }{\quad \supset\rm R  }</math>
+</td><td>
+<math>{ { \Gamma, A \supset B \Rightarrow A \qquad \Gamma, A \supset B, B \Rightarrow C}\over{ \Gamma, A \supset B \Rightarrow C  } }{\quad \supset\rm L  }</math>
+</td></tr>
+</table>
+
+The logic supports only the {{top}}, ∧, and ⊃ connectives to simplify this tutorial. In LF, we encode the sequent calculus as follows:
+
+<twelf>
+
+prop : type.    %name prop A.
+top : prop.
+imp : prop -> prop -> prop.
+and : prop -> prop -> prop.
+
+% hypotheses
+hyp : prop -> type.
+
+% G |- C
+conc : prop -> type.
+
+init : hyp A -> conc A.
+topR : conc top.
+andL : (hyp A -> hyp B -> conc C) ->
+       (hyp (and A B) -> conc C).
+andR : conc A -> conc B ->
+       conc (and A B).
+impL : conc A -> (hyp B -> conc C) ->
+       (hyp (imp A B) -> conc C).
+impR : (hyp A -> conc B) ->
+       conc (imp A B).
+</twelf>
+
+The sequent is represented as the judgment <tt>conc</tt>, which is hypothetical in hypotheses <tt>hyp</tt>. A rule <tt>init</tt> allows us to use a hypothesis to satisfy a conclusion.
+
+== Statement and proof of cut ==
+
+<twelf>
+cut : {A: prop} 
+      {D: conc A}
+      {E: hyp A -> conc C}
+      {F: conc C}
+      type.
+%mode cut +A +D +E -F.
+</twelf>
+
+We will refer to the input derivations as <tt>D</tt> and <tt>E</tt> throughout this tutorial and the output as <tt>F</tt>. Because we will induct on the structure of the type <tt>A</tt>, we make it an explicit argument.
+
+There are nominally about ''n''² cases to consider in this proof; for each of the ''n'' rules that can be at the bottom of <tt>D</tt>, ''n'' rules can be used at the bottom of <tt>E</tt>. In actuality, two factors reduce the number of cases we'll make: some combinations of rules are incompatible (Twelf's excludes them via unification, so we don't even need to write them down) and some cases can be done schematically by using universal quantification.
+
+=== Initial cuts ===
+
+If either derivation is an instance of the <tt>init</tt> rule, we are done:
+
+<twelf>
+initD : cut A (init Ha) ([Ha] E Ha) (E Ha).
+
+initE : cut A D ([Ha] init Ha) D.
+closed : cut A D ([Ha] E') E'.
+</twelf>
+
+If <tt>D</tt> is the <tt>init</tt> rule used to conclude <tt>conc A</tt> from <tt>hyp A</tt>, then Γ includes <tt>hyp A</tt> already, so we can satisfy the hypothesis in <tt>E</tt> by simply using the <tt>A</tt> that is already around (case <tt>initD</tt>).
+
+If <tt>E</tt> is the <tt>init</tt> rule used to conclude <tt>conc C</tt> from <tt>hyp A</tt> (so <tt>A</tt> = <tt>C</tt>), then <tt>D</tt> is a proof of Γ {{darrow}} C, so <tt>F</tt> is just <tt>D</tt> (case <tt>initE</tt>).
+
+It's also possible that <tt>E</tt> is the <tt>init</tt> rule used to conclude <tt>conc C</tt> from some other hypothesis <tt>C</tt> in Γ. In this case, <tt>E</tt> doesn't use the hypothesis <tt>A</tt> at all, so <tt>E</tt> can be strengthened to produce the output derivation <tt>F</tt> which doesn't depend on <tt>A</tt>. In fact, we can easily generalize this case to any derivation <tt>E</tt> that does not use the hypothesis <tt>A</tt>; this is the <tt>closed</tt> case. (When we write <tt>([Ha] E')</tt>, the variable <tt>E'</tt>&mdash;which is implicitly quantified at the outside of the goal&mdash;cannot depend on the lambda-bound variable <tt>Ha</tt>. This is how we indicate the derivation is closed with respect to its argument.)
+
+=== Principal cuts ===
+
+The most interesting cases are those where the cut formula <tt>A</tt> is concluded with a right rule in <tt>D</tt>, and used with a left rule in <tt>E</tt>. These are known as ''principal cuts''.
+
+There is no principal cut for {{top}} because there is no left rule, so the easiest one will be <tt>A ∧ B</tt>:
+<twelf>
+andC : cut (and A B) (andR D1 D2) ([Hab : hyp (and A B)] andL ([Ha : hyp A] [Hb : hyp B] E' Hab Ha Hb) Hab) F
+    <- ({Ha} {Hb} cut (and A B) (andR D1 D2) ([Hab] E' Hab Ha Hb) (F1 Ha Hb))
+    <- ({Hb} cut A D1 ([Ha] F1 Ha Hb) (F2 Hb))
+    <- cut B D2 ([Hb] F2 Hb) F.
+</twelf>
+
+We identify the case where <tt>D</tt> is an instance of <tt>andR</tt>, and <tt>E</tt> is <tt>andL</tt> acting on the hypothesis of the cut formula. (The hypothetical derivation <tt>E</tt> is represented as a LF function taking the hypothesis <tt>A ∧ B</tt>; we identify the case where this specific hypothesis is used by <tt>andL</tt> by passing that bound variable (<tt>Hab</tt>) to the <tt>andL</tt> constant.) We have a subderivation <tt>E'</tt> of  <tt>conc C</tt> under hypotheses <tt>hyp (and A B)</tt>, <tt>hyp A</tt>, and <tt>hyp B</tt>. We must eliminate each of these to produce <tt>F</tt>. In the first subgoal we eliminate the <tt>and A B</tt> hypothesis. <tt>D</tt> itself is a derivation of <tt>conc (and A B)</tt> in Γ, so we want to appeal to the IH on <tt>D</tt> and <tt>E'</tt>. There are a few things to notice. First, we did not name <tt>D</tt> (indeed there is no way to do so) because we pattern matched against it as an application of <tt>andR</tt>; therefore, in the inductive call we have to build up <tt>D</tt> again as <tt>andR D1 D2</tt>. Second, <tt>E'</tt> is not of the correct type for the inductive call, because it is a curried function of three arguments, not one. We therefore must make the subgoal higher order: we hypothesize the existence of <tt>Ha</tt> and <tt>Hb</tt> (of type <tt>hyp A</tt> and <tt>hyp B</tt> respectively). We then form the term of type <tt>hyp (and A B) -> conc C</tt> by abstracting the hypothesis we seek to eliminate (<tt>Hab</tt>) and applying <tt>E'</tt> to it and the Π-bound <tt>Ha</tt> and <tt>Hb</tt>. Because this inductive call is in a context including <tt>Ha</tt> and <tt>Hb</tt>, the resulting derivation <tt>F1</tt> depends on those two variables as well.
+
+We then want to do the same thing to eliminate the hypotheses for <tt>A</tt> and <tt>B</tt>. In the second subgoal, we prove that for all derivations of <tt>hyp B</tt> (Π-bound variable <tt>Hb</tt>), we can cut <tt>D1</tt> with the result of the previous induction <tt>F1</tt> to get <tt>F2</tt>, which only depends on <tt>Hb</tt>. Finally, in the third subgoal we eliminate the <tt>hyp B</tt> hypothesis to produce a derivation of <tt>conc C</tt> in the ambient Γ with no extra assumptions, which is what we need for <tt>F</tt>.
+
+We must pay close attention to the induction order. The first inductive call is well-founded because it is on a subderivation <tt>E'</tt>. The output derivation <tt>F1</tt> may be larger, however, and it is used as an input to the second inductive call. Observe, however, that the cut formula <tt>A</tt> is a subderivation of the original cut formula <tt>and A B</tt>. Ultimately, our induction order will be lexicographic. Either <tt>D</tt> or <tt>E</tt> will get smaller (with the other staying the same size), or they both may get larger but <tt>A</tt> will get smaller. We will specify this induction measure in the [[%total]] declaration when we check the [[metatheorem]] below.
+
+<twelf>
+impC : cut (imp A B) (impR ([Ha] D' Ha))
+           ([Hab] impL (E1 Hab : conc A) ([Hb] E2 Hab Hb : conc C) Hab)
+           F
+    <- cut (imp A B) (impR D') E1 (F1 : conc A)
+    <- ({Hb:hyp B} cut (imp A B) (impR D') ([Hab] E2 Hab Hb) (F2 Hb : conc C))
+    <- cut A F1 D' (F3 : conc B)
+    <- cut B F3 F2 F.
+</twelf>
+
+The <tt>impC</tt> case works in much the same way. We first cut the <tt>A ⊃ B</tt> hypothesis from both subderivations <tt>E1</tt> and <tt>E2</tt>. We then have <tt>F1 : conc A</tt> and <tt>F2 : hyp B -> conc C</tt>. To get <tt>F3 : conc B</tt> we cut the <tt>hyp A</tt> from <tt>D' : hyp A -> conc B</tt> using <tt>F1</tt> (note that in this inductive call, derivations from the "<tt>D</tt> side" and "<tt>E</tt> side" have switched roles!). Finally, we cut the <tt>hyp B</tt> from <tt>F2</tt> to get the result <tt>F</tt>.
+
+=== Left-commutative cuts ===
+
+The remainder of the cases are ''commutative'' cases where we search for initial and principal cuts to apply. The first set are the ''left commutative''  cases, where the rule used to derive <tt>D</tt> is a left rule.
+
+<twelf>
+andLLC : cut A (andL ([Ha][Hb] D' Ha Hb) Hab) E 
+               (andL ([Ha][Hb] F' Ha Hb) Hab)
+      <- ({Ha}{Hb} cut A (D' Ha Hb) E (F' Ha Hb)).
+
+impLLC : cut A (impL D1 ([Hb] D2 Hb) Hi) E
+               (impL D1 F2 Hi)
+      <- ({Hb} cut A (D2 Hb) E (F2 Hb)).
+</twelf>
+
+In the <tt>andLLC</tt>, <tt>D : conc A</tt> is an instance of <tt>andL</tt>. We proceed by hypothesizing the <tt>Ha : hyp A1</tt> and <tt>Hb : hyp B1</tt> that <tt>D' : hyp A1 -> hyp B1 -> conc A</tt> depends on, so that we may cut it against <tt>E</tt>. The resulting derivation <tt>F'</tt> then also depends on a <tt>hyp A1</tt> and <tt>hyp B1</tt>; we wrap it with an instance of the <tt>andL</tt> rule. In these commutative cases, we find rules that do not involve the cut formula, work underneath them inductively, and then re-apply the rule to the cut-free proof we obtained. The <tt>impLLC</tt> case follows the same pattern.
+
+=== Right-commutative cuts ===
+
+The ''right commutative'' cuts are those where the rule at the bottom of <tt>E</tt> is not a left rule acting on the cut formula. The first two cases are where <tt>E</tt> is a right rule:
+
+<twelf>
+andRRC : cut A D ([Ha] andR (E1 Ha) (E2 Ha)) (andR F1 F2)
+      <- cut A D E1 F1
+      <- cut A D E2 F2.
+
+impRRC : cut A D ([Ha] impR ([H1] E1 Ha H1)) (impR ([H1] F1 H1))
+      <- ({H1} cut A D ([Ha] E1 Ha H1) (F1 H1)).
+</twelf>
+
+In the <tt>andRRC</tt> case, we simply apply straightforward induction. <tt>E</tt> consists of two subderivations, <tt>E1</tt> and <tt>E2</tt>, each of which may use the cut formula <tt>A</tt>. We inductively cut out uses of <tt>A</tt>, and then rebuild the derivation with the <tt>impR</tt> rule. The <tt>impRRC</tt> rule is similar.
+
+The final two cases are uses of the left rules, but where they act on a hypothesis different from the cut hypothesis:
+
+<twelf>
+andLRC : cut A (D : conc A) ([Ha] andL ([H1] [H2] E' Ha H1 H2) Hp)
+                            (andL ([H1][H2] F' H1 H2) Hp)
+      <- ({H1}{H2} cut A D ([Ha] E' Ha H1 H2) (F' H1 H2)).
+
+impLRC : cut A (D : conc A) ([Ha] impL (E1 Ha) ([Hb] E2 Ha Hb) Hi)
+                            (impL F1 ([Hb] F2 Hb) Hi)
+      <- cut A D ([Ha] E1 Ha) F1
+      <- ({Hb} cut A D ([Ha] E2 Ha Hb) (F2 Hb)).
+</twelf>
+
+The <tt>andLRC</tt> case is similar to the principal cut case <tt>andC</tt>, but here the <tt>andL</tt> in <tt>E</tt> acts on some hypothesis <tt>Hp : and A1 B1</tt> instead of the cut hypothesis <tt>Ha : hyp A</tt>. To proceed, we simply eliminate uses of <tt>Ha</tt> within E' inductively, and then reapply the <tt>andL</tt> rule to the resulting derivation. We follow a similar pattern for the <tt>impLRC</tt> case.
+
+== The metatheorem ==
+
+We can now state and check the metatheorem: that for every [[ground]] arguments <tt>A</tt>, <tt>D</tt> and <tt>E</tt> to the <tt>cut</tt> relation, there exists a derivation <tt>F</tt> that concludes <tt>C</tt> without using the hypothesis <tt>A</tt>. Our [[%worlds]] declaration for cut is only that hypotheses may appear in the context:
+
+<twelf>
+%block hyp : some {A : prop} block {H : hyp A}.
+%worlds (hyp) (cut _ _ _ _).
+</twelf>
+
+We check the totality of <tt>cut</tt> using a lexicographic induction order, as discussed above. We write <tt>{A [D E]}</tt> to mean that either the cut formula <tt>A</tt> gets smaller, or it stays the same size and one of <tt>D</tt> or <tt>E</tt> gets smaller with the other staying the same size.
+
+<twelf>
+%total {A [D E]} (cut A D E F).
+</twelf>
+
+
+
+We proved the admissibility of cut for a small sequent calculus with only a few connectives. Experience shows that this same strategy works for more complex logics. For instance, the case study on [[Classical S5]] includes a cut theorem for a classical modal logic. It also formalizes the translations between natural deduction and the sequent calculus.
+
+<twelflink>All code from this tutorial</twelflink>. <twelflink check="true">Twelf's output from this tutorial</twelflink>.
+
+
+== See also ==
+
+* [[Lax logic]] - Cut elimination for a polarized variant of the Pfenning-Davies reconstruction of lax logic
+* [[Tethered modal logic]] - Cut elimination for the Pfenning-Davies reconstruction of Modal S4
+* [[Weak focusing]] - Cut elimination for a focused sequent calculus (lacks commentary)
+
+{{case study}}[[Category:Twelf code]]

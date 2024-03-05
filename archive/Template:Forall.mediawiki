@@ -1,0 +1,5 @@
+<font face="Lucida Sans Unicode">∀</font><noinclude>
+
+This template renders the ''for all'' (latex \forall) symbol, with workarounds for Internet Explorer. Use it by typing <nowiki>{{forall}}</nowiki> in an article.
+
+</noinclude>

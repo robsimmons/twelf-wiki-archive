@@ -1,0 +1,5 @@
+<font face="Lucida Sans Unicode">⊗</font><noinclude>
+
+This template renders the tensor (latex \otimes) symbol, with workarounds for Internet Explorer. Use it by typing <nowiki>{{otimes}}</nowiki> in an article.
+
+</noinclude>

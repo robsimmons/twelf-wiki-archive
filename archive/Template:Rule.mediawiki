@@ -1,0 +1,13 @@
+<strong>This template does not work because template arguments are not expanded inside the <nowiki><math></nowiki> tag in the current MediaWiki. Any workarounds?</strong>
+
+
+<math>{ { {{{1}}} }\over{ {{{2}}}  } }{\quad \rm {{{3}}} }</math><noinclude>
+
+<s>Render an inference rule. Use: {<nowiki>{</nowiki>rule|premise1 \qquad premise2 ...|conclusion|name<nowiki>}</nowiki>}.
+
+It produces:
+
+<math>{{premise1 \qquad premise2 \qquad ...}\over{conclusion}}{\quad \rm name}</math>
+</s>
+
+</noinclude>

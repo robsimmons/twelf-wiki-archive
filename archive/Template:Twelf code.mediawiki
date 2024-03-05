@@ -1,0 +1,2 @@
+<hr><small>The above page contains an example of [[:Category:Twelf code|Twelf code]]. It may be attached to a [[tutorial]] as an illustrative example, or it may stand on its own.</small>
+<includeonly>[[Category:Twelf code]]</includeonly>

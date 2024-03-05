@@ -1,0 +1,189 @@
+Many judgements of an object language have the property that, given some subjects of the judgement, the other subjects are determined uniquely.  For example: The [[Proving metatheorems:Representing the judgements of the natural numbers|addition judgement]] on natural numbers has the property that the two addends determine the sum uniquely.  A typing judgement for a programming language may have the property that a term has at most one type.  The operational semantics of a programming language may have the property that a term steps to at most one other term.  We refer to a metatheorem that establishes such a property a '''uniqueness lemma'''.  
+
+The goal of this article is to teach you how to prove uniqueness lemmas in Twelf.  The only subtlety is that the statement of a uniqueness lemma requires an auxiliary definition of a judgement defining equality at the relevant types.  
+
+In this article, we refer to the "given" subjects of the judgement as ''inputs'' and those subjects that are determined uniquely by the givens as ''outputs''.  However, these inputs and outputs do not need to correspond with the <tt>[[%mode]]</tt> of the judgement: it is meaningful to prove a uniqueness lemma for a judgement that has no mode specified in Twelf.  Note that a judgement may satisfy a uniqueness lemma but not define a function: uniqueness says that the outputs are uniquely determined if they exist at all.  To know that a judgement defines a function, it is necessary to prove a corresponding [[effectiveness lemma]] establishing that some instance of the judgement holds for each input.  
+
+Sometimes a uniqueness lemma can be proven trivially by leveraging a <tt>[[%unique]]</tt> declaration. 
+
+== Example: Flipping bits ==
+
+The following is a simple example of a uniqueness lemma. First we define bits and a simple relation <tt>bit-flip</tt> that negates a bit.
+
+<twelf>
+bit : type.
+
+bit/0 : bit.
+bit/1 : bit.
+
+bit-flip : bit -> bit -> type.
+
+bit-flip/01 : bit-flip bit/0 bit/1.
+bit-flip/10 : bit-flip bit/1 bit/0.
+</twelf>
+
+We would like to prove that the second argument of <tt>bit-flip</tt> is determined uniquely by the first.  How do we state this theorem?  We assume two derivations of <tt>bit-flip</tt> for the same input that seem to have distinct outputs and we prove that the outputs are the same:  
+
+: If <tt>D : bit-flip B1 B2</tt> and <tt>D' : bit-flip B1 B2'</tt> then <tt>B2 = B2'</tt>.
+
+The only subtlety in proving this theorem in Twelf is that we need a judgement representing the equality used in the conclusion.  If the output of the judgement is in fact unique (rather than unique modulo some equivalence relation), then the best judgement to use is the [[identity]] relation at the appropriate type:
+
+<twelf>
+id-bit : bit -> bit -> type.
+id-bit/refl : id-bit B B.
+</twelf>
+
+Identity internalizes syntactic equality of canonical forms as a judgement: <tt>id B B'</tt> is inhabited only when <tt>B</tt> an <tt>B'</tt> are the same LF term.  
+
+Thus, we can prove the theorem by exhibiting the following total relation:
+<twelf check="true" export="alt">
+bit-flip-unique : bit-flip B1 B2
+               -> bit-flip B1 B2'
+               -> id-bit B2 B2'
+               -> type.
+%mode bit-flip-unique +D1 +D2 -D3.
+
+- : bit-flip-unique bit-flip/01 bit-flip/01 id-bit/refl.
+
+- : bit-flip-unique bit-flip/10 bit-flip/10 id-bit/refl.
+
+%worlds () (bit-flip-unique _ _ _).
+%total {} (bit-flip-unique _ _ _).
+</twelf>
+
+=== Alternate formulation ===
+
+Uniqueness can also be expressed in a less-direct but sometimes more-convenient way that is nonetheless logically equivalent to the previous theorem.
+In this theorem statement, we assume derivations whose ''inputs'' are related by an identity relation, and show that the outputs are identical as well.  This theorem statement applies when we have evidence that the inputs are identical but the two derivations of the judgement in question have different types.  The proof is no more complicated than the previous formulation, because when we derive the precondition <tt>id-bit B1 B1'</tt> using <tt>id-bit/refl</tt> (the only rule we could use to derive that fact), <tt>B1</tt> and <tt>B1'</tt> are forced to be identical objects, just as they were in the previous proof. 
+
+<twelf check="true" discard="true">
+bit-flip-unique-alt : id-bit B1 B1'
+                       -> bit-flip B1 B2
+                       -> bit-flip B1' B2'
+                       -> id-bit B2 B2'
+                       -> type.
+%mode bit-flip-unique-alt +D0 +D1 +D2 -D3.
+
+- : bit-flip-unique-alt id-bit/refl bit-flip/01 bit-flip/01 id-bit/refl.
+
+- : bit-flip-unique-alt id-bit/refl bit-flip/10 bit-flip/10 id-bit/refl.
+
+%worlds () (bit-flip-unique-alt _ _ _ _).
+%total {} (bit-flip-unique-alt _ _ _ _).
+</twelf><twelf hidden="true" import="alt">
+bit-flip-resp : id-bit B1 B1'
+                 -> id-bit B2 B2'
+                 -> bit-flip B1 B2
+                 -> bit-flip B1' B2'
+                 -> type.
+%mode bit-flip-resp +D0 +D1 +D2 -D3.
+
+- : bit-flip-resp id-bit/refl id-bit/refl D D.
+
+%worlds () (bit-flip-resp _ _ _ _).
+%total {} (bit-flip-resp _ _ _ _).
+
+bit-flip-unique-alt : id-bit B1 B1' 
+                       -> bit-flip B1 B2
+                       -> bit-flip B1' B2'
+                       -> id-bit B2 B2'
+                       -> type.
+%mode bit-flip-unique-alt +D0 +D1 +D2 -D3.
+
+- : bit-flip-unique-alt ID1 (BF: bit-flip B1 B2) (BF': bit-flip B1' B2') ID2
+     <- bit-flip-resp ID1 id-bit/refl BF (BF'': bit-flip B1' B2)
+     <- bit-flip-unique BF'' BF' (ID2: id-bit B2 B2').
+
+%worlds () (bit-flip-unique-alt _ _ _ _).
+%total {} (bit-flip-unique-alt _ _ _ _).
+</twelf>
+However, this alternate formulation is equivalent to the above uniqueness lemma.  It is easy to see that this lemma implies the above, as we can always call this lemma with <tt>id-bit/refl</tt>.  To prove the other direction, we can compose the above uniqueness lemma with a [[respects lemma]] showing that <tt>bit-flip</tt> respects equality.  <twelflink import=alt>Here is an example</twelflink> of proving <tt>bit-flip-unique-alt</tt> using a uniqueness lemma and a respects lemma (<twelflink import=alt check=true>here is Twelf's output</twelflink>).  Because the [[respects lemma]] will often be necessary for other reasons, it is usually preferable to prove it and the above uniqueness lemma, rather than the composed version presented here.
+
+== Bigger example: determinism of evaluation ==
+
+As a slightly more-involved example of a uniqueness lemma, we can prove that the operational semantics of the simply typed λ-calculus are deterministic:
+
+: If <math>e \mapsto e'</math> and <math>e \mapsto e''</math> then <math>\mathsf{}e' = e''</math>.
+
+Here, equality of terms means syntactic identity modulo α-equivalence
+
+This proof reuses the formulation of the STLC from [[Proving metatheorems:Representing the syntax of the STLC|Proving metatheorems with Twelf]]; see that article for a description of the language and its operational semantics.  We recap the signature for the STLC here:
+<twelf>
+%% Syntax
+tp    : type.
+
+unit  : tp.
+arrow : tp -> tp -> tp.
+
+tm    : type.
+empty : tm.
+lam   : tp -> (tm -> tm) -> tm.
+app   : tm -> tm -> tm.
+
+%% Dynamic Semantics
+
+value       : tm -> type.
+value_empty : value empty.
+value_lam   : value (lam T2 ([x] E x)).
+             
+step          : tm -> tm -> type.
+step_app_1    : step (app E1 E2) (app E1' E2)
+                 <- step E1 E1'.
+step_app_2    : step (app E1 E2) (app E1 E2')
+                 <- step E2 E2'
+                 <- value E1.
+
+step_app_beta : step (app (lam T2 ([x] E x)) E2) (E E2)
+                 <- value E2.
+</twelf>
+
+To state the uniqueness lemma, we define an identity type for <tt>tm</tt>:
+
+<twelf>
+id : tm -> tm -> type.
+refl : id E E.
+</twelf>
+
+The judgement <tt>id</tt> represent object-language α-equivalence: α-equivalent STLC terms are represented by α-equivalent LF terms, and <tt>id E E'</tt> is inhabited exactly when <tt>E</tt> and <tt>E'</tt> are α-equivalent in LF.  
+
+The proof of determinism requires a congruence lemma, which states that applications are equal if their subterms are:
+<twelf>
+id_app_cong : id E1 E1' 
+               -> id E2 E2' 
+               -> id (app E1 E2) (app E1' E2') 
+               -> type.
+%mode id_app_cong +X1 +X2 -X3.
+
+- : id_app_cong refl refl refl.
+
+%worlds () (id_app_cong _ _ _).
+%total {} (id_app_cong _ _ _).
+</twelf>
+
+Next, we present a complete proof of determinism:
+<twelf check="true">
+det : step E E' -> step E E'' -> id E' E'' -> type.
+%mode det +X1 +X2 -X3.
+
+det-1 : det (step_app_1 DstepE1') (step_app_1 DstepE1'') DidApp
+         <- det DstepE1' DstepE1'' DidE1
+         <- id_app_cong DidE1 refl DidApp.
+
+det-2 : det (step_app_2 _ DstepE2') (step_app_2 _ DstepE2'') DidApp
+         <- det DstepE2' DstepE2'' DidE2
+         <- id_app_cong refl DidE2 DidApp.
+
+det-b : det (step_app_beta _) (step_app_beta _) refl.
+
+%worlds () (det _ _ _).
+%total D (det D _ _).
+</twelf>
+
+Observe that the [[totality assertion]] for this type family implies the informal statement above.  
+
+The proof consists of three cases, and in each case the two <tt>step</tt> derivations conclude with the same final rule.  The cases <tt>det-1</tt> and <tt>det-2</tt> appeal to the inductive hypothesis on the subderivations and then use the congruence lemma for identity.  The case <tt>det-b</tt> concludes equality by reflexivity because the left-hand term of <tt>step-app-beta</tt> uniquely determines the form of the right-hand term.
+
+Twelf successfully proves the totality of <tt>det</tt>, even though the relation elides the "off-diagonal" cases where the two <tt>step</tt> derivations do not concludes with the same final rule.  This is because the off-diagonal cases are all vacuously true---and moreover, Twelf's coverage checker
+rules out these contradictory cases automatically.  For example, if one derivation concluded with <tt>step-app-1</tt> and the other with <tt>step-app-2</tt>, then there would be subderivations concluding both <tt>value E1</tt> and <tt>step E1 E1'</tt>.  These two types can never be simultaneously inhabited: <tt>step</tt> is only inhabited when <tt>E1</tt> is an application, and there is no rule inhabiting <tt>value</tt> for an application.  Similarly, if one derivation concluded with <tt>step-app-1</tt> and the other with <tt>step-app-beta</tt>, subderivations would give a <tt>step</tt> derivation whose left-hand side is a <tt>lam</tt>, which cannot exist.  The other off-diagonal cases can be contradicted in a similar manner.  Twelf's coverage checker rules out cases like these where the inputs to a metatheorem result in an uninhabited instance of some type family.  See also: [[Reasoning from false]]
+
+{{tutorial}}

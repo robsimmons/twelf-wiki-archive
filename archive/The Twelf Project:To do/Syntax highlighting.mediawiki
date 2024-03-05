@@ -1,0 +1,12 @@
+* An identifier within a lemma without a leading <tt>&lt;-</tt> is interpreted as a new keyword (is this fixable?)
+
+=== Done === 
+* <strike><tt>*</tt> is not recognized as part of an identifier</strike> — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 13:21, 30 September 2006 (EDT)
+* <strike><tt>%block</tt> is not recognized as a keyword</strike> — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 13:21, 30 September 2006 (EDT)
+* <strike>[[%infix]], [[%postfix]], [[%prefix]] not keywords. &nbsp;&mdash;&nbsp;[[User:Tom7|Tom 7]] 10:49, 5 October 2006 (EDT)</strike> — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 19:06, 5 October 2006 (EDT)
+* Doesn't dig many other characters in identifiers: > < &, etc. &nbsp;&mdash;&nbsp;[[User:Tom7|Tom 7]] 10:49, 5 October 2006 (EDT)
+:* Made some fixes, other ones will be more complicated (because it's actually syntax higlighting <nowiki>&gt</nowiki>, not >) — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 19:06, 5 October 2006 (EDT)
+::* Whoa: [[CPS conversion]] (scroll down) &nbsp;&mdash;&nbsp;[[User:Tom7|Tom 7]] 19:11, 5 October 2006 (EDT)
+:::* I think I fixed all the crazy stuff. Did I fix all the crazy stuff? — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 00:51, 7 October 2006 (EDT)
+
+* <twelf>fuNNY : type.</twelf> looks bad. &nbsp;&mdash;&nbsp;[[User:Varming|Varming]] Sat Oct  7 00:52:14 EDT 2006

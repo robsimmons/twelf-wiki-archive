@@ -1,0 +1,54 @@
+The following '''case studies''' present interesting applications of Twelf.  Some of these case studies use proof techniques that are explained in the [[tutorials]], so you may wish to read those first.  
+
+Feel free to add your own case studies here.  We would welcome experience reports that document not just the Twelf code you wrote but your experience writing it. (If the goal of your article is to teach a specific Twelf technique, it should instead be a [[tutorials|tutorial]], and if your Twelf code is off-site, you should instead add it to the list of [[Research projects using Twelf]].)
+
+==== Beginner ====
+
+* [[Bracket abstraction]], by [[User:William Lovas|William Lovas]]
+: A translation of the untyped lambda calculus into the SKI combinator calculus.  Bracket abstraction is defined by pattern matching over LF-level lambda abstractions, making essential use of [[higher-order abstract syntax]].
+
+* [[Typed combinators soundness and completeness]], by [[User:William Lovas|William Lovas]]
+: A translation of the simply-typed lambda calculus into the SKI combinator calculus.  The translation is shown correct by showing that it preserves and reflects full beta-eta equality.  This case study uses uses [[Intrinsic and extrinsic encodings|intrinsic typing]] and [[regular worlds|open worlds]]. (Roughly an extended version of the above [[bracket abstraction]] case study.)
+
+* [[Division over the natural numbers]], by [[User:DanielKLee|Daniel K. Lee]]
+: A study of the encoding of division over the natural numbers. The definition is shown to be "correct" in a number of ways, including termination of division by a non-zero number and correctness with respect to multiplication. The former involves a use of <tt>%reduces</tt> for strong induction.
+
+* [[Church-Rosser via complete development]], by [[User:drl|Dan Licata]]
+: Takahashi's proof of the diamond property of parallel reduction.  This case study includes lots of examples of theorems in [[regular world]]s.
+
+* [[Admissibility of cut]], by [[User:Tom7|Tom Murphy VII]]
+: A proof of an important theorem about an intuitionistic sequent calculus. Uses lexicographic [[%terminates|termination]] orderings.
+
+* [[Hereditary substitution for the STLC]], by [[User:drl|Dan Licata]] 
+: The above proof of cut admissibility recast as an algorithm for normalizing λ-terms.  Uses many of the proof techniques explained in the [[tutorials]].
+
+* [[Double-negation translation]], by [[User:drl|Dan Licata]] 
+: The Godel-Gentzen negative translation of classical logic into intuitionistic logic.
+
+* [[Linear logic]], by [[User:Crary|Karl Crary]] 
+: An encoding of linear logic that uses a judgment to enforce linearity, along with a proof of subject reduction for it.
+
+* [[Mutable state]], by [[User:Rsimmons|Robert J. Simmons]]
+: Encoding a simple imperative language with state.
+
+* [[Zermelo Frankel]], by Daniel Wang
+: A particular encoding of ZF set theory in Twelf
+
+* Twelf Data structures:
+** [[heterogeneous lists| Lists]], by [[User:Varming|Carsten Varming]]
+** [[natural numbers with inequality | Unary natural numbers with inequality]], by [[User:Rsimmons|Robert J. Simmons]]
+** [[Dense lexicographical orderings]], by [[User:DanielKLee|Daniel K. Lee]]
+
+==== Advanced ====
+
+* [[CPS conversion]], by [[User:Tom7|Tom Murphy VII]]
+: A type-directed conversion from direct style lambda calculus into continuation passing style.
+
+* [[Classical S5]], by [[User:Tom7|Tom Murphy VII]]
+: A proof that a non-standard natural deduction for the modal logic Classical S5 is equivalent to the standard cut-free sequent calculus.
+
+* [[Lily]], by [[User:Varming|Carsten Varming]]
+: An encoding of a polymorphic linear lambda calculus with fixed points in LF, and a metatheorem proving that ground contextual equivalence with respect to a call-by-name semantics coincides with ground contextual equivalence with respect to a call-by-value semantics.
+
+* [[Lax logic]], by [[User:Rsimmons|Robert J. Simmons]]
+: Establishing the correspondence between two different presentations of propositional lax logic and showing soundness and completeness of the two systems, in the process establishing cut and identity.

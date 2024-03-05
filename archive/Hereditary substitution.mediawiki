@@ -1,0 +1,24 @@
+[[LF]] is defined so that only [[canonical form]]s exist.  However, canonical forms are not closed under substitution.  '''Hereditary substitution''' is an algorithm that directly computes the canonical result of an ordinary substiution of one canonical form into another.  This algorithm has been applied in several additional type theories as well.
+
+{{needs|citations of said type theories.}}
+
+== Example ==
+
+Substitution <math>\mathsf{}[M'/x]M</math> of one canonical form into another does not necessarily produce a canonical result.  For example:
+
+<math>\mathsf{}[\lambda y.y/x](x \; z)  \; = \;(\lambda y.y) \; z</math>
+
+Even though both terms are canonical forms, the result is [[beta-equivalence|beta-reducible]].  
+
+However, ''hereditary substitution'' directly computes the canonical result of an ordinary substitution.  When ordinary substitution would return a non-canonical form, hereditary substitution continues to reduce by substituting the argument into the body of the function.  In the above example, the hereditary substitution 
+
+<math>\mathsf{}[\lambda y.y/x](x \; z)  \; = \; [z/y] y \; = \; z </math>
+
+Whenever we use the notation <math>\mathsf{}[M'/x]M</math> for LF, we mean hereditary substitution.
+
+{{needs|an explanation of the hereditary substitution algorithm and its metatheory.}}
+
+== See also ==
+* The tutorial on [[hereditary substitution for the STLC]] formalizes the hereditary substitution algorithm for a simply typed lambda-calculus in Twelf.
+
+{{stub}}

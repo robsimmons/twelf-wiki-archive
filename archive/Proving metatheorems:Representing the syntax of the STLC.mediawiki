@@ -1,0 +1,98 @@
+{{proving metatheorems
+  | prev = Summary: the natural numbers
+  | prevname = Summary
+  | next = Representing the judgements of the STLC
+  | nextname = Representing judgements}}
+
+In this section, we discuss how to represent the syntax of a simply typed λ-calculus in LF.
+
+== Representing STLC types ==
+
+We consider a λ-calculus with <math>\mathsf{unit}</math> as a base type:
+
+<math>\tau ::= \mathsf{unit} \,|\, \tau_1 \rightarrow \tau_2</math>
+
+The representation of types is no more complicated than the representation of natural numbers in the previous section:
+
+<twelf>
+tp    : type.
+unit  : tp.
+arrow : tp -> tp -> tp.
+</twelf>
+
+We leave it to the reader to formulate an appropriate encoding judgement between STLC types <math>\texttt{}\tau</math> and closed LF terms of type <tt>tp</tt> and to prove that this encoding is adequate in the usual sense.  
+
+== Representing STLC terms ==
+
+=== Informal definition ===
+
+The terms of the STLC are variables <math>\mathsf{}x</math>, the 0-element tuple, lambda abstraction (with a type annotation), and application:
+
+<math>e ::= x \,|\, \langle\rangle \,|\, \lambda x :\tau . e \,|\, e_1 \, e_2</math>
+
+The variable <math>\mathsf{}x</math> is considered to be bound by the expression <math>\lambda x :\tau . e</math>.  Following standard practice, we implicitly consider terms modulo renaming of bound variables.
+
+=== LF representation ===
+
+We represent these terms in LF with the following signature:
+
+<twelf>
+tm    : type.
+empty : tm.
+app   : tm -> tm -> tm.
+lam   : tp -> (tm -> tm) -> tm.
+</twelf>
+
+The representation of <math>\langle\rangle</math> as <tt>empty</tt> and application as <tt>app</tt> is standard.  The questions you are probably asking are:
+# How does this LF signature represent variables <math>\mathsf{}x</math>?, and
+# What's going on with the type of <tt>lam</tt>?
+
+The answer is that we are using a representation technique called ''higher-order abstract syntax'' (HOAS): we use LF variables to represent object-language variables.  Here are some example representations: 
+
+{| border="1" cellpadding="5" cellspacing="0"
+|-
+| '''Informal Syntax''' || '''LF Representation'''
+|-
+| <math>\mathsf{}x</math>
+| <tt>x</tt>
+|-
+| <math>\mathsf{}x \, \langle\rangle</math>
+| <tt>app x empty</tt>
+|-
+| <math>\lambda x:(\mathsf{unit} \rightarrow \mathsf{unit}). x \, \langle\rangle</math>
+| <tt>lam (arrow unit unit) ([x] app x empty)</tt>
+|}
+
+As you can see, we represent an object-language variable by an LF variable with the same name.  Thus, to represent an object-language term <math>\lambda x :\tau . e</math>, we first represent the body <math>\mathsf{}e</math> as an LF term <tt>M</tt> in which the LF variable <tt>x</tt> occurs free.  Then, we bind this variable using an LF abstraction <tt>[x] M</tt>.  This abstraction, which represents the body of the object-language λ, has LF type <tt>tm -> tm</tt>.  This explains the higher-order type of the constant <tt>lam</tt>.
+
+Using higher-order abstract syntax (HOAS) in this fashion makes two operations on syntax primitive:
+* '''α-equivalence''': Because LF terms are considered modulo α-renaming of bound variables, and LF bound variables are used to model object-language bound variables, the type <tt>tm</tt> represents α-equivalence classes of object-language terms.  For example, because there is no way to distinguish <tt>([x] app x empty)</tt> and <tt>([y] app y empty)</tt> in LF, so there is no way to distinguish <tt>lam (arrow unit unit) ([x] app x empty)</tt> and <tt>lam (arrow unit unit) ([y] app y empty)</tt>.  
+* '''capture-avoiding substitution''': an object-language substitution, written <math>\{e_2/x\}e</math>, is modeled by an LF substitution <tt>[E2/x] E</tt>.  
+
+=== Adequacy ===
+
+The adequacy theorem for terms shows that the LF operations correctly implement the object-language operations:
+
+: '''Adequacy for terms:''' There is a bijection <math>e \gg \texttt{E}</math> between (α-equivalence classes of) STLC terms <math>\mathsf{}e</math> with free variables in <math>\mathsf{}x_1,\ldots,x_n</math> and (α-equivalence classes of) LF terms <tt>E : tm</tt> in the LF context <tt>x1:tm, ..., xn:tm</tt>.  
+
+: Moreover, this bijection is compositional in the following sense: if <math>e \gg \texttt{E}</math> and <math>e' \gg \texttt{E'}</math> then <math>\{e'/x\}e \gg \texttt{[E'/x] E}</math>.  
+
+If you're interested in the details of how this adequacy theorem is stated and proved, you can read more about it in the literature<ref>{{bibtex:hl07mechanizing}}</ref>.  However, there are a few high-level ideas in this proof that we should call out here:
+
+'''Adequacy for terms requires adequacy for types.'''  Because the syntax of terms mentions the syntax of types, the proof of adequacy for terms requires knowing that <tt>tp</tt> adequately represents types <math>\mathsf{}\tau</math>.  Above, we (well, you) proved that types <math>\mathsf{}\tau</math> are adequately represented by ''closed'' LF terms of type <tt>tp</tt>.  Thus, there is a danger here: the syntax of STLC types might not be adequately represented in the LF contexts we consider here, which have the form <tt>x1:tm, ..., xn:tm</tt>.  
+
+In fact, the representation of STLC types remains adequate in contexts of this form because adding variables of type <tt>tm</tt> to the context does not change the canonical forms of type <tt>tp</tt>.  This kind of argument can be made precise using [[subordination]], which tracks when terms of one type may appear in terms of another.  Informally, the idea is that the canonical forms of a type only depend on the canonical forms of subordinate types.  Here, <tt>tm</tt> is not subordinate to <tt>tp</tt> (because STLC terms do not appear in STLC types), so adding canonical forms of type <tt>tm</tt> does not change the canonical forms of type <tt>tp</tt>.  We will discuss another application of subordination [[Proving metatheorems:Proving totality assertions in non-empty contexts|later in this article]].
+
+'''The power of weak frameworks.''' When we consider closed LF terms of type <tt>nat</tt> or <tt>tp</tt>, the only possible terms of those types are applications of the appropriate constants.  The reason our higher-order representation of STLC terms works in LF is that, when we consider open LF terms in contexts containing assumptions <tt>x:tm</tt>, the only LF terms of type <tt>tm</tt> are either those variables or applications of the appropriate constants.  
+
+Specifically, it is important that LF does not provide any elimination forms for constants.  For example, suppose LF provided a <tt>case</tt> construct for case-analyzing the terms of a type, as one would have if <tt>tm</tt> were considered to be an inductive definition within the type theory.  Then the term <tt>([x:tm] case x of empty => empty | ...)</tt> would need to be considered a canonical form of type <tt>tm -> tm</tt> (without knowing what the variable stands for, there is no way to reduce the case).  However, this term does not correspond to any object-language term-with-a-free-variable, so having such a case construct would ruin the adequacy of the representation.  
+
+== References ==
+
+<references/>
+
+{{proving metatheorems
+  | prev = Summary: the natural numbers
+  | prevname = Summary
+  | next = Representing the judgements of the STLC
+  | nextname = Representing judgements}}

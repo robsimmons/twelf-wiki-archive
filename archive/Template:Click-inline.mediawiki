@@ -1,0 +1,12 @@
+<includeonly><span style="position:relative; overflow:hidden; width:{{{width}}}; height:{{{height}}}; z-index:2;">[[Image:{{{image}}}|{{{width}}}]]<span style="position:absolute; top:0; left:0; padding-top:3px; z-index:3;">[[{{{link}}}|<span style="float:left; width:{{{width}}}; height:{{{height}}}; font-size:{{{height}}}; line-height:{{{height}}}; word-spacing:{{{width}}}; cursor:pointer;">&nbsp; &nbsp;</span>]]</span></span></includeonly><noinclude>
+Copy of the wikipedia template for clicky images of the same name.
+Usage:
+ <nowiki>{{</nowiki>click-inline
+   | image = some icon of size 20x30.png
+   | link = destination page link
+   | width = 20px
+   | height = 30px
+ <nowiki>}}</nowiki>
+
+This template doesn't work in all browsers; perhaps the [http://www.mediawiki.org/wiki/Extension:ImageMap imagemap] extension is better. 
+</noinclude>

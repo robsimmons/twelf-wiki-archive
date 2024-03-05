@@ -1,0 +1,24 @@
+First, you should read up on [[Twelf with Emacs]], to understand [[Twelf with Emacs#How Twelf programs are divided up into files|how Twelf programs are divided up into files]] and how one interacts with those files.  Then, instead of using emacs, you can run the <tt>twelf-server</tt> command directly from your shell and interact with your files using the following commands.  (You may find it convenient to run <tt>twelf-server</tt> under some readline wrapper program like <tt>rlwrap</tt> or <tt>ledit</tt> to get command-line editing and history.)
+
+=== Loading the configuration file ===
+
+To read your current config from <tt>sources.cfg</tt>, type <code>make</code>  To read some other config <tt>other.cfg</tt>, type <code>make other.cfg</code>
+
+=== Checking an individual declaration ===
+
+To check an individual declaration, type <code>readDecl</code>  Then, on a new line, type a Twelf declaration, terminated with a period.
+
+=== Checking an individual file ===
+
+To load an individual file <tt>sometwelf.elf</tt>, type <code>loadFile sometwelf.elf</code>
+
+=== Logic programming proof search ===
+
+To animate your specifications by doing logic programming queries, type <code>top</code>  You will be presented with a a prompt, <code>?-</code> at which you can type queries with existential metavariables, like <code>?- plus (s z) (s (s z)) N.</code>  Assuming you've loaded the signature from the [[Natural numbers]] article), the Twelf server responds with the following: <code>Solving...
+N = s (s (s z)).
+More?</code>
+You can exit the logic programming top-level by pressing Ctrl-C.
+
+=== Quitting ===
+
+To quit from the Twelf server, type <code>quit</code> or press Ctrl-D.

@@ -1,0 +1,17 @@
+'''Beta-equivalence''' (β-equivalence) is a notion of proof equivalence in natural deduction logics with introduction and elimination forms.  Roughly, it says that when an elimination form is applied to an introduction form, they cancel.
+
+Consider the simply-typed lambda-calculus with arrow types.
+
+<math>A ::= a \mid A_1 \rightarrow A_2</math>
+
+<math>e ::= x \mid \lambda x{:}A.\, e \mid e_1\ e_2</math>
+
+The beta-equivalence induced by the arrow type <math>A \rightarrow B</math> says that the elimination form <math>e_1\ e_2</math> "cancels" the introduction form <math>\lambda x{:}A.\, e</math>; formally, it is the least [[congruence relation]] <math>\texttt{}e_1 =_\beta e_2</math> closed under the <math>\texttt{}\beta</math> axiom:
+
+<math>{\; \over (\lambda x{:}A.\, e_1)\ e_2 =_\beta [e_2/x] e_1} \beta</math>
+
+Beta-equivalence is usually oriented to the right yielding a notion of ''beta-reduction''.  For example:
+
+<math>(\lambda x{:}A.\, e_1)\ e_2 \Longrightarrow_\beta [e_2/x] e_1</math>
+
+The term on the left-hand side of the <math>\texttt{}\beta</math> axiom is called a ''beta-redex'', and the term on the right-hand side is its ''beta-reduct''.  A term with no beta-redexes is called ''beta-normal''.  Being beta-normal is one aspect of being [[canonical form|canonical]].

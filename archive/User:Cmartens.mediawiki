@@ -1,0 +1,5 @@
+Tutorial Sunday, Oct 17, 2010.
+
+[[TAT/plus.elf]]
+
+[[TAT/church.elf]]

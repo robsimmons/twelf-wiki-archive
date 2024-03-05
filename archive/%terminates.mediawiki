@@ -1,0 +1,219 @@
+A '''[[%terminates]]''' declaration provides checks that a program will either succeed or fail in a finite amount of time when given [[ground]] inputs. 
+
+A <tt>[[%total]]</tt> declaration uses the same syntax as a <tt>%terminates</tt> declaration. 
+
+== Termination checking in Twelf == 
+
+Termination is in general an undecidable problem, and so Twelf uses a simple strategy of requiring the user to define some '''termination ordering''', and then checking that every recursive subgoal makes that ordering smaller. 
+
+Twelf considers a term to be smaller than another term if it can inspect the two terms to see that the first is a strict subterm or if it follows from a <tt>[[%reduces]]</tt> declaration that the first is smaller. Twelf also uses [[mode]] information to ensure that it is reasoning about [[ground]] terms.
+
+A term A is only considered to be smaller than B if A is a strict subterm of B. So, for instance, <tt>(s (s z))</tt>, <tt>(s z)</tt>, and <tt>z</tt> are all subterms of <tt>(f (s (s z)) (s z))</tt>, but <tt>(f z z)</tt> is not. 
+
+As usual, we will use the [[natural numbers]] as the basis for our example. 
+
+<twelf>
+nat: type.
+
+z: nat.
+s: nat -> nat.
+</twelf>
+
+=== Non-ordering ===
+
+The simplest termination ordering says that no termination argument is needed, because there are no recursive calls! We can write such an ordering for <tt>triv</tt>, which takes a number and can either return a number one greater or one less.
+
+<twelf>
+triv: nat -> nat -> type.
+%mode triv +A -B.
+
+triv/: triv (s N) N.
+triv/: triv N (s N).
+</twelf>
+
+<twelf check=decl>
+%terminates {} (triv _ _).
+</twelf>
+
+=== Simple ordering ===
+
+A simple ordering says that one term always gets smaller in a subgoal, even if the other ones get larger. The first argument to <tt>a</tt> always gets smaller in this example (even though the second may get bigger). We only need to be able to reason about the first argument, but we define both to be inputs.
+
+<twelf>
+a : nat -> nat -> type.
+%mode a +A +B.
+
+a0 : a z z.
+a1 : a (s N1) N
+      <- a N1 (s (s (s N))).
+</twelf>
+<twelf check=decl>
+%terminates N (a N _).
+</twelf>
+
+Alternatively, the second argument to <tt>b</tt> always gets smaller (even though the first may stay the same), and the termination declarations capture this information. The <tt>*A</tt> in the <tt>[[%mode]]</tt> declaration means that we do not care whether the first argument to <tt>b</tt> is an input or an output. 
+
+Notice that because we already showed <tt>a</tt> to be terminating, we can use it as a subgoal to <tt>b</tt> as long as it is only called with ground terms.
+
+<twelf>
+b : nat -> nat -> type.
+%mode b *A +B.
+
+b0 : b (s z) (s z).
+b1 : b N (s (s M))
+      <- b N M
+      <- a (s (s (s M))) M.
+</twelf>
+<twelf check=decl>
+%terminates N (b _ N).
+</twelf>
+
+=== Simultaneous ordering ===
+
+We can define a relation <tt>c</tt> that non-deterministically counts three numbers down to zero:
+
+<twelf>
+c : nat -> nat -> nat -> type.
+%mode c +N1 +N2 +N3.
+
+c0 : c z z z.
+c1 : c (s N1) N2 N3
+      <- c N1 N2 N3.
+c2 : c N1 (s N2) N3
+      <- c N1 N2 N3.
+c3 : c N1 N2 (s N3)
+      <- c N1 N2 N3.
+</twelf>
+
+No single term gets smaller at any one step, but ''some'' term gets smaller at every step. We can express this using a simultaneous ordering:
+
+<twelf check=decl>
+%terminates [N1 N2 N3] (c N1 N2 N3).
+</twelf>
+
+=== Lexicographic ordering ===
+
+Lexicographic orders generalize simultaneous orders - using a lexicographic ordering we can define <tt>d</tt> in a manner similar to <tt>c</tt>, but we can allow the second and third numbers to count ''up'' whenever the first number counts down, and allow the third number to count up whenever the second number counts down.  However, the first number must stay constant when the second counts down, and the first and second both must stay constant when the third counts down.
+
+<twelf>
+d : nat -> nat -> nat -> type.
+%mode d +N1 +N2 +N3.
+
+d0 : d z z z.
+d1 : d (s N1) N2 N3
+      <- d N1 (s (s (s (s N2)))) (s (s N3)).
+d2 : d N1 (s N2) N3
+      <- d N1 N2 (s N3).
+d3 : d N1 N2 (s N3)
+      <- d N1 N2 N3.
+</twelf>
+
+<twelf check=decl>
+%terminates {N1 N2 N3} (d N1 N2 N3).
+</twelf>
+
+=== Lexicographic ordering II ===
+
+Another example that is (slightly) less contrived arises with lists of natural numbers. If we want to directly represent the sum of a natural number <tt>N</tt> and a list <tt>L</tt>, then we can define it as follows:
+
+* The sum of <tt>z</tt> and <tt>nil</tt> is <tt>z</tt>.
+* The sum of <tt>z</tt> and <tt>cons N L</tt> is the sum of <tt>N</tt> and <tt>L</tt>.
+* The sum of <tt>(s N)</tt> and <tt>L</tt> is <tt>s M</tt>, if <tt>M</tt> is the sume of <tt>N</tt> and <tt>L</tt>.
+
+This is a lexicographic induction - either the list gets smaller, or the natural number gets smaller and the list stays the same size.
+
+<twelf>
+list : type.
+nil : list.
+cons : nat -> list -> list.
+
+listsum : nat -> list -> nat -> type.
+%mode listsum +N +L -M.
+
+lsz : listsum z nil z.
+lsl : listsum z (cons N L) M <- listsum N L M.
+lss : listsum (s N) L (s M) <- listsum N L M.
+</twelf>
+
+<twelf check=decl>
+%terminates {L N} (listsum N L M).
+</twelf>
+
+=== Mutual, lexicographic ordering ===
+
+In this case, we have a program that is non-deterministic to illustrate more possibilities. We will describe a "big" lemma and a "small" lemma, each with two arguments. Twelf decides what is "big" or "small" based on the way we order things - from small to large - in the <tt>%terminates</tt> declaration below.
+
+<twelf check=true>
+big : nat -> nat -> nat -> type.
+small : nat -> nat -> nat -> type.
+%mode big +A +B -C.
+%mode small +A +B -C.
+</twelf>
+
+We can split up the possibilities into four cases:
+
+* We "bottom out" in a base case or a call to another theorem:
+
+<twelf>
+& : small z N N.
+& : big N M P
+     <- listsum N (cons M (cons M nil)) P.
+</twelf>
+
+* The second argument gets smaller (nothing else matters)
+
+<twelf>
+& : small N1 (s N2) N3
+     <- big (s (s N1)) N2 N3.
+& : small N1 (s N2) N3
+     <- big N2 N2 N3.
+& : big N1 (s (s N2)) N3
+     <- big N1 N2 N3.
+</twelf>
+
+* The first argument gets smaller, and the second argument gets no bigger.
+
+<twelf>
+& : small (s N1) (s N2) (s N3)
+     <- big N1 N2 N3.
+& : big (s N1) N2 N3
+     <- big N1 N2 N3.
+</twelf>
+
+* The "lemma" gets smaller and everything else gets no bigger.
+
+<twelf>
+& : big N1 N2 N3
+     <- small N1 N2 N3.
+& : big (s N1) (s N2) N3
+     <- small N1 N2 N3.
+</twelf>
+
+These requirements are encoded in the declaration below. The ordering of the patterns declares <tt>small</tt> to be smaller than <tt>big</tt>, and either the second argument (<tt>B1</tt> and <tt>B2</tt>) gets smaller, or else it gets no bigger and the first
+argument (<tt>A1</tt> and <tt>A2</tt>) gets smaller.
+
+<twelf check=decl>
+%terminates {(B1 B2) (A1 A2)} (small A2 B2 _) (big A1 B1 _).
+</twelf>
+
+== Troubleshooting ==
+
+The simplest example of running afoul of the Twelf termination checker is if the recursive call uses an argument unrelated to the original argument. 
+
+<twelf discard=true check=decl>
+e: nat -> nat -> type.
+- : e N M <- e M N.
+%mode e +N +M.
+%terminates N (e N M).
+</twelf>
+
+As the error message indicates, Twelf requires that <tt>M</tt> be less than <tt>N</tt> in the recursive call in order for termination analysis to hold, but it has
+no way of establishing this. If, for some reason, the un-fufilled termination requirement is actually true, it can often be established with a <tt>[[%reduces]]</tt>
+declaration.
+
+== See also ==
+
+* {{guide|chapter=8|section=45|title=Termination}}
+* <tt>[[%total]]</tt>
+* [[Lexicographic induction]]
+* [[Mutual induction]]

@@ -1,0 +1,6 @@
+<bibtex>@InProceedings{crary03talt,
+  author = "Karl Crary",
+  title = "Toward a Foundational Typed Assembly Language",
+  booktitle = "2003 Symposium on Principles of Programming Languages",
+  year = "2003",
+}</bibtex>

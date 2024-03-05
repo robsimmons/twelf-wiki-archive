@@ -1,0 +1,17 @@
+'''Eta-equivalence''' (η-equivalence) is a notion of proof equivalence in natural deduction logics with introduction and elimination forms.  Roughly, it says that any proof of a proposition is equivalent to one which introduces the proposition's principal connective.  It is a form of extensional equivalence.
+
+Consider the simply-typed lambda-calculus with arrow types.
+
+<math>A ::= a \mid A_1 \rightarrow A_2</math>
+
+<math>e ::= x \mid \lambda x{:}A.\, e \mid e_1\ e_2</math>
+
+Eta-equivalence for terms <math>\texttt{}e : A \rightarrow B</math> is the least [[congruence relation]] <math>\texttt{}e_1 =_\eta e_2</math> closed under the <math>\texttt{}\eta</math> axiom:
+
+<math>{(x \not\in \mathit{FV}(e)) \over \lambda x{:}A.\, e\ x =_\eta e} \eta</math>
+
+In logics and typed calculi, eta-equivalence is usually oriented to the left yielding a notion of ''eta-expansion''.  For example:
+
+<math>e : A \rightarrow B \Longrightarrow_\eta \lambda x{:}A.\, e\ x</math>
+
+Eta-expansion transforms an arbitrary proof of a proposition into a proof that introduces the proposition's principal connective.  A term with no sub-terms that can be eta-expanded without introducing [[beta-equivalence|beta-redexes]] is said to be ''eta-long''.  Being eta-long is one aspect of being [[canonical forms|canonical]].

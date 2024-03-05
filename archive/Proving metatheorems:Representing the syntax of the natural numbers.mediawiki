@@ -1,0 +1,75 @@
+{{proving metatheorems
+   |noprevious=
+   |next= Simply typed LF
+   |nextname=Simply typed LF}}
+
+To use Twelf, you need to know how to represent [[deductive systems]] using the LF logical framework.  LF is a very convenient language for representing deductive systems that involve [[variable binding]] and [[hypothetical judgement]]s, such as programming languages and logics. However, we won't see any examples of such uses of LF until [[Proving metatheorems:Representing the syntax of the STLC|later]]. The goal of the first part of this guide is to take a broad sweep through LF and Twelf; you will see how to represent and prove properties of a very simple language, which will prepare you for more sophisticated (and more impressive) content later on.
+
+Our first task is to introduce LF and see how to represent the syntax of a deductive system in it. We refer to a language that we are formalizing in LF as an [[object language]] (i.e., it is the object of our study).  In contrast, we sometimes refer to LF as the [[meta-language]]. To keep things simple, we use the natural numbers as first example object language.
+
+==Natural numbers==
+
+===Informal definition===
+
+In informal mathematical notation ("informal" is used here in the sense of "not formalized"), the syntax of the natural numbers is defined by the following grammar:
+
+<math>n ::= \mathsf{zero} \, | \, \mathsf{succ}(n)</math>
+
+That is, <math>\mathsf{zero}</math> is a natural number, and if <math>n</math> is a natural number, then <math>\mathsf{succ}(n)</math> is as well.
+
+===LF representation===
+
+LF is a typed lambda-calculus. We represent an [[object language]] in LF by writing an LF [[signature]].  A signature declares type and term constants.  For example, this LF [[signature]] defines a type representing the natural numbers:
+
+<twelf>
+nat : type.
+z   : nat.
+s   : nat -> nat.
+</twelf>
+
+Intuitively, the LF type <tt>nat</tt> classifies the LF representations of natural numbers.  The LF constant <tt>z</tt> corresponds to <math>\mathsf{zero}</math> and the LF constant <tt>s</tt> corresponds to <math>\mathsf{succ}</math>.  
+
+The signature declares that <tt>z</tt> has type <tt>nat</tt>, which makes sense because <math>\mathsf{zero}</math> is a natural number.  
+
+The signature declares that <tt>s</tt> has function type <tt>nat -> nat</tt>.  An LF term of function type can be applied to another LF term of the appropriate type to form a new term.  For example, the constant <tt>s</tt> can be applied to the constant <tt>z</tt> to form the term <tt>s z</tt> representing the number <math>\mathsf{succ}(\mathsf{zero})</math>.  Then <tt>s</tt> can be applied to this term to form <tt>s (s z)</tt>, and so on. An informal natural number <math>\mathsf{succ}(n)</math> is represented by the LF term <tt>s N</tt> where <math>\texttt{}n</math> is represented by <tt>N</tt>.
+
+We can state the relationship between the informal presentation of the object language and its LF representation by giving an encoding judgement relating an informal object with its representation:
+
+<center>
+<math>
+\, \over \mathsf{zero} \gg \texttt{z}
+</math>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<math>
+n \gg N \over
+\mathsf{succ}(n) \gg \texttt{s}(N)
+</math>
+</center>
+
+===Adequacy===
+
+Is this a correct encoding of the natural numbers?  In the LF methodology, the correctness criterion for an encoding is called [[adequacy]]:
+
+;Adequacy
+:An encoding is [[adequate]] iff it is an isomorphism between the informal object-language entities and the LF terms of the appropriate type.
+
+Adequacy permits any reasoning in or about an object language to be "ported" between the informal and LF descriptions.  For example, if we prove a property about the LF representation, by adequacy, that property holds for the informal description as well.  Adequacy ensures that the work we do using the formalization has bearing on the actual language that we had in mind to begin with.
+
+In this example, the informal object-language entity is the syntax of the natural numbers, and the appropriate LF type is <tt>nat</tt>.  Thus, to satisfy adequacy, the above encoding judgement must be
+an isomorphism between informal natural numbers <math>\texttt{}n</math> and LF terms of type <tt>nat</tt>.  In this case, because both the informal and LF representations are first order (there is no binding structure), adequacy requires only a simple bijection. (More complicated examples require the adequacy argument to exhibit a [[compositional bijection]] instead of the simple bijection discussed here - an example like this is discussed [[Proving metatheorems:Representing the syntax of the STLC|later]].)
+
+To establish a bijection, we must show three things:
+# If <math>n \gg N</math> then <math>\texttt{}n</math> is a well-formed number and <math>\texttt{}N</math> is an LF term of type <tt>nat</tt>.
+# For all <math>\texttt{}n</math>, there exists a unique LF term <math>\texttt{}N</math> such that <math>n \gg N</math>.
+# For all LF terms <tt>N : nat</tt>, there exists a unique <math>\texttt{}n</math> such that <math>n \gg N</math>.
+
+The first part establishes that the judgement
+<math>n \gg N</math> relates informal numbers to LF terms of the appropriate type.  The second and third show that this relation defines a function in both directions.  Because we show that the same relation is functional in both directions, these functions are mutually inverse, establishing a bijection.
+
+The first part can be proved by a simple induction on the derivation of the encoding.  The second can be proved by structural induction on <math>\texttt{}n</math>.  The third part states that all LF terms of type <tt>nat</tt> represent a unique informal number.  It can be proved by induction on the structure of LF terms.  
+To do so, we will need to give a more precise account of LF.  
+
+{{proving metatheorems
+   |noprevious=
+   |next= Simply typed LF
+   |nextname=Simply typed LF}}

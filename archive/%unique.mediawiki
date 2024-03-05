@@ -1,0 +1,140 @@
+{{undocumented}}
+A '''<tt>%unique</tt>''' declaration attempts to automatically check whether some positions of a relation (its outputs) are uniquely determined by some other positions (its inputs). Its syntax is similar to that of <tt>[[%mode]]</tt>, except that in addition to being able to specify an argument to be an input (<tt>+</tt>), an output (<tt>-</tt>), or unmoded (<tt>*</tt>), you may also specify an argument to be a unique output (<tt>-1</tt>).
+
+Successful <tt>%unique</tt> declarations are used to simplify [[coverage checking]], and they can easily be transformed into first-class [[uniqueness lemma|uniqueness lemmas]].
+
+<!--
+Currently there is no way to utilize the result of a successful <tt>%unique</tt> declaration and so its use is not suggested - an equivalent result can be established by a [[uniqueness lemma]].
+-->
+
+== Example ==
+
+We define the oft-used example of addition of [[natural numbers]]:
+
+<twelf>
+nat : type.
+z : nat.
+s : nat -> nat.
+
+plus : nat -> nat -> nat -> type.
+pz : plus z N N.
+ps : plus (s N1) N2 (s N3)
+      <- plus N1 N2 N3.
+</twelf>
+
+
+
+We can then check for uniqueness using <tt>%unique</tt> (a <tt>[[%worlds]]</tt> declaration is also required).
+
+<twelf check=decl discard=true>
+%worlds () (plus _ _ _).
+%unique plus +N1 +N2 -1N3.
+</twelf>
+
+
+
+If we had created a non-unique definition of <tt>plus</tt>, for instance by adding an additional, broken version of <tt>ps2</tt>, Twelf would have indicated an error upon checking for uniqueness:
+
+<twelf>
+ps2 : plus (s N1) N2 N3 
+      <- plus N1 N2 N3.
+</twelf>
+
+<twelf check=decl discard=true>
+%worlds () (plus _ _ _).
+%unique plus +N1 +N2 -1N3.
+</twelf>
+
+
+== Mutual recursion ==
+
+Checking the uniqueness of mutually recursive predicates
+creates a problem, because uniqueness (unlike <tt>[[%mode]]</tt>) cannot
+be checked incrementally.  We therefore introduce a simultaneous
+form of uniqueness declarations, in analogy with other
+simultaneous declarations.
+
+<twelf>
+nat : type.
+z : nat.
+s : nat -> nat.
+
+div2 : nat -> nat -> type.
+div2' : nat -> nat -> type.
+d2s : div2 (s N) (s M)
+      <- div2' N M.
+d2z : div2 z z.
+d2's : div2' (s N) M
+       <- div2 N M.
+
+%worlds () (div2 _ _) (div2' _ _).
+
+%unique (div2 +N -1M) (div2' +N' -1M').
+</twelf>
+
+== Coverage checking ==
+
+Successful <tt>%unique</tt> declarations are taken into account to simplify certain kinds of coverage goals in [[coverage checking]].  Suppose you have a goal with two hypotheses of the form
+ ... {x : a N1 ... Nk M } ... {y : a N1 ... Nk M' } ...
+where the inputs <tt>N1 ... Nk</tt> are all equal, and suppose further that you have declared (and Twelf checked)
+ %unique a +X1 ... +Xk -1Y.
+Then, Twelf's coverage checker will unify the unique outputs <tt>M</tt> and <tt>M'</tt> in the coverage goal, which may cause some otherwise non-exhaustive pattern match to be recognized as exhaustive.  (If <tt>M</tt> and <tt>M'</tt> do not unify, the coverage goal is impossible, and no case will be needed to cover it.)
+
+As a simple example, consider proving a first-class [[uniqueness lemma]] for the original <tt>plus</tt> relation defined above.
+<twelf>
+nat : type.
+z : nat.
+s : nat -> nat.
+
+plus : nat -> nat -> nat -> type.
+pz : plus z N N.
+ps : plus (s N1) N2 (s N3)
+      <- plus N1 N2 N3.
+</twelf>
+
+To state such a lemma , we first define [[identity]] on natural numbers with just one constructor, reflexivity.
+<twelf>
+id : nat -> nat -> type.
+refl : id N N.
+</twelf>
+Then we can say that for any <math>N_1</math> and <math>N_2</math>, if both <math>N_1 + N_2 = M</math> and <math>N_1 + N_2 = M'</math>, then in fact <math>M = M'</math>.
+<twelf>
+plus-unique : plus N1 N2 M -> plus N1 N2 M' -> id M M' -> type.
+%mode plus-unique +D +D' -Did.
+</twelf>
+We might naively hope to be able to prove this theorem with a single case:
+<twelf>
+- : plus-unique D D' refl.
+</twelf>
+However, before taking any uniqueness information into account, this pattern match isn't sufficiently general to cover all cases, since matching the third argument as <tt>refl</tt> requires the types of <tt>D</tt> and <tt>D'</tt> to be equal.
+<twelf check=decl discard=true>
+%worlds () (plus-unique _ _ _).
+%total {} (plus-unique _ _ _).
+</twelf>
+If we can show that <tt>plus</tt>'s output is unique, though, the coverage checker can determine that the coverage goal need not be so generic: the types of <tt>D</tt> and <tt>D'</tt> ''can'' be considered equal, since the uniqueness declaration says that they ''will'' be.
+<twelf>
+%worlds () (plus _ _ _).
+%unique plus +X1 +X2 -1Y.
+</twelf>
+<twelf check=decl>
+%worlds () (plus-unique _ _ _).
+%total {} (plus-unique _ _ _).
+</twelf>
+
+== See also ==
+
+<bibtex>@InProceedings{
+  editor = "K.Slind and A.Bunker and G.Gopalakrishnan",
+  author = "Penny Anderson and Frank Pfenning",
+  title = "Verifying uniqueness in a logical framework",
+  booktitle = "Proceedings of the 17th International Conference on Theorem Proving in Higher Order Logics (TPHOLs'04)",
+  pages = "18-33",
+  month = "September",
+  year = "2004",
+  address = "Park City, Utah",
+  note = "Springer LNCS 3223",
+}</bibtex>
+
+
+
+{{keyword|key=unique}}

@@ -1,0 +1,17 @@
+A term is '''ground''' if it does not contain any existential ([[unification]]) variables. For example, we can make the following [[%solve|queries]] on <tt>[[natural numbers|plus]]</tt>:
+
+<twelf hidden="true">
+nat: type.
+z: nat.
+s: nat -> nat.
+plus: nat -> nat -> nat -> type.
+plus-z: plus z N N.
+plus-s: plus (s N1) N2 (s N3)
+     <- plus N1 N2 N3.
+</twelf><twelf discard="true" check="decl">
+%mode plus +M +N -O.
+%solve D1 : plus (s z) (s (s z)) X.
+%solve D2 : plus (s z) (s Y) (s (s z)).
+</twelf>
+
+In the query for <tt>D1</tt>, the first two arguments to <tt>plus</tt> are ground. The third is not; it is an existential variable. This is the typical situation: that the input arguments are ground and the output is an unconstrained existential variable. A [[%total]] declaration for <tt>plus</tt> guarantees that such queries will always succeed. However, we can still issue queries like the second, where the middle argument is not ground. In this case, the query does succeed, but the totality declaration does not guarantee that it will.

@@ -1,0 +1,2 @@
+why do you call the inhabitant of the unit type "the empty pair"? shouldn't it rather be "the empty tuple"? in my opinion, pairs always have two components and can not be empty.
+:: Seems reasonable! — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 21:23, 21 April 2010 (EDT)

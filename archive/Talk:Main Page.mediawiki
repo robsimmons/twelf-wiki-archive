@@ -1,0 +1,7 @@
+== How to edit the main page ==
+
+In rough order of how likely they are to need to be edited. If you want to edit a certain page, click on it and choose edit.
+
+*[[What's new?]] 
+*[[Template:The Twelf Project/Introduction]] (About The Twelf Project)
+*[[Template:The Twelf Project/Getting Started]]

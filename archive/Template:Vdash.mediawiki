@@ -1,0 +1,6 @@
+<font face="Lucida Sans Unicode">⊦</font><noinclude>
+
+This template renders the turnstile (latex \vdash) symbol, with workarounds for Internet Explorer. Use it by typing <nowiki>{{vdash}}</nowiki> in an article.
+
+{{needs|more testing on versions of internet explorer. some systems have different behavior. any tips?}}
+</noinclude>

@@ -1,0 +1,18 @@
+The '''<tt>%theorem</tt>''' declaration acts as the ''specification'' of a theorem.
+
+{{needs|syntax of the declaration}}
+
+== Use to write statements of metatheorems ==
+
+Some people find the notation a clearer way of specifying [[metatheorems]]; a <tt>%theorem</tt> declaration used in this style handles the type family declation and the <tt>[[%mode]]</tt> declaration parts of a [[totality assertion]].
+
+== Use with the theorem prover ==
+
+When using the Twelf [[theorem prover]], a <tt>%theorem</tt> declaration establishes a proposition that the theorem prover may later attempt to establish. A '''<tt>%theorem</tt>''' declaration is thus somewhat analogous to the three-part specification of a [[totality assertions]], the type family definition, the [[%mode]] declaration, and the [[%worlds]] declaration. 
+
+== See also ==
+
+* [[Theorem prover]]
+* {{guide|title=Theorem Prover|chapter=10|section=57}}
+
+{{keyword|key=theorem}}

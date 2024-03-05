@@ -1,0 +1,3 @@
+=> is getting turned into =&amp;gt; in the <tt>&lt;twelf></tt> block. Any idea why? [[User:Jcreed|Jcreed]] 18:11, 24 October 2006 (EDT)
+
+: It must be something that got changed in the syntax highlighting module, ugh. I am due for another rewriting of that stupid module soon, looks like. — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 18:54, 24 October 2006 (EDT)

@@ -1,0 +1,192 @@
+TwelfTag is [[User:Rsimmons|Rob's]] system for non-interactively checking Twelf code. This is a guide to TwelfTag for contributors; if you are a reader, then [[TwelfTag|this article]] may be more helpful. While [[Twelf Live]] allows people to interact with signatures, TwelfTag is designed for writing and checking code for use in wiki articles.
+
+Neither the <nowiki><twelf></nowiki> tag nor the <nowiki><twelflink></nowiki> tag have any required arguments. The optional arguments for <nowiki><twelf></nowiki> tags are:
+* <tt>check={true|false|decl}</tt> (default <tt>false</tt>) - cannot be used when hidden=true
+* <tt>discard={true|false}</tt> (default <tt>false</tt>)
+* <tt>hidden={true|false}</tt> (default <tt>false</tt>)
+* <tt>import="..something.."</tt> (default <tt>"main"</tt>)
+* <tt>export="..something.."</tt> (default <tt>"main"</tt>)
+
+The optional arguments for <nowiki><twelflink></nowiki> tags are:
+* <tt>check={true|false}</tt> (default <tt>false</tt>)
+* <tt>import="..something.."</tt> (default <tt>"main"</tt>)
+
+The following document discusses the function of each of these tags.
+
+== The <tt><nowiki><twelf></nowiki></tt> tag for syntax highlighting ==
+
+The <tt><nowiki><twelf></nowiki></tt> tag itself is simple enough, it works much like an HTML <nowiki><pre></nowiki> environment with [[Project:Syntax Highlighting|syntax highlighting]].
+
+However, the <tt><nowiki><twelf></nowiki></tt> tag also does a number of other interesting and useful things. At the most basic level, it crops out any whitespace at the beginning or end of the environment so that this:
+
+<pre><twelf>
+
+exp : type.
+
+abs : (exp -> exp) -> exp.
+
+</twelf></pre>
+
+Will look like this:
+
+<twelf>
+
+exp : type.
+
+abs : (exp -> exp) -> exp.
+
+</twelf>
+
+== The <tt><nowiki><twelf></nowiki></tt> and <tt><nowiki><twelflink></nowiki></tt> tags ==
+
+Behind the scenes, the content of every <tt><nowiki><twelf></nowiki></tt> tag is grouped together. So if you have a series of Twelf tags that are defining a single signature, like this (continuing from the example above):
+
+<twelf>
+app : exp -> exp -> exp.
+</twelf>
+
+and this:
+
+<twelf>
+step : exp -> exp -> type.
+</twelf>
+
+then TwelfTag, at this point in the process, has code for <tt>exp</tt>, <tt>abs</tt>, <tt>app</tt>, and <tt>step</tt> gathered in a group (this group is named (<tt>"main"</tt>), though it hasn't done anything with it yet. 
+
+=== The <tt><nowiki><twelflink></nowiki></tt> tag ===
+
+You can link to a collection of all the code that has been presented so far by using <tt><nowiki><twelflink></nowiki></tt> tags in the same way you would use <tt><nowiki><a href=...></nowiki></tt> tags in normal HTML code.
+
+As an example, <tt><nowiki><twelflink>OMG link!</twelflink></nowiki></tt>, will appear like this: <twelflink>OMG link!</twelflink>, pointing to the four lines of code declared so far throughout the file.
+
+The filenames are just the MD5 hashes of the code which they contain; the [http://twelf.plparty.org/code code directory] contains all these stored files.
+
+=== The <tt>check=true</tt> option ===
+
+We are not collecting code in the background just to link to it, we're creating code so we can check it in Twelf! If you use the twelf tag with the <tt>check=true</tt> option, Twelf will execute the collected segments in Twelf and link to the output.
+
+<pre><twelf check=true>
+step/app1 : step (app E1 E2) (app E1' E2)
+             <- step E1 E1'.
+step/app2 : step (app E1 E2) (app E1 E2')
+             <- step E2 E2'.
+step/appabs : step (app (abs [x] E x) E') (E E').
+</twelf></pre>
+
+<twelf check=true>
+step/app1 : step (app E1 E2) (app E1' E2)
+             <- step E1 E1'.
+step/app2 : step (app E1 E2) (app E1 E2')
+             <- step E2 E2'.
+step/appabs : step (app (abs [x] E x) E') (E E').
+</twelf>
+
+You may notice that the link above links to a file "twelf.plparty.org/code/<obvious md5 hash>.chk". The code that was checked is just at "twelf.plparty.org/code/<exact sameobvious md5 hash>" - that is, without the ".chk".
+
+You can use <tt><nowiki><twelflink check=true></nowiki></tt> to link to the Twelf output of checking the most recent code instead of just linking to that code code - so <tt><nowiki><twelflink check=true>See?</twelflink></nowiki></tt> just duplicates the link that was automatically entered in above. <twelflink check=true>See?</twelflink>. This works even if you haven't set <tt>check=true</tt> in any of your <tt><nowiki><twelf></nowiki></tt> tags; you could just avoid using the <tt>check=true</tt> option in your code in favor of causing checks only with <tt><nowiki><twelflink check=true></nowiki></tt>.
+
+=== The <tt>check=decl</tt> option ===
+
+If you want to concentrate on the output of the last code fragment, for instance to examine a particular case of type reconstruction, you can use the <tt>check=decl</tt> option for the Twelf tag. In the background, TwelfTag loads the previous portions of the signature on chatter 0, and then returns to the default chatter 3 to run the current code snippet. It then does some simple manipulations on Twelf's response to remove things like useless <tt>%% OK %%</tt> notices, and then inlines the result.
+
+<pre><twelf check=decl>
+
+test = step/app1(step/app2 step/appabs).
+
+</twelf></pre>
+
+<twelf check=decl>
+
+test = step/app1(step/app2 step/appabs).
+
+</twelf>
+
+=== The <tt>discard=true</tt> option ===
+
+If you add <tt><nowiki><twelf discard=true></nowiki></tt> then it will syntax highlight but will not incorporate the segment into the collected code. This is important when you want to demonstrate mistake, because otherwise Twelf will get caught up on that mistake in the future. As a result, this option is frequently used with <tt>check=decl</tt>.
+
+<pre><twelf discard=true check=decl>
+% Don't do this!
+
+step/appabs : step E1 E2 <- step E1 E2.
+</twelf></pre>
+
+<twelf discard=true check=decl>
+% Don't do this!
+
+step/appabs : step E1 E2 <- step E1 E2.
+</twelf>
+
+=== The <tt>import=</tt> and <tt>export=</tt> options ===
+
+This is a tricky feature that allows you to run parallel segments of code on a single page. It should be used sparingly, as otherwise it can become extremely confusing to both readers and editors. Each <tt><nowiki><twelf></nowiki></tt> tag is associated with a value, <tt>import</tt>, that defines where it gets its code ''from'', and a value, <tt>export</tt>, that defines where it binds the concatenation of the code the previous code and the new code within the tag. 
+
+* If <tt>import=</tt> is not defined, it is assumed to be <tt>"main"</tt>.
+* If <tt>export=</tt> is not defined, it is assumed to be the value of <tt>import</tt>. If you try to clobber an existing export, for instance by importing from <tt>"main"</tt> and exporting to <tt>"alt"</tt> twice, Twelf will complain.
+
+In most cases <tt>discard=true</tt> should be sufficient for one's purposes.
+
+This example is hopefully revealing:
+
+<pre><twelf import="nat">
+nat : type.
+</twelf>
+
+This is a simple way of expressing nats:
+<twelf import="nat" export="natsimple">
+z : nat.
+s : nat -> nat.
+</twelf>
+
+This is a verbose way of expressing nats:
+<twelf import="nat" export="natverbose">
+nat/z : nat.
+nat/s : nat -> nat.
+</twelf>
+
+<twelflink import="natsimple">See the simple code</twelflink>
+
+<twelflink import="natverbose">See the verbose code</twelflink></pre>
+
+<twelf import="nat">
+nat : type.
+</twelf>
+
+This is a simple way of expressing nats:
+<twelf import="nat" export="natsimple">
+z : nat.
+s : nat -> nat.
+</twelf>
+
+This is a verbose way of expressing nats:
+<twelf import="nat" export="natverbose">
+nat/z : nat.
+nat/s : nat -> nat.
+</twelf>
+
+<twelflink import="natsimple">See the simple code</twelflink>
+
+<twelflink import="natverbose">See the verbose code</twelflink>
+
+=== The <tt>hidden=true</tt> option ===
+
+You can use the <tt>hidden=true</tt> option to insert Twelf into a page without having it appear to the reader. You can't use the
+<tt>check</tt> option in conjunction with this setting, but it is quite useful in conjunction with <tt>import</tt> and <tt>export</tt>.
+
+By inserting this code into the wiki you can add a definition of "plus" to the code group named "natsimple".
+
+<pre><twelf import="natsimple" hidden=true>
+plus : nat -> nat -> nat -> type.
+
+plus/z : plus z N N.
+plus/s : plus (s N1) N2 (s N3)
+          <- plus N1 N2 N3.
+</twelf></pre><twelf import="natsimple" hidden=true>
+plus : nat -> nat -> nat -> type.
+
+plus/z : plus z N N.
+plus/s : plus (s N1) N2 (s N3)
+          <- plus N1 N2 N3.
+</twelf> 
+
+<twelflink import="natsimple">See the hidden code added to the existing natural number development.</twelflink>

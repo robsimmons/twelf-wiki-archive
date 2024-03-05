@@ -1,0 +1,127 @@
+It often comes to pass that you have a judgement and a second judgement which picks out some of the subjects of the first. For instance, terms and values, or terms and well-typed terms, or finite maps and well-formed finite maps (e.g. maps without duplicate keys). Depending on what you're doing, you may then have a choice as to whether to encode the judgements ''intrinsically'' or ''extrinsically''.
+
+In an extrinsic encoding, the second judgement is represented as a refinement of the first: a type family which is indexed by the type family representing the first judgement. For example, the simply-typed lambda calculus, extrinsically:
+
+<twelf>
+tm : type.
+
+lam : (tm -> tm) -> tm.
+app : tm -> tm -> tm.
+
+tp : type.
+
+arr : tp -> tp -> tp.
+
+of : tm -> tp -> type.
+
+of-lam : ({x:tm}{d:of x T} of (B x) T') -> of (lam B) (arr T T').
+of-app : of M' (arr T T') -> of M T -> of (app M' M) T'.
+</twelf>
+
+In an intrinsic encoding, the second judgement is rolled into the definition of the first; there is no representation of subjects of the first judgement which are not subjects of the second. For example, the simply-typed lambda calculus, intrinsically:
+
+<twelf>
+tp : type.
+
+arr : tp -> tp -> tp.
+
+tm : tp -> type.
+
+lam : (tm T -> tm T') -> tm (arr T T').
+app : tm (arr T T') -> tm T -> tm T'.
+</twelf>
+
+Strictly speaking this is not just a different encoding; it adequately encodes only the typing judgement, since there are ill-typed terms which can be written down in the previous signature but not in this one.
+
+
+
+You may wish to work with both judgements (for instance, terms and values). In that case you have the choice of representing values extrinsically, as a judgement indexed by terms, or intrinsically, as a separate judgement. Extrinsically:
+
+<twelf>
+tm : type.
+
+lam : (tm -> tm) -> tm.
+app : tm -> tm -> tm.
+
+val : tm -> type.
+
+val-lam : val (lam B).
+</twelf>
+
+Intrinsically:
+
+<twelf>
+tm : type.
+val : type.
+
+lam : (val -> tm) -> val.
+app : tm -> tm -> tm.
+inj : val -> tm.
+</twelf>
+
+In this representation values must be explicitly injected into terms with <tt>inj</tt>. (Note that taking <tt>val</tt> as argument to the body of <tt>lam</tt> makes the language call-by-value.) An advantage of the intrinsic encoding is that you need only pass around a single <tt>val</tt> derivation to operate on values, while in the extrinsic encoding you must pass both a <tt>tm</tt> and a <tt>value</tt>. A disadvantage is that you have to deal with the term/value distinction everywhere you work with terms.
+
+Another possibility is to have a completely separate secondary judgement and inject its subjects into the primary judgement via a metatheorem rather than a constructor:
+
+<twelf>
+tm : type.
+
+lam : (tm -> tm) -> tm.
+app : tm -> tm -> tm.
+
+val : type.
+
+val-lam : (tm -> tm) -> val.
+</twelf>
+
+
+
+As a final example, consider finite maps. On paper you typically work with finite maps which are implicitly well-defined (they have at most one binding for a key). To encode them as LF terms in Twelf you have the choice of an extrinsic encoding, in which there is a separate well-formedness judgement, or an intrinsic one, in which only well-formed maps can be written down. Extrinsically:
+
+<twelf>
+key : type. % pretend that key and value have some inhabitants
+value : type.
+map : type.
+
+empty : map.
+bind : map -> key -> value -> map.
+
+key-neq : key -> key -> type. % holds if keys are not equal
+
+key-not-in-map : key -> map -> type.
+- : key-not-in-map K empty.
+- : key-not-in-map K (bind M K' V)
+      <- key-neq K K'
+      <- key-not-in-map K M.
+
+wf-map : map -> type.
+
+- : wf-map empty.
+- : wf-map (bind M K V)
+      <- key-not-in-map K M
+      <- wf-map M.
+</twelf>
+
+Intrinsically:
+
+<twelf>
+key : type. % pretend that key and value have some inhabitants
+value : type.
+map : type.
+
+key-neq : key -> key -> type. % holds if keys are not equal
+
+empty : map.
+key-not-in-map : key -> map -> type.
+bind : {M : map} {K : key} value -> key-not-in-map K M -> map.
+
+- : key-not-in-map K empty.
+- : key-not-in-map K (bind M K' V _)
+      <- key-neq K K'
+      <- key-not-in-map K M.
+
+</twelf>
+
+Here the extrinsic encoding has the advantage that you need not prove that well-formedness is maintained as you go (or even maintain it), which may save a lot of work. The intrinsic encoding has the advantage that since only well-formed maps can be written down, you never need to prove that a type-family maintains well-formedness as an invariant, which may save a lot of work.
+
+For an example of an intrinsic encoding, see [[CPS conversion]], where the distinction between values and expressions is encoded intrinsically, and where all terms are manifestly well-typed.

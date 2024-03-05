@@ -1,0 +1,62 @@
+The '''natural numbers''' are the numbers 0, 1, 2, etc. The term is generally used to indicate a specific technique of representing natural numbers as either zero or the successor of some other natural number - 0, s(0), s(s(0)), etc - as in [[w:Peano arithmetic|Peano arithmetic]], a technique also sometimes referred to as '''unary numbers.'''
+
+== Natural numbers in Twelf ==
+
+Natural numbers in Twelf are usually defined in a similar way. Mathematically, natural numbers can be defined as zero or the successor of some other natural number:
+
+<math>\texttt{}n ::= 0 \,|\, \texttt{s}(n)</math>
+
+This representation translates easily into Twelf:
+
+<twelf>
+nat: type.
+z: nat.
+s: nat -> nat.
+</twelf>
+
+The first line declares that <tt>nat</tt> is a type. The second line declares <tt>z</tt> (zero) to be an object of type <tt>nat</tt>, and the third line declars <tt>s</tt> (successor) to be a type constructor that takes an object <tt>N</tt> of type <tt>nat</tt> and produces another object <tt>(s N)</tt> of type <tt>nat</tt>.
+
+== Addition of natural numbers in Twelf ==
+
+The addition of these natural numbers is defined by the judgment <math>\texttt{plus}(N_1,N_2,N_3)</math>, where <math>N_1</math>, <math>N_2</math>, and <math>N_3</math> are natural numbers. In the definition below, capital letters stand for metavariables that can range over all natural numbers. 
+
+<math>{\qquad \over \texttt{plus}(0,N,N)}{\mbox{p-z}}</math> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math>{\texttt{plus}(N_1,N_2,N_3) \over \texttt{plus}(\texttt{s}(N_1),N_2,\texttt{s}(N_3))}{\mbox{p-s}}</math>
+
+These judgments also translate cleanly into Twelf:
+
+<twelf>
+plus: nat -> nat -> nat -> type.
+p-z: plus z N N.
+p-s: plus (s N1) N2 (s N3)
+      <- plus N1 N2 N3.
+</twelf>
+
+The first line defines the judgment, declaring <tt>plus</tt> to be a type family indexed by three terms of type <tt>nat</tt>. 
+
+The second line declares that for any natural number <tt>N</tt>, <tt>p-z</tt> is an object of type <tt>plus z N N</tt>, which corresponds to the axiom p-z above. The <tt>N</tt> is an [[implicit parameter]] - it is treated as a bound variable by Twelf, which you can see by <twelflink check="true">looking at Twelf's output</twelflink> after checking the above code. 
+
+The third line says that <tt>p-s</tt> is a type constructor that, given an object <tt>D</tt> of type <tt>plus N1 N2 N3</tt> (where <tt>N1</tt>, <tt>N2</tt>, and <tt>N3</tt> are all implicit parameters that can
+be treated as metavariables), produces an object, <tt>p-s D</tt>, with type <tt>plus (s N1) N2 (s N3)</tt>. This corresponds to the rule p-s, which given a derivation of <math>\texttt{plus}(N_1,N_2,N_3)</math> allows us to conclude <math>\texttt{plus}(\texttt{s}(N_1),N_2,\texttt{s}(N_3))</math>.
+
+Consider this derivation which encodes the fact that <math>2 + 1 = 3</math>:
+
+<math> {{{\;} \over {
+\texttt{plus}(0,\;\;\texttt{s}(0),\;\;\texttt{s}(0))}}{\mbox{p-z}} \over {{
+\texttt{plus}(\texttt{s}(0),\;\;\texttt{s}(0),\;\;\texttt{s}(\texttt{s}(0)))} \over {
+\texttt{plus}(\texttt{s}(\texttt{s}(0)),\;\;\texttt{s}(0),\;\;\texttt{s}(\texttt{s}(\texttt{s}(0))))}}{\mbox{p-s}}}{\mbox{p-s}} </math>
+
+This can be represented in Twelf by applying the type constructor <tt>p-s</tt> to the object <tt>p-z</tt> twice:
+
+<twelf check=decl>
+2+1=3 : plus (s (s z)) (s z) (s (s (s z))) = p-s (p-s p-z).
+</twelf>
+
+== See also ==
+
+* [[Natural numbers with inequality]]
+* [[Division over the natural numbers]]
+* [[Proving metatheorems with Twelf]], which uses natural numbers as an example, and also discusses the [[adequacy]] of the encoding.
+
+== External link ==
+
+* [http://en.wikipedia.org/wiki/Natural_numbers Natural numbers at Wikipedia]

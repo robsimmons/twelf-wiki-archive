@@ -1,0 +1,5 @@
+<font face="Lucida Sans Unicode">∃</font><noinclude>
+
+This template renders the ''there exists'' (latex \exists) symbol, with workarounds for Internet Explorer. Use it by typing <nowiki>{{exists}}</nowiki> in an article.
+
+</noinclude>

@@ -1,0 +1,135 @@
+A '''world''' (or '''worlds''') is a set of [[LF]] contexts.  
+
+The representation of an [[object language]] in LF is specified not just by an LF [[signature]], but also by the world in which that signature is considered.  This is because a representation that is [[adequate]] in one set of contexts may not be adequate in another. Similarly, a [[totality assertion]] about an LF type family may be true in one set of contexts but false in another. 
+
+Twelf includes a '''<tt>%worlds</tt>''' declaration that serves two purposes.  First, it declares the world for which a [[totality assertion]] about a type family is proved. Second, it verifies that the constants inhabiting a type family stay within contexts in the specified world.
+
+In Twelf, a world is specified by first defining a set of ''blocks'' using a [[%block]] declaration. A block is a pattern that describes a fragment of an LF context.  Then a world is specified by a regular expression <tt>(b1 | b2 | ... | bn)*</tt> for blocks <tt>b1</tt> through <tt>bn</tt>.  This regular expression matches any LF context consisting of any number of these blocks in any order.  Hence, Twelf supports the specification of '''regular worlds'''.  
+
+== Specifying the world of a totality assertion ==
+
+We can define natural numbers and a relation <tt>max</tt> that defines the larger of two natural numbers.
+
+<twelf>
+nat : type.
+z : nat.
+s : nat -> nat.
+
+max : nat -> nat -> nat -> type.
+mzz : max z z z.
+mzs : max z (s N) (s N).
+msz : max (s N) z (s N).
+mss : max (s N1) (s N2) (s N)
+      <- max N1 N2 N.
+</twelf>
+
+As discussed in the introduction article on [[Proving metatheorems:Representing the judgements of the natural numbers|Representing the judgments of the natural numbers]], the type <tt>nat</tt> in this signature [[adequacy|adequately]] represents the natural numbers only if the LF context does not contain variables of type <tt>nat</tt>.
+
+=== Totality of <tt>max</tt> in the empty context ===
+
+The judgement <tt>max</tt> defined in this signature is a [[%total|total]] relation on natural numbers, or LF terms of type <tt>nat</tt> in the empty LF context.  We specify this totality assertion in Twelf with the following declarations:
+
+<twelf check=true export="maxtotal">
+%mode max +N1 +N2 -N3.
+%worlds () (max _ _ _).
+%total T (max T _ _).
+</twelf>
+
+The <tt>%worlds</tt> declaration does not mention any blocks; the world <tt>()*</tt> describes only the empty LF context.  
+
+=== Non-totality of <tt>max</tt> in an extended context ===
+
+What happens if we consider <tt>max</tt> in an LF context that includes variables of type <tt>nat</tt>?  (Note that in this world <tt>nat</tt> no longer represents the natural numbers.)
+
+The following <tt>[[%block]]</tt> declaration defines the block <tt>random_nat</tt>, which allows such variables:
+
+<twelf export="badnews">
+%block random_nat : block {x: nat}.
+
+%mode max +N1 +N2 -N3.
+%worlds (random_nat) (max _ _ _).
+</twelf>
+
+If we attempt to verify the totality assertion for <tt>max</tt> in these worlds, Twelf reports an error: <tt>max</tt> is not defined in the "natural numbers" arising from LF variables in the context.
+
+<twelf import="badnews" check=decl>
+%total T (max T _ _).
+</twelf>
+
+== World checking ==
+
+Up until this point, we have focused on the role of a <tt>%worlds</tt> declaration has in specifying a totality assertion.  However, just as <tt>%mode</tt> both specifies the mode of a totality assertion and mode-checks a type family, <tt>%worlds</tt> both specifies the world of a totality assertion and ''world checks'' a type family.  
+
+What property does a world declaration specify?  Intuitively, a world declaration for a type family circumscribes the contexts in which we consider inhabitants of that type family.  For example, the world declaration for <tt>max</tt> says that we should only ever consider terms of type <tt>max</tt> in the empty LF context.
+Thus, it is a world error if some piece of Twelf code introduces a variable relevant to <tt>max</tt>.  World checking ensures that we only consider a term in the contexts declared for its type.
+
+When Twelf processes a <tt>%worlds</tt> declaration, it world checks each constant in the type family. A constant ''world checks'' under the following condition: whenever the ambient LF context is of the form specified by the world declaration, each premise of the constant occurs in an LF context that is within the world specified for the premise's type family. 
+
+=== Example world violation ===
+
+For example, consider the following signature for the lambda-calculus:
+<twelf import="maxtotal" export="height">
+exp : type.
+lam : (exp -> exp) -> exp.
+app : exp -> exp -> exp.
+</twelf>
+
+We define a height relation on open lambda-terms as a [[hypothetical judgement]]; note that the height rule for variables is represented as an LF assumption:
+<twelf import="height">
+height : exp -> nat -> type.
+
+height/lam : height (lam ([x] E x)) (s N)
+              <- {x: exp} height x (s z) -> height (E x) N. 
+height/app : height (app E1 E2) (s N)
+              <- height E1 N1
+              <- height E2 N2 
+              <- max N1 N2 N.
+</twelf>
+
+If we try to declare <tt>height</tt> to be defined in the closed world, as we did for <tt>max</tt>, Twelf will fail with a <tt>World violation</tt> [[error messages|error message]]:
+
+<twelf import="height" discard=true check=decl>
+%worlds () (height _ _).
+</twelf>
+
+This is because <tt>height/lam</tt> adds variables to the LF context, so saying that the context should always be empty is wrong!  Additionally, this world declaration is incorrect for another reason: the adequacy argument for <tt>exp</tt> says LF terms in contexts including variables of type <tt>tm</tt> adequately represent open object language terms; so if we wish <tt>height</tt> to represent a judgement on open terms, it must be declared in a world including such variables.  Declaring <tt>height</tt> as above, even if it succeeded, would not capture the idea we have in mind that <tt>height</tt> is a relation on open terms.  
+
+=== Example world success ===
+
+The correct world for this type family consists of blocks of the form defined in the following <tt>[[%block]]</tt> declaration called <tt>var-height</tt>.  These blocks specify that whenever a new variable with type <tt>exp</tt> is added to the context, it is added along with a derivation of <tt>height x (s z)</tt>. The type family <tt>height</tt> adequately represents the notion of height that we have in mind in this world.  Moreover, it also world-checks in this world:
+
+<twelf import="height" check=true>
+%block var-height : block {x: exp}{_: height x (s z)}.
+
+%mode height +E -N.
+%worlds (var-height) (height _ _).
+</twelf>
+
+Indeed, the type family is total in this world as well:
+<twelf import="height" check=decl>
+%total T (height T _).
+</twelf>
+
+=== Subordination and world subsumption ===
+
+It should be interesting that <tt>max</tt> can be called by <tt>height</tt>, even though <tt>height</tt> is defined for non-empty LF contexts.  Technically, these contexts are not in the world for <tt>max</tt>, so the call to <tt>max</tt> from <tt>height</tt> would seem to be a world violation.  However, Twelf knows, by keeping track of the [[subordination]] relation, that any <tt>var-height</tt> blocks can never change the [[canonical forms]] of <tt>nat</tt> or <tt>max</tt>. The [[Twelf server]] will print out the current subordination relation if you type in <tt>Print.subord</tt>. For the example above, this is the subordination relation:
+
+<code>%% OK %%
+Print.subord
+nat #> nat 
+max #> max nat 
+exp #> exp 
+height #> height exp max nat 
+%% OK %%</code>
+
+The line <tt>max #> max nat</tt> means that the canonical forms (i.e. the possible derivations) of <tt>max</tt> will not change unless the definitions of <tt>max</tt> or <tt>nat</tt> are changed. Because the block <tt>var-height</tt> does not add any declarations that are subordinate to either of these types, it is permissible to call <tt>max</tt> from within an LF context that includes blocks of the form <tt>var-height</tt>.
+This is an instance of what is called [[world subsumption]], which is the criterion under which a type family in one world can be called from a type family in another.
+
+== See also ==
+
+* <tt>[[%block]]</tt>
+* [[Totality assertion]]
+* {{guide|chapter=9|section=53|title=Regular Worlds}}
+* The case study [[Church-Rosser via complete development]] uses regular worlds heavily.
+
+{{keyword|key=worlds}}

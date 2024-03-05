@@ -1,0 +1,9 @@
+An '''ambiguous hyperkind''' occurs in pathological cases like this:
+
+<twelf check="decl">
+
+a : type.
+
+b = a : _ _ .
+
+</twelf>

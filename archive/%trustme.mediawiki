@@ -1,0 +1,7 @@
+{{undocumented}} The '''<tt>%trustme</tt>''' keyword, when it precedes another directive such as a '''<tt>%total</tt>''' directive, causes Twelf to believe that the directive succeeded even if it did not. This feature is only available in [[unsafe mode]], and can be used to easily create [[holes in metatheorems]].
+
+== See also ==
+
+* [[Holes in metatheorems]]
+
+{{keyword|key=trustme}}

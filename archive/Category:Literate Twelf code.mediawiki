@@ -1,0 +1,3 @@
+This category contains all pages that are written using the [[Project:Literate Twelf|Literate Twelf]] extension to this wiki.
+
+[[Category:Twelf code]]

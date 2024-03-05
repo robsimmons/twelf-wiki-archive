@@ -1,0 +1,3 @@
+== Freeness/coverage ==
+
+Do you consider output freeness to be an aspect of coverage checking? It is a position that makes sense; I suppose I'd just thought of it as an auxillary check that <tt>[[%total]]</tt> performs. — [[User:rsimmons|Rob]] (and his [[User talk:rsimmons|talk]]) 09:10, 21 March 2007 (EDT)

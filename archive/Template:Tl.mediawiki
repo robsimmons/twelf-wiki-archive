@@ -1,0 +1,5 @@
+<nowiki>{{</nowiki>[[Template:{{{1}}}|{{{1}}}]]<nowiki>}}</nowiki><noinclude>
+
+This template can be used for linking to other templates in expository text. For instance, to link to [[Template:vdash]], write <nowiki>{{tl|vdash}}</nowiki>, which renders as <nowiki>{{</nowiki>[[Template:vdash|vdash]]<nowiki>}}</nowiki>.
+
+</noinclude>

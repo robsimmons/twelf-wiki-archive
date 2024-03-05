@@ -1,0 +1,10 @@
+<div style="float:right;border:solid #EEBBBB 1px;margin:1px;">
+{| cellspacing="0" style="background:#FFE7E7;"
+| style="font-weight:bold;font-size:24pt;padding:6pt;line-height:1.25em;margin:12pt;" | Draft of {{<includeonly>subst:</includeonly>CURRENTDAY}} {{<includeonly>subst:</includeonly>CURRENTMONTHNAME}} {{<includeonly>subst:</includeonly>CURRENTYEAR}}.
+|}
+</div><noinclude>
+
+
+This template marks a page as a draft. To use it, write <nowiki>{{draft}}</nowiki> at the top of an article. That produces the box (with date) shown at the right.
+
+</noinclude>

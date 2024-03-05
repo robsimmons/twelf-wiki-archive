@@ -1,0 +1,26 @@
+The '''<tt>%infix</tt>''', '''<tt>%prefix</tt>''' and '''<tt>%postfix</tt>''' declarations assign '''fixity''' and precedence to constants for the purpose of parsing (they have no meaning in the logic). 
+
+{{needs|a description of the syntax}}
+
+'''''Higher''''' numbers bind '''''tighter,''''' and the pretty printer only prints out necessary information. Hence the following example:
+<twelf>
+a : type.
+b : a.
+c : a.
+d : a.
+
++ : a -> a -> a. %infix left 1 +.
+* : a -> a -> a. %infix left 2 *.
+</twelf>
+<twelf check=decl>
+x : a = (b + c) * d. %% The parenthesis are necessary here
+y : a = b + (c * d). %% This means the same thing as b + c * d.
+</twelf>
+
+
+== See also ==
+* {{guide|chapter=3|section=11|title=Operator Declaration}}
+
+{{keyword|key=Fixity declaration}}
+
+{{stub}}

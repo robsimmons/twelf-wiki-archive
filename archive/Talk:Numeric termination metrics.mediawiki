@@ -1,0 +1,1 @@
+I stole this code from Karl's Comp+Ded class.  Does anyone remember off-hand which cases actually use the metric?  I don't want to have to do them until I find one that does.  [[User:Drl|Drl]] 17:13, 15 March 2007 (EDT)

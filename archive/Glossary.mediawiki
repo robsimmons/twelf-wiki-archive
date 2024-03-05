@@ -1,0 +1,58 @@
+This '''glossary''' should include most of the unfamiliar concepts that someone with an undergraduate-level understanding of type theory would encounter in the process of learning to use Twelf. Some of these links point to extensive tutorials, but in those cases the first paragraph or two should include a definition of the concept.
+
+Feel free to add new glossary entries to the list below.  If you encounter a piece of terminology or jargon you haven't seen and it isn't here already, or if a link doesn't answer your question, let us know on the [[Talk:Glossary|talk page]].
+
+{{keyword|nocat=}}
+
+* [[Adequacy]]
+* [[Alpha-equivalence]] (i.e. "<math>\alpha</math>-equivalence")
+* [[Beta-equivalence]] (i.e. "<math>\beta</math>-equivalence")
+* [[Canonical form]]
+* [[Canonical forms lemma]]
+* [[Compatibility lemma]]
+* [[Congruence relation]]
+* [[Congruence lemma]]
+* [[Constraint domain]]
+* [[Coverage checking]]
+* [[Effectiveness lemma]]
+* [[Equality]]
+* [[Equivalence relation]]
+* [[Eta-equivalence]] (i.e. "<math>\eta</math>-equivalence")
+* [[Eta-long form]] (i.e. "<math>\eta</math>-long form")
+* [[Exchange lemma]]
+* [[Explicit parameter]]
+* [[Explicit context]]
+* [[Intrinsic and extrinsic encodings|Extrinsic encoding]]
+* [[Function]]
+* [[Ground]]
+* [[Higher-order abstract syntax]]
+* [[Higher-order judgement]]
+* [[Hereditary substitution]]
+* [[Hypothetical judgment]]
+* [[Implicit parameter]]
+* [[Intrinsic and extrinsic encodings|Intrinsic encoding]]
+* [[Judgment]]
+* [[Judgments as types]]
+* [[LF]]
+* [[Logic programming]]
+* [[Meta-logic]]
+* [[Metatheorem]]
+* [[%mode|Mode checking]]
+* [[Object logic]]
+* [[Relation]]
+* [[Regular worlds]]
+* [[Respects lemma]]
+* [[Substitution lemma]]
+* [[Subordination]]
+* [[Tabled logic programming]]
+* [[Tactical theorem proving]]
+* [[Theorem prover]]
+* [[Totality assertion]]
+* [[%total|Totality checking]]
+* [[Type family]]
+* [[Twelf signature]]
+* [[Unification]]
+* [[Uniqueness lemma]]
+* [[Weakening lemma]]
+* [[%worlds|World checking]]
+* [[World subsumption]]

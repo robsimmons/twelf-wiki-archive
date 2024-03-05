@@ -1,0 +1,5 @@
+<font face="Lucida Sans Unicode">□</font><noinclude>
+
+This template renders the box (latex \box) symbol from modal logic, with workarounds for Internet Explorer. Use it by typing <nowiki>{{box}}</nowiki> in an article.
+
+</noinclude>

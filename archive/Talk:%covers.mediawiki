@@ -1,0 +1,2 @@
+==<tt>%partial</tt>==
+If you're interested in a <tt>%covers</tt> that "does the right thing" (input, output, freeness, and checking of other type families in subgoals), I have a simple implementation of the <tt>%partial</tt> declaration. This declaration does the same thing as <tt>%total</tt> but does not perform the totality check. From it you get a "partial correctness" property: a <tt>%partial</tt> relation will either search forever or it will succeed. &nbsp;&mdash;&nbsp;[[User:Tom7|Tom 7]] 22:41, 17 October 2007 (EDT)

@@ -1,0 +1,168 @@
+{{proving metatheorems
+  | prev = Proving totality assertions about the natural numbers
+  | prevname = Proving totality assertions
+  | next = Summary: the natural numbers
+  | nextname = Summary}}
+
+In the previous section, we saw how to ask Twelf to verify totality assertions, which are a particular form of statement one can make about a deductive system.  However, not all that many metatheorems are totality assertions about the judgements of an object language.  Moreover, even if a judgement does in fact satisfy a total assertion, the judgement often will not be written in the particular form that allows Twelf to automatically check mode, worlds, termination, and coverage.  So why are totality assertions so important?
+
+== How to prove metatheorems ==
+
+The reason is that we can use Twelf's ability to ''prove'' totality assertions to ''check'' proofs of more general metatheorems.  Let's illustrate this with an example.  Say we want to prove that the sum of two even numbers is even.  More precisely, let's prove the following statement:
+
+:: If <math>\mathsf{even}(N_1)</math> and <math>\mathsf{even}(N_2)</math> and <math>\mathsf{plus}(N_1,N_2,N_3)</math> then <math>\mathsf{even}(N_3)</math>.
+
+We can prove this statement by rule induction on the first premise, the derivation that <math>\mathsf{even}(N_1)</math>.  The computational content of this proof will be a function that transforms the derivations of the premises into a derivation of the conclusion.  
+
+Now, let's recast this informal theorem statement as a statement about LF terms.  By the adequacy of our LF representations, this informal statement is equivalent to a statement about the canonical forms of the corresponding types:
+
+:: For all <tt>DevenN1 : even N1</tt> and <tt>DevenN2 : even N2</tt> and <tt>Dplus : plus N1 N2 N3</tt> there exists a <tt>DevenN3 : even N3</tt>.  
+
+We can recast the informal proof by rule induction on the derivation of <math>\mathsf{even}(N_1)</math> 
+as a proof by induction on the canonical forms of type <tt>even N1</tt>.  The computational content of this proof will be a transformation from LF terms of type <tt>even N1</tt>, <tt>even N2</tt>, and <tt>plus N1 N2 N3</tt> 
+to an LF term of type <tt>even N3</tt>.
+
+The key to the way we use Twelf to prove general metatheorems is that ''we can represent this transformation within LF itself''.  Specifically, we represent the theorem statement as a type family, which defines a relation on the subjects of the theorem.  Then, we represent the proof as LF constants inhabiting that type family.  A proof is correct iff it defines a total relation (because the original metatheorem is implied by the totality assertion for the relation).  So we deploy Twelf's ability to verify totality assertions in order to check the proof of the metatheorem.  Thus, you already have all the tools you need to prove metatheorems with Twelf; you just need to use them in the right way.  
+
+== Our first metatheorem ==
+This will all be clearer once we do an example.
+
+=== Representing the theorem statement ===   
+
+We represent the above theorem statement in Twelf as a type family relating the appropriate derivations:
+
+<twelf discard=true>
+sum-evens : even N1 -> even N2 -> plus N1 N2 N3 -> even N3 -> type.
+%mode sum-evens +D1 +D2 +Dplus -D3.
+%worlds () (sum-evens _ _ _ _).
+</twelf>
+
+The kind of <tt>sum-evens</tt> is ''dependent'', unlike all the kinds we have seen so far.  The dependency ensures that the <tt>sum-evens</tt> relation relates derivations of the appropriate facts.  
+
+The mode declaration for this type family makes the "for all" theorem subjects into inputs, and the "there exists" theorem subject into an output.  Intuitively, this is the right thing to do because then the relation defined by <tt>sum-evens</tt> will transform these three "for all" derivations into the "there exists" derivation.  More formally, observe that the mode and worlds declarations declare the following totality assertion:
+
+:: For all <tt>D1 : even N1</tt> and <tt>D2 : even N2</tt> and <tt>Dplus : plus N1 N2 N3</tt> there exist <tt>D3 : even N3</tt> and <tt>D : sum-evens D1 D2 Dplus D3</tt>.  
+
+The above metatheorem statement is clearly a corollary of this totality assertion.
+
+=== Representing the proof ===
+
+Next, we transcribe the informal proof of the metatheorem as LF constants of the appropriate types.  First, let's review the informal proof.
+
+==== Informal proof ====
+The proof is by induction over the derivation of <math>\mathsf{even}(N_1)</math>.  
+
+Case for <math>\overline{\mathsf{even}(\mathsf{zero})}</math>:
+
+In this case, <math>\texttt{}N_1</math> is <math>\texttt{zero}</math>, so by inversion the derivation of <math>\mathsf{plus}(N_1,N_2,N_3)</math> must derive <math>\mathsf{plus}(\mathsf{zero},N_2,N_2)</math>.  Then the assumption of <math>\mathsf{even}(N_2)</math> gives the result.  
+
+Case for <math>\mathsf{even}(N_1') \over \mathsf{even}(\mathsf{succ}(\mathsf{succ}(N_1'))</math>:
+
+In this case, <math>\texttt{}N_1</math> is <math>\mathsf{succ}(\mathsf{succ}(N_1'))</math>, so we have a derivation of <math>\mathsf{plus}(\mathsf{succ}(\mathsf{succ}(N_1')),N_2,N_3)</math>.  By inversion on this derivation, 
+<math>\texttt{}N_3</math> is <math>\mathsf{succ}(\mathsf{succ}(N_3'))</math> and we have a derivation of
+<math>\mathsf{plus}(N_1',N_2,N_3')</math>.  Then the inductive hypothesis applied to this derivation and the derivation of <math>\mathsf{even}(N_2)</math> yields a derivation of <math>\mathsf{even}(N_3')</math>.  So we can derive 
+
+<math>\mathsf{even}(N_3') \over \mathsf{even}(\mathsf{succ}(\mathsf{succ}(N_3'))</math>
+
+to finish the case.
+
+==== LF Representation ====
+
+We represent this informal proof as LF constants inhabiting the type family <tt>sum-evens</tt>. We use the implicit-arguments versions of the definitions from [[Proving_metatheorems:Full_LF]].  There will be one constant for each case of the informal proof.  The constant corresponding to the first case is:
+
+<twelf discard=true>
+sez : sum-evens 
+       even-z 
+       (DevenN2 : even N2)
+       (plus-z : plus z N2 N2)
+       DevenN2.
+</twelf>
+
+We can read the type of this constant as the above case: when the term of type <tt>even N1</tt> is <tt>even-z</tt>, then <tt>N1</tt> is <tt>z</tt> and the term of type <tt>plus N1 N2 N3</tt> must be <tt>plus-z</tt>.  Then the assumed term of type <tt>even N2</tt> has the appropriate type for the result.  
+
+The constant corresponding to the second case is:
+
+<twelf discard=true>
+ses : sum-evens 
+       ( (even-s DevenN1') : even (s (s N1')))
+       (DevenN2 : even N2)
+       ( (plus-s (plus-s Dplus)) : plus (s (s N1')) N2 (s (s N3')))
+       (even-s DevenN3')
+       <- sum-evens DevenN1' DevenN2 Dplus DevenN3'.
+</twelf>
+
+We invert the derivation of <tt>plus</tt> by pattern-matching it as two applications of the constant <tt>plus-s</tt>.  The inductive call to the theorem is represented as a premise of type <tt>sum-evens</tt> on a term <tt>DevenN1'</tt> that is a subterm of the input term <tt>(even-s DevenN1')</tt>.  The result of the case is created by applying the constant <tt>even-s</tt>, which corresponds to the rule used in the informal case, to the result of the inductive call.  
+
+You should try to get used to the three equivalent ways of thinking about these constants:
+# '''Informal proof:''' They are a direct transcription of the cases of the informal proof.
+# '''Type inhabitation:''' They define the relation <tt>sum-evens</tt> by type inhabitation, in such a way that Twelf can prove that the family is inhabited for all inputs.
+# '''Logic programming:''' They define a total logic program from the inputs to the outputs.  
+
+Now that we have represented the proof, all that's left is to ask Twelf to verify this proof by induction on the first argument:
+<twelf discard=true>
+%total D (sum-evens D _ _ _).
+</twelf>
+
+We call attention to a few of Twelf's checks:
+* '''Termination:''' In the premise of the constant <tt>even-s</tt>, the term <tt>DevenN1'</tt> is a subterm of the input derivation, so the termination check succeeds.  In this case, it happens that the term <tt>Dplus</tt> is also smaller, so we could have checked termination on this argument instead.  
+* '''Input Coverage:''' Because Twelf separates termination checking from coverage checking, the constants defining a type family may case-analyze more arguments than just the induction one.  This subsidiary case-analyses correspond to inversion steps in an informal proof.  If an inversion is not justified (e.g., if in <tt>sez</tt> there were another way to derive <tt>plus z N2 N3</tt> besides <tt>plus-z</tt>), Twelf reports an input coverage error—not all possible input terms are covered.
+
+=== Summary ===
+
+Here's the entire Twelf proof:
+<twelf hidden="true">
+nat : type.
+z   : nat.
+s   : nat -> nat.
+
+even   : nat -> type.
+even-z : even z.
+even-s : even (s (s N))
+	  <- even N.
+
+plus   : nat -> nat -> nat -> type.
+plus-z : plus z N2 N2.
+plus-s : plus (s N1) N2 (s N3)
+	  <- plus N1 N2 N3.
+</twelf>
+<twelf check="true">
+sum-evens : even N1 -> even N2 -> plus N1 N2 N3 -> even N3 -> type.
+%mode sum-evens +D1 +D2 +D3 -D4.
+
+sez : sum-evens 
+       even-z 
+       (DevenN2 : even N2)
+       (plus-z : plus z N2 N2)
+       DevenN2.
+
+ses : sum-evens 
+       ( (even-s DevenN1') : even (s (s N1')))
+       (DevenN2 : even N2)
+       ( (plus-s (plus-s Dplus)) : plus (s (s N1')) N2 (s (s N3')))
+       (even-s DevenN3')
+       <- sum-evens DevenN1' DevenN2 Dplus DevenN3'.
+
+%worlds () (sum-evens _ _ _ _).
+%total D (sum-evens D _ _ _).
+</twelf>
+Note that the type annotations are only for readability of the proof; they are not necessary for Twelf to type-check the constants.
+
+== What metatheorems can we prove this way? ==
+
+The metatheorems that can be proved in Twelf have the form
+
+: For all LF terms of some input types, there exist LF terms of some output types.
+
+These metatheorems are called <math>\forall\exists</math>-statements, and they are the theorems whose proofs consist of total relations between the input types and the output types.  
+
+This means that there are many theorems that cannot be mechanized in Twelf (e.g., theorems requiring higher quantifier complexity).  However, in practice, <math>\forall\exists</math>-statements have been shown to be a useful class of metatheorems about programming languages (for example, they are enough to prove type safety for all of Standard ML<ref>{{bibtex:lch07ml}}</ref>).    
+
+It is important to recognize that the restriction to <math>\forall\exists</math>-statements is a consequence of  representing proofs of metatheorems as total relations among LF types.  It is ''not'' a consequence of representing object languages in LF.  Any on-paper proof about an informal description of an object language can be translated into an on-paper proof about the associated adequate LF representation.  But only some of these proofs can be mechanically verified in Twelf using the techniques presented above.  
+
+<references />
+
+{{proving metatheorems
+  | prev = Proving totality assertions about the natural numbers
+  | prevname = Proving totality assertions
+  | next = Summary: the natural numbers
+  | nextname = Summary}}

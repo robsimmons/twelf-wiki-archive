@@ -1,0 +1,2 @@
+* [[CADE Tutorial/MinML encoding| MinML Syntax and judgments---the code we just wrote]] 
+* [[CADE Tutorial/MinML Answer|Solutions to exercises]]

@@ -1,0 +1,1 @@
+This is the category for any Twelf code fragments, signatures, etc. on the site. [[Project:Literate Twelf|Literate Twelf]] pages are automatically placed in this category, and other pages that have a significant amount of code in them probably should too.

@@ -1,0 +1,5 @@
+[[Try Twelf now]] from your browser! No installation necessary.
+
+Twelf runs on Windows and varieties of Unix, including Linux and Mac OS X.
+
+The [[software]] page has downloads, as well as installation instructions.

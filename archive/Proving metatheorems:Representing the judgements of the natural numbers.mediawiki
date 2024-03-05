@@ -1,0 +1,135 @@
+{{proving metatheorems
+  | prev = Simply typed LF
+  | prevname = Simply typed LF
+  | next = Full LF
+  | nextname = Full LF}}
+
+Now that we've seen how to represent the syntax of a deductive system, we turn to representing judgements.  Our first example is the judgement that a number is even.
+
+==Even numbers==
+
+===Informal definition===
+
+The judgement <math>\mathsf{even}(n)</math> holds when <math>\texttt{}n</math> is even.  It is inductively defined by the following inference rules:
+
+<table style="margin-left:auto;margin-right:auto" cellpadding="24">
+<tr><td>
+<math>{\qquad} \over {\mathsf{even}(\mathsf{zero})}
+</math>
+</td><td>
+<math>
+{\mathsf{even}(n)} \over {\mathsf{even}(\mathsf{succ}(\mathsf{succ}(n)))}
+</math>
+</td></tr>
+</table>
+
+===LF representation===
+
+In the previous sections, we saw how to represent object-language syntax as the inhabitants of LF types.  At a high level, the LF methodology for representing judgements is exactly analogous: we represent an object-language judgement with an LF type, where the inhabitants of this type correspond exactly to derivations of the judgement.
+
+However, to adequately represent judgements, we must generalize from simply-typed LF to dependently-typed LF.  A moment's thought reveals why a dependently-typed language is appropriate: Object-language judgements are parametrized by their subjects&mdash;for example <math>\mathsf{even}(n)</math> is parametrized by the number <math>\texttt{}n</math> being judged to be even.  Consequently, to represent judgements themselves as LF types, we should consider LF types that are parametrized by the subjects of object-language judgements.  But the judgement subjects&mdash;the syntax of the language&mdash;are represented as LF terms.  Thus, to represent judgements themselves as LF types, it is natural to consider families of LF types parameterized by LF terms.  
+
+For example, we represent the judgement <math>\mathsf{even}(n)</math> using the following signature:
+<twelf hidden="true">
+nat : type.
+z   : nat.
+s   : nat -> nat.
+</twelf>
+<twelf>
+even    : nat -> type.
+even-z  : even z.
+even-s  : {N:nat} even N -> even (s (s N)).
+</twelf>
+
+The first declaration says that <tt>even</tt> is a family of types indexed by a <tt>nat</tt>.  This means that for every term <tt>N : nat</tt>, there is a type <tt>even N</tt>.  Note that the syntax <tt>-></tt> is overloaded: it is used to classify both type-level families and and term-level functions.  We then use this type
+family to define the types of two term constants.
+
+The first term constant, <tt>even-z</tt>, has type <tt>even z</tt>.  This constant represents the derivation that consists of the first inference rule above, which concludes <math>\mathsf{even}(\mathsf{zero})</math>.  
+
+The second term constant <tt>even-s</tt>, corresponds to the second inference rule above, which, for any <math>\texttt{}n</math>, constructs a derivation of <math>\mathsf{even}(\mathsf{succ}(\mathsf{succ}(n)))</math> from a derivation of <math>\mathsf{even}(n)</math>.  To encode this inference rule, the constant <tt>even-s</tt> is given a [[dependent type|dependent function type]].  
+
+The syntax <tt>{x:A1} A2</tt> represents a dependent function type, which is a generalization of the ordinary function type <tt>A1 -> A2</tt> that allows the argument term <tt>x</tt> to appear in <tt>A2</tt>.  We write the ordinary function type <tt>-></tt> as a synonym when the argument is not free in the result type (i.e., <tt>A1 -> A2</tt> means <tt>{_:A1} A2</tt>).  Just as with the ordinary function type, LF terms of dependent function type can be applied to a term of the argument type to form a new term.
+
+As an example, the constant <tt>even-s</tt> can be applied to a term <tt>N:nat</tt> and then a term of type 
+<tt>even N</tt> ''for that <tt>N</tt>'' to create a term of type <tt>even (s (s N))</tt> (again, for that <tt>N</tt>).  The dependent function type is used to bind the variable <tt>N</tt> in the type <tt>(even N -> even (s (s N)))</tt>, expressing that the inference rule is schematic in <math>\texttt{}n</math>.
+
+When a term of dependent function type is applied to an argument, the argument is substituted into the result type.  For example, the term <tt>even-s z</tt> has type <tt>even z -> even (s (s z))</tt>—i.e., it is the specialization of the inference rule to <math>n = \mathsf{zero}</math>.  Thus, the term
+
+<!-- syntax highlighting looks weird when it's not actually Twelf code -->
+<pre>even-s z even-z
+</pre>
+
+(where we adopt the usual convention that application is left-associative) represents the derivation
+
+<center>
+<math>
+{\overline{\mathsf{even}(\mathsf{zero})}}
+\over 
+{\mathsf{even}(\mathsf{succ}(\mathsf{succ}(\mathsf{zero})))}
+</math>
+</center>
+
+The term <tt>even-s (s (s z)) (even-s z even-z)</tt> represents a derivation that 4 is even, and so on.
+
+To summarize, dependently-typed LF refines the type level of simply-typed LF with dependent function types and families of types parametrized by LF terms.  The terms of LF remain unchanged from the grammar presented in the previous section.  These changes are sufficient for representing judgements as LF type families and derivations as LF terms.
+
+===Adequacy===
+
+To check that this LF representation is correct ([[adequacy|adequate]]), we must verify that there is a bijection between the derivations of <math>\mathsf{even}(n)</math> and the LF terms of type <tt>even N</tt> where <math>n \gg N</math>.  In particular, this LF signature adequately represents natural numbers and derivations of <math>\mathsf{even}(n)</math> when considered in the empty LF context. It would not be adequate in contexts containing assumptions of the form <tt>x : nat</tt> (which don't correspond to any natural number) or <tt>d : even N</tt> (which don't correspond to any of the rules for deriving <math>\mathsf{even}(n)</math>.
+
+Part of establishing this bijection requires reasoning by induction on the canonical forms of type <tt>even N</tt>, which corresponds to rule induction on the informal judgement.  The definition of the encoding and the proof of adequacy are simple; interested readers are referred to the literature for examples.
+
+{{needs|references to the literature}}
+
+==Addition==
+
+===Informal definition===
+
+Addition can be represented as a judgement relating two natural numbers to their sum:
+
+<table style="margin-left:auto;margin-right:auto" cellpadding="24">
+<tr><td>
+<math>{\qquad} \over {\mathsf{plus}(\mathsf{zero},n_2,n_2)}
+</math>
+</td><td>
+<math>
+{\mathsf{plus}(n_1,n_2,n_3)} \over
+{\mathsf{plus}(\mathsf{succ}(n_1), n_2, \mathsf{succ}(n_3))}
+</math>
+</td></tr>
+</table>
+
+This judgement defines addition by induction on the first argument.
+
+===LF representation===
+
+This judgement is represented by the following LF signature:
+
+<twelf>
+plus   : nat -> nat -> nat -> type.
+plus-z : {N2:nat} plus z N2 N2.
+plus-s : {N1:nat} {N2:nat} {N3:nat} plus N1 N2 N3 -> plus (s N1) N2 (s N3).
+</twelf>
+
+The type family <tt>plus</tt> is indexed by three terms of type <tt>nat</tt> because the informal judgement has three parameters.  The constants correspond to the two inference rules, inhabiting the type family with terms representing derivations.  For example, the term
+
+<pre>plus-s (s z) (s z) (s (s z)) 
+       (plus-s z (s z) (s z) 
+               (plus-z (s z)))
+</pre>
+
+which has type <tt>plus (s (s z)) (s z) (s (s (s z)))</tt>, represents a derivation that 2 + 1 = 3.
+
+===Adequacy===
+
+To check correctness of this representation, we must verify that there is a bijection between derivations of <math>\mathsf{plus}(n_1,n_2,n_3)</math> and LF terms of type
+<tt>plus N1 N2 N3</tt> where <math>n_i \gg N_i</math>.  Once again, the definition of the encoding judgement and the adequacy proof are simple.
+
+These adequacy theorems will be more precise after we review the full language of dependently typed LF in the next section.
+
+
+{{proving metatheorems
+  | prev = Simply typed LF
+  | prevname = Simply typed LF
+  | next = Full LF
+  | nextname = Full LF}}

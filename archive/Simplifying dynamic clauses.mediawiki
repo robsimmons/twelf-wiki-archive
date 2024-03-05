@@ -1,0 +1,136 @@
+=== Summary ===
+
+When writing proofs about relations that introduce hypotheses, it is sometimes necessary to introduce dynamic clauses for the proof along with the hypothetical variable, to encode informal reasoning "at the variable case". In some cases, this reasoning is somewhat complicated, and can be streamlined by a judicious choice of lemma, so that the dynamic clause, while still present, is of a much simpler form, and the complicated reasoning is pushed to the top-level, where it can be more easily encoded.
+
+=== Example ===
+
+Suppose that we have lists of items, some of which may be colored red.
+
+<twelf name="basics">
+elt : type.
+cherry : elt.
+strawberry : elt.
+blueberry : elt.
+
+list : type.
+nil : list.
+cons : elt -> list -> list.
+
+is-red : elt -> type.
+is-red/cherry : is-red cherry.
+is-red/strawberry : is-red strawberry.
+</twelf>
+
+A property that a list may satisfy is that all of its elements are red, which is encoded as follows:
+<twelf name="basics" include="basics">
+all-red : list -> type.
+all-red/nil : all-red nil.
+all-red/cons : all-red (cons H L) 
+		<- all-red L 
+		<- is-red H.
+</twelf>
+
+We now define a nondeterministic function that take in a list, and outputs a list derived from the input by some combination of permutation, duplication, and dropping of its elements.
+
+<twelf name="basics" include="basics">
+mix : list -> list -> type.
+seed : elt -> type.
+
+mix/sow : (seed E -> mix L L') -> mix (cons E L) L'.
+mix/reap : mix nil L -> seed E -> mix nil (cons E L).
+mix/nil : mix nil nil.
+</twelf>
+
+The behavior of <tt>mix</tt> is as follows: it decomposes the input list, turning every element <tt>E</tt> in it into a hypothesis of type <tt>seed E</tt>. Once the input list is empty, it builds up a new list by consing on some number of elements to the empty list, but each element must have come from some <tt>seed E</tt>. Since there is no restriction on how many times a hypothesis is used, the resulting list may have many (or one, or no) copies of each element in the original list, and in any order. However, since the function <tt>mix</tt> cannot introduce elements <I>ex nihilo</I>, we can state and prove some properties of it. For instance, when applied to an all-red list, it must yield an all-red list.
+
+<twelf name="basics" include="basics">
+mix-pres : mix L L'
+	 -> all-red L
+	 -> all-red L'
+	 -> type.
+%mode mix-pres +MIX +AR -AR'.
+</twelf>
+
+==== First proof ====
+
+It can be proved in the following way:
+<twelf name="proof1" include="basics">
+- : mix-pres 
+	     (mix/sow ([s] MIX s)) 
+ 	     (all-red/cons RH AR)
+	     AR'
+     <- ({sd:seed E} 
+	   {dynclause: {L: list} {Mix : mix nil L} {Ared:all-red nil} {Ared':all-red L}
+		     mix-pres (mix/reap Mix sd) Ared (all-red/cons RH Ared')
+		     <- mix-pres Mix Ared Ared'}
+	   mix-pres (MIX sd) AR AR').
+
+- : mix-pres 
+     mix/nil
+     all-red/nil
+     all-red/nil.
+</twelf>
+
+In this proof of the theorem, the block of variables introduced includes a <I>dynamic clause</I> for the relation <tt>mix-pres</tt> that covers the variable case. It expresses the reasoning, "if the last rule used to derive <tt>mix</tt> was <tt>mix-pres</tt> applied to the seed <tt>sd</tt> just introduced, then appeal to the induction hypothesis on the smaller derivation of <tt>mix</tt>". Without this dynamic clause, coverage would fail, and the theorem would not go through.
+
+<twelf include="proof1">
+%block b : some {E:elt} {RH:is-red E} block {sd:seed E}
+	   {dynclause: {L: list} {Mix : mix nil L} {Ared:all-red nil} {Ared':all-red L}
+		     mix-pres (mix/reap Mix sd) Ared (all-red/cons RH Ared')
+		     <- mix-pres Mix Ared Ared'}.
+%worlds (b) (mix-pres _ _ _).
+%total X (mix-pres X _ _).
+</twelf>
+
+Writing dynamic clauses like this can be annoying, because Twelf's type reconstruction cannot be used to elide implicit &Pi;s. If we left a variable such as <tt>Mix</tt> implicitly quantified inside the dynamic clause, it would be quantified at the very outside, which would be incorrect. Moreover, some older versions of Twelf cannot check dynamic clauses that themselves have subgoals, as is the case here.
+
+==== Second proof ====
+
+We can instead prove the same theorem in a different way, which has the advantage of working in older verisons of Twelf, and allowing more leverage of type reconstruction in any event, simplifying the presentation.
+The technique is to introduce another lemma that makes explicit the invariant represented by the worlds declaration for the main theorem. In this case, we know that for every <tt>seed E</tt> in the context, there is a derivation <tt>RH</tt> of type <tt>is-red E</tt>.
+
+<twelf name="proof2" include="basics">
+has-rh : seed E -> is-red E -> type.
+%mode has-rh +A -C.
+
+</twelf>
+
+The proof of this theorem conists of one dynamic clause, which has no subgoals, and no &Pi;-quantification:
+
+<twelf name="proof2" include="proof2">
+%block b : some {E:elt} {RH:is-red E} block {sd:seed E}
+	   {clause: has-rh sd RH}.
+
+%worlds (b) (has-rh _ _).
+%total X (has-rh X _).
+</twelf>
+
+Having done that, the proof of the main theorem is simply
+<twelf name="proof2" include="proof2">
+- : mix-pres (mix/reap Mix SEED) Ared (all-red/cons RH Ared')
+     <- has-rh SEED RH
+     <- mix-pres Mix Ared Ared'.
+
+- : mix-pres
+	     (mix/sow ([s] MIX s)) 
+ 	     (all-red/cons RH AR)
+	     AR'
+     <- ({sd:seed E} 
+	   {dynclause: has-rh sd RH}
+	   mix-pres(MIX sd) AR AR').
+
+- : mix-pres
+     mix/nil
+     all-red/nil
+     all-red/nil.
+
+%worlds (b) (mix-pres _ _ _).
+%total X (mix-pres X _ _).
+</twelf>
+
+Note how there is now an "explicit variable case", which covers any possible derivation <tt>SEED</tt> of <tt>seed E</tt>, and appeals to the above lemma <tt>has-rh</tt> in order to get the derivation of <tt>is-red H</tt>. The second case, which introduces a parametric <tt>sd : seed E</tt>, needs only supply the comparatively simple dynamic clause <tt>{dynclause: has-rh sd RH}</tt> to ensure the proof of <tt>has-rh</tt> goes through.
+
+<twelflink include="proof1">Twelf code of first proof</twelflink><BR/>
+<twelflink include="proof2">Twelf code of second proof</twelflink>
+
+{{tutorial}}

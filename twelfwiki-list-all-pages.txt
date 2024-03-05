@@ -1,0 +1,698 @@
+%.
+%assert
+%block
+%clause
+%covers
+%establish
+%freeze
+%infix
+%mode
+%name
+%postfix
+%prefix
+%prove
+%query
+%querytabled
+%reduces
+%solve
+%subord
+%tabled
+%terminates
+%thaw
+%theorem
+%total
+%trustme
+%unique
+%use
+%worlds
+Abbrev declaration
+About The Twelf Project
+Abstract syntax
+Ad hoc binding structures
+Adequacy
+Adequate
+Admissibility of cut
+Alpha-equivalence
+Ambiguous hyperkind
+Ask Twelf Elf
+Ask Twelf Elf:Short Answers
+Ask Twelf Elf:Short answers
+Auto-freezing
+Autofreeze
+Beta-equivalence
+Beta-equivalent
+Beta-normal
+Beta-reduction
+Beta equivalence
+Beta equivalent
+Bibliography of LF
+Big algebraic solver
+Block
+Blocks
+Bracket abstraction
+CADE Tutorial
+CADE Tutorial/Basic error messages
+CADE Tutorial/Basics
+CADE Tutorial/Basics Answer
+CADE Tutorial/Combinators
+CADE Tutorial/Combinators Answer
+CADE Tutorial/Combinators Support
+CADE Tutorial/MinML
+CADE Tutorial/MinML Answer
+CADE Tutorial/MinML encoding
+CADE Tutorial/Next
+CPS conversion
+C machine and focusing
+C machine and focusing (composition in machine state)
+C machine and focusing (internalized compositon)
+Canonical form
+Canonical forms
+Canonical forms lemma
+Case studies
+Catch-all case
+Church-Rosser (w/ catch-all case)
+Church-Rosser (w/ identity reduction)
+Church-Rosser via Complete Development
+Church-Rosser via complete development
+Classical S5
+Compatibility lemma
+Compositional bijection
+Computation and Deduction 2009
+Computation and Deduction 2009/20090203
+Computation and Deduction 2009/20090204
+Computation and Deduction 2009/20090209
+Computation and Deduction 2009/20090223
+Computation and Deduction 2009/20090304
+Computation and Deduction 2009/20090304-support
+Computation and Deduction 2009/20090316
+Computation and Deduction 2009/20090318
+Computation and Deduction 2009/20090325
+Computation and Deduction 2009/20090330
+Computation and Deduction 2009/20090401
+Computation and Deduction 2009/20090406
+Computation and Deduction 2009/20090408
+Computation and Deduction 2009/20090413
+Computation and Deduction 2009/20090415
+Computation and Deduction 2009/20090420
+Computation and Deduction 2009/20090422
+Computation and Deduction 2009/20090427
+Computation and Deduction 2009/20090429
+Computation and Deduction 2009/Test Page 1
+Concrete representation
+Concrete representations
+Congruence lemma
+Congruence lemmas
+Congruence relation
+Constraint domain
+Constraint domains
+Constraint domains and coverage checking
+ConstructiveSemantics
+Converting between implicit and explicit parameters
+Correctness of mergesort
+Coverage checking
+Cut
+Cut elimination
+Debugging coverage errors
+Deductive system
+Deductive systems
+Deep equality
+Define declaration
+Dense lexicographical orderings
+Dependent type
+Dependent types
+Deterministic declaration
+Developers
+Division over the natural numbers
+Documentation
+Double-negation translation
+Download
+Editing Summer school 2008:Alternate typed arithmetic expressions with sums
+Effectiveness
+Effectiveness lemma
+Effectiveness lemmas
+Equality
+Equivalence relation
+Equivalence relations
+Error messages
+Eta-equivalence
+Eta-expansion
+Eta-long
+Eta-long form
+Evaluation contexts
+Exchange
+Exchange lemma
+Explicit context
+Explicit parameter
+Extrinsic encoding
+Factoring
+First-order encodings
+Fixity declaration
+Focusing
+Freeze
+Frozen
+Function
+Function (relation)
+General Description of Twelf
+General description of Twelf
+Glossary
+Ground
+HOAS nat bijection
+Hauptsatz
+Hereditary substitution
+Hereditary substitution for the STLC
+Hereditary substitution for the STLC (part 2)
+Hereditary substitution with a zipper
+Hereditary substitution with zippers
+Heterogeneous lists
+Higher-order abstract syntax
+Higher-order judgement
+Higher-order judgements
+Higher-order judgment
+Higher-order judgments
+Holes in metatheorems
+Homogeneous lists
+Hypothetical judgement
+Hypothetical judgment
+Identity
+Implicit and explicit parameters
+Implicit parameter
+Implicit parameters
+Incremental metatheorem development
+Indexed HOAS nat bijection
+Indexed lists
+Input coverage
+Intrinsic and extrinsic encodings
+Intrinsic encoding
+Introductions to Twelf
+Iterated Let Bindings
+Iterated inductive definitions and defunctionalization
+Judgement
+Judgment
+Judgments
+Judgments as types
+LF
+Language with references
+Lax logic
+Let*
+Letrec
+Lexicographical orderings with density
+Lily
+Linear logic
+Lists
+Logic program
+Logic programming
+Mailing lists
+Main Page
+Main page
+Manipulating proof witnesses
+Manipulating proof witnesses as inputs
+MediaWiki formatting description
+Meta-language
+Meta-logic
+Metatheorem
+Metatheorems
+MinMLToMinHaskell
+Modal logic
+Modally Propositional Logic
+Mode
+Mode checking
+Modes of use
+Mutable state
+Mutual induction
+Naming conventions
+Natural number
+Natural numbers
+Natural numbers with inequality
+Negation as failure
+Numeric termination metric
+Numeric termination metrics
+Object language
+Object logic
+Object logic syntax
+Output coverage
+Output factoring
+Output freeness
+PLTheory:Introduction to Twelf
+POPL Tutorial
+POPL Tutorial/Basic error messages
+POPL Tutorial/Basics
+POPL Tutorial/Basics Answer
+POPL Tutorial/Basics Starter
+POPL Tutorial/Big step, small step
+POPL Tutorial/Big step, small step: Solution
+POPL Tutorial/CPS
+POPL Tutorial/CPS Solution2
+POPL Tutorial/CPS Solutions
+POPL Tutorial/Church Rosser
+POPL Tutorial/Church Rosser (Problem)
+POPL Tutorial/Combinators
+POPL Tutorial/Combinators (karl)
+POPL Tutorial/Combinators Answer
+POPL Tutorial/Combinators Starter
+POPL Tutorial/Combinators Support
+POPL Tutorial/Combinators session
+POPL Tutorial/Combinators session (answers)
+POPL Tutorial/Control machine
+POPL Tutorial/Cost Semantics
+POPL Tutorial/Cost semantics
+POPL Tutorial/Evaluation Contexts Intrinsic
+POPL Tutorial/Exceptions
+POPL Tutorial/Exceptions-problem
+POPL Tutorial/MinML
+POPL Tutorial/MinML Answer
+POPL Tutorial/MinML Encoding
+POPL Tutorial/MinML Preservation Theorem
+POPL Tutorial/MinML Preservation Theorem: Solution
+POPL Tutorial/MinML Preservation Theorem Answer
+POPL Tutorial/MinML Starter
+POPL Tutorial/MinML encoding
+POPL Tutorial/Nat
+POPL Tutorial/Nat Starter
+POPL Tutorial/New language
+POPL Tutorial/Next
+POPL Tutorial/Pattern Matching
+POPL Tutorial/Pattern matching
+POPL Tutorial/Problems
+POPL Tutorial/Properties of Typing and Reduction
+POPL Tutorial/Saturday
+POPL Tutorial/Sequent vs Natural Deduction
+POPL Tutorial/Sequent vs Natural Deduction: Solution
+POPL Tutorial/Session2
+POPL Tutorial/Session 2
+POPL Tutorial/Session 2 Answer
+POPL Tutorial/Session 2 Script
+POPL Tutorial/Session 2 Starter
+POPL Tutorial/Session 4
+POPL Tutorial/Session 4 Answer
+POPL Tutorial/Session 4 Live
+POPL Tutorial/Session 4 Starter
+POPL Tutorial/Session 5
+POPL Tutorial/Thursday
+POPL Tutorial/Typed bracket abstraction
+POPL Tutorial/Typed bracket abstraction (solution)
+POPL Tutorial/Typed bracket abstraction with equivalence
+POPL Tutorial/cps
+POPL Tutorial/cps-ctp
+POPL Tutorial/cps-problem
+POPL Tutorial/cps-problem2
+POPL Tutorial/cps-rp
+POPL Tutorial/cps-truefalse
+Pattern Matching (Case Study)
+Pattern matching
+Polarized PCF
+Polarized PCF Better
+Programming language theory with Twelf
+Progress
+Proofs by reductio ad absurdum
+Proving metatheorems with Twelf
+Quick introduction
+Real-world binding structures
+Real World Binding Structures
+Reasoning from equality
+Reasoning from false
+Reformulating languages to use hypothetical judgements
+Regular world
+Regular worlds
+Relation
+Release history
+Research projects using Twelf
+Respects lemma
+Respects lemmas
+Revision history
+Sets and supersets
+Shallow equality
+Signature
+Signature checking
+Signatures as logic programs
+Simplifying dynamic clauses
+Simply-typed lambda calculus
+Software
+Strengthening
+Structural metric
+Structural metrics
+Structural termination metrics
+Style guide
+Subordination
+Substitution
+Substitution Lemma
+Substitution lemma
+Sudoku
+Summer school 2008
+Summer school 2008:Alternate typed arithmetic expressions with sums
+Summer school 2008:Arithmetic expressions
+Summer school 2008:Arithmetic expressions with call-by-value let-binding
+Summer school 2008:Arithmetic expressions with let-binding
+Summer school 2008:Arithmetic expressions with let-binding (hypothetical evaluation)
+Summer school 2008:Arithmetic expressions with pairs (value)
+Summer school 2008:Encoding of System F
+Summer school 2008:Exercises 1
+Summer school 2008:Exercises 2
+Summer school 2008:Exercises 3
+Summer school 2008:Type safety for MinML (extrinsic encoding)
+Summer school 2008:Type safety for MinML (intrinsic encoding)
+Summer school 2008:Type safety for MinML with monadic effects
+Summer school 2008:Type safety for MinML with monadic effects (putngetn)
+Summer school 2008:Type safety for polymorphic MinML (intrinsic encoding)
+Summer school 2008:Typed arithmetic expressions
+Summer school 2008:Typed arithmetic expressions (extrinsic encoding)
+Summer school 2008:Typed arithmetic expressions (value)
+Summer school 2008:Typed arithmetic expressions with pairs
+Summer school 2008:Typed arithmetic expressions with sums
+Summer school 2008:Typed arithmetic expressions with sums 2
+Summer school 2008: Exercise: Typed arithmetic expressions with pairs
+Syntax (Object logic)
+TAT/church.elf
+TAT/plus.elf
+Tabled logic programming
+Tactical theorem proving
+Termination analysis
+Termination checking
+Tethered Modal Logic
+Tethered modal logic
+The Best Fake cigarette Sold in the market
+The two Twelfs
+Theorem prover
+Totality assertion
+Totality assertions
+Try Twelf now
+Tutorial
+Tutorials
+Twelf-list
+TwelfTag
+Twelf Elf Rotation Charter
+Twelf Live
+Twelf glossary
+Twelf naming conventions
+Twelf signature
+Twelf style guide
+Twelf with Emacs
+Twelf without Emacs
+Type families
+Type family
+Typed combinators soundness and completeness
+Unary numbers
+Unification
+Uniqueness lemma
+Uniqueness lemmas
+Universal quantification
+Universally quantified
+Unsafe mode
+User's Guide
+User-defined constraint domain
+Using a metric
+Using nat-less with %reduces
+Verifications and uses
+Verifications and uses in HLF
+Verifications and uses with zippers
+Weak focusing
+Weakening
+Weakening lemma
+What's new
+What's new?
+Working with higher-order judgements
+World
+World subsumption
+Zermelo Frankel
+Talk:% define
+Talk:%covers
+Talk:%freeze
+Talk:%reduces
+Talk:%thaw
+Talk:%theorem
+Talk:%worlds
+Talk:Ad hoc binding structures
+Talk:Admissibility of cut
+Talk:Alpha-equivalence
+Talk:Ask Twelf Elf
+Talk:Ask Twelf Elf/Archive 1
+Talk:Ask Twelf Elf/Archive 2
+Talk:CPS conversion
+Talk:Canonical forms lemma
+Talk:Case studies
+Talk:Classical S5
+Talk:Congruence lemma
+Talk:Constraint domains and coverage checking
+Talk:Converting between implicit and explicit parameters
+Talk:Coverage checking
+Talk:Debugging coverage errors
+Talk:Define declaration
+Talk:Documentation
+Talk:Download
+Talk:Effectiveness lemma
+Talk:Equality
+Talk:Exchange lemma
+Talk:General Description of Twelf
+Talk:General description of Twelf
+Talk:Get started
+Talk:Glossary
+Talk:Heterogeneous lists
+Talk:Holes in metatheorems
+Talk:Implicit and explicit parameters
+Talk:Incremental metatheorem development
+Talk:Introductions to Twelf
+Talk:Language with references
+Talk:Letrec
+Talk:Lily
+Talk:Lists
+Talk:Main Page
+Talk:Meta-logic
+Talk:Metatheorem
+Talk:Modes of use
+Talk:Mutable state
+Talk:Natural numbers with inequality
+Talk:Numeric termination metrics
+Talk:Output factoring
+Talk:Output freeness
+Talk:Programming language theory with Twelf
+Talk:Proving metatheorems with Twelf
+Talk:Quick introduction
+Talk:Reformulating languages to use hypothetical judgements
+Talk:Respects lemma
+Talk:Software
+Talk:Strengthening
+Talk:Substitution lemma
+Talk:The two Twelfs
+Talk:Totality assertion
+Talk:Try Twelf now
+Talk:Tutorials
+Talk:Twelf Live
+Talk:Twelf style guide
+Talk:Twelf with Emacs
+Talk:Uniqueness lemma
+Talk:User's Guide
+Talk:UserGuide
+Talk:Using nat-less with %reduces
+Talk:What's new
+Talk:Working with higher-order judgements
+User:Boyland
+User:Carsten
+User:Ccasin
+User:Cmartens
+User:Crary
+User:DanielKLee
+User:Drl
+User:Hdeyoung
+User:Hdeyoung/monweakfoc.elf
+User:JakeD
+User:Jcreed
+User:Jcreed/Sandbox
+User:NewTestUser
+User:Rsimmons
+User:Rsimmons/CR2
+User:Rsimmons/Fluid binding
+User:Rsimmons/Handled exceptions
+User:Rsimmons/Homework 6
+User:Rsimmons/Homework 7: Proofs In Twelf
+User:Rsimmons/Lecture20
+User:Rsimmons/Lecture 20: Logic Programming
+User:Rsimmons/Lecture 22: Proofs In Twelf
+User:Rsimmons/Lecture 23: Proofs In Twelf
+User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
+User:Rsimmons/fillholes.elf
+User:Spoons
+User:TestUser
+User:TheTwelfElf
+User:Tom7
+User:Tom7/test.elf
+User:Twilson
+User:Varming
+User:William Lovas
+User talk:128.2.223.28
+User talk:128.237.241.108
+User talk:Aleffert
+User talk:Alepa
+User talk:Boyland
+User talk:Ccasin
+User talk:Crary
+User talk:DanielKLee
+User talk:Drdreyer
+User talk:Drl
+User talk:Hdeyoung
+User talk:JakeD
+User talk:Jcreed
+User talk:Neel
+User talk:Popik
+User talk:Rpollack
+User talk:Rsimmons
+User talk:Spoons
+User talk:Twilson
+User talk:Varming
+User talk:William Lovas
+The Twelf Project:1.0
+The Twelf Project:AJALF
+The Twelf Project:About
+The Twelf Project:Administrators
+The Twelf Project:BY-NC
+The Twelf Project:BY-SA
+The Twelf Project:Bureaucrats
+The Twelf Project:Contributing
+The Twelf Project:Contributors
+The Twelf Project:Copyright
+The Twelf Project:Copyrights
+The Twelf Project:GFDL
+The Twelf Project:GNU Free Documentation License
+The Twelf Project:GPL
+The Twelf Project:GeSHi Twelf extension
+The Twelf Project:Literate Twelf
+The Twelf Project:Literate Twelf/Sample Page
+The Twelf Project:MIT
+The Twelf Project:MIT license
+The Twelf Project:Policy
+The Twelf Project:Protected page
+The Twelf Project:Style guide
+The Twelf Project:Subversion transition
+The Twelf Project:Syntax Highlighting
+The Twelf Project:Syntax highlighting
+The Twelf Project:To do
+The Twelf Project:To do/Syntax highlighting
+The Twelf Project:TwelfTag
+The Twelf Project talk:AJALF
+The Twelf Project talk:Copyright
+The Twelf Project talk:GeSHi Twelf extension
+The Twelf Project talk:Policy
+The Twelf Project talk:Style guide
+The Twelf Project talk:To do
+The Twelf Project talk:TwelfTag
+File:Demtech.png
+File:Disk download.gif
+File:POPL Tutorial-IBM.jpg
+File:POPL Tutorial-cmu.gif
+File:POPL Tutorial-docomo-logo.gif
+File:POPL Tutorial-google-logo.gif
+File:POPL Tutorial-intel.jpg
+File:POPL Tutorial-mozilla.jpg
+File:POPL Tutorial-msr.jpg
+File:POPL Tutorial-scslogo.gif
+File:Searchgraph-found.svg
+File:Searchgraph.svg
+File:ServerOK.png
+File:Smalltree.svg
+File:Sudokuexample.svg
+File:TWELFLIVE-1.png
+File:TWELFLIVE-2.png
+File:TWELFLIVE-3.png
+File:Test.svg
+File:Tom Twelfelf2.jpg
+MediaWiki:Copyrightwarning
+MediaWiki:Copyrightwarning2
+MediaWiki:Edittools
+MediaWiki:Fileinfo
+MediaWiki:Loginreqpagetext
+MediaWiki:Monobook.css
+MediaWiki:Newwindow
+MediaWiki:Previewnote
+MediaWiki:Privacy
+MediaWiki:Privacypage
+MediaWiki:Sidebar
+MediaWiki talk:Sidebar
+Template:Bibtex:af04dependent
+Template:Bibtex:crary03talt
+Template:Bibtex:fm97lax
+Template:Bibtex:hhp93lf
+Template:Bibtex:hl07mechanizing
+Template:Bibtex:lch07ml
+Template:Bibtex:pd01modal
+Template:Bibtex:pierce02tapl
+Template:Bottom
+Template:Box
+Template:Case study
+Template:Click-inline
+Template:Darrow
+Template:Dia
+Template:Discuss
+Template:Draft
+Template:Exists
+Template:Forall
+Template:Front-Blog Updates
+Template:Front-Getting Started
+Template:Front-Release History
+Template:Front-What's new
+Template:Guide
+Template:Keyword
+Template:License-by-nc
+Template:License-by-sa
+Template:License-gfdl
+Template:License-gpl
+Template:Literatetwelf
+Template:Lolli
+Template:Multimap
+Template:Needs
+Template:Needswork
+Template:Oplus
+Template:Otimes
+Template:Proving
+Template:Proving metatheorems
+Template:Repository
+Template:Rule
+Template:Stub
+Template:Stub tutorial
+Template:Summer school 2008
+Template:The Twelf Project/Blog Updates
+Template:The Twelf Project/Getting Started
+Template:The Twelf Project/Introduction
+Template:The Twelf Project/Learning Twelf
+Template:The Twelf Project/Release History
+Template:The Twelf Project/What's new
+Template:Tl
+Template:Top
+Template:Tutorial
+Template:Twelf code
+Template:Undocumented
+Template:Vdash
+Template talk:Bibtex:hl07mechanizing
+Template talk:Click-inline
+Template talk:Front-Blog Updates
+Template talk:Guide
+Template talk:The Twelf Project/Introduction
+Help:Contents
+Category:Case studies
+Category:Keywords
+Category:Literate Twelf code
+Category:Pages needing attention
+Category:Stubs
+Category:Tutorials
+Category:Tutorials needing attention
+Category:Twelf code
+Category:Undocumented features
+Elves:Main Page
+Elves talk:Main Page
+Proving metatheorems:Full LF
+Proving metatheorems:Natural numbers:Answers to exercises
+Proving metatheorems:Natural numbers: Answers to exercises
+Proving metatheorems:Proving metatheorems about the STLC
+Proving metatheorems:Proving metatheorems about the natural numbers
+Proving metatheorems:Proving metatheorems in non-empty contexts
+Proving metatheorems:Proving totality assertions about the natural numbers
+Proving metatheorems:Proving totality assertions in non-empty contexts
+Proving metatheorems:Representing the judgements of the STLC
+Proving metatheorems:Representing the judgements of the natural numbers
+Proving metatheorems:Representing the syntax of the STLC
+Proving metatheorems:Representing the syntax of the natural numbers
+Proving metatheorems:STLC: Answers to exercises
+Proving metatheorems:Simply typed LF
+Proving metatheorems:Summary: the STLC
+Proving metatheorems:Summary: the natural numbers
+Proving metatheorems talk:Representing the judgements of the STLC
+Proving metatheorems talk:Representing the judgements of the natural numbers
+Proving metatheorems talk:Representing the syntax of the STLC
+Proving metatheorems talk:Simply typed LF

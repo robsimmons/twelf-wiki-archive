@@ -1,0 +1,15 @@
+If you want to read more about Twelf, you can check out the [[introductions to Twelf|introductions]], [[tutorials]], and [[case studies]] on the wiki.
+
+We strongly recommend that you work on some of the following exercises: you'll get a flavor for the experience of defining systems and proving theorems in Twelf.  If we have time at the end of the tutorial, we'll break into small groups and you can pick an interesting problem or two to work on.  If you get stuck, ask a TA!  Refer to the solutions to check your work (though Server OK from Twelf should be assurance enough!)  Feel free to ask us for help during the rest of the conference. 
+
+== Beginner problems (Recommended) ==
+* [[POPL Tutorial/MinML Preservation Theorem|Preservation for MinML]] -- Prove type preservation for MinML. ([[POPL Tutorial/MinML Preservation Theorem Answer|Solution]])
+* [[POPL Tutorial/Sequent vs Natural Deduction|Sequent calculus vs. natural deduction]] -- Prove the logical equivalence of Gentzen's intuitionistic sequent calculus and intuitionistic natural deduction. ([[POPL Tutorial/Sequent vs Natural Deduction: Solution|Solution]])
+* [[POPL Tutorial/Big step, small step|Big-step evaluation vs. small-step transition semantics]] -- Prove the operational equivalence of the big-step and small-step views of operational semantics.  ([[POPL Tutorial/Big step, small step: Solution|Solution]])
+
+== Intermediate problems ==
+* [[POPL Tutorial/cps-problem|Call-by-value CPS transform, with administrative redexes]] -- Define an algorithm for converting lambda terms to continuation-passing style ([[POPL Tutorial/CPS Solutions|Solution]])
+* [[POPL Tutorial/cps-problem2|Higher-order call-by-value CPS transform, no administrative redexes]] -- Define a higher-order variant of the CPS conversion that never creates administrative redexes ([[POPL Tutorial/CPS Solution2|Solution]])
+* [[POPL Tutorial/Church Rosser (Problem)|Church-Rosser]] -- Prove Church and Rosser's seminal result via a Diamond Lemma for the untyped lambda calculus. ([[POPL Tutorial/Church Rosser|Solution]])
+* [[POPL Tutorial/Exceptions-problem|MinML with exceptions]] -- Prove type safety for an extension of MinML with exceptions defined using structural operational semantics with a "raises" judgement.  ([[POPL Tutorial/Exceptions|Solution]])
+* [[POPL Tutorial/Typed bracket abstraction|Lambda calculus and combinators]] -- Explore the relation between the simply-typed lambda calculus and combinatory logic using Curry's classic bracket abstraction algorithm.  ([[POPL Tutorial/Typed bracket abstraction (solution)|Solution]])

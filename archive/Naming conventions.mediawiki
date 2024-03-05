@@ -1,0 +1,84 @@
+{{needswork|Incomplete commentary; furthermore, a consensus needs to exist around this document before we present it generally}}
+
+These are '''naming conventions''' for Twelf code. This article should be considered an appendix to/chapter of the [[style guide]].
+
+== Syntax ==
+
+=== The uninhabited type ===
+
+Defining an uninhabited type is important for [[reasoning from false]] - however, the name of that type varies from user to user, with <tt>void</tt>, <tt>false</tt>, and <tt>absurd</tt> perhaps being the most common.
+
+Standard usage is to use <tt>void</tt>, and to freeze the type immediately after its introduction, like this:
+
+<twelf>void : type. %freeze void.</twelf>
+
+== Judgments ==
+
+=== Factored judgments ===
+
+[[Factoring]] is a technique used to reduce backtracking. If a rule does some computation, it might then sends the result to another rule that continues based on the output of its computation. The style introduced here works well with factoring - if you are creating "helper judgment," just replace the forward slash in the primary [[judgment]] with a hyphen to come up with the name.
+
+<twelf>eval : state -> state -> type.
+
+eval-branch-if-nil : list -> state -> state -> type.
+
+...
+
+eval-branch-if-nil/nil : eval-branch-if-nil list/nil ...
+eval-branch-if-nil/cons : eval-branch-if-nil (list/cons _ _) ...
+
+eval/branch-if-nil : eval S1 S2
+                      <- do-some-computation-on-state S1 L
+                      <- eval-branch-if-nil L S1 S2.</twelf>
+
+=== Introduction rules ===
+
+If a type family is inhabited by exactly one rule, it is recommended to use <tt>i</tt> (short for introduction) as the case name for the lone inference rule. For example, the [[identity]] (syntactic equality) [[relation]] for natural numbers would be defined in the following way.
+
+<twelf>seq-nat : nat -> nat -> type.
+
+seq-nat/i : seq-nat N N.</twelf>
+
+This also applies to pieces of syntax in the [[object language]], but it appears less frequently there.
+
+=== A note on word order ===
+
+Here as in the previous section, there is a legitimate case for reversing the word order, calling a list of natural numbers <tt>nat-list</tt> instead of <tt>list-nat</tt> on the other, and for calling the three-place relation implementing addition of natural numbers <tt>nat-plus</tt> instead of <tt>plus-nat</tt>
+
+The construction that is not used here looks more like declarations would look were a module system is in place (i.e. <tt>nat::list</tt>, but the first is more readable after combination - for instance <tt>list-list-nat</tt> can be read out loud as "a list of lists of nats," whereas the equivalent formulation does not compose as well - <tt>nat-list-list</tt> can best be read as "a natlist list."
+
+Internal consistancy is most important here, but the construction <tt><nowiki>(structure)-(object)</nowiki></tt> for syntax (i.e. <tt>list-nat</tt>) and <tt><nowiki>(adjective/verb/operation)-(object)</nowiki></tt> (i.e. <tt>wellformed-env</tt>, <tt>sort-list</tt>, or <tt>plus-nat</tt>) is preferred.
+
+=== Different types of equality ===
+
+
+== Metatheorems ==
+
+=== Metatheorem names ===
+
+One way to think about a naming strategy for many metatheorems is that many simple theorems act like admissibility arguments for other rules. For instance, imagine an alternate form of <tt>plus-nat/z</tt> that has the zero in the ''second'' place instead of the first. It might be written like this if it were a real definition: 
+<twelf>plus-nat/z-alt : plus N z N.</twelf> 
+Following that logic, a lemma establishing the admissibility argument might be titled 
+<twelf>plus-nat-z-alt : {N} plus-nat N z N -> type.</twelf>
+
+Beyond that suggestion, the properties that we wish to prove about our inference rules vary to the point where some measure of consistency is the only reasonable guideline.
+
+=== <tt>can-</tt> and <tt>-unique</tt> metatheorems ===
+
+A judgment behaves like a function (in the meta-logical sense) on particular "input" derivations if it satisfies two properties. The first is that given the "input" derivations, the judgment can be derived, i.e. an [[effectiveness lemma]]. The second is that given two derivations of the judgments with the same "input" derivations, the results are actually the same, i.e. a [[uniqueness lemma]]. It is common practice to name the metatheorems proving the first property <tt>can-judgmentname</tt> and the second property <tt>judgmentname-unique</tt>.
+
+<twelf>
+can-plus-nat : {N1:nat} {N2:nat} 
+                 plus-nat N1 N2 N3 
+                -> type.
+%mode can-plus-nat +D1 +D2 -D3.
+
+...
+
+plus-nat-unique : plus-nat N1 N2 N3
+                   -> plus-nat N1 N2 N3'
+                   -> seq-nat N3 N3
+                   -> type.
+%mode plus-nat-unique +D1 +D2 -D3.
+
+...</twelf>

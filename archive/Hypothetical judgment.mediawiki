@@ -1,0 +1,33 @@
+A [[judgment]] is a statement derivable in a particular object logic. A '''hypothetical judgment''' is a judgment that makes use of hypothetical assumptions. On paper, we often represent a set of hypothetical assumptions using a context:
+
+<math>{ \Gamma, A \mbox{ true} \vdash B \mbox{ true} \over \Gamma \vdash A \Rightarrow B \mbox{ true} }</math>
+
+We name the judgment that proves the truth of a proposition <math>\Gamma \vdash C \mbox{ true}</math>, which can be read as "Under the assumptions <math>\texttt{}\Gamma</math>, <math>\texttt{}A</math> is true." The context is the sequence of assumptions <math>\Gamma = A_1 \mbox{ true}, \ldots, A_n \mbox{ true}</math>. 
+
+With an ordinary hypothetical context, we may freely coalesce repeated assumptions, add extra unused assumptions, and to reorder the assumptions in the context. (Formally, these are the properties of contraction, weakening, and exchange.) 
+
+Additionally, a context in a hypothetical judgment should satisfy the identity and substitution properties. Identity simply means that we should be able to use our hypotheses -- <math>\Gamma, A \mbox{ true} \vdash A \mbox{ true}</math>. Substitution  means that if we have a proof tree showing <math>\Gamma, A \mbox{ true} \vdash B \mbox{ true}</math>, and another proof tree <math>\Gamma \vdash A \mbox{ true}</math>, then we should be able to substitute the second tree into the first, replacing hypothesis <math>\texttt{}A \mbox{ true}</math> and producing a new tree proving <math>\Gamma \vdash B \mbox{ true}</math>.
+
+This sample rule is the implication introduction rule, which says that <math>A \Rightarrow B</math> is true if we can show <math>\texttt{}B</math> is true under the hypothetical assumption <math>\texttt{}A \mbox{ true}</math>. 
+
+In the LF methodology, we represent the hypothetical context of our object language's judgment using the LF context itself. (See [[higher-order judgment]].)
+
+For example, we can represent the introduction rule as follows:
+
+<twelf>
+prop : type.
+==> : prop -> prop -> prop.  %infix none 10 ==>.
+
+true : prop -> type.   
+
+imp/intro : true (A ==> B) <-
+              (true A -> true B).
+</twelf>
+
+Here, we represent the hypothetical assumption that <math>\texttt{}A \mbox{ true}</math> using an LF hypothesis of type <tt>A true</tt>. We can see this clearly if we write down the proof term for the proof of the tautology <tt>P ==> P</tt>:
+
+<twelf>
+taut : true (P ==> P)= imp/intro ([ptrue : true P] ptrue).
+</twelf>
+
+Within the scope of the function argument to <tt>imp/intro</tt>, we assume that we have a proof of <tt>P true</tt> (which we creatively named <tt>ptrue</tt>). This assumption lets us show that <tt>P true</tt> holds, and that lets us show that <tt>(P ==> P) true</tt>.

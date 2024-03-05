@@ -1,0 +1,54 @@
+== Mechanizing Metatheory with LF and Twelf ==
+
+Do you want to learn how to use [[Main page|Twelf]] to specify, implement, and prove
+properties about programming languages?  
+
+Come to the Twelf tutorial on '''January 19, 2009''', co-located with POPL 2009, in
+'''Savannah, Georgia'''.
+
+Learn to:
+* Represent [[deductive systems|languages and logics]] in [[LF]]
+* Prove [[metatheorem]]s with [[Main page|Twelf]]
+under the helpful guidance of Twelf experts.  
+
+The tutorial will be a highly interactive introduction to LF and Twelf
+aimed at programming languages researchers. No prior experience with LF
+and Twelf is presumed.  Participants will leave the workshop with
+experience in reading and writing LF representations of programming
+languages, and experience reading, writing, and debugging Twelf proofs.
+
+Register at the [http://www.regmaster.com/conf/popl2009.html POPL 2009 registration site]!  
+The early registration deadline is '''December 19'''.
+                                                                                                                                                            
+The tutorial is organized and presented by the CMU Principles of
+Programming group.
+
+== Schedule ([http://www.cs.cmu.edu/~drl/tmp/lectures.pdf all slides]) ==
+
+* Overview ([[POPL_Tutorial/Nat|Answers]])
+** Session A1: Representation
+** Session A2: Totality ([[POPL_Tutorial/Session_2_Answer|notes]])
+** Session A3: Metatheory
+
+* Languages ([[POPL_Tutorial/MinML|Answers]])
+** Session B1: Representation and adequacy
+** Session B2: Metatheory
+
+* Advanced examples
+** Session C1: [[POPL_Tutorial/Combinators session|Combinators]]
+** Session C2: [[POPL_Tutorial/Session 5|Work on exercies]]
+
+== Get Twelf before the tutorial! ==
+
+The tutorial will be interactive, with participants writing Twelf code, so you should come with Twelf installed on your laptop.
+
+Pre-built binaries of Twelf are available for most operating systems through the [http://twelf.plparty.org/builds Twelf Night(ly)].
+* [http://twelf.plparty.org/builds/twelf-linux.tar.gz Linux (tgz)]
+* [http://twelf.plparty.org/builds/twelf.exe Windows (exe)]
+* [http://twelf.plparty.org/builds/twelf-osx-intel.dmg Mac OS 10.4 or 10.5 (Intel only) (dmg)]
+
+Otherwise:
+* you can build Twelf from the [http://twelf.plparty.org/builds/twelf-src.tar.gz source tarball].  You will need [http://www.mlton.org MLton] or [http://www.smlnj.org sml/nj]. 
+* you can make yourself an account on the wiki, and do the exercises on your User:<login> page (linked at the top after you log in).
+
+Then see [[Twelf with Emacs]] for the basics of interacting with Twelf.  (You can also use [[Twelf without Emacs]], by interacting with the Twelf server directly.)

@@ -1,0 +1,21 @@
+The syntax of an [[object logic]] is commonly encoded as an [[LF]] [[type family]] of [[kind]] <tt>type</tt>.
+
+For example, if the language of our object logic is the [[natural numbers]], its syntax would be declared in the following way.
+
+<twelf>% declare a type family of kind "type" for natural numbers.
+nat : type.
+
+% inhabit the nat with the appropriate constructors.
+
+nat/z : nat.
+nat/s : nat -> nat.</twelf>
+
+== See also ==
+
+* Read the [[introductions to Twelf]] to learn how to represent syntax in LF.
+* [[Judgment]]
+* [[Judgments as types]]
+* [[Higher-order abstract syntax]]
+
+
+{{stub}}

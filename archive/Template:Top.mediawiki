@@ -1,0 +1,5 @@
+<font face="Lucida Sans Unicode">⊤</font><noinclude>
+
+This template renders the top (or 'true') symbol, with workarounds for Internet Explorer. Use it by typing <nowiki>{{top}}</nowiki> in an article.
+
+</noinclude>

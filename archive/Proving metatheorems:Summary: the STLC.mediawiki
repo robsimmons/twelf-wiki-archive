@@ -1,0 +1,31 @@
+{{proving metatheorems
+  | nonext = 
+  | prev = Proving metatheorems in non-empty contexts
+  | prevname = Proving metatheorems in non-empty contexts}}
+
+== Take-aways ==
+
+The lessons you should take from this section are:
+
+# LF's binding structure enables elegant representations of object-language binding and hypothetical judgements.
+# World declarations permit totality assertions about type families in non-empty contexts.
+# Such totality assertions can be used to prove general metatheorems about object-language entities that are represented using higher-order LF encodings.  
+
+== What's next? ==
+
+Now that you've made it through this introduction, you have the basic tools you need to start proving metatheorems with Twelf.  You've seen all of the basic machinery that Twelf provides, and you are in a good position to understand the other documentation on this wiki.  Your next step should be to read some of the [[tutorials]], which describe clever modes of use of the techniques we have talked about here, or to read some of the [[case studies]], which describe interesting applications of Twelf.
+
+== Test yourself ==
+
+''This section is under development; if you try other examples at this point, please add them here.''
+
+Before going on to the next section, you may wish to test yourself with the following exercises.  Then see the [[Proving metatheorems: STLC: Answers to exercises|answers]].
+
+# Add product types (<math>\tau_1 \times \tau_2</math>) to the STLC and extend the proof of preservation to cover this new type.
+# ''Add your exercises here!''
+
+
+{{proving metatheorems
+  | nonext = 
+  | prev = Proving metatheorems in non-empty contexts
+  | prevname = Proving metatheorems in non-empty contexts}}

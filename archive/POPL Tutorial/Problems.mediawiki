@@ -1,0 +1,28 @@
+* [[POPL Tutorial/cps]] by jcreed
+* [[POPL Tutorial/cps-rp]] by dklee, based on code by jcreed
+* [[POPL Tutorial/cps-problem]] by arbob, based on code by jcreed
+** [[POPL Tutorial/CPS_Solutions]] by arbob, based on code by jcreed
+* [[POPL Tutorial/cps-problem2]] by arbob, based on code by jcreed
+** [[POPL Tutorial/CPS_Solution2]] by arbob, based on code by jcreed
+* [[POPL_Tutorial/Sequent_vs_Natural_Deduction]] by cmartens/wlovas
+** [[POPL Tutorial/Sequent vs Natural Deduction: Solution]]
+* [[POPL_Tutorial/Pattern_matching]] by dklee
+* [[POPL_Tutorial/Control machine]] by [[User:Rsimmons|Rob]]
+* [[POPL Tutorial/Church Rosser (Problem)]] by [[User:Rsimmons|Rob]], based on code by Karl
+** [[POPL Tutorial/Church Rosser]] by [[User:Rsimmons|Rob]] solution to the above
+* [[POPL_Tutorial/Properties_of_Typing_and_Reduction]] by [[User:Twilson|Todd]].
+* [[POPL_Tutorial/Cost_semantics]] by Rob and mpa
+* [[POPL_Tutorial/Combinators]] by Karl
+* [[Bracket abstraction]] by wlovas (can this be made into a problem?)
+* [[POPL Tutorial/Typed bracket abstraction]] by wlovas (types make it combinatory logic)
+* [[POPL Tutorial/Typed bracket abstraction with equivalence]] by wlovas (full beta/eta equivalence)
+* [[POPL Tutorial/Big step, small step]] by wlovas
+** [[POPL Tutorial/Big step, small step: Solution]]
+* [[POPL Tutorial/Exceptions-problem]] by dklee
+** [[POPL Tutorial/Exceptions]] by dklee, a solution to the above problem.
+* [[POPL Tutorial/Evaluation_Contexts_Intrinsic]] by drl
+
+* CPS variations (Dklee and arbob are working on this for wednesday)
+* Stack machine vs. SOS vs. evaluation (Will and Chris are working on this for Weds)
+* Authorization logic
+* ML5

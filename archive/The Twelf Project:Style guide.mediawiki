@@ -1,0 +1,76 @@
+''This page is a style guide for contributions to the Twelf Project Wiki. For a style guide for writing Twelf itself, see [[Style guide]]''
+
+== Basic style points ==
+
+* ''Twelf'' is always capitalized.
+* Always snippets of code more than one line long inside <nowiki><twelf></twelf></nowiki> tags. Constants, names of lemmas, and keywords like <tt>%total</tt> should be displayed in fixed-width fonts by inserting them into <nowiki><tt></tt></nowiki> tags.
+* Use lowercase for the titles of pages and <nowiki>==Section headers==</nowiki>, except for the first character or where English otherwise requires capitalization. (Article titles are case-sensitive except for the first character.) This facilitates linking pages inline, such as "The %trustme declaration is often used to develop proofs with [[holes in metatheorems]]."
+
+== Word usage ==
+
+* A period-terminated line in Twelf is a ''declaration'' or a ''top-level declaration.''
+* %-things are ''keywords,'' declarations incorporating the keyword <tt>%foo</tt> are "<tt>%foo</tt> declarations" ("<tt>%foo</tt> directive" was used in some earlier articles).
+* Use [[metatheorem]] instead of other meta-words (such as metalemma).
+* The word [[metatheorem]] is ambiguous, as it can refer to a {{forall}}{{exists}}-statement, a [[totality assertion]], a logical relations argument, etc. It is best to use the word to mean  {{forall}}{{exists}}-statement.
+* The thing which we believe to be true when we run <tt>[[%total]]</tt> directives is a ''[[totality assertion]],'' rather than a {{forall}}{{exists}}R-statement. Running a <tt>[[%total]]</tt> directive causes Twelf to either ''prove'' or ''verfiy'' a totality assertion (the latter, "verify," is preferable).
+* The person using Twelf is a ''user,'' ''Twelf user,'' or (if appropriate) ''programmer.''
+
+== Editing pages ==
+
+The MediaWiki software does not come loaded with a style guide, becuase the existing guides are not available under general-user licenses. If you need an introduction to general Wiki markup, then checking out [[w:Wikipedia:How_to_edit_a_page | how to edit a page on Wikipedia]] might be helpful.
+
+=== Tagging documents with templates ===
+
+You can leave templates on pages by adding the tag <nowiki>{{template}}</nowiki> to the text of the page, where "template" is replaced by what you want to add. Tags have a few uses on this wiki:
+
+* '''Licensing''' (see [[Project:Copyright]] for more information) - <nowiki>{{license-gdfl}} {{license-gpl}}, {{license-by-nc}}, or {{license-by-sa}}</nowiki> can be added to a page at the bottom.
+* '''Indicating problems''' - the tag <nowiki>{{stub}} or {{stub tutorial}}</nowiki> should be added to the bottom of pages that are very short and need to be longer. If a page is not too short but has problems that need to be addressed, the tag <nowiki>{{needswork|Description of the problem}}</nowiki> should be added to the top (replacing "Description of the problem" with an actual description of the problem).
+* '''Classification''' (see sections below) - the tag <nowiki>{{tutorial}}</nowiki> should be added to tutorials, the tag <nowiki>{{case study}}</nowiki> should be added to case studies.
+
+=== Working with code (syntax highlighting) ===
+
+The Twelf Project has syntax highlighting enabled for most major programming languages, and has a custom module that can decently highlight most normal Twelf code. The short version is that you should surround any Twelf code you post with <nowiki><twelf></twelf></nowiki> tags. If you want things to be unhighlighted but still in monospaced, pre-formatted form, you can surround the content with <nowiki><code></code></nowiki> tags.
+
+The full story can be found at [[Project:Syntax Highlighting]].
+
+Twelf code submitted to the site, when possible, should follow the [[Twelf style guide]] when such a thing is written.
+
+== Adding new pages ==
+
+Adding new pages is relatively simple, and can be done in one of (at least) two ways. For this example, say you want to create a page titled "Not a page." 
+
+* You can type "Not a page" into the search tool on the left side of the page. (You should do this anyway to make sure there's not a similar page already!) The first line on the page that you go to will say "'''There is no page titled ":Not a page".''' You can [[Not a page|create this page]]." Click on the link and you can create the page.
+* You can edit (almost) any page by clicking the "edit" link at top. If you add the text <nowiki>[[Not a page]]</nowiki> to the page, it will show up like this: [[Not a page]]. Click on the link and you can create a page.
+
+The first letter of any page title can appear in uppercase or lowercase - the system always thinks of it as an uppercase letter. Other than the first word, titles of new pages should generally be in lowercase unless they are using a proper noun (like "Twelf").
+
+=== What goes where ===
+
+In general, there are two main "namespaces" in the wiki. This page is in the "Project" namespace, which is why it is called and linked to as "The Twelf Project:Style guide" or, equivalently, "Project:Style guide." Pages that start with "The Twelf Project:" or "Project:" are only for pages that ''deal with the fact that this is a wiki.'' 
+
+Alternately, the "main namespace" (basically everything else) is for articles dealing with Twelf, the software, the user community, etc. Thus the page talking about The Twelf Project as funded ongoing research work is named [[About The Twelf Project]], and the style guide for writing Twelf code is [[Twelf style guide]]. The main namespace is relatively "flat," in that it has very little directory structure. Structure is preserved in other ways, such as adding categories or tags (which have associated categories) to pages.
+
+=== Adding documentation ===
+
+The [[Documentation]] page indexes all the documentation on the wiki.  If you're adding something new, here are rough guidelines for where it should go:
+* [[Tutorials]] - if it's an article that teaches a specific Twelf proof or troubleshooting technique.  Tutorials are primarily focused on technique.
+* [[Case studies]] - if it's an article that show how an interesting theorem is proved in Twelf.  Case studies are primarily focused on the application.  
+* [[Glossary]] - if it's an article that defines a Twelf term.
+
+The distinction between case studies and tutorials is largely a matter of emphasis, as an example in a tutorial may be an interesting theorem, and a proof in a case study may illustrate a technique.  Put the article wherever you think it fits best.
+
+Completed tutorials should be tagged with <nowiki>{{tutorial}}</nowiki> at the bottom, and incomplete tutorials should either be tagged with <nowiki>{{stub tutorial}}</nowiki> at the bottom or with <nowiki>{{needswork}}</nowiki> at the top.  Completed case studies should be tagged with <nowiki>{{case study}}</nowiki> at the bottom.
+
+=== Adding code examples ===
+
+There is not currently a page listing all the code examples. The reason for this is that code here is currently primarily useful in terms of tutorials it is attached to. but all pages that are primarily a code example should include the tag <nowiki>{{twelf code}}</nowiki>, which adds the page to the [[:Category:Twelf code | category for twelf code]].
+
+=== Adding library code ===
+
+You can add code that can be thought of as "standard library"-style code and can be find in students [http://www.resumesplanet.com resume], but there is not, at this time, a framework for organizing that code on this site. The reason for this is that the organizers of the project wiki have not decided whether this code should go in a code repository, directly onto the wiki, or elsewhere. If you upload your contributions to the wiki and tag the file with the <nowiki>{{twelf code}}</nowiki> tag, your contributions will get added to this eventual resource.
+
+[http://customessaywritings.co.uk/samples.php essay samples]
+
+[http://cvresumewritingservices.org buy resume]
+
+[http://perfectessay.ca/ buy essay]

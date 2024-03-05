@@ -1,0 +1,15 @@
+Shouldn't "i.e., it is the specialization of the inference rule to <math>N = \mathsf{zero}</math>" read "i.e., it is the specialization of the inference rule to <math>n = \mathsf{zero}</math>", since only a small <math>n</math> appears in the judgements?
+
+: Fixed.  Thanks again! If you like, feel free to fix typos like this directly in the text. [[User:Drl|Drl]] 11:30, 18 April 2007 (EDT)
+
+== %worlds ==
+
+The [[%worlds]] page said
+
+<blockquote>
+As discussed in the introduction article on [[Proving metatheorems:Representing the judgments of the natural numbers|Representing the judgments of the natural numbers]], the type <tt>nat</tt> in this signature [[adequacy|adequately]] represents the natural numbers only if the LF context does not contain variables of type <tt>nat</tt>.
+</blockquote>
+
+This page doesn't mention that now, but I would be very grateful if it did!
+
+: Fixed--thanks! [[User:Drl|Drl]] 17:16, 25 July 2008 (EDT)

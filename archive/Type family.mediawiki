@@ -1,0 +1,14 @@
+We use the word '''type family''' to refer to the syntactic class of [[LF]] that classifies terms and is classified by kinds.  The type families include the types of LF, which are dependent function types and type family constants  that are fully applied to arguments.  The type families also include partially applied type family constants.  We refer to the arguments of a type family constant as the '''subjects''' or '''indices''' of the family.    
+
+The LF methodology specifies how [[judgment|object-language judgements are represented as LF type families]].
+
+== See also ==
+* Read the [[introductions to Twelf]] to learn how to represent object-language entities as LF type families.
+* [[LF]]
+* [[Canonical form]]s
+* [[Judgment]]
+* [[Higher-order judgment]]
+* [[Syntax (Object logic)]]
+* [[Relation]]
+
+{{stub}}

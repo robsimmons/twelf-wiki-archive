@@ -1,0 +1,7 @@
+It is common to refer to a an LF [[type family]] as a '''relation''', because a type family defines a relation on its indices where indices are related iff their instance of the type family is inhabited. A htype family is also commonly referred to as a [[judgment]].
+
+== See also ==
+
+* [[Judgment]]
+* [[Judgments as types]]
+{{stub}}

@@ -1,0 +1,2 @@
+* [[CADE Tutorial/Basic error messages|Examples of basic error messages]]
+* [[CADE Tutorial/Basics Answer|Solutions to exercises]]

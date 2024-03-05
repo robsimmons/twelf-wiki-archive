@@ -1,0 +1,5 @@
+<font face="Lucida Sans Unicode">⇒</font><noinclude>
+
+This template renders the double right arrow (latex \Rightarrow) symbol, with workarounds for Internet Explorer. Use it by typing <nowiki>{{darrow}}</nowiki> in an article.
+
+</noinclude>

@@ -1,0 +1,112 @@
+This is an extension of the example given in the [[%reduces]] article. The theorem <tt>nat-plus-reduces-s</tt> is used in conjunction with some standard properties about addition over the natural numbers to show <tt>nat-less-reduces</tt>, which allows <tt>nat-less</tt> to be used in termination arguments about other metatheorems. 
+
+<twelf>nat : type.
+
+nat/z	: nat.
+nat/s	: nat -> nat.
+
+
+
+nat-plus : nat -> nat -> nat -> type.
+
+nat-plus/z	: nat-plus nat/z N N.
+
+nat-plus/s	: nat-plus (nat/s N1) N2 (nat/s N3)
+		   <- nat-plus N1 N2 N3.
+
+
+
+nat-plus-reduces-s	: {N2}{N3}
+			   nat-plus (nat/s N1) N2 N3
+			   -> type.
+%mode nat-plus-reduces-s +D1 +D2 +D3.
+
+-	: nat-plus-reduces-s _ _ (nat-plus/s nat-plus/z).
+
+-	: nat-plus-reduces-s _ _ (nat-plus/s DL)
+	   <- nat-plus-reduces-s _ _ DL.
+
+%worlds () (nat-plus-reduces-s _ _ _).
+%reduces N2 < N3 (nat-plus-reduces-s N2 N3 _).
+%total {D1} (nat-plus-reduces-s _ _ D1).
+
+
+
+nat-less-plus	: nat-less N1 N2
+		   -> nat-plus N1 (nat/s _) N2
+		   -> type.
+%mode nat-less-plus +D1 -D2.
+
+
+-	: nat-less-plus nat-less/z nat-plus/z.
+
+-	: nat-less-plus (nat-less/s DL) (nat-plus/s DP)
+	   <- nat-less-plus DL DP.
+
+%worlds () (nat-less-plus _ _).
+%total {D1} (nat-less-plus D1 _).
+
+
+
+nat-plus-z	: {N}
+		   nat-plus N nat/z N
+		   -> type.
+%mode nat-plus-z +D1 -D2.
+
+-	: nat-plus-z nat/z nat-plus/z.
+
+-	: nat-plus-z _ (nat-plus/s DP)
+	   <- nat-plus-z _ DP.
+
+%worlds () (nat-plus-z _ _).
+%total {D1} (nat-plus-z D1 _).
+
+
+
+nat-plus-s	: nat-plus N1 N2 N3
+		   -> nat-plus N1 (nat/s N2) (nat/s N3)
+		   -> type.
+%mode nat-plus-s +D1 -D2.
+
+-	: nat-plus-s nat-plus/z nat-plus/z.
+
+-	: nat-plus-s (nat-plus/s DP1) (nat-plus/s DP2)
+	   <- nat-plus-s DP1 DP2.
+
+%worlds () (nat-plus-s _ _).
+%total {D1} (nat-plus-s D1 _).
+
+
+
+nat-plus-commute	: nat-plus N1 N2 N3
+			   -> nat-plus N2 N1 N3
+			   -> type.
+%mode nat-plus-commute +D1 -D2.
+
+-	: nat-plus-commute nat-plus/z DP
+	   <- nat-plus-z _ DP.
+
+-	: nat-plus-commute (nat-plus/s DP1) DP2
+	   <- nat-plus-commute DP1 DP1'
+	   <- nat-plus-s DP1' DP2.
+
+%worlds () (nat-plus-commute _ _).
+%total {D1} (nat-plus-commute D1 _).
+
+
+
+nat-less-reduces	: {N1}{N2}
+			   nat-less N1 N2
+			   -> type.
+%mode nat-less-reduces +D1 +D2 +D3.
+
+-	: nat-less-reduces _ _ DL
+	   <- nat-less-plus DL DP
+	   <- nat-plus-commute DP DP'
+	   <- nat-plus-reduces-s _ _ DP'.
+
+%worlds () (nat-less-reduces _ _ _).
+%reduces N1 < N2 (nat-less-reduces N1 N2 _).
+%total {} (nat-less-reduces _ _ _).</twelf>
+
+[[Category:Twelf code]]

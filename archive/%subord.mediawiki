@@ -1,0 +1,20 @@
+{{undocumented|article}}
+
+The '''<tt>%subord</tt>''' declaration adds edges to the [[subordination]] relation.  This declaration is currently only available in Twelf CVS{{discuss|Version}} and may not yet be available in [[TwelfTag]]. 
+
+== Syntax ==
+
+The syntax is as follows:
+
+<tt>%subord (t1 t1') ... (tn tn').</tt>
+
+The type families <tt>ti'</tt> will then be treated as being dependent on the type family <tt>ti</tt>.
+
+== Example ==
+
+{{needs|a good concise example.}}
+
+
+{{keyword|key=subord}}
+
+{{stub}}
