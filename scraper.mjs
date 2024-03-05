@@ -86,6 +86,10 @@ for (const page of PAGES) {
       // Hardcoded ignore the cursed beta equivalence redirects
       continue;
     }
+    if (DOOMED_SPAMMED_PAGES.has(title)) {
+      // Hardcoded removal of spammy pages
+      continue;
+    }
 
     if (href !== `/wiki/${convTitle(title)}`) {
       throw new Error("Unexpected conversion");
