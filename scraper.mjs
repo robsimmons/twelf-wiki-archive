@@ -2,8 +2,7 @@
 
 import { DOMParser } from "https://deno.land/x/deno_dom/deno-dom-wasm.ts";
 import { parse as xmlparse } from "https://deno.land/x/xml/mod.ts";
-import { ALL } from "node:dns";
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { writeFileSync, existsSync, mkdirSync } from "node:fs";
 
 /*
 
@@ -174,7 +173,7 @@ for (const page of dumpJson.mediawiki.page) {
     PAGES_IN_DUMP.add(page.title);
   }
 
-  const segments = page.title.split("/");
+  const segments = page.title.replaceAll(" ", "_").split("/");
   if (segments.length > 2) {
     throw new Error("Can only handle directories one deep");
   } else if (segments.length === 2) {
@@ -188,7 +187,7 @@ for (const page of dumpJson.mediawiki.page) {
     REDIRECTS.set(page.title, page.redirect["@title"]);
   } else if (page.revision.text["@bytes"] > 0) {
     writeFileSync(
-      `archive/${page.title}.mediawiki`,
+      `archive/${page.title.replaceAll(" ", "_")}.mediawiki`,
       page.revision.text["#text"]
     );
   } else {
@@ -204,19 +203,33 @@ for (const [src, dst] of REDIRECTS.entries()) {
   if (!PAGES_IN_DUMP.has(dst)) {
     throw new Error(`orphan redirect ${src} ${dst}`);
   }
-  REDIRECTS_FOR_ASTRO[`/wiki/${convTitle(src)}`] = {
-    status: 302,
-    destination: `wiki/${convTitle(dst)}`,
-  };
 }
 
 writeFileSync(
   "twelfwiki-all-redirects.json",
-  JSON.stringify([...REDIRECTS.entries()], undefined, 2)
+  JSON.stringify(
+    [
+      ...REDIRECTS.entries().map(([src, dst]) => ({
+        src,
+        dst,
+        url: `wiki/${convTitle(src)}`,
+      })),
+    ],
+    undefined,
+    2
+  )
 );
 writeFileSync(
-  "twelfwiki-all-redirects-for-astro.json",
-  JSON.stringify(REDIRECTS_FOR_ASTRO, undefined, 2)
+  "twelfwiki-all-content.json",
+  JSON.stringify(
+    [...PAGES_IN_DUMP].map((title) => ({
+      title,
+      filename: `archive/${title.replaceAll(" ", "_")}.mediawiki`,
+      url: `wiki/${convTitle(title)}`,
+    })),
+    undefined,
+    2
+  )
 );
 
 for (const title of ALL_LISTED_PAGE_TITLES) {
@@ -224,3 +237,10 @@ for (const title of ALL_LISTED_PAGE_TITLES) {
     throw new Error(`Page ${title} not accounted for in data dump`);
   }
 }
+
+/*
+
+Part 4: Anticipate some normalization for names
+
+*/
+const ACCOUNTED_PAGE_TITLES = new Set();
