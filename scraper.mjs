@@ -38,6 +38,7 @@ const DOOMED_SPAMMED_PAGES = new Set([
   "User:Hdeyoung/subord.elf",
   "User talk:Tom7",
   "User:Rsimmons/Testtag",
+  "The Best Fake cigarette Sold in the market",
 ]);
 
 const parser = new DOMParser();
@@ -87,6 +88,11 @@ for (const page of PAGES) {
     }
     if (DOOMED_SPAMMED_PAGES.has(title)) {
       // Hardcoded removal of spammy pages
+      continue;
+    }
+    if (title === "POPL Tutorial/CPS") {
+      // There was both a POPL Tutorial/CPS and POPL Tutorial/cps
+      // The former was an anon contribution, and I can't even
       continue;
     }
 

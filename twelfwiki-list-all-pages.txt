@@ -240,7 +240,6 @@ POPL Tutorial/Basics Answer
 POPL Tutorial/Basics Starter
 POPL Tutorial/Big step, small step
 POPL Tutorial/Big step, small step: Solution
-POPL Tutorial/CPS
 POPL Tutorial/CPS Solution2
 POPL Tutorial/CPS Solutions
 POPL Tutorial/Church Rosser
@@ -369,7 +368,6 @@ Termination analysis
 Termination checking
 Tethered Modal Logic
 Tethered modal logic
-The Best Fake cigarette Sold in the market
 The two Twelfs
 Theorem prover
 Totality assertion
