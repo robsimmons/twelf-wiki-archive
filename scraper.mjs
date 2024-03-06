@@ -195,7 +195,6 @@ for (const page of dumpJson.mediawiki.page) {
   }
 }
 
-const REDIRECTS_FOR_ASTRO = {};
 for (const [src, dst] of REDIRECTS.entries()) {
   if (REDIRECTS.has(dst)) {
     throw new Error(`double redirect ${src} ${dst}`);
@@ -222,7 +221,7 @@ writeFileSync(
 writeFileSync(
   "twelfwiki-all-content.json",
   JSON.stringify(
-    [...PAGES_IN_DUMP].map((title) => ({
+    [...CONTENT_PAGES].map((title) => ({
       title,
       filename: `archive/${title.replaceAll(" ", "_")}.mediawiki`,
       url: `wiki/${convTitle(title)}`,
@@ -237,10 +236,3 @@ for (const title of ALL_LISTED_PAGE_TITLES) {
     throw new Error(`Page ${title} not accounted for in data dump`);
   }
 }
-
-/*
-
-Part 4: Anticipate some normalization for names
-
-*/
-const ACCOUNTED_PAGE_TITLES = new Set();

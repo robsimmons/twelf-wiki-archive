@@ -35,11 +35,6 @@
     "url": "wiki/%25freeze"
   },
   {
-    "title": "%infix",
-    "filename": "archive/%infix.mediawiki",
-    "url": "wiki/%25infix"
-  },
-  {
     "title": "%mode",
     "filename": "archive/%mode.mediawiki",
     "url": "wiki/%25mode"
@@ -48,16 +43,6 @@
     "title": "%name",
     "filename": "archive/%name.mediawiki",
     "url": "wiki/%25name"
-  },
-  {
-    "title": "%postfix",
-    "filename": "archive/%postfix.mediawiki",
-    "url": "wiki/%25postfix"
-  },
-  {
-    "title": "%prefix",
-    "filename": "archive/%prefix.mediawiki",
-    "url": "wiki/%25prefix"
   },
   {
     "title": "%prove",
@@ -160,11 +145,6 @@
     "url": "wiki/Adequacy"
   },
   {
-    "title": "Adequate",
-    "filename": "archive/Adequate.mediawiki",
-    "url": "wiki/Adequate"
-  },
-  {
     "title": "Admissibility of cut",
     "filename": "archive/Admissibility_of_cut.mediawiki",
     "url": "wiki/Admissibility_of_cut"
@@ -185,54 +165,14 @@
     "url": "wiki/Ask_Twelf_Elf"
   },
   {
-    "title": "Ask Twelf Elf:Short Answers",
-    "filename": "archive/Ask_Twelf_Elf:Short_Answers.mediawiki",
-    "url": "wiki/Ask_Twelf_Elf:Short_Answers"
-  },
-  {
     "title": "Ask Twelf Elf:Short answers",
     "filename": "archive/Ask_Twelf_Elf:Short_answers.mediawiki",
     "url": "wiki/Ask_Twelf_Elf:Short_answers"
   },
   {
-    "title": "Auto-freezing",
-    "filename": "archive/Auto-freezing.mediawiki",
-    "url": "wiki/Auto-freezing"
-  },
-  {
-    "title": "Autofreeze",
-    "filename": "archive/Autofreeze.mediawiki",
-    "url": "wiki/Autofreeze"
-  },
-  {
     "title": "Beta-equivalence",
     "filename": "archive/Beta-equivalence.mediawiki",
     "url": "wiki/Beta-equivalence"
-  },
-  {
-    "title": "Beta-equivalent",
-    "filename": "archive/Beta-equivalent.mediawiki",
-    "url": "wiki/Beta-equivalent"
-  },
-  {
-    "title": "Beta-normal",
-    "filename": "archive/Beta-normal.mediawiki",
-    "url": "wiki/Beta-normal"
-  },
-  {
-    "title": "Beta-reduction",
-    "filename": "archive/Beta-reduction.mediawiki",
-    "url": "wiki/Beta-reduction"
-  },
-  {
-    "title": "Beta equivalence",
-    "filename": "archive/Beta_equivalence.mediawiki",
-    "url": "wiki/Beta_equivalence"
-  },
-  {
-    "title": "Beta equivalent",
-    "filename": "archive/Beta_equivalent.mediawiki",
-    "url": "wiki/Beta_equivalent"
   },
   {
     "title": "Bibliography of LF",
@@ -243,16 +183,6 @@
     "title": "Big algebraic solver",
     "filename": "archive/Big_algebraic_solver.mediawiki",
     "url": "wiki/Big_algebraic_solver"
-  },
-  {
-    "title": "Block",
-    "filename": "archive/Block.mediawiki",
-    "url": "wiki/Block"
-  },
-  {
-    "title": "Blocks",
-    "filename": "archive/Blocks.mediawiki",
-    "url": "wiki/Blocks"
   },
   {
     "title": "Bracket abstraction",
@@ -340,11 +270,6 @@
     "url": "wiki/Canonical_form"
   },
   {
-    "title": "Canonical forms",
-    "filename": "archive/Canonical_forms.mediawiki",
-    "url": "wiki/Canonical_forms"
-  },
-  {
     "title": "Canonical forms lemma",
     "filename": "archive/Canonical_forms_lemma.mediawiki",
     "url": "wiki/Canonical_forms_lemma"
@@ -370,11 +295,6 @@
     "url": "wiki/Church-Rosser_(w/_identity_reduction)"
   },
   {
-    "title": "Church-Rosser via Complete Development",
-    "filename": "archive/Church-Rosser_via_Complete_Development.mediawiki",
-    "url": "wiki/Church-Rosser_via_Complete_Development"
-  },
-  {
     "title": "Church-Rosser via complete development",
     "filename": "archive/Church-Rosser_via_complete_development.mediawiki",
     "url": "wiki/Church-Rosser_via_complete_development"
@@ -383,16 +303,6 @@
     "title": "Classical S5",
     "filename": "archive/Classical_S5.mediawiki",
     "url": "wiki/Classical_S5"
-  },
-  {
-    "title": "Compatibility lemma",
-    "filename": "archive/Compatibility_lemma.mediawiki",
-    "url": "wiki/Compatibility_lemma"
-  },
-  {
-    "title": "Compositional bijection",
-    "filename": "archive/Compositional_bijection.mediawiki",
-    "url": "wiki/Compositional_bijection"
   },
   {
     "title": "Computation and Deduction 2009",
@@ -505,21 +415,6 @@
     "url": "wiki/Concrete_representation"
   },
   {
-    "title": "Concrete representations",
-    "filename": "archive/Concrete_representations.mediawiki",
-    "url": "wiki/Concrete_representations"
-  },
-  {
-    "title": "Congruence lemma",
-    "filename": "archive/Congruence_lemma.mediawiki",
-    "url": "wiki/Congruence_lemma"
-  },
-  {
-    "title": "Congruence lemmas",
-    "filename": "archive/Congruence_lemmas.mediawiki",
-    "url": "wiki/Congruence_lemmas"
-  },
-  {
     "title": "Congruence relation",
     "filename": "archive/Congruence_relation.mediawiki",
     "url": "wiki/Congruence_relation"
@@ -528,11 +423,6 @@
     "title": "Constraint domain",
     "filename": "archive/Constraint_domain.mediawiki",
     "url": "wiki/Constraint_domain"
-  },
-  {
-    "title": "Constraint domains",
-    "filename": "archive/Constraint_domains.mediawiki",
-    "url": "wiki/Constraint_domains"
   },
   {
     "title": "Constraint domains and coverage checking",
@@ -560,49 +450,14 @@
     "url": "wiki/Coverage_checking"
   },
   {
-    "title": "Cut",
-    "filename": "archive/Cut.mediawiki",
-    "url": "wiki/Cut"
-  },
-  {
-    "title": "Cut elimination",
-    "filename": "archive/Cut_elimination.mediawiki",
-    "url": "wiki/Cut_elimination"
-  },
-  {
     "title": "Debugging coverage errors",
     "filename": "archive/Debugging_coverage_errors.mediawiki",
     "url": "wiki/Debugging_coverage_errors"
   },
   {
-    "title": "Deductive system",
-    "filename": "archive/Deductive_system.mediawiki",
-    "url": "wiki/Deductive_system"
-  },
-  {
-    "title": "Deductive systems",
-    "filename": "archive/Deductive_systems.mediawiki",
-    "url": "wiki/Deductive_systems"
-  },
-  {
-    "title": "Deep equality",
-    "filename": "archive/Deep_equality.mediawiki",
-    "url": "wiki/Deep_equality"
-  },
-  {
     "title": "Define declaration",
     "filename": "archive/Define_declaration.mediawiki",
     "url": "wiki/Define_declaration"
-  },
-  {
-    "title": "Dense lexicographical orderings",
-    "filename": "archive/Dense_lexicographical_orderings.mediawiki",
-    "url": "wiki/Dense_lexicographical_orderings"
-  },
-  {
-    "title": "Dependent type",
-    "filename": "archive/Dependent_type.mediawiki",
-    "url": "wiki/Dependent_type"
   },
   {
     "title": "Dependent types",
@@ -613,11 +468,6 @@
     "title": "Deterministic declaration",
     "filename": "archive/Deterministic_declaration.mediawiki",
     "url": "wiki/Deterministic_declaration"
-  },
-  {
-    "title": "Developers",
-    "filename": "archive/Developers.mediawiki",
-    "url": "wiki/Developers"
   },
   {
     "title": "Division over the natural numbers",
@@ -640,24 +490,9 @@
     "url": "wiki/Download"
   },
   {
-    "title": "Editing Summer school 2008:Alternate typed arithmetic expressions with sums",
-    "filename": "archive/Editing_Summer_school_2008:Alternate_typed_arithmetic_expressions_with_sums.mediawiki",
-    "url": "wiki/Editing_Summer_school_2008:Alternate_typed_arithmetic_expressions_with_sums"
-  },
-  {
-    "title": "Effectiveness",
-    "filename": "archive/Effectiveness.mediawiki",
-    "url": "wiki/Effectiveness"
-  },
-  {
     "title": "Effectiveness lemma",
     "filename": "archive/Effectiveness_lemma.mediawiki",
     "url": "wiki/Effectiveness_lemma"
-  },
-  {
-    "title": "Effectiveness lemmas",
-    "filename": "archive/Effectiveness_lemmas.mediawiki",
-    "url": "wiki/Effectiveness_lemmas"
   },
   {
     "title": "Equality",
@@ -670,11 +505,6 @@
     "url": "wiki/Equivalence_relation"
   },
   {
-    "title": "Equivalence relations",
-    "filename": "archive/Equivalence_relations.mediawiki",
-    "url": "wiki/Equivalence_relations"
-  },
-  {
     "title": "Error messages",
     "filename": "archive/Error_messages.mediawiki",
     "url": "wiki/Error_messages"
@@ -685,29 +515,9 @@
     "url": "wiki/Eta-equivalence"
   },
   {
-    "title": "Eta-expansion",
-    "filename": "archive/Eta-expansion.mediawiki",
-    "url": "wiki/Eta-expansion"
-  },
-  {
-    "title": "Eta-long",
-    "filename": "archive/Eta-long.mediawiki",
-    "url": "wiki/Eta-long"
-  },
-  {
-    "title": "Eta-long form",
-    "filename": "archive/Eta-long_form.mediawiki",
-    "url": "wiki/Eta-long_form"
-  },
-  {
     "title": "Evaluation contexts",
     "filename": "archive/Evaluation_contexts.mediawiki",
     "url": "wiki/Evaluation_contexts"
-  },
-  {
-    "title": "Exchange",
-    "filename": "archive/Exchange.mediawiki",
-    "url": "wiki/Exchange"
   },
   {
     "title": "Exchange lemma",
@@ -718,21 +528,6 @@
     "title": "Explicit context",
     "filename": "archive/Explicit_context.mediawiki",
     "url": "wiki/Explicit_context"
-  },
-  {
-    "title": "Explicit parameter",
-    "filename": "archive/Explicit_parameter.mediawiki",
-    "url": "wiki/Explicit_parameter"
-  },
-  {
-    "title": "Extrinsic encoding",
-    "filename": "archive/Extrinsic_encoding.mediawiki",
-    "url": "wiki/Extrinsic_encoding"
-  },
-  {
-    "title": "Factoring",
-    "filename": "archive/Factoring.mediawiki",
-    "url": "wiki/Factoring"
   },
   {
     "title": "First-order encodings",
@@ -750,29 +545,9 @@
     "url": "wiki/Focusing"
   },
   {
-    "title": "Freeze",
-    "filename": "archive/Freeze.mediawiki",
-    "url": "wiki/Freeze"
-  },
-  {
-    "title": "Frozen",
-    "filename": "archive/Frozen.mediawiki",
-    "url": "wiki/Frozen"
-  },
-  {
     "title": "Function",
     "filename": "archive/Function.mediawiki",
     "url": "wiki/Function"
-  },
-  {
-    "title": "Function (relation)",
-    "filename": "archive/Function_(relation).mediawiki",
-    "url": "wiki/Function_(relation)"
-  },
-  {
-    "title": "General Description of Twelf",
-    "filename": "archive/General_Description_of_Twelf.mediawiki",
-    "url": "wiki/General_Description_of_Twelf"
   },
   {
     "title": "General description of Twelf",
@@ -795,11 +570,6 @@
     "url": "wiki/HOAS_nat_bijection"
   },
   {
-    "title": "Hauptsatz",
-    "filename": "archive/Hauptsatz.mediawiki",
-    "url": "wiki/Hauptsatz"
-  },
-  {
     "title": "Hereditary substitution",
     "filename": "archive/Hereditary_substitution.mediawiki",
     "url": "wiki/Hereditary_substitution"
@@ -820,24 +590,9 @@
     "url": "wiki/Hereditary_substitution_with_a_zipper"
   },
   {
-    "title": "Hereditary substitution with zippers",
-    "filename": "archive/Hereditary_substitution_with_zippers.mediawiki",
-    "url": "wiki/Hereditary_substitution_with_zippers"
-  },
-  {
-    "title": "Heterogeneous lists",
-    "filename": "archive/Heterogeneous_lists.mediawiki",
-    "url": "wiki/Heterogeneous_lists"
-  },
-  {
     "title": "Higher-order abstract syntax",
     "filename": "archive/Higher-order_abstract_syntax.mediawiki",
     "url": "wiki/Higher-order_abstract_syntax"
-  },
-  {
-    "title": "Higher-order judgement",
-    "filename": "archive/Higher-order_judgement.mediawiki",
-    "url": "wiki/Higher-order_judgement"
   },
   {
     "title": "Higher-order judgements",
@@ -845,54 +600,14 @@
     "url": "wiki/Higher-order_judgements"
   },
   {
-    "title": "Higher-order judgment",
-    "filename": "archive/Higher-order_judgment.mediawiki",
-    "url": "wiki/Higher-order_judgment"
-  },
-  {
-    "title": "Higher-order judgments",
-    "filename": "archive/Higher-order_judgments.mediawiki",
-    "url": "wiki/Higher-order_judgments"
-  },
-  {
-    "title": "Holes in metatheorems",
-    "filename": "archive/Holes_in_metatheorems.mediawiki",
-    "url": "wiki/Holes_in_metatheorems"
-  },
-  {
-    "title": "Homogeneous lists",
-    "filename": "archive/Homogeneous_lists.mediawiki",
-    "url": "wiki/Homogeneous_lists"
-  },
-  {
-    "title": "Hypothetical judgement",
-    "filename": "archive/Hypothetical_judgement.mediawiki",
-    "url": "wiki/Hypothetical_judgement"
-  },
-  {
     "title": "Hypothetical judgment",
     "filename": "archive/Hypothetical_judgment.mediawiki",
     "url": "wiki/Hypothetical_judgment"
   },
   {
-    "title": "Identity",
-    "filename": "archive/Identity.mediawiki",
-    "url": "wiki/Identity"
-  },
-  {
     "title": "Implicit and explicit parameters",
     "filename": "archive/Implicit_and_explicit_parameters.mediawiki",
     "url": "wiki/Implicit_and_explicit_parameters"
-  },
-  {
-    "title": "Implicit parameter",
-    "filename": "archive/Implicit_parameter.mediawiki",
-    "url": "wiki/Implicit_parameter"
-  },
-  {
-    "title": "Implicit parameters",
-    "filename": "archive/Implicit_parameters.mediawiki",
-    "url": "wiki/Implicit_parameters"
   },
   {
     "title": "Incremental metatheorem development",
@@ -910,19 +625,9 @@
     "url": "wiki/Indexed_lists"
   },
   {
-    "title": "Input coverage",
-    "filename": "archive/Input_coverage.mediawiki",
-    "url": "wiki/Input_coverage"
-  },
-  {
     "title": "Intrinsic and extrinsic encodings",
     "filename": "archive/Intrinsic_and_extrinsic_encodings.mediawiki",
     "url": "wiki/Intrinsic_and_extrinsic_encodings"
-  },
-  {
-    "title": "Intrinsic encoding",
-    "filename": "archive/Intrinsic_encoding.mediawiki",
-    "url": "wiki/Intrinsic_encoding"
   },
   {
     "title": "Introductions to Twelf",
@@ -940,24 +645,9 @@
     "url": "wiki/Iterated_inductive_definitions_and_defunctionalization"
   },
   {
-    "title": "Judgement",
-    "filename": "archive/Judgement.mediawiki",
-    "url": "wiki/Judgement"
-  },
-  {
     "title": "Judgment",
     "filename": "archive/Judgment.mediawiki",
     "url": "wiki/Judgment"
-  },
-  {
-    "title": "Judgments",
-    "filename": "archive/Judgments.mediawiki",
-    "url": "wiki/Judgments"
-  },
-  {
-    "title": "Judgments as types",
-    "filename": "archive/Judgments_as_types.mediawiki",
-    "url": "wiki/Judgments_as_types"
   },
   {
     "title": "LF",
@@ -965,19 +655,9 @@
     "url": "wiki/LF"
   },
   {
-    "title": "Language with references",
-    "filename": "archive/Language_with_references.mediawiki",
-    "url": "wiki/Language_with_references"
-  },
-  {
     "title": "Lax logic",
     "filename": "archive/Lax_logic.mediawiki",
     "url": "wiki/Lax_logic"
-  },
-  {
-    "title": "Let*",
-    "filename": "archive/Let*.mediawiki",
-    "url": "wiki/Let*"
   },
   {
     "title": "Letrec",
@@ -1005,11 +685,6 @@
     "url": "wiki/Lists"
   },
   {
-    "title": "Logic program",
-    "filename": "archive/Logic_program.mediawiki",
-    "url": "wiki/Logic_program"
-  },
-  {
     "title": "Logic programming",
     "filename": "archive/Logic_programming.mediawiki",
     "url": "wiki/Logic_programming"
@@ -1025,16 +700,6 @@
     "url": "wiki/Main_Page"
   },
   {
-    "title": "Main page",
-    "filename": "archive/Main_page.mediawiki",
-    "url": "wiki/Main_page"
-  },
-  {
-    "title": "Manipulating proof witnesses",
-    "filename": "archive/Manipulating_proof_witnesses.mediawiki",
-    "url": "wiki/Manipulating_proof_witnesses"
-  },
-  {
     "title": "Manipulating proof witnesses as inputs",
     "filename": "archive/Manipulating_proof_witnesses_as_inputs.mediawiki",
     "url": "wiki/Manipulating_proof_witnesses_as_inputs"
@@ -1045,11 +710,6 @@
     "url": "wiki/MediaWiki_formatting_description"
   },
   {
-    "title": "Meta-language",
-    "filename": "archive/Meta-language.mediawiki",
-    "url": "wiki/Meta-language"
-  },
-  {
     "title": "Meta-logic",
     "filename": "archive/Meta-logic.mediawiki",
     "url": "wiki/Meta-logic"
@@ -1058,11 +718,6 @@
     "title": "Metatheorem",
     "filename": "archive/Metatheorem.mediawiki",
     "url": "wiki/Metatheorem"
-  },
-  {
-    "title": "Metatheorems",
-    "filename": "archive/Metatheorems.mediawiki",
-    "url": "wiki/Metatheorems"
   },
   {
     "title": "MinMLToMinHaskell",
@@ -1078,16 +733,6 @@
     "title": "Modally Propositional Logic",
     "filename": "archive/Modally_Propositional_Logic.mediawiki",
     "url": "wiki/Modally_Propositional_Logic"
-  },
-  {
-    "title": "Mode",
-    "filename": "archive/Mode.mediawiki",
-    "url": "wiki/Mode"
-  },
-  {
-    "title": "Mode checking",
-    "filename": "archive/Mode_checking.mediawiki",
-    "url": "wiki/Mode_checking"
   },
   {
     "title": "Modes of use",
@@ -1110,11 +755,6 @@
     "url": "wiki/Naming_conventions"
   },
   {
-    "title": "Natural number",
-    "filename": "archive/Natural_number.mediawiki",
-    "url": "wiki/Natural_number"
-  },
-  {
     "title": "Natural numbers",
     "filename": "archive/Natural_numbers.mediawiki",
     "url": "wiki/Natural_numbers"
@@ -1130,34 +770,14 @@
     "url": "wiki/Negation_as_failure"
   },
   {
-    "title": "Numeric termination metric",
-    "filename": "archive/Numeric_termination_metric.mediawiki",
-    "url": "wiki/Numeric_termination_metric"
-  },
-  {
     "title": "Numeric termination metrics",
     "filename": "archive/Numeric_termination_metrics.mediawiki",
     "url": "wiki/Numeric_termination_metrics"
   },
   {
-    "title": "Object language",
-    "filename": "archive/Object_language.mediawiki",
-    "url": "wiki/Object_language"
-  },
-  {
     "title": "Object logic",
     "filename": "archive/Object_logic.mediawiki",
     "url": "wiki/Object_logic"
-  },
-  {
-    "title": "Object logic syntax",
-    "filename": "archive/Object_logic_syntax.mediawiki",
-    "url": "wiki/Object_logic_syntax"
-  },
-  {
-    "title": "Output coverage",
-    "filename": "archive/Output_coverage.mediawiki",
-    "url": "wiki/Output_coverage"
   },
   {
     "title": "Output factoring",
@@ -1225,11 +845,6 @@
     "url": "wiki/POPL_Tutorial/CPS_Solutions"
   },
   {
-    "title": "POPL Tutorial/Church Rosser",
-    "filename": "archive/POPL_Tutorial/Church_Rosser.mediawiki",
-    "url": "wiki/POPL_Tutorial/Church_Rosser"
-  },
-  {
     "title": "POPL Tutorial/Church Rosser (Problem)",
     "filename": "archive/POPL_Tutorial/Church_Rosser_(Problem).mediawiki",
     "url": "wiki/POPL_Tutorial/Church_Rosser_(Problem)"
@@ -1250,11 +865,6 @@
     "url": "wiki/POPL_Tutorial/Combinators_Answer"
   },
   {
-    "title": "POPL Tutorial/Combinators Starter",
-    "filename": "archive/POPL_Tutorial/Combinators_Starter.mediawiki",
-    "url": "wiki/POPL_Tutorial/Combinators_Starter"
-  },
-  {
     "title": "POPL Tutorial/Combinators Support",
     "filename": "archive/POPL_Tutorial/Combinators_Support.mediawiki",
     "url": "wiki/POPL_Tutorial/Combinators_Support"
@@ -1273,11 +883,6 @@
     "title": "POPL Tutorial/Control machine",
     "filename": "archive/POPL_Tutorial/Control_machine.mediawiki",
     "url": "wiki/POPL_Tutorial/Control_machine"
-  },
-  {
-    "title": "POPL Tutorial/Cost Semantics",
-    "filename": "archive/POPL_Tutorial/Cost_Semantics.mediawiki",
-    "url": "wiki/POPL_Tutorial/Cost_Semantics"
   },
   {
     "title": "POPL Tutorial/Cost semantics",
@@ -1310,11 +915,6 @@
     "url": "wiki/POPL_Tutorial/MinML_Answer"
   },
   {
-    "title": "POPL Tutorial/MinML Encoding",
-    "filename": "archive/POPL_Tutorial/MinML_Encoding.mediawiki",
-    "url": "wiki/POPL_Tutorial/MinML_Encoding"
-  },
-  {
     "title": "POPL Tutorial/MinML Preservation Theorem",
     "filename": "archive/POPL_Tutorial/MinML_Preservation_Theorem.mediawiki",
     "url": "wiki/POPL_Tutorial/MinML_Preservation_Theorem"
@@ -1323,11 +923,6 @@
     "title": "POPL Tutorial/MinML Preservation Theorem: Solution",
     "filename": "archive/POPL_Tutorial/MinML_Preservation_Theorem:_Solution.mediawiki",
     "url": "wiki/POPL_Tutorial/MinML_Preservation_Theorem:_Solution"
-  },
-  {
-    "title": "POPL Tutorial/MinML Preservation Theorem Answer",
-    "filename": "archive/POPL_Tutorial/MinML_Preservation_Theorem_Answer.mediawiki",
-    "url": "wiki/POPL_Tutorial/MinML_Preservation_Theorem_Answer"
   },
   {
     "title": "POPL Tutorial/MinML Starter",
@@ -1345,11 +940,6 @@
     "url": "wiki/POPL_Tutorial/Nat"
   },
   {
-    "title": "POPL Tutorial/Nat Starter",
-    "filename": "archive/POPL_Tutorial/Nat_Starter.mediawiki",
-    "url": "wiki/POPL_Tutorial/Nat_Starter"
-  },
-  {
     "title": "POPL Tutorial/New language",
     "filename": "archive/POPL_Tutorial/New_language.mediawiki",
     "url": "wiki/POPL_Tutorial/New_language"
@@ -1358,11 +948,6 @@
     "title": "POPL Tutorial/Next",
     "filename": "archive/POPL_Tutorial/Next.mediawiki",
     "url": "wiki/POPL_Tutorial/Next"
-  },
-  {
-    "title": "POPL Tutorial/Pattern Matching",
-    "filename": "archive/POPL_Tutorial/Pattern_Matching.mediawiki",
-    "url": "wiki/POPL_Tutorial/Pattern_Matching"
   },
   {
     "title": "POPL Tutorial/Pattern matching",
@@ -1393,11 +978,6 @@
     "title": "POPL Tutorial/Sequent vs Natural Deduction: Solution",
     "filename": "archive/POPL_Tutorial/Sequent_vs_Natural_Deduction:_Solution.mediawiki",
     "url": "wiki/POPL_Tutorial/Sequent_vs_Natural_Deduction:_Solution"
-  },
-  {
-    "title": "POPL Tutorial/Session2",
-    "filename": "archive/POPL_Tutorial/Session2.mediawiki",
-    "url": "wiki/POPL_Tutorial/Session2"
   },
   {
     "title": "POPL Tutorial/Session 2",
@@ -1495,11 +1075,6 @@
     "url": "wiki/POPL_Tutorial/cps-truefalse"
   },
   {
-    "title": "Pattern Matching (Case Study)",
-    "filename": "archive/Pattern_Matching_(Case_Study).mediawiki",
-    "url": "wiki/Pattern_Matching_(Case_Study)"
-  },
-  {
     "title": "Pattern matching",
     "filename": "archive/Pattern_matching.mediawiki",
     "url": "wiki/Pattern_matching"
@@ -1510,49 +1085,14 @@
     "url": "wiki/Polarized_PCF"
   },
   {
-    "title": "Polarized PCF Better",
-    "filename": "archive/Polarized_PCF_Better.mediawiki",
-    "url": "wiki/Polarized_PCF_Better"
-  },
-  {
     "title": "Programming language theory with Twelf",
     "filename": "archive/Programming_language_theory_with_Twelf.mediawiki",
     "url": "wiki/Programming_language_theory_with_Twelf"
   },
   {
-    "title": "Progress",
-    "filename": "archive/Progress.mediawiki",
-    "url": "wiki/Progress"
-  },
-  {
-    "title": "Proofs by reductio ad absurdum",
-    "filename": "archive/Proofs_by_reductio_ad_absurdum.mediawiki",
-    "url": "wiki/Proofs_by_reductio_ad_absurdum"
-  },
-  {
     "title": "Proving metatheorems with Twelf",
     "filename": "archive/Proving_metatheorems_with_Twelf.mediawiki",
     "url": "wiki/Proving_metatheorems_with_Twelf"
-  },
-  {
-    "title": "Quick introduction",
-    "filename": "archive/Quick_introduction.mediawiki",
-    "url": "wiki/Quick_introduction"
-  },
-  {
-    "title": "Real-world binding structures",
-    "filename": "archive/Real-world_binding_structures.mediawiki",
-    "url": "wiki/Real-world_binding_structures"
-  },
-  {
-    "title": "Real World Binding Structures",
-    "filename": "archive/Real_World_Binding_Structures.mediawiki",
-    "url": "wiki/Real_World_Binding_Structures"
-  },
-  {
-    "title": "Reasoning from equality",
-    "filename": "archive/Reasoning_from_equality.mediawiki",
-    "url": "wiki/Reasoning_from_equality"
   },
   {
     "title": "Reasoning from false",
@@ -1563,16 +1103,6 @@
     "title": "Reformulating languages to use hypothetical judgements",
     "filename": "archive/Reformulating_languages_to_use_hypothetical_judgements.mediawiki",
     "url": "wiki/Reformulating_languages_to_use_hypothetical_judgements"
-  },
-  {
-    "title": "Regular world",
-    "filename": "archive/Regular_world.mediawiki",
-    "url": "wiki/Regular_world"
-  },
-  {
-    "title": "Regular worlds",
-    "filename": "archive/Regular_worlds.mediawiki",
-    "url": "wiki/Regular_worlds"
   },
   {
     "title": "Relation",
@@ -1595,29 +1125,9 @@
     "url": "wiki/Respects_lemma"
   },
   {
-    "title": "Respects lemmas",
-    "filename": "archive/Respects_lemmas.mediawiki",
-    "url": "wiki/Respects_lemmas"
-  },
-  {
-    "title": "Revision history",
-    "filename": "archive/Revision_history.mediawiki",
-    "url": "wiki/Revision_history"
-  },
-  {
     "title": "Sets and supersets",
     "filename": "archive/Sets_and_supersets.mediawiki",
     "url": "wiki/Sets_and_supersets"
-  },
-  {
-    "title": "Shallow equality",
-    "filename": "archive/Shallow_equality.mediawiki",
-    "url": "wiki/Shallow_equality"
-  },
-  {
-    "title": "Signature",
-    "filename": "archive/Signature.mediawiki",
-    "url": "wiki/Signature"
   },
   {
     "title": "Signature checking",
@@ -1640,19 +1150,9 @@
     "url": "wiki/Simply-typed_lambda_calculus"
   },
   {
-    "title": "Software",
-    "filename": "archive/Software.mediawiki",
-    "url": "wiki/Software"
-  },
-  {
     "title": "Strengthening",
     "filename": "archive/Strengthening.mediawiki",
     "url": "wiki/Strengthening"
-  },
-  {
-    "title": "Structural metric",
-    "filename": "archive/Structural_metric.mediawiki",
-    "url": "wiki/Structural_metric"
   },
   {
     "title": "Structural metrics",
@@ -1660,29 +1160,9 @@
     "url": "wiki/Structural_metrics"
   },
   {
-    "title": "Structural termination metrics",
-    "filename": "archive/Structural_termination_metrics.mediawiki",
-    "url": "wiki/Structural_termination_metrics"
-  },
-  {
-    "title": "Style guide",
-    "filename": "archive/Style_guide.mediawiki",
-    "url": "wiki/Style_guide"
-  },
-  {
     "title": "Subordination",
     "filename": "archive/Subordination.mediawiki",
     "url": "wiki/Subordination"
-  },
-  {
-    "title": "Substitution",
-    "filename": "archive/Substitution.mediawiki",
-    "url": "wiki/Substitution"
-  },
-  {
-    "title": "Substitution Lemma",
-    "filename": "archive/Substitution_Lemma.mediawiki",
-    "url": "wiki/Substitution_Lemma"
   },
   {
     "title": "Substitution lemma",
@@ -1723,11 +1203,6 @@
     "title": "Summer school 2008:Arithmetic expressions with let-binding (hypothetical evaluation)",
     "filename": "archive/Summer_school_2008:Arithmetic_expressions_with_let-binding_(hypothetical_evaluation).mediawiki",
     "url": "wiki/Summer_school_2008:Arithmetic_expressions_with_let-binding_(hypothetical_evaluation)"
-  },
-  {
-    "title": "Summer school 2008:Arithmetic expressions with pairs (value)",
-    "filename": "archive/Summer_school_2008:Arithmetic_expressions_with_pairs_(value).mediawiki",
-    "url": "wiki/Summer_school_2008:Arithmetic_expressions_with_pairs_(value)"
   },
   {
     "title": "Summer school 2008:Encoding of System F",
@@ -1805,11 +1280,6 @@
     "url": "wiki/Summer_school_2008:Typed_arithmetic_expressions_with_sums_2"
   },
   {
-    "title": "Summer school 2008: Exercise: Typed arithmetic expressions with pairs",
-    "filename": "archive/Summer_school_2008:_Exercise:_Typed_arithmetic_expressions_with_pairs.mediawiki",
-    "url": "wiki/Summer_school_2008:_Exercise:_Typed_arithmetic_expressions_with_pairs"
-  },
-  {
     "title": "Syntax (Object logic)",
     "filename": "archive/Syntax_(Object_logic).mediawiki",
     "url": "wiki/Syntax_(Object_logic)"
@@ -1835,21 +1305,6 @@
     "url": "wiki/Tactical_theorem_proving"
   },
   {
-    "title": "Termination analysis",
-    "filename": "archive/Termination_analysis.mediawiki",
-    "url": "wiki/Termination_analysis"
-  },
-  {
-    "title": "Termination checking",
-    "filename": "archive/Termination_checking.mediawiki",
-    "url": "wiki/Termination_checking"
-  },
-  {
-    "title": "Tethered Modal Logic",
-    "filename": "archive/Tethered_Modal_Logic.mediawiki",
-    "url": "wiki/Tethered_Modal_Logic"
-  },
-  {
     "title": "Tethered modal logic",
     "filename": "archive/Tethered_modal_logic.mediawiki",
     "url": "wiki/Tethered_modal_logic"
@@ -1858,11 +1313,6 @@
     "title": "The Best Fake cigarette Sold in the market",
     "filename": "archive/The_Best_Fake_cigarette_Sold_in_the_market.mediawiki",
     "url": "wiki/The_Best_Fake_cigarette_Sold_in_the_market"
-  },
-  {
-    "title": "The two Twelfs",
-    "filename": "archive/The_two_Twelfs.mediawiki",
-    "url": "wiki/The_two_Twelfs"
   },
   {
     "title": "Theorem prover",
@@ -1875,29 +1325,9 @@
     "url": "wiki/Totality_assertion"
   },
   {
-    "title": "Totality assertions",
-    "filename": "archive/Totality_assertions.mediawiki",
-    "url": "wiki/Totality_assertions"
-  },
-  {
-    "title": "Try Twelf now",
-    "filename": "archive/Try_Twelf_now.mediawiki",
-    "url": "wiki/Try_Twelf_now"
-  },
-  {
-    "title": "Tutorial",
-    "filename": "archive/Tutorial.mediawiki",
-    "url": "wiki/Tutorial"
-  },
-  {
     "title": "Tutorials",
     "filename": "archive/Tutorials.mediawiki",
     "url": "wiki/Tutorials"
-  },
-  {
-    "title": "Twelf-list",
-    "filename": "archive/Twelf-list.mediawiki",
-    "url": "wiki/Twelf-list"
   },
   {
     "title": "TwelfTag",
@@ -1913,16 +1343,6 @@
     "title": "Twelf Live",
     "filename": "archive/Twelf_Live.mediawiki",
     "url": "wiki/Twelf_Live"
-  },
-  {
-    "title": "Twelf glossary",
-    "filename": "archive/Twelf_glossary.mediawiki",
-    "url": "wiki/Twelf_glossary"
-  },
-  {
-    "title": "Twelf naming conventions",
-    "filename": "archive/Twelf_naming_conventions.mediawiki",
-    "url": "wiki/Twelf_naming_conventions"
   },
   {
     "title": "Twelf signature",
@@ -1945,11 +1365,6 @@
     "url": "wiki/Twelf_without_Emacs"
   },
   {
-    "title": "Type families",
-    "filename": "archive/Type_families.mediawiki",
-    "url": "wiki/Type_families"
-  },
-  {
     "title": "Type family",
     "filename": "archive/Type_family.mediawiki",
     "url": "wiki/Type_family"
@@ -1960,11 +1375,6 @@
     "url": "wiki/Typed_combinators_soundness_and_completeness"
   },
   {
-    "title": "Unary numbers",
-    "filename": "archive/Unary_numbers.mediawiki",
-    "url": "wiki/Unary_numbers"
-  },
-  {
     "title": "Unification",
     "filename": "archive/Unification.mediawiki",
     "url": "wiki/Unification"
@@ -1973,21 +1383,6 @@
     "title": "Uniqueness lemma",
     "filename": "archive/Uniqueness_lemma.mediawiki",
     "url": "wiki/Uniqueness_lemma"
-  },
-  {
-    "title": "Uniqueness lemmas",
-    "filename": "archive/Uniqueness_lemmas.mediawiki",
-    "url": "wiki/Uniqueness_lemmas"
-  },
-  {
-    "title": "Universal quantification",
-    "filename": "archive/Universal_quantification.mediawiki",
-    "url": "wiki/Universal_quantification"
-  },
-  {
-    "title": "Universally quantified",
-    "filename": "archive/Universally_quantified.mediawiki",
-    "url": "wiki/Universally_quantified"
   },
   {
     "title": "Unsafe mode",
@@ -2003,11 +1398,6 @@
     "title": "User-defined constraint domain",
     "filename": "archive/User-defined_constraint_domain.mediawiki",
     "url": "wiki/User-defined_constraint_domain"
-  },
-  {
-    "title": "Using a metric",
-    "filename": "archive/Using_a_metric.mediawiki",
-    "url": "wiki/Using_a_metric"
   },
   {
     "title": "Using nat-less with %reduces",
@@ -2035,11 +1425,6 @@
     "url": "wiki/Weak_focusing"
   },
   {
-    "title": "Weakening",
-    "filename": "archive/Weakening.mediawiki",
-    "url": "wiki/Weakening"
-  },
-  {
     "title": "Weakening lemma",
     "filename": "archive/Weakening_lemma.mediawiki",
     "url": "wiki/Weakening_lemma"
@@ -2050,21 +1435,6 @@
     "url": "wiki/What%27s_new"
   },
   {
-    "title": "What's new?",
-    "filename": "archive/What's_new?.mediawiki",
-    "url": "wiki/What%27s_new%3F"
-  },
-  {
-    "title": "Working with higher-order judgements",
-    "filename": "archive/Working_with_higher-order_judgements.mediawiki",
-    "url": "wiki/Working_with_higher-order_judgements"
-  },
-  {
-    "title": "World",
-    "filename": "archive/World.mediawiki",
-    "url": "wiki/World"
-  },
-  {
     "title": "World subsumption",
     "filename": "archive/World_subsumption.mediawiki",
     "url": "wiki/World_subsumption"
@@ -2073,11 +1443,6 @@
     "title": "Zermelo Frankel",
     "filename": "archive/Zermelo_Frankel.mediawiki",
     "url": "wiki/Zermelo_Frankel"
-  },
-  {
-    "title": "Talk:% define",
-    "filename": "archive/Talk:%_define.mediawiki",
-    "url": "wiki/Talk:%25_define"
   },
   {
     "title": "Talk:%covers",
@@ -2160,11 +1525,6 @@
     "url": "wiki/Talk:Classical_S5"
   },
   {
-    "title": "Talk:Congruence lemma",
-    "filename": "archive/Talk:Congruence_lemma.mediawiki",
-    "url": "wiki/Talk:Congruence_lemma"
-  },
-  {
     "title": "Talk:Constraint domains and coverage checking",
     "filename": "archive/Talk:Constraint_domains_and_coverage_checking.mediawiki",
     "url": "wiki/Talk:Constraint_domains_and_coverage_checking"
@@ -2215,34 +1575,14 @@
     "url": "wiki/Talk:Exchange_lemma"
   },
   {
-    "title": "Talk:General Description of Twelf",
-    "filename": "archive/Talk:General_Description_of_Twelf.mediawiki",
-    "url": "wiki/Talk:General_Description_of_Twelf"
-  },
-  {
     "title": "Talk:General description of Twelf",
     "filename": "archive/Talk:General_description_of_Twelf.mediawiki",
     "url": "wiki/Talk:General_description_of_Twelf"
   },
   {
-    "title": "Talk:Get started",
-    "filename": "archive/Talk:Get_started.mediawiki",
-    "url": "wiki/Talk:Get_started"
-  },
-  {
     "title": "Talk:Glossary",
     "filename": "archive/Talk:Glossary.mediawiki",
     "url": "wiki/Talk:Glossary"
-  },
-  {
-    "title": "Talk:Heterogeneous lists",
-    "filename": "archive/Talk:Heterogeneous_lists.mediawiki",
-    "url": "wiki/Talk:Heterogeneous_lists"
-  },
-  {
-    "title": "Talk:Holes in metatheorems",
-    "filename": "archive/Talk:Holes_in_metatheorems.mediawiki",
-    "url": "wiki/Talk:Holes_in_metatheorems"
   },
   {
     "title": "Talk:Implicit and explicit parameters",
@@ -2258,11 +1598,6 @@
     "title": "Talk:Introductions to Twelf",
     "filename": "archive/Talk:Introductions_to_Twelf.mediawiki",
     "url": "wiki/Talk:Introductions_to_Twelf"
-  },
-  {
-    "title": "Talk:Language with references",
-    "filename": "archive/Talk:Language_with_references.mediawiki",
-    "url": "wiki/Talk:Language_with_references"
   },
   {
     "title": "Talk:Letrec",
@@ -2335,11 +1670,6 @@
     "url": "wiki/Talk:Proving_metatheorems_with_Twelf"
   },
   {
-    "title": "Talk:Quick introduction",
-    "filename": "archive/Talk:Quick_introduction.mediawiki",
-    "url": "wiki/Talk:Quick_introduction"
-  },
-  {
     "title": "Talk:Reformulating languages to use hypothetical judgements",
     "filename": "archive/Talk:Reformulating_languages_to_use_hypothetical_judgements.mediawiki",
     "url": "wiki/Talk:Reformulating_languages_to_use_hypothetical_judgements"
@@ -2348,11 +1678,6 @@
     "title": "Talk:Respects lemma",
     "filename": "archive/Talk:Respects_lemma.mediawiki",
     "url": "wiki/Talk:Respects_lemma"
-  },
-  {
-    "title": "Talk:Software",
-    "filename": "archive/Talk:Software.mediawiki",
-    "url": "wiki/Talk:Software"
   },
   {
     "title": "Talk:Strengthening",
@@ -2365,19 +1690,9 @@
     "url": "wiki/Talk:Substitution_lemma"
   },
   {
-    "title": "Talk:The two Twelfs",
-    "filename": "archive/Talk:The_two_Twelfs.mediawiki",
-    "url": "wiki/Talk:The_two_Twelfs"
-  },
-  {
     "title": "Talk:Totality assertion",
     "filename": "archive/Talk:Totality_assertion.mediawiki",
     "url": "wiki/Talk:Totality_assertion"
-  },
-  {
-    "title": "Talk:Try Twelf now",
-    "filename": "archive/Talk:Try_Twelf_now.mediawiki",
-    "url": "wiki/Talk:Try_Twelf_now"
   },
   {
     "title": "Talk:Tutorials",
@@ -2410,11 +1725,6 @@
     "url": "wiki/Talk:User%27s_Guide"
   },
   {
-    "title": "Talk:UserGuide",
-    "filename": "archive/Talk:UserGuide.mediawiki",
-    "url": "wiki/Talk:UserGuide"
-  },
-  {
     "title": "Talk:Using nat-less with %reduces",
     "filename": "archive/Talk:Using_nat-less_with_%reduces.mediawiki",
     "url": "wiki/Talk:Using_nat-less_with_%25reduces"
@@ -2423,11 +1733,6 @@
     "title": "Talk:What's new",
     "filename": "archive/Talk:What's_new.mediawiki",
     "url": "wiki/Talk:What%27s_new"
-  },
-  {
-    "title": "Talk:Working with higher-order judgements",
-    "filename": "archive/Talk:Working_with_higher-order_judgements.mediawiki",
-    "url": "wiki/Talk:Working_with_higher-order_judgements"
   },
   {
     "title": "User:Boyland",
@@ -2525,24 +1830,9 @@
     "url": "wiki/User:Rsimmons/Homework_7:_Proofs_In_Twelf"
   },
   {
-    "title": "User:Rsimmons/Lecture20",
-    "filename": "archive/User:Rsimmons/Lecture20.mediawiki",
-    "url": "wiki/User:Rsimmons/Lecture20"
-  },
-  {
     "title": "User:Rsimmons/Lecture 20: Logic Programming",
     "filename": "archive/User:Rsimmons/Lecture_20:_Logic_Programming.mediawiki",
     "url": "wiki/User:Rsimmons/Lecture_20:_Logic_Programming"
-  },
-  {
-    "title": "User:Rsimmons/Lecture 22: Proofs In Twelf",
-    "filename": "archive/User:Rsimmons/Lecture_22:_Proofs_In_Twelf.mediawiki",
-    "url": "wiki/User:Rsimmons/Lecture_22:_Proofs_In_Twelf"
-  },
-  {
-    "title": "User:Rsimmons/Lecture 23: Proofs In Twelf",
-    "filename": "archive/User:Rsimmons/Lecture_23:_Proofs_In_Twelf.mediawiki",
-    "url": "wiki/User:Rsimmons/Lecture_23:_Proofs_In_Twelf"
   },
   {
     "title": "User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf",
@@ -2710,16 +2000,6 @@
     "url": "wiki/The_Twelf_Project:AJALF"
   },
   {
-    "title": "The Twelf Project:About",
-    "filename": "archive/The_Twelf_Project:About.mediawiki",
-    "url": "wiki/The_Twelf_Project:About"
-  },
-  {
-    "title": "The Twelf Project:Administrators",
-    "filename": "archive/The_Twelf_Project:Administrators.mediawiki",
-    "url": "wiki/The_Twelf_Project:Administrators"
-  },
-  {
     "title": "The Twelf Project:BY-NC",
     "filename": "archive/The_Twelf_Project:BY-NC.mediawiki",
     "url": "wiki/The_Twelf_Project:BY-NC"
@@ -2728,11 +2008,6 @@
     "title": "The Twelf Project:BY-SA",
     "filename": "archive/The_Twelf_Project:BY-SA.mediawiki",
     "url": "wiki/The_Twelf_Project:BY-SA"
-  },
-  {
-    "title": "The Twelf Project:Bureaucrats",
-    "filename": "archive/The_Twelf_Project:Bureaucrats.mediawiki",
-    "url": "wiki/The_Twelf_Project:Bureaucrats"
   },
   {
     "title": "The Twelf Project:Contributing",
@@ -2750,19 +2025,9 @@
     "url": "wiki/The_Twelf_Project:Copyright"
   },
   {
-    "title": "The Twelf Project:Copyrights",
-    "filename": "archive/The_Twelf_Project:Copyrights.mediawiki",
-    "url": "wiki/The_Twelf_Project:Copyrights"
-  },
-  {
     "title": "The Twelf Project:GFDL",
     "filename": "archive/The_Twelf_Project:GFDL.mediawiki",
     "url": "wiki/The_Twelf_Project:GFDL"
-  },
-  {
-    "title": "The Twelf Project:GNU Free Documentation License",
-    "filename": "archive/The_Twelf_Project:GNU_Free_Documentation_License.mediawiki",
-    "url": "wiki/The_Twelf_Project:GNU_Free_Documentation_License"
   },
   {
     "title": "The Twelf Project:GPL",
@@ -2783,11 +2048,6 @@
     "title": "The Twelf Project:Literate Twelf/Sample Page",
     "filename": "archive/The_Twelf_Project:Literate_Twelf/Sample_Page.mediawiki",
     "url": "wiki/The_Twelf_Project:Literate_Twelf/Sample_Page"
-  },
-  {
-    "title": "The Twelf Project:MIT",
-    "filename": "archive/The_Twelf_Project:MIT.mediawiki",
-    "url": "wiki/The_Twelf_Project:MIT"
   },
   {
     "title": "The Twelf Project:MIT license",
@@ -2813,11 +2073,6 @@
     "title": "The Twelf Project:Subversion transition",
     "filename": "archive/The_Twelf_Project:Subversion_transition.mediawiki",
     "url": "wiki/The_Twelf_Project:Subversion_transition"
-  },
-  {
-    "title": "The Twelf Project:Syntax Highlighting",
-    "filename": "archive/The_Twelf_Project:Syntax_Highlighting.mediawiki",
-    "url": "wiki/The_Twelf_Project:Syntax_Highlighting"
   },
   {
     "title": "The Twelf Project:Syntax highlighting",
@@ -2875,9 +2130,64 @@
     "url": "wiki/The_Twelf_Project_talk:TwelfTag"
   },
   {
+    "title": "File:Demtech.png",
+    "filename": "archive/File:Demtech.png.mediawiki",
+    "url": "wiki/File:Demtech.png"
+  },
+  {
     "title": "File:Disk download.gif",
     "filename": "archive/File:Disk_download.gif.mediawiki",
     "url": "wiki/File:Disk_download.gif"
+  },
+  {
+    "title": "File:POPL Tutorial-IBM.jpg",
+    "filename": "archive/File:POPL_Tutorial-IBM.jpg.mediawiki",
+    "url": "wiki/File:POPL_Tutorial-IBM.jpg"
+  },
+  {
+    "title": "File:POPL Tutorial-cmu.gif",
+    "filename": "archive/File:POPL_Tutorial-cmu.gif.mediawiki",
+    "url": "wiki/File:POPL_Tutorial-cmu.gif"
+  },
+  {
+    "title": "File:POPL Tutorial-docomo-logo.gif",
+    "filename": "archive/File:POPL_Tutorial-docomo-logo.gif.mediawiki",
+    "url": "wiki/File:POPL_Tutorial-docomo-logo.gif"
+  },
+  {
+    "title": "File:POPL Tutorial-google-logo.gif",
+    "filename": "archive/File:POPL_Tutorial-google-logo.gif.mediawiki",
+    "url": "wiki/File:POPL_Tutorial-google-logo.gif"
+  },
+  {
+    "title": "File:POPL Tutorial-intel.jpg",
+    "filename": "archive/File:POPL_Tutorial-intel.jpg.mediawiki",
+    "url": "wiki/File:POPL_Tutorial-intel.jpg"
+  },
+  {
+    "title": "File:POPL Tutorial-mozilla.jpg",
+    "filename": "archive/File:POPL_Tutorial-mozilla.jpg.mediawiki",
+    "url": "wiki/File:POPL_Tutorial-mozilla.jpg"
+  },
+  {
+    "title": "File:POPL Tutorial-msr.jpg",
+    "filename": "archive/File:POPL_Tutorial-msr.jpg.mediawiki",
+    "url": "wiki/File:POPL_Tutorial-msr.jpg"
+  },
+  {
+    "title": "File:POPL Tutorial-scslogo.gif",
+    "filename": "archive/File:POPL_Tutorial-scslogo.gif.mediawiki",
+    "url": "wiki/File:POPL_Tutorial-scslogo.gif"
+  },
+  {
+    "title": "File:Searchgraph-found.svg",
+    "filename": "archive/File:Searchgraph-found.svg.mediawiki",
+    "url": "wiki/File:Searchgraph-found.svg"
+  },
+  {
+    "title": "File:Searchgraph.svg",
+    "filename": "archive/File:Searchgraph.svg.mediawiki",
+    "url": "wiki/File:Searchgraph.svg"
   },
   {
     "title": "File:ServerOK.png",
@@ -2908,6 +2218,11 @@
     "title": "File:TWELFLIVE-3.png",
     "filename": "archive/File:TWELFLIVE-3.png.mediawiki",
     "url": "wiki/File:TWELFLIVE-3.png"
+  },
+  {
+    "title": "File:Test.svg",
+    "filename": "archive/File:Test.svg.mediawiki",
+    "url": "wiki/File:Test.svg"
   },
   {
     "title": "File:Tom Twelfelf2.jpg",
@@ -3065,11 +2380,6 @@
     "url": "wiki/Template:Forall"
   },
   {
-    "title": "Template:Front-Blog Updates",
-    "filename": "archive/Template:Front-Blog_Updates.mediawiki",
-    "url": "wiki/Template:Front-Blog_Updates"
-  },
-  {
     "title": "Template:Front-Getting Started",
     "filename": "archive/Template:Front-Getting_Started.mediawiki",
     "url": "wiki/Template:Front-Getting_Started"
@@ -3123,11 +2433,6 @@
     "title": "Template:Lolli",
     "filename": "archive/Template:Lolli.mediawiki",
     "url": "wiki/Template:Lolli"
-  },
-  {
-    "title": "Template:Multimap",
-    "filename": "archive/Template:Multimap.mediawiki",
-    "url": "wiki/Template:Multimap"
   },
   {
     "title": "Template:Needs",
@@ -3185,11 +2490,6 @@
     "url": "wiki/Template:Summer_school_2008"
   },
   {
-    "title": "Template:The Twelf Project/Blog Updates",
-    "filename": "archive/Template:The_Twelf_Project/Blog_Updates.mediawiki",
-    "url": "wiki/Template:The_Twelf_Project/Blog_Updates"
-  },
-  {
     "title": "Template:The Twelf Project/Getting Started",
     "filename": "archive/Template:The_Twelf_Project/Getting_Started.mediawiki",
     "url": "wiki/Template:The_Twelf_Project/Getting_Started"
@@ -3198,21 +2498,6 @@
     "title": "Template:The Twelf Project/Introduction",
     "filename": "archive/Template:The_Twelf_Project/Introduction.mediawiki",
     "url": "wiki/Template:The_Twelf_Project/Introduction"
-  },
-  {
-    "title": "Template:The Twelf Project/Learning Twelf",
-    "filename": "archive/Template:The_Twelf_Project/Learning_Twelf.mediawiki",
-    "url": "wiki/Template:The_Twelf_Project/Learning_Twelf"
-  },
-  {
-    "title": "Template:The Twelf Project/Release History",
-    "filename": "archive/Template:The_Twelf_Project/Release_History.mediawiki",
-    "url": "wiki/Template:The_Twelf_Project/Release_History"
-  },
-  {
-    "title": "Template:The Twelf Project/What's new",
-    "filename": "archive/Template:The_Twelf_Project/What's_new.mediawiki",
-    "url": "wiki/Template:The_Twelf_Project/What%27s_new"
   },
   {
     "title": "Template:Tl",
@@ -3255,11 +2540,6 @@
     "url": "wiki/Template_talk:Click-inline"
   },
   {
-    "title": "Template talk:Front-Blog Updates",
-    "filename": "archive/Template_talk:Front-Blog_Updates.mediawiki",
-    "url": "wiki/Template_talk:Front-Blog_Updates"
-  },
-  {
     "title": "Template talk:Guide",
     "filename": "archive/Template_talk:Guide.mediawiki",
     "url": "wiki/Template_talk:Guide"
@@ -3268,11 +2548,6 @@
     "title": "Template talk:The Twelf Project/Introduction",
     "filename": "archive/Template_talk:The_Twelf_Project/Introduction.mediawiki",
     "url": "wiki/Template_talk:The_Twelf_Project/Introduction"
-  },
-  {
-    "title": "Help:Contents",
-    "filename": "archive/Help:Contents.mediawiki",
-    "url": "wiki/Help:Contents"
   },
   {
     "title": "Category:Case studies",
@@ -3333,11 +2608,6 @@
     "title": "Proving metatheorems:Full LF",
     "filename": "archive/Proving_metatheorems:Full_LF.mediawiki",
     "url": "wiki/Proving_metatheorems:Full_LF"
-  },
-  {
-    "title": "Proving metatheorems:Natural numbers:Answers to exercises",
-    "filename": "archive/Proving_metatheorems:Natural_numbers:Answers_to_exercises.mediawiki",
-    "url": "wiki/Proving_metatheorems:Natural_numbers:Answers_to_exercises"
   },
   {
     "title": "Proving metatheorems:Natural numbers: Answers to exercises",
