@@ -1,0 +1,3432 @@
+[
+  {
+    "title": "%.",
+    "filename": "archive/%..mediawiki",
+    "url": "wiki/%25."
+  },
+  {
+    "title": "%assert",
+    "filename": "archive/%assert.mediawiki",
+    "url": "wiki/%25assert"
+  },
+  {
+    "title": "%block",
+    "filename": "archive/%block.mediawiki",
+    "url": "wiki/%25block"
+  },
+  {
+    "title": "%clause",
+    "filename": "archive/%clause.mediawiki",
+    "url": "wiki/%25clause"
+  },
+  {
+    "title": "%covers",
+    "filename": "archive/%covers.mediawiki",
+    "url": "wiki/%25covers"
+  },
+  {
+    "title": "%establish",
+    "filename": "archive/%establish.mediawiki",
+    "url": "wiki/%25establish"
+  },
+  {
+    "title": "%freeze",
+    "filename": "archive/%freeze.mediawiki",
+    "url": "wiki/%25freeze"
+  },
+  {
+    "title": "%infix",
+    "filename": "archive/%infix.mediawiki",
+    "url": "wiki/%25infix"
+  },
+  {
+    "title": "%mode",
+    "filename": "archive/%mode.mediawiki",
+    "url": "wiki/%25mode"
+  },
+  {
+    "title": "%name",
+    "filename": "archive/%name.mediawiki",
+    "url": "wiki/%25name"
+  },
+  {
+    "title": "%postfix",
+    "filename": "archive/%postfix.mediawiki",
+    "url": "wiki/%25postfix"
+  },
+  {
+    "title": "%prefix",
+    "filename": "archive/%prefix.mediawiki",
+    "url": "wiki/%25prefix"
+  },
+  {
+    "title": "%prove",
+    "filename": "archive/%prove.mediawiki",
+    "url": "wiki/%25prove"
+  },
+  {
+    "title": "%query",
+    "filename": "archive/%query.mediawiki",
+    "url": "wiki/%25query"
+  },
+  {
+    "title": "%querytabled",
+    "filename": "archive/%querytabled.mediawiki",
+    "url": "wiki/%25querytabled"
+  },
+  {
+    "title": "%reduces",
+    "filename": "archive/%reduces.mediawiki",
+    "url": "wiki/%25reduces"
+  },
+  {
+    "title": "%solve",
+    "filename": "archive/%solve.mediawiki",
+    "url": "wiki/%25solve"
+  },
+  {
+    "title": "%subord",
+    "filename": "archive/%subord.mediawiki",
+    "url": "wiki/%25subord"
+  },
+  {
+    "title": "%tabled",
+    "filename": "archive/%tabled.mediawiki",
+    "url": "wiki/%25tabled"
+  },
+  {
+    "title": "%terminates",
+    "filename": "archive/%terminates.mediawiki",
+    "url": "wiki/%25terminates"
+  },
+  {
+    "title": "%thaw",
+    "filename": "archive/%thaw.mediawiki",
+    "url": "wiki/%25thaw"
+  },
+  {
+    "title": "%theorem",
+    "filename": "archive/%theorem.mediawiki",
+    "url": "wiki/%25theorem"
+  },
+  {
+    "title": "%total",
+    "filename": "archive/%total.mediawiki",
+    "url": "wiki/%25total"
+  },
+  {
+    "title": "%trustme",
+    "filename": "archive/%trustme.mediawiki",
+    "url": "wiki/%25trustme"
+  },
+  {
+    "title": "%unique",
+    "filename": "archive/%unique.mediawiki",
+    "url": "wiki/%25unique"
+  },
+  {
+    "title": "%use",
+    "filename": "archive/%use.mediawiki",
+    "url": "wiki/%25use"
+  },
+  {
+    "title": "%worlds",
+    "filename": "archive/%worlds.mediawiki",
+    "url": "wiki/%25worlds"
+  },
+  {
+    "title": "Abbrev declaration",
+    "filename": "archive/Abbrev_declaration.mediawiki",
+    "url": "wiki/Abbrev_declaration"
+  },
+  {
+    "title": "About The Twelf Project",
+    "filename": "archive/About_The_Twelf_Project.mediawiki",
+    "url": "wiki/About_The_Twelf_Project"
+  },
+  {
+    "title": "Abstract syntax",
+    "filename": "archive/Abstract_syntax.mediawiki",
+    "url": "wiki/Abstract_syntax"
+  },
+  {
+    "title": "Ad hoc binding structures",
+    "filename": "archive/Ad_hoc_binding_structures.mediawiki",
+    "url": "wiki/Ad_hoc_binding_structures"
+  },
+  {
+    "title": "Adequacy",
+    "filename": "archive/Adequacy.mediawiki",
+    "url": "wiki/Adequacy"
+  },
+  {
+    "title": "Adequate",
+    "filename": "archive/Adequate.mediawiki",
+    "url": "wiki/Adequate"
+  },
+  {
+    "title": "Admissibility of cut",
+    "filename": "archive/Admissibility_of_cut.mediawiki",
+    "url": "wiki/Admissibility_of_cut"
+  },
+  {
+    "title": "Alpha-equivalence",
+    "filename": "archive/Alpha-equivalence.mediawiki",
+    "url": "wiki/Alpha-equivalence"
+  },
+  {
+    "title": "Ambiguous hyperkind",
+    "filename": "archive/Ambiguous_hyperkind.mediawiki",
+    "url": "wiki/Ambiguous_hyperkind"
+  },
+  {
+    "title": "Ask Twelf Elf",
+    "filename": "archive/Ask_Twelf_Elf.mediawiki",
+    "url": "wiki/Ask_Twelf_Elf"
+  },
+  {
+    "title": "Ask Twelf Elf:Short Answers",
+    "filename": "archive/Ask_Twelf_Elf:Short_Answers.mediawiki",
+    "url": "wiki/Ask_Twelf_Elf:Short_Answers"
+  },
+  {
+    "title": "Ask Twelf Elf:Short answers",
+    "filename": "archive/Ask_Twelf_Elf:Short_answers.mediawiki",
+    "url": "wiki/Ask_Twelf_Elf:Short_answers"
+  },
+  {
+    "title": "Auto-freezing",
+    "filename": "archive/Auto-freezing.mediawiki",
+    "url": "wiki/Auto-freezing"
+  },
+  {
+    "title": "Autofreeze",
+    "filename": "archive/Autofreeze.mediawiki",
+    "url": "wiki/Autofreeze"
+  },
+  {
+    "title": "Beta-equivalence",
+    "filename": "archive/Beta-equivalence.mediawiki",
+    "url": "wiki/Beta-equivalence"
+  },
+  {
+    "title": "Beta-equivalent",
+    "filename": "archive/Beta-equivalent.mediawiki",
+    "url": "wiki/Beta-equivalent"
+  },
+  {
+    "title": "Beta-normal",
+    "filename": "archive/Beta-normal.mediawiki",
+    "url": "wiki/Beta-normal"
+  },
+  {
+    "title": "Beta-reduction",
+    "filename": "archive/Beta-reduction.mediawiki",
+    "url": "wiki/Beta-reduction"
+  },
+  {
+    "title": "Beta equivalence",
+    "filename": "archive/Beta_equivalence.mediawiki",
+    "url": "wiki/Beta_equivalence"
+  },
+  {
+    "title": "Beta equivalent",
+    "filename": "archive/Beta_equivalent.mediawiki",
+    "url": "wiki/Beta_equivalent"
+  },
+  {
+    "title": "Bibliography of LF",
+    "filename": "archive/Bibliography_of_LF.mediawiki",
+    "url": "wiki/Bibliography_of_LF"
+  },
+  {
+    "title": "Big algebraic solver",
+    "filename": "archive/Big_algebraic_solver.mediawiki",
+    "url": "wiki/Big_algebraic_solver"
+  },
+  {
+    "title": "Block",
+    "filename": "archive/Block.mediawiki",
+    "url": "wiki/Block"
+  },
+  {
+    "title": "Blocks",
+    "filename": "archive/Blocks.mediawiki",
+    "url": "wiki/Blocks"
+  },
+  {
+    "title": "Bracket abstraction",
+    "filename": "archive/Bracket_abstraction.mediawiki",
+    "url": "wiki/Bracket_abstraction"
+  },
+  {
+    "title": "CADE Tutorial",
+    "filename": "archive/CADE_Tutorial.mediawiki",
+    "url": "wiki/CADE_Tutorial"
+  },
+  {
+    "title": "CADE Tutorial/Basic error messages",
+    "filename": "archive/CADE_Tutorial/Basic_error_messages.mediawiki",
+    "url": "wiki/CADE_Tutorial/Basic_error_messages"
+  },
+  {
+    "title": "CADE Tutorial/Basics",
+    "filename": "archive/CADE_Tutorial/Basics.mediawiki",
+    "url": "wiki/CADE_Tutorial/Basics"
+  },
+  {
+    "title": "CADE Tutorial/Basics Answer",
+    "filename": "archive/CADE_Tutorial/Basics_Answer.mediawiki",
+    "url": "wiki/CADE_Tutorial/Basics_Answer"
+  },
+  {
+    "title": "CADE Tutorial/Combinators",
+    "filename": "archive/CADE_Tutorial/Combinators.mediawiki",
+    "url": "wiki/CADE_Tutorial/Combinators"
+  },
+  {
+    "title": "CADE Tutorial/Combinators Answer",
+    "filename": "archive/CADE_Tutorial/Combinators_Answer.mediawiki",
+    "url": "wiki/CADE_Tutorial/Combinators_Answer"
+  },
+  {
+    "title": "CADE Tutorial/Combinators Support",
+    "filename": "archive/CADE_Tutorial/Combinators_Support.mediawiki",
+    "url": "wiki/CADE_Tutorial/Combinators_Support"
+  },
+  {
+    "title": "CADE Tutorial/MinML",
+    "filename": "archive/CADE_Tutorial/MinML.mediawiki",
+    "url": "wiki/CADE_Tutorial/MinML"
+  },
+  {
+    "title": "CADE Tutorial/MinML Answer",
+    "filename": "archive/CADE_Tutorial/MinML_Answer.mediawiki",
+    "url": "wiki/CADE_Tutorial/MinML_Answer"
+  },
+  {
+    "title": "CADE Tutorial/MinML encoding",
+    "filename": "archive/CADE_Tutorial/MinML_encoding.mediawiki",
+    "url": "wiki/CADE_Tutorial/MinML_encoding"
+  },
+  {
+    "title": "CADE Tutorial/Next",
+    "filename": "archive/CADE_Tutorial/Next.mediawiki",
+    "url": "wiki/CADE_Tutorial/Next"
+  },
+  {
+    "title": "CPS conversion",
+    "filename": "archive/CPS_conversion.mediawiki",
+    "url": "wiki/CPS_conversion"
+  },
+  {
+    "title": "C machine and focusing",
+    "filename": "archive/C_machine_and_focusing.mediawiki",
+    "url": "wiki/C_machine_and_focusing"
+  },
+  {
+    "title": "C machine and focusing (composition in machine state)",
+    "filename": "archive/C_machine_and_focusing_(composition_in_machine_state).mediawiki",
+    "url": "wiki/C_machine_and_focusing_(composition_in_machine_state)"
+  },
+  {
+    "title": "C machine and focusing (internalized compositon)",
+    "filename": "archive/C_machine_and_focusing_(internalized_compositon).mediawiki",
+    "url": "wiki/C_machine_and_focusing_(internalized_compositon)"
+  },
+  {
+    "title": "Canonical form",
+    "filename": "archive/Canonical_form.mediawiki",
+    "url": "wiki/Canonical_form"
+  },
+  {
+    "title": "Canonical forms",
+    "filename": "archive/Canonical_forms.mediawiki",
+    "url": "wiki/Canonical_forms"
+  },
+  {
+    "title": "Canonical forms lemma",
+    "filename": "archive/Canonical_forms_lemma.mediawiki",
+    "url": "wiki/Canonical_forms_lemma"
+  },
+  {
+    "title": "Case studies",
+    "filename": "archive/Case_studies.mediawiki",
+    "url": "wiki/Case_studies"
+  },
+  {
+    "title": "Catch-all case",
+    "filename": "archive/Catch-all_case.mediawiki",
+    "url": "wiki/Catch-all_case"
+  },
+  {
+    "title": "Church-Rosser (w/ catch-all case)",
+    "filename": "archive/Church-Rosser_(w/_catch-all_case).mediawiki",
+    "url": "wiki/Church-Rosser_(w/_catch-all_case)"
+  },
+  {
+    "title": "Church-Rosser (w/ identity reduction)",
+    "filename": "archive/Church-Rosser_(w/_identity_reduction).mediawiki",
+    "url": "wiki/Church-Rosser_(w/_identity_reduction)"
+  },
+  {
+    "title": "Church-Rosser via Complete Development",
+    "filename": "archive/Church-Rosser_via_Complete_Development.mediawiki",
+    "url": "wiki/Church-Rosser_via_Complete_Development"
+  },
+  {
+    "title": "Church-Rosser via complete development",
+    "filename": "archive/Church-Rosser_via_complete_development.mediawiki",
+    "url": "wiki/Church-Rosser_via_complete_development"
+  },
+  {
+    "title": "Classical S5",
+    "filename": "archive/Classical_S5.mediawiki",
+    "url": "wiki/Classical_S5"
+  },
+  {
+    "title": "Compatibility lemma",
+    "filename": "archive/Compatibility_lemma.mediawiki",
+    "url": "wiki/Compatibility_lemma"
+  },
+  {
+    "title": "Compositional bijection",
+    "filename": "archive/Compositional_bijection.mediawiki",
+    "url": "wiki/Compositional_bijection"
+  },
+  {
+    "title": "Computation and Deduction 2009",
+    "filename": "archive/Computation_and_Deduction_2009.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090203",
+    "filename": "archive/Computation_and_Deduction_2009/20090203.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090203"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090204",
+    "filename": "archive/Computation_and_Deduction_2009/20090204.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090204"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090209",
+    "filename": "archive/Computation_and_Deduction_2009/20090209.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090209"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090223",
+    "filename": "archive/Computation_and_Deduction_2009/20090223.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090223"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090304",
+    "filename": "archive/Computation_and_Deduction_2009/20090304.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090304"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090304-support",
+    "filename": "archive/Computation_and_Deduction_2009/20090304-support.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090304-support"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090316",
+    "filename": "archive/Computation_and_Deduction_2009/20090316.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090316"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090318",
+    "filename": "archive/Computation_and_Deduction_2009/20090318.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090318"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090325",
+    "filename": "archive/Computation_and_Deduction_2009/20090325.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090325"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090330",
+    "filename": "archive/Computation_and_Deduction_2009/20090330.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090330"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090401",
+    "filename": "archive/Computation_and_Deduction_2009/20090401.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090401"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090406",
+    "filename": "archive/Computation_and_Deduction_2009/20090406.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090406"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090408",
+    "filename": "archive/Computation_and_Deduction_2009/20090408.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090408"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090413",
+    "filename": "archive/Computation_and_Deduction_2009/20090413.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090413"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090415",
+    "filename": "archive/Computation_and_Deduction_2009/20090415.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090415"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090420",
+    "filename": "archive/Computation_and_Deduction_2009/20090420.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090420"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090422",
+    "filename": "archive/Computation_and_Deduction_2009/20090422.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090422"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090427",
+    "filename": "archive/Computation_and_Deduction_2009/20090427.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090427"
+  },
+  {
+    "title": "Computation and Deduction 2009/20090429",
+    "filename": "archive/Computation_and_Deduction_2009/20090429.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/20090429"
+  },
+  {
+    "title": "Computation and Deduction 2009/Test Page 1",
+    "filename": "archive/Computation_and_Deduction_2009/Test_Page_1.mediawiki",
+    "url": "wiki/Computation_and_Deduction_2009/Test_Page_1"
+  },
+  {
+    "title": "Concrete representation",
+    "filename": "archive/Concrete_representation.mediawiki",
+    "url": "wiki/Concrete_representation"
+  },
+  {
+    "title": "Concrete representations",
+    "filename": "archive/Concrete_representations.mediawiki",
+    "url": "wiki/Concrete_representations"
+  },
+  {
+    "title": "Congruence lemma",
+    "filename": "archive/Congruence_lemma.mediawiki",
+    "url": "wiki/Congruence_lemma"
+  },
+  {
+    "title": "Congruence lemmas",
+    "filename": "archive/Congruence_lemmas.mediawiki",
+    "url": "wiki/Congruence_lemmas"
+  },
+  {
+    "title": "Congruence relation",
+    "filename": "archive/Congruence_relation.mediawiki",
+    "url": "wiki/Congruence_relation"
+  },
+  {
+    "title": "Constraint domain",
+    "filename": "archive/Constraint_domain.mediawiki",
+    "url": "wiki/Constraint_domain"
+  },
+  {
+    "title": "Constraint domains",
+    "filename": "archive/Constraint_domains.mediawiki",
+    "url": "wiki/Constraint_domains"
+  },
+  {
+    "title": "Constraint domains and coverage checking",
+    "filename": "archive/Constraint_domains_and_coverage_checking.mediawiki",
+    "url": "wiki/Constraint_domains_and_coverage_checking"
+  },
+  {
+    "title": "ConstructiveSemantics",
+    "filename": "archive/ConstructiveSemantics.mediawiki",
+    "url": "wiki/ConstructiveSemantics"
+  },
+  {
+    "title": "Converting between implicit and explicit parameters",
+    "filename": "archive/Converting_between_implicit_and_explicit_parameters.mediawiki",
+    "url": "wiki/Converting_between_implicit_and_explicit_parameters"
+  },
+  {
+    "title": "Correctness of mergesort",
+    "filename": "archive/Correctness_of_mergesort.mediawiki",
+    "url": "wiki/Correctness_of_mergesort"
+  },
+  {
+    "title": "Coverage checking",
+    "filename": "archive/Coverage_checking.mediawiki",
+    "url": "wiki/Coverage_checking"
+  },
+  {
+    "title": "Cut",
+    "filename": "archive/Cut.mediawiki",
+    "url": "wiki/Cut"
+  },
+  {
+    "title": "Cut elimination",
+    "filename": "archive/Cut_elimination.mediawiki",
+    "url": "wiki/Cut_elimination"
+  },
+  {
+    "title": "Debugging coverage errors",
+    "filename": "archive/Debugging_coverage_errors.mediawiki",
+    "url": "wiki/Debugging_coverage_errors"
+  },
+  {
+    "title": "Deductive system",
+    "filename": "archive/Deductive_system.mediawiki",
+    "url": "wiki/Deductive_system"
+  },
+  {
+    "title": "Deductive systems",
+    "filename": "archive/Deductive_systems.mediawiki",
+    "url": "wiki/Deductive_systems"
+  },
+  {
+    "title": "Deep equality",
+    "filename": "archive/Deep_equality.mediawiki",
+    "url": "wiki/Deep_equality"
+  },
+  {
+    "title": "Define declaration",
+    "filename": "archive/Define_declaration.mediawiki",
+    "url": "wiki/Define_declaration"
+  },
+  {
+    "title": "Dense lexicographical orderings",
+    "filename": "archive/Dense_lexicographical_orderings.mediawiki",
+    "url": "wiki/Dense_lexicographical_orderings"
+  },
+  {
+    "title": "Dependent type",
+    "filename": "archive/Dependent_type.mediawiki",
+    "url": "wiki/Dependent_type"
+  },
+  {
+    "title": "Dependent types",
+    "filename": "archive/Dependent_types.mediawiki",
+    "url": "wiki/Dependent_types"
+  },
+  {
+    "title": "Deterministic declaration",
+    "filename": "archive/Deterministic_declaration.mediawiki",
+    "url": "wiki/Deterministic_declaration"
+  },
+  {
+    "title": "Developers",
+    "filename": "archive/Developers.mediawiki",
+    "url": "wiki/Developers"
+  },
+  {
+    "title": "Division over the natural numbers",
+    "filename": "archive/Division_over_the_natural_numbers.mediawiki",
+    "url": "wiki/Division_over_the_natural_numbers"
+  },
+  {
+    "title": "Documentation",
+    "filename": "archive/Documentation.mediawiki",
+    "url": "wiki/Documentation"
+  },
+  {
+    "title": "Double-negation translation",
+    "filename": "archive/Double-negation_translation.mediawiki",
+    "url": "wiki/Double-negation_translation"
+  },
+  {
+    "title": "Download",
+    "filename": "archive/Download.mediawiki",
+    "url": "wiki/Download"
+  },
+  {
+    "title": "Editing Summer school 2008:Alternate typed arithmetic expressions with sums",
+    "filename": "archive/Editing_Summer_school_2008:Alternate_typed_arithmetic_expressions_with_sums.mediawiki",
+    "url": "wiki/Editing_Summer_school_2008:Alternate_typed_arithmetic_expressions_with_sums"
+  },
+  {
+    "title": "Effectiveness",
+    "filename": "archive/Effectiveness.mediawiki",
+    "url": "wiki/Effectiveness"
+  },
+  {
+    "title": "Effectiveness lemma",
+    "filename": "archive/Effectiveness_lemma.mediawiki",
+    "url": "wiki/Effectiveness_lemma"
+  },
+  {
+    "title": "Effectiveness lemmas",
+    "filename": "archive/Effectiveness_lemmas.mediawiki",
+    "url": "wiki/Effectiveness_lemmas"
+  },
+  {
+    "title": "Equality",
+    "filename": "archive/Equality.mediawiki",
+    "url": "wiki/Equality"
+  },
+  {
+    "title": "Equivalence relation",
+    "filename": "archive/Equivalence_relation.mediawiki",
+    "url": "wiki/Equivalence_relation"
+  },
+  {
+    "title": "Equivalence relations",
+    "filename": "archive/Equivalence_relations.mediawiki",
+    "url": "wiki/Equivalence_relations"
+  },
+  {
+    "title": "Error messages",
+    "filename": "archive/Error_messages.mediawiki",
+    "url": "wiki/Error_messages"
+  },
+  {
+    "title": "Eta-equivalence",
+    "filename": "archive/Eta-equivalence.mediawiki",
+    "url": "wiki/Eta-equivalence"
+  },
+  {
+    "title": "Eta-expansion",
+    "filename": "archive/Eta-expansion.mediawiki",
+    "url": "wiki/Eta-expansion"
+  },
+  {
+    "title": "Eta-long",
+    "filename": "archive/Eta-long.mediawiki",
+    "url": "wiki/Eta-long"
+  },
+  {
+    "title": "Eta-long form",
+    "filename": "archive/Eta-long_form.mediawiki",
+    "url": "wiki/Eta-long_form"
+  },
+  {
+    "title": "Evaluation contexts",
+    "filename": "archive/Evaluation_contexts.mediawiki",
+    "url": "wiki/Evaluation_contexts"
+  },
+  {
+    "title": "Exchange",
+    "filename": "archive/Exchange.mediawiki",
+    "url": "wiki/Exchange"
+  },
+  {
+    "title": "Exchange lemma",
+    "filename": "archive/Exchange_lemma.mediawiki",
+    "url": "wiki/Exchange_lemma"
+  },
+  {
+    "title": "Explicit context",
+    "filename": "archive/Explicit_context.mediawiki",
+    "url": "wiki/Explicit_context"
+  },
+  {
+    "title": "Explicit parameter",
+    "filename": "archive/Explicit_parameter.mediawiki",
+    "url": "wiki/Explicit_parameter"
+  },
+  {
+    "title": "Extrinsic encoding",
+    "filename": "archive/Extrinsic_encoding.mediawiki",
+    "url": "wiki/Extrinsic_encoding"
+  },
+  {
+    "title": "Factoring",
+    "filename": "archive/Factoring.mediawiki",
+    "url": "wiki/Factoring"
+  },
+  {
+    "title": "First-order encodings",
+    "filename": "archive/First-order_encodings.mediawiki",
+    "url": "wiki/First-order_encodings"
+  },
+  {
+    "title": "Fixity declaration",
+    "filename": "archive/Fixity_declaration.mediawiki",
+    "url": "wiki/Fixity_declaration"
+  },
+  {
+    "title": "Focusing",
+    "filename": "archive/Focusing.mediawiki",
+    "url": "wiki/Focusing"
+  },
+  {
+    "title": "Freeze",
+    "filename": "archive/Freeze.mediawiki",
+    "url": "wiki/Freeze"
+  },
+  {
+    "title": "Frozen",
+    "filename": "archive/Frozen.mediawiki",
+    "url": "wiki/Frozen"
+  },
+  {
+    "title": "Function",
+    "filename": "archive/Function.mediawiki",
+    "url": "wiki/Function"
+  },
+  {
+    "title": "Function (relation)",
+    "filename": "archive/Function_(relation).mediawiki",
+    "url": "wiki/Function_(relation)"
+  },
+  {
+    "title": "General Description of Twelf",
+    "filename": "archive/General_Description_of_Twelf.mediawiki",
+    "url": "wiki/General_Description_of_Twelf"
+  },
+  {
+    "title": "General description of Twelf",
+    "filename": "archive/General_description_of_Twelf.mediawiki",
+    "url": "wiki/General_description_of_Twelf"
+  },
+  {
+    "title": "Glossary",
+    "filename": "archive/Glossary.mediawiki",
+    "url": "wiki/Glossary"
+  },
+  {
+    "title": "Ground",
+    "filename": "archive/Ground.mediawiki",
+    "url": "wiki/Ground"
+  },
+  {
+    "title": "HOAS nat bijection",
+    "filename": "archive/HOAS_nat_bijection.mediawiki",
+    "url": "wiki/HOAS_nat_bijection"
+  },
+  {
+    "title": "Hauptsatz",
+    "filename": "archive/Hauptsatz.mediawiki",
+    "url": "wiki/Hauptsatz"
+  },
+  {
+    "title": "Hereditary substitution",
+    "filename": "archive/Hereditary_substitution.mediawiki",
+    "url": "wiki/Hereditary_substitution"
+  },
+  {
+    "title": "Hereditary substitution for the STLC",
+    "filename": "archive/Hereditary_substitution_for_the_STLC.mediawiki",
+    "url": "wiki/Hereditary_substitution_for_the_STLC"
+  },
+  {
+    "title": "Hereditary substitution for the STLC (part 2)",
+    "filename": "archive/Hereditary_substitution_for_the_STLC_(part_2).mediawiki",
+    "url": "wiki/Hereditary_substitution_for_the_STLC_(part_2)"
+  },
+  {
+    "title": "Hereditary substitution with a zipper",
+    "filename": "archive/Hereditary_substitution_with_a_zipper.mediawiki",
+    "url": "wiki/Hereditary_substitution_with_a_zipper"
+  },
+  {
+    "title": "Hereditary substitution with zippers",
+    "filename": "archive/Hereditary_substitution_with_zippers.mediawiki",
+    "url": "wiki/Hereditary_substitution_with_zippers"
+  },
+  {
+    "title": "Heterogeneous lists",
+    "filename": "archive/Heterogeneous_lists.mediawiki",
+    "url": "wiki/Heterogeneous_lists"
+  },
+  {
+    "title": "Higher-order abstract syntax",
+    "filename": "archive/Higher-order_abstract_syntax.mediawiki",
+    "url": "wiki/Higher-order_abstract_syntax"
+  },
+  {
+    "title": "Higher-order judgement",
+    "filename": "archive/Higher-order_judgement.mediawiki",
+    "url": "wiki/Higher-order_judgement"
+  },
+  {
+    "title": "Higher-order judgements",
+    "filename": "archive/Higher-order_judgements.mediawiki",
+    "url": "wiki/Higher-order_judgements"
+  },
+  {
+    "title": "Higher-order judgment",
+    "filename": "archive/Higher-order_judgment.mediawiki",
+    "url": "wiki/Higher-order_judgment"
+  },
+  {
+    "title": "Higher-order judgments",
+    "filename": "archive/Higher-order_judgments.mediawiki",
+    "url": "wiki/Higher-order_judgments"
+  },
+  {
+    "title": "Holes in metatheorems",
+    "filename": "archive/Holes_in_metatheorems.mediawiki",
+    "url": "wiki/Holes_in_metatheorems"
+  },
+  {
+    "title": "Homogeneous lists",
+    "filename": "archive/Homogeneous_lists.mediawiki",
+    "url": "wiki/Homogeneous_lists"
+  },
+  {
+    "title": "Hypothetical judgement",
+    "filename": "archive/Hypothetical_judgement.mediawiki",
+    "url": "wiki/Hypothetical_judgement"
+  },
+  {
+    "title": "Hypothetical judgment",
+    "filename": "archive/Hypothetical_judgment.mediawiki",
+    "url": "wiki/Hypothetical_judgment"
+  },
+  {
+    "title": "Identity",
+    "filename": "archive/Identity.mediawiki",
+    "url": "wiki/Identity"
+  },
+  {
+    "title": "Implicit and explicit parameters",
+    "filename": "archive/Implicit_and_explicit_parameters.mediawiki",
+    "url": "wiki/Implicit_and_explicit_parameters"
+  },
+  {
+    "title": "Implicit parameter",
+    "filename": "archive/Implicit_parameter.mediawiki",
+    "url": "wiki/Implicit_parameter"
+  },
+  {
+    "title": "Implicit parameters",
+    "filename": "archive/Implicit_parameters.mediawiki",
+    "url": "wiki/Implicit_parameters"
+  },
+  {
+    "title": "Incremental metatheorem development",
+    "filename": "archive/Incremental_metatheorem_development.mediawiki",
+    "url": "wiki/Incremental_metatheorem_development"
+  },
+  {
+    "title": "Indexed HOAS nat bijection",
+    "filename": "archive/Indexed_HOAS_nat_bijection.mediawiki",
+    "url": "wiki/Indexed_HOAS_nat_bijection"
+  },
+  {
+    "title": "Indexed lists",
+    "filename": "archive/Indexed_lists.mediawiki",
+    "url": "wiki/Indexed_lists"
+  },
+  {
+    "title": "Input coverage",
+    "filename": "archive/Input_coverage.mediawiki",
+    "url": "wiki/Input_coverage"
+  },
+  {
+    "title": "Intrinsic and extrinsic encodings",
+    "filename": "archive/Intrinsic_and_extrinsic_encodings.mediawiki",
+    "url": "wiki/Intrinsic_and_extrinsic_encodings"
+  },
+  {
+    "title": "Intrinsic encoding",
+    "filename": "archive/Intrinsic_encoding.mediawiki",
+    "url": "wiki/Intrinsic_encoding"
+  },
+  {
+    "title": "Introductions to Twelf",
+    "filename": "archive/Introductions_to_Twelf.mediawiki",
+    "url": "wiki/Introductions_to_Twelf"
+  },
+  {
+    "title": "Iterated Let Bindings",
+    "filename": "archive/Iterated_Let_Bindings.mediawiki",
+    "url": "wiki/Iterated_Let_Bindings"
+  },
+  {
+    "title": "Iterated inductive definitions and defunctionalization",
+    "filename": "archive/Iterated_inductive_definitions_and_defunctionalization.mediawiki",
+    "url": "wiki/Iterated_inductive_definitions_and_defunctionalization"
+  },
+  {
+    "title": "Judgement",
+    "filename": "archive/Judgement.mediawiki",
+    "url": "wiki/Judgement"
+  },
+  {
+    "title": "Judgment",
+    "filename": "archive/Judgment.mediawiki",
+    "url": "wiki/Judgment"
+  },
+  {
+    "title": "Judgments",
+    "filename": "archive/Judgments.mediawiki",
+    "url": "wiki/Judgments"
+  },
+  {
+    "title": "Judgments as types",
+    "filename": "archive/Judgments_as_types.mediawiki",
+    "url": "wiki/Judgments_as_types"
+  },
+  {
+    "title": "LF",
+    "filename": "archive/LF.mediawiki",
+    "url": "wiki/LF"
+  },
+  {
+    "title": "Language with references",
+    "filename": "archive/Language_with_references.mediawiki",
+    "url": "wiki/Language_with_references"
+  },
+  {
+    "title": "Lax logic",
+    "filename": "archive/Lax_logic.mediawiki",
+    "url": "wiki/Lax_logic"
+  },
+  {
+    "title": "Let*",
+    "filename": "archive/Let*.mediawiki",
+    "url": "wiki/Let*"
+  },
+  {
+    "title": "Letrec",
+    "filename": "archive/Letrec.mediawiki",
+    "url": "wiki/Letrec"
+  },
+  {
+    "title": "Lexicographical orderings with density",
+    "filename": "archive/Lexicographical_orderings_with_density.mediawiki",
+    "url": "wiki/Lexicographical_orderings_with_density"
+  },
+  {
+    "title": "Lily",
+    "filename": "archive/Lily.mediawiki",
+    "url": "wiki/Lily"
+  },
+  {
+    "title": "Linear logic",
+    "filename": "archive/Linear_logic.mediawiki",
+    "url": "wiki/Linear_logic"
+  },
+  {
+    "title": "Lists",
+    "filename": "archive/Lists.mediawiki",
+    "url": "wiki/Lists"
+  },
+  {
+    "title": "Logic program",
+    "filename": "archive/Logic_program.mediawiki",
+    "url": "wiki/Logic_program"
+  },
+  {
+    "title": "Logic programming",
+    "filename": "archive/Logic_programming.mediawiki",
+    "url": "wiki/Logic_programming"
+  },
+  {
+    "title": "Mailing lists",
+    "filename": "archive/Mailing_lists.mediawiki",
+    "url": "wiki/Mailing_lists"
+  },
+  {
+    "title": "Main Page",
+    "filename": "archive/Main_Page.mediawiki",
+    "url": "wiki/Main_Page"
+  },
+  {
+    "title": "Main page",
+    "filename": "archive/Main_page.mediawiki",
+    "url": "wiki/Main_page"
+  },
+  {
+    "title": "Manipulating proof witnesses",
+    "filename": "archive/Manipulating_proof_witnesses.mediawiki",
+    "url": "wiki/Manipulating_proof_witnesses"
+  },
+  {
+    "title": "Manipulating proof witnesses as inputs",
+    "filename": "archive/Manipulating_proof_witnesses_as_inputs.mediawiki",
+    "url": "wiki/Manipulating_proof_witnesses_as_inputs"
+  },
+  {
+    "title": "MediaWiki formatting description",
+    "filename": "archive/MediaWiki_formatting_description.mediawiki",
+    "url": "wiki/MediaWiki_formatting_description"
+  },
+  {
+    "title": "Meta-language",
+    "filename": "archive/Meta-language.mediawiki",
+    "url": "wiki/Meta-language"
+  },
+  {
+    "title": "Meta-logic",
+    "filename": "archive/Meta-logic.mediawiki",
+    "url": "wiki/Meta-logic"
+  },
+  {
+    "title": "Metatheorem",
+    "filename": "archive/Metatheorem.mediawiki",
+    "url": "wiki/Metatheorem"
+  },
+  {
+    "title": "Metatheorems",
+    "filename": "archive/Metatheorems.mediawiki",
+    "url": "wiki/Metatheorems"
+  },
+  {
+    "title": "MinMLToMinHaskell",
+    "filename": "archive/MinMLToMinHaskell.mediawiki",
+    "url": "wiki/MinMLToMinHaskell"
+  },
+  {
+    "title": "Modal logic",
+    "filename": "archive/Modal_logic.mediawiki",
+    "url": "wiki/Modal_logic"
+  },
+  {
+    "title": "Modally Propositional Logic",
+    "filename": "archive/Modally_Propositional_Logic.mediawiki",
+    "url": "wiki/Modally_Propositional_Logic"
+  },
+  {
+    "title": "Mode",
+    "filename": "archive/Mode.mediawiki",
+    "url": "wiki/Mode"
+  },
+  {
+    "title": "Mode checking",
+    "filename": "archive/Mode_checking.mediawiki",
+    "url": "wiki/Mode_checking"
+  },
+  {
+    "title": "Modes of use",
+    "filename": "archive/Modes_of_use.mediawiki",
+    "url": "wiki/Modes_of_use"
+  },
+  {
+    "title": "Mutable state",
+    "filename": "archive/Mutable_state.mediawiki",
+    "url": "wiki/Mutable_state"
+  },
+  {
+    "title": "Mutual induction",
+    "filename": "archive/Mutual_induction.mediawiki",
+    "url": "wiki/Mutual_induction"
+  },
+  {
+    "title": "Naming conventions",
+    "filename": "archive/Naming_conventions.mediawiki",
+    "url": "wiki/Naming_conventions"
+  },
+  {
+    "title": "Natural number",
+    "filename": "archive/Natural_number.mediawiki",
+    "url": "wiki/Natural_number"
+  },
+  {
+    "title": "Natural numbers",
+    "filename": "archive/Natural_numbers.mediawiki",
+    "url": "wiki/Natural_numbers"
+  },
+  {
+    "title": "Natural numbers with inequality",
+    "filename": "archive/Natural_numbers_with_inequality.mediawiki",
+    "url": "wiki/Natural_numbers_with_inequality"
+  },
+  {
+    "title": "Negation as failure",
+    "filename": "archive/Negation_as_failure.mediawiki",
+    "url": "wiki/Negation_as_failure"
+  },
+  {
+    "title": "Numeric termination metric",
+    "filename": "archive/Numeric_termination_metric.mediawiki",
+    "url": "wiki/Numeric_termination_metric"
+  },
+  {
+    "title": "Numeric termination metrics",
+    "filename": "archive/Numeric_termination_metrics.mediawiki",
+    "url": "wiki/Numeric_termination_metrics"
+  },
+  {
+    "title": "Object language",
+    "filename": "archive/Object_language.mediawiki",
+    "url": "wiki/Object_language"
+  },
+  {
+    "title": "Object logic",
+    "filename": "archive/Object_logic.mediawiki",
+    "url": "wiki/Object_logic"
+  },
+  {
+    "title": "Object logic syntax",
+    "filename": "archive/Object_logic_syntax.mediawiki",
+    "url": "wiki/Object_logic_syntax"
+  },
+  {
+    "title": "Output coverage",
+    "filename": "archive/Output_coverage.mediawiki",
+    "url": "wiki/Output_coverage"
+  },
+  {
+    "title": "Output factoring",
+    "filename": "archive/Output_factoring.mediawiki",
+    "url": "wiki/Output_factoring"
+  },
+  {
+    "title": "Output freeness",
+    "filename": "archive/Output_freeness.mediawiki",
+    "url": "wiki/Output_freeness"
+  },
+  {
+    "title": "PLTheory:Introduction to Twelf",
+    "filename": "archive/PLTheory:Introduction_to_Twelf.mediawiki",
+    "url": "wiki/PLTheory:Introduction_to_Twelf"
+  },
+  {
+    "title": "POPL Tutorial",
+    "filename": "archive/POPL_Tutorial.mediawiki",
+    "url": "wiki/POPL_Tutorial"
+  },
+  {
+    "title": "POPL Tutorial/Basic error messages",
+    "filename": "archive/POPL_Tutorial/Basic_error_messages.mediawiki",
+    "url": "wiki/POPL_Tutorial/Basic_error_messages"
+  },
+  {
+    "title": "POPL Tutorial/Basics",
+    "filename": "archive/POPL_Tutorial/Basics.mediawiki",
+    "url": "wiki/POPL_Tutorial/Basics"
+  },
+  {
+    "title": "POPL Tutorial/Basics Answer",
+    "filename": "archive/POPL_Tutorial/Basics_Answer.mediawiki",
+    "url": "wiki/POPL_Tutorial/Basics_Answer"
+  },
+  {
+    "title": "POPL Tutorial/Basics Starter",
+    "filename": "archive/POPL_Tutorial/Basics_Starter.mediawiki",
+    "url": "wiki/POPL_Tutorial/Basics_Starter"
+  },
+  {
+    "title": "POPL Tutorial/Big step, small step",
+    "filename": "archive/POPL_Tutorial/Big_step,_small_step.mediawiki",
+    "url": "wiki/POPL_Tutorial/Big_step,_small_step"
+  },
+  {
+    "title": "POPL Tutorial/Big step, small step: Solution",
+    "filename": "archive/POPL_Tutorial/Big_step,_small_step:_Solution.mediawiki",
+    "url": "wiki/POPL_Tutorial/Big_step,_small_step:_Solution"
+  },
+  {
+    "title": "POPL Tutorial/CPS",
+    "filename": "archive/POPL_Tutorial/CPS.mediawiki",
+    "url": "wiki/POPL_Tutorial/CPS"
+  },
+  {
+    "title": "POPL Tutorial/CPS Solution2",
+    "filename": "archive/POPL_Tutorial/CPS_Solution2.mediawiki",
+    "url": "wiki/POPL_Tutorial/CPS_Solution2"
+  },
+  {
+    "title": "POPL Tutorial/CPS Solutions",
+    "filename": "archive/POPL_Tutorial/CPS_Solutions.mediawiki",
+    "url": "wiki/POPL_Tutorial/CPS_Solutions"
+  },
+  {
+    "title": "POPL Tutorial/Church Rosser",
+    "filename": "archive/POPL_Tutorial/Church_Rosser.mediawiki",
+    "url": "wiki/POPL_Tutorial/Church_Rosser"
+  },
+  {
+    "title": "POPL Tutorial/Church Rosser (Problem)",
+    "filename": "archive/POPL_Tutorial/Church_Rosser_(Problem).mediawiki",
+    "url": "wiki/POPL_Tutorial/Church_Rosser_(Problem)"
+  },
+  {
+    "title": "POPL Tutorial/Combinators",
+    "filename": "archive/POPL_Tutorial/Combinators.mediawiki",
+    "url": "wiki/POPL_Tutorial/Combinators"
+  },
+  {
+    "title": "POPL Tutorial/Combinators (karl)",
+    "filename": "archive/POPL_Tutorial/Combinators_(karl).mediawiki",
+    "url": "wiki/POPL_Tutorial/Combinators_(karl)"
+  },
+  {
+    "title": "POPL Tutorial/Combinators Answer",
+    "filename": "archive/POPL_Tutorial/Combinators_Answer.mediawiki",
+    "url": "wiki/POPL_Tutorial/Combinators_Answer"
+  },
+  {
+    "title": "POPL Tutorial/Combinators Starter",
+    "filename": "archive/POPL_Tutorial/Combinators_Starter.mediawiki",
+    "url": "wiki/POPL_Tutorial/Combinators_Starter"
+  },
+  {
+    "title": "POPL Tutorial/Combinators Support",
+    "filename": "archive/POPL_Tutorial/Combinators_Support.mediawiki",
+    "url": "wiki/POPL_Tutorial/Combinators_Support"
+  },
+  {
+    "title": "POPL Tutorial/Combinators session",
+    "filename": "archive/POPL_Tutorial/Combinators_session.mediawiki",
+    "url": "wiki/POPL_Tutorial/Combinators_session"
+  },
+  {
+    "title": "POPL Tutorial/Combinators session (answers)",
+    "filename": "archive/POPL_Tutorial/Combinators_session_(answers).mediawiki",
+    "url": "wiki/POPL_Tutorial/Combinators_session_(answers)"
+  },
+  {
+    "title": "POPL Tutorial/Control machine",
+    "filename": "archive/POPL_Tutorial/Control_machine.mediawiki",
+    "url": "wiki/POPL_Tutorial/Control_machine"
+  },
+  {
+    "title": "POPL Tutorial/Cost Semantics",
+    "filename": "archive/POPL_Tutorial/Cost_Semantics.mediawiki",
+    "url": "wiki/POPL_Tutorial/Cost_Semantics"
+  },
+  {
+    "title": "POPL Tutorial/Cost semantics",
+    "filename": "archive/POPL_Tutorial/Cost_semantics.mediawiki",
+    "url": "wiki/POPL_Tutorial/Cost_semantics"
+  },
+  {
+    "title": "POPL Tutorial/Evaluation Contexts Intrinsic",
+    "filename": "archive/POPL_Tutorial/Evaluation_Contexts_Intrinsic.mediawiki",
+    "url": "wiki/POPL_Tutorial/Evaluation_Contexts_Intrinsic"
+  },
+  {
+    "title": "POPL Tutorial/Exceptions",
+    "filename": "archive/POPL_Tutorial/Exceptions.mediawiki",
+    "url": "wiki/POPL_Tutorial/Exceptions"
+  },
+  {
+    "title": "POPL Tutorial/Exceptions-problem",
+    "filename": "archive/POPL_Tutorial/Exceptions-problem.mediawiki",
+    "url": "wiki/POPL_Tutorial/Exceptions-problem"
+  },
+  {
+    "title": "POPL Tutorial/MinML",
+    "filename": "archive/POPL_Tutorial/MinML.mediawiki",
+    "url": "wiki/POPL_Tutorial/MinML"
+  },
+  {
+    "title": "POPL Tutorial/MinML Answer",
+    "filename": "archive/POPL_Tutorial/MinML_Answer.mediawiki",
+    "url": "wiki/POPL_Tutorial/MinML_Answer"
+  },
+  {
+    "title": "POPL Tutorial/MinML Encoding",
+    "filename": "archive/POPL_Tutorial/MinML_Encoding.mediawiki",
+    "url": "wiki/POPL_Tutorial/MinML_Encoding"
+  },
+  {
+    "title": "POPL Tutorial/MinML Preservation Theorem",
+    "filename": "archive/POPL_Tutorial/MinML_Preservation_Theorem.mediawiki",
+    "url": "wiki/POPL_Tutorial/MinML_Preservation_Theorem"
+  },
+  {
+    "title": "POPL Tutorial/MinML Preservation Theorem: Solution",
+    "filename": "archive/POPL_Tutorial/MinML_Preservation_Theorem:_Solution.mediawiki",
+    "url": "wiki/POPL_Tutorial/MinML_Preservation_Theorem:_Solution"
+  },
+  {
+    "title": "POPL Tutorial/MinML Preservation Theorem Answer",
+    "filename": "archive/POPL_Tutorial/MinML_Preservation_Theorem_Answer.mediawiki",
+    "url": "wiki/POPL_Tutorial/MinML_Preservation_Theorem_Answer"
+  },
+  {
+    "title": "POPL Tutorial/MinML Starter",
+    "filename": "archive/POPL_Tutorial/MinML_Starter.mediawiki",
+    "url": "wiki/POPL_Tutorial/MinML_Starter"
+  },
+  {
+    "title": "POPL Tutorial/MinML encoding",
+    "filename": "archive/POPL_Tutorial/MinML_encoding.mediawiki",
+    "url": "wiki/POPL_Tutorial/MinML_encoding"
+  },
+  {
+    "title": "POPL Tutorial/Nat",
+    "filename": "archive/POPL_Tutorial/Nat.mediawiki",
+    "url": "wiki/POPL_Tutorial/Nat"
+  },
+  {
+    "title": "POPL Tutorial/Nat Starter",
+    "filename": "archive/POPL_Tutorial/Nat_Starter.mediawiki",
+    "url": "wiki/POPL_Tutorial/Nat_Starter"
+  },
+  {
+    "title": "POPL Tutorial/New language",
+    "filename": "archive/POPL_Tutorial/New_language.mediawiki",
+    "url": "wiki/POPL_Tutorial/New_language"
+  },
+  {
+    "title": "POPL Tutorial/Next",
+    "filename": "archive/POPL_Tutorial/Next.mediawiki",
+    "url": "wiki/POPL_Tutorial/Next"
+  },
+  {
+    "title": "POPL Tutorial/Pattern Matching",
+    "filename": "archive/POPL_Tutorial/Pattern_Matching.mediawiki",
+    "url": "wiki/POPL_Tutorial/Pattern_Matching"
+  },
+  {
+    "title": "POPL Tutorial/Pattern matching",
+    "filename": "archive/POPL_Tutorial/Pattern_matching.mediawiki",
+    "url": "wiki/POPL_Tutorial/Pattern_matching"
+  },
+  {
+    "title": "POPL Tutorial/Problems",
+    "filename": "archive/POPL_Tutorial/Problems.mediawiki",
+    "url": "wiki/POPL_Tutorial/Problems"
+  },
+  {
+    "title": "POPL Tutorial/Properties of Typing and Reduction",
+    "filename": "archive/POPL_Tutorial/Properties_of_Typing_and_Reduction.mediawiki",
+    "url": "wiki/POPL_Tutorial/Properties_of_Typing_and_Reduction"
+  },
+  {
+    "title": "POPL Tutorial/Saturday",
+    "filename": "archive/POPL_Tutorial/Saturday.mediawiki",
+    "url": "wiki/POPL_Tutorial/Saturday"
+  },
+  {
+    "title": "POPL Tutorial/Sequent vs Natural Deduction",
+    "filename": "archive/POPL_Tutorial/Sequent_vs_Natural_Deduction.mediawiki",
+    "url": "wiki/POPL_Tutorial/Sequent_vs_Natural_Deduction"
+  },
+  {
+    "title": "POPL Tutorial/Sequent vs Natural Deduction: Solution",
+    "filename": "archive/POPL_Tutorial/Sequent_vs_Natural_Deduction:_Solution.mediawiki",
+    "url": "wiki/POPL_Tutorial/Sequent_vs_Natural_Deduction:_Solution"
+  },
+  {
+    "title": "POPL Tutorial/Session2",
+    "filename": "archive/POPL_Tutorial/Session2.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session2"
+  },
+  {
+    "title": "POPL Tutorial/Session 2",
+    "filename": "archive/POPL_Tutorial/Session_2.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session_2"
+  },
+  {
+    "title": "POPL Tutorial/Session 2 Answer",
+    "filename": "archive/POPL_Tutorial/Session_2_Answer.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session_2_Answer"
+  },
+  {
+    "title": "POPL Tutorial/Session 2 Script",
+    "filename": "archive/POPL_Tutorial/Session_2_Script.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session_2_Script"
+  },
+  {
+    "title": "POPL Tutorial/Session 2 Starter",
+    "filename": "archive/POPL_Tutorial/Session_2_Starter.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session_2_Starter"
+  },
+  {
+    "title": "POPL Tutorial/Session 4",
+    "filename": "archive/POPL_Tutorial/Session_4.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session_4"
+  },
+  {
+    "title": "POPL Tutorial/Session 4 Answer",
+    "filename": "archive/POPL_Tutorial/Session_4_Answer.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session_4_Answer"
+  },
+  {
+    "title": "POPL Tutorial/Session 4 Live",
+    "filename": "archive/POPL_Tutorial/Session_4_Live.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session_4_Live"
+  },
+  {
+    "title": "POPL Tutorial/Session 4 Starter",
+    "filename": "archive/POPL_Tutorial/Session_4_Starter.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session_4_Starter"
+  },
+  {
+    "title": "POPL Tutorial/Session 5",
+    "filename": "archive/POPL_Tutorial/Session_5.mediawiki",
+    "url": "wiki/POPL_Tutorial/Session_5"
+  },
+  {
+    "title": "POPL Tutorial/Thursday",
+    "filename": "archive/POPL_Tutorial/Thursday.mediawiki",
+    "url": "wiki/POPL_Tutorial/Thursday"
+  },
+  {
+    "title": "POPL Tutorial/Typed bracket abstraction",
+    "filename": "archive/POPL_Tutorial/Typed_bracket_abstraction.mediawiki",
+    "url": "wiki/POPL_Tutorial/Typed_bracket_abstraction"
+  },
+  {
+    "title": "POPL Tutorial/Typed bracket abstraction (solution)",
+    "filename": "archive/POPL_Tutorial/Typed_bracket_abstraction_(solution).mediawiki",
+    "url": "wiki/POPL_Tutorial/Typed_bracket_abstraction_(solution)"
+  },
+  {
+    "title": "POPL Tutorial/Typed bracket abstraction with equivalence",
+    "filename": "archive/POPL_Tutorial/Typed_bracket_abstraction_with_equivalence.mediawiki",
+    "url": "wiki/POPL_Tutorial/Typed_bracket_abstraction_with_equivalence"
+  },
+  {
+    "title": "POPL Tutorial/cps",
+    "filename": "archive/POPL_Tutorial/cps.mediawiki",
+    "url": "wiki/POPL_Tutorial/cps"
+  },
+  {
+    "title": "POPL Tutorial/cps-ctp",
+    "filename": "archive/POPL_Tutorial/cps-ctp.mediawiki",
+    "url": "wiki/POPL_Tutorial/cps-ctp"
+  },
+  {
+    "title": "POPL Tutorial/cps-problem",
+    "filename": "archive/POPL_Tutorial/cps-problem.mediawiki",
+    "url": "wiki/POPL_Tutorial/cps-problem"
+  },
+  {
+    "title": "POPL Tutorial/cps-problem2",
+    "filename": "archive/POPL_Tutorial/cps-problem2.mediawiki",
+    "url": "wiki/POPL_Tutorial/cps-problem2"
+  },
+  {
+    "title": "POPL Tutorial/cps-rp",
+    "filename": "archive/POPL_Tutorial/cps-rp.mediawiki",
+    "url": "wiki/POPL_Tutorial/cps-rp"
+  },
+  {
+    "title": "POPL Tutorial/cps-truefalse",
+    "filename": "archive/POPL_Tutorial/cps-truefalse.mediawiki",
+    "url": "wiki/POPL_Tutorial/cps-truefalse"
+  },
+  {
+    "title": "Pattern Matching (Case Study)",
+    "filename": "archive/Pattern_Matching_(Case_Study).mediawiki",
+    "url": "wiki/Pattern_Matching_(Case_Study)"
+  },
+  {
+    "title": "Pattern matching",
+    "filename": "archive/Pattern_matching.mediawiki",
+    "url": "wiki/Pattern_matching"
+  },
+  {
+    "title": "Polarized PCF",
+    "filename": "archive/Polarized_PCF.mediawiki",
+    "url": "wiki/Polarized_PCF"
+  },
+  {
+    "title": "Polarized PCF Better",
+    "filename": "archive/Polarized_PCF_Better.mediawiki",
+    "url": "wiki/Polarized_PCF_Better"
+  },
+  {
+    "title": "Programming language theory with Twelf",
+    "filename": "archive/Programming_language_theory_with_Twelf.mediawiki",
+    "url": "wiki/Programming_language_theory_with_Twelf"
+  },
+  {
+    "title": "Progress",
+    "filename": "archive/Progress.mediawiki",
+    "url": "wiki/Progress"
+  },
+  {
+    "title": "Proofs by reductio ad absurdum",
+    "filename": "archive/Proofs_by_reductio_ad_absurdum.mediawiki",
+    "url": "wiki/Proofs_by_reductio_ad_absurdum"
+  },
+  {
+    "title": "Proving metatheorems with Twelf",
+    "filename": "archive/Proving_metatheorems_with_Twelf.mediawiki",
+    "url": "wiki/Proving_metatheorems_with_Twelf"
+  },
+  {
+    "title": "Quick introduction",
+    "filename": "archive/Quick_introduction.mediawiki",
+    "url": "wiki/Quick_introduction"
+  },
+  {
+    "title": "Real-world binding structures",
+    "filename": "archive/Real-world_binding_structures.mediawiki",
+    "url": "wiki/Real-world_binding_structures"
+  },
+  {
+    "title": "Real World Binding Structures",
+    "filename": "archive/Real_World_Binding_Structures.mediawiki",
+    "url": "wiki/Real_World_Binding_Structures"
+  },
+  {
+    "title": "Reasoning from equality",
+    "filename": "archive/Reasoning_from_equality.mediawiki",
+    "url": "wiki/Reasoning_from_equality"
+  },
+  {
+    "title": "Reasoning from false",
+    "filename": "archive/Reasoning_from_false.mediawiki",
+    "url": "wiki/Reasoning_from_false"
+  },
+  {
+    "title": "Reformulating languages to use hypothetical judgements",
+    "filename": "archive/Reformulating_languages_to_use_hypothetical_judgements.mediawiki",
+    "url": "wiki/Reformulating_languages_to_use_hypothetical_judgements"
+  },
+  {
+    "title": "Regular world",
+    "filename": "archive/Regular_world.mediawiki",
+    "url": "wiki/Regular_world"
+  },
+  {
+    "title": "Regular worlds",
+    "filename": "archive/Regular_worlds.mediawiki",
+    "url": "wiki/Regular_worlds"
+  },
+  {
+    "title": "Relation",
+    "filename": "archive/Relation.mediawiki",
+    "url": "wiki/Relation"
+  },
+  {
+    "title": "Release history",
+    "filename": "archive/Release_history.mediawiki",
+    "url": "wiki/Release_history"
+  },
+  {
+    "title": "Research projects using Twelf",
+    "filename": "archive/Research_projects_using_Twelf.mediawiki",
+    "url": "wiki/Research_projects_using_Twelf"
+  },
+  {
+    "title": "Respects lemma",
+    "filename": "archive/Respects_lemma.mediawiki",
+    "url": "wiki/Respects_lemma"
+  },
+  {
+    "title": "Respects lemmas",
+    "filename": "archive/Respects_lemmas.mediawiki",
+    "url": "wiki/Respects_lemmas"
+  },
+  {
+    "title": "Revision history",
+    "filename": "archive/Revision_history.mediawiki",
+    "url": "wiki/Revision_history"
+  },
+  {
+    "title": "Sets and supersets",
+    "filename": "archive/Sets_and_supersets.mediawiki",
+    "url": "wiki/Sets_and_supersets"
+  },
+  {
+    "title": "Shallow equality",
+    "filename": "archive/Shallow_equality.mediawiki",
+    "url": "wiki/Shallow_equality"
+  },
+  {
+    "title": "Signature",
+    "filename": "archive/Signature.mediawiki",
+    "url": "wiki/Signature"
+  },
+  {
+    "title": "Signature checking",
+    "filename": "archive/Signature_checking.mediawiki",
+    "url": "wiki/Signature_checking"
+  },
+  {
+    "title": "Signatures as logic programs",
+    "filename": "archive/Signatures_as_logic_programs.mediawiki",
+    "url": "wiki/Signatures_as_logic_programs"
+  },
+  {
+    "title": "Simplifying dynamic clauses",
+    "filename": "archive/Simplifying_dynamic_clauses.mediawiki",
+    "url": "wiki/Simplifying_dynamic_clauses"
+  },
+  {
+    "title": "Simply-typed lambda calculus",
+    "filename": "archive/Simply-typed_lambda_calculus.mediawiki",
+    "url": "wiki/Simply-typed_lambda_calculus"
+  },
+  {
+    "title": "Software",
+    "filename": "archive/Software.mediawiki",
+    "url": "wiki/Software"
+  },
+  {
+    "title": "Strengthening",
+    "filename": "archive/Strengthening.mediawiki",
+    "url": "wiki/Strengthening"
+  },
+  {
+    "title": "Structural metric",
+    "filename": "archive/Structural_metric.mediawiki",
+    "url": "wiki/Structural_metric"
+  },
+  {
+    "title": "Structural metrics",
+    "filename": "archive/Structural_metrics.mediawiki",
+    "url": "wiki/Structural_metrics"
+  },
+  {
+    "title": "Structural termination metrics",
+    "filename": "archive/Structural_termination_metrics.mediawiki",
+    "url": "wiki/Structural_termination_metrics"
+  },
+  {
+    "title": "Style guide",
+    "filename": "archive/Style_guide.mediawiki",
+    "url": "wiki/Style_guide"
+  },
+  {
+    "title": "Subordination",
+    "filename": "archive/Subordination.mediawiki",
+    "url": "wiki/Subordination"
+  },
+  {
+    "title": "Substitution",
+    "filename": "archive/Substitution.mediawiki",
+    "url": "wiki/Substitution"
+  },
+  {
+    "title": "Substitution Lemma",
+    "filename": "archive/Substitution_Lemma.mediawiki",
+    "url": "wiki/Substitution_Lemma"
+  },
+  {
+    "title": "Substitution lemma",
+    "filename": "archive/Substitution_lemma.mediawiki",
+    "url": "wiki/Substitution_lemma"
+  },
+  {
+    "title": "Sudoku",
+    "filename": "archive/Sudoku.mediawiki",
+    "url": "wiki/Sudoku"
+  },
+  {
+    "title": "Summer school 2008",
+    "filename": "archive/Summer_school_2008.mediawiki",
+    "url": "wiki/Summer_school_2008"
+  },
+  {
+    "title": "Summer school 2008:Alternate typed arithmetic expressions with sums",
+    "filename": "archive/Summer_school_2008:Alternate_typed_arithmetic_expressions_with_sums.mediawiki",
+    "url": "wiki/Summer_school_2008:Alternate_typed_arithmetic_expressions_with_sums"
+  },
+  {
+    "title": "Summer school 2008:Arithmetic expressions",
+    "filename": "archive/Summer_school_2008:Arithmetic_expressions.mediawiki",
+    "url": "wiki/Summer_school_2008:Arithmetic_expressions"
+  },
+  {
+    "title": "Summer school 2008:Arithmetic expressions with call-by-value let-binding",
+    "filename": "archive/Summer_school_2008:Arithmetic_expressions_with_call-by-value_let-binding.mediawiki",
+    "url": "wiki/Summer_school_2008:Arithmetic_expressions_with_call-by-value_let-binding"
+  },
+  {
+    "title": "Summer school 2008:Arithmetic expressions with let-binding",
+    "filename": "archive/Summer_school_2008:Arithmetic_expressions_with_let-binding.mediawiki",
+    "url": "wiki/Summer_school_2008:Arithmetic_expressions_with_let-binding"
+  },
+  {
+    "title": "Summer school 2008:Arithmetic expressions with let-binding (hypothetical evaluation)",
+    "filename": "archive/Summer_school_2008:Arithmetic_expressions_with_let-binding_(hypothetical_evaluation).mediawiki",
+    "url": "wiki/Summer_school_2008:Arithmetic_expressions_with_let-binding_(hypothetical_evaluation)"
+  },
+  {
+    "title": "Summer school 2008:Arithmetic expressions with pairs (value)",
+    "filename": "archive/Summer_school_2008:Arithmetic_expressions_with_pairs_(value).mediawiki",
+    "url": "wiki/Summer_school_2008:Arithmetic_expressions_with_pairs_(value)"
+  },
+  {
+    "title": "Summer school 2008:Encoding of System F",
+    "filename": "archive/Summer_school_2008:Encoding_of_System_F.mediawiki",
+    "url": "wiki/Summer_school_2008:Encoding_of_System_F"
+  },
+  {
+    "title": "Summer school 2008:Exercises 1",
+    "filename": "archive/Summer_school_2008:Exercises_1.mediawiki",
+    "url": "wiki/Summer_school_2008:Exercises_1"
+  },
+  {
+    "title": "Summer school 2008:Exercises 2",
+    "filename": "archive/Summer_school_2008:Exercises_2.mediawiki",
+    "url": "wiki/Summer_school_2008:Exercises_2"
+  },
+  {
+    "title": "Summer school 2008:Exercises 3",
+    "filename": "archive/Summer_school_2008:Exercises_3.mediawiki",
+    "url": "wiki/Summer_school_2008:Exercises_3"
+  },
+  {
+    "title": "Summer school 2008:Type safety for MinML (extrinsic encoding)",
+    "filename": "archive/Summer_school_2008:Type_safety_for_MinML_(extrinsic_encoding).mediawiki",
+    "url": "wiki/Summer_school_2008:Type_safety_for_MinML_(extrinsic_encoding)"
+  },
+  {
+    "title": "Summer school 2008:Type safety for MinML (intrinsic encoding)",
+    "filename": "archive/Summer_school_2008:Type_safety_for_MinML_(intrinsic_encoding).mediawiki",
+    "url": "wiki/Summer_school_2008:Type_safety_for_MinML_(intrinsic_encoding)"
+  },
+  {
+    "title": "Summer school 2008:Type safety for MinML with monadic effects",
+    "filename": "archive/Summer_school_2008:Type_safety_for_MinML_with_monadic_effects.mediawiki",
+    "url": "wiki/Summer_school_2008:Type_safety_for_MinML_with_monadic_effects"
+  },
+  {
+    "title": "Summer school 2008:Type safety for MinML with monadic effects (putngetn)",
+    "filename": "archive/Summer_school_2008:Type_safety_for_MinML_with_monadic_effects_(putngetn).mediawiki",
+    "url": "wiki/Summer_school_2008:Type_safety_for_MinML_with_monadic_effects_(putngetn)"
+  },
+  {
+    "title": "Summer school 2008:Type safety for polymorphic MinML (intrinsic encoding)",
+    "filename": "archive/Summer_school_2008:Type_safety_for_polymorphic_MinML_(intrinsic_encoding).mediawiki",
+    "url": "wiki/Summer_school_2008:Type_safety_for_polymorphic_MinML_(intrinsic_encoding)"
+  },
+  {
+    "title": "Summer school 2008:Typed arithmetic expressions",
+    "filename": "archive/Summer_school_2008:Typed_arithmetic_expressions.mediawiki",
+    "url": "wiki/Summer_school_2008:Typed_arithmetic_expressions"
+  },
+  {
+    "title": "Summer school 2008:Typed arithmetic expressions (extrinsic encoding)",
+    "filename": "archive/Summer_school_2008:Typed_arithmetic_expressions_(extrinsic_encoding).mediawiki",
+    "url": "wiki/Summer_school_2008:Typed_arithmetic_expressions_(extrinsic_encoding)"
+  },
+  {
+    "title": "Summer school 2008:Typed arithmetic expressions (value)",
+    "filename": "archive/Summer_school_2008:Typed_arithmetic_expressions_(value).mediawiki",
+    "url": "wiki/Summer_school_2008:Typed_arithmetic_expressions_(value)"
+  },
+  {
+    "title": "Summer school 2008:Typed arithmetic expressions with pairs",
+    "filename": "archive/Summer_school_2008:Typed_arithmetic_expressions_with_pairs.mediawiki",
+    "url": "wiki/Summer_school_2008:Typed_arithmetic_expressions_with_pairs"
+  },
+  {
+    "title": "Summer school 2008:Typed arithmetic expressions with sums",
+    "filename": "archive/Summer_school_2008:Typed_arithmetic_expressions_with_sums.mediawiki",
+    "url": "wiki/Summer_school_2008:Typed_arithmetic_expressions_with_sums"
+  },
+  {
+    "title": "Summer school 2008:Typed arithmetic expressions with sums 2",
+    "filename": "archive/Summer_school_2008:Typed_arithmetic_expressions_with_sums_2.mediawiki",
+    "url": "wiki/Summer_school_2008:Typed_arithmetic_expressions_with_sums_2"
+  },
+  {
+    "title": "Summer school 2008: Exercise: Typed arithmetic expressions with pairs",
+    "filename": "archive/Summer_school_2008:_Exercise:_Typed_arithmetic_expressions_with_pairs.mediawiki",
+    "url": "wiki/Summer_school_2008:_Exercise:_Typed_arithmetic_expressions_with_pairs"
+  },
+  {
+    "title": "Syntax (Object logic)",
+    "filename": "archive/Syntax_(Object_logic).mediawiki",
+    "url": "wiki/Syntax_(Object_logic)"
+  },
+  {
+    "title": "TAT/church.elf",
+    "filename": "archive/TAT/church.elf.mediawiki",
+    "url": "wiki/TAT/church.elf"
+  },
+  {
+    "title": "TAT/plus.elf",
+    "filename": "archive/TAT/plus.elf.mediawiki",
+    "url": "wiki/TAT/plus.elf"
+  },
+  {
+    "title": "Tabled logic programming",
+    "filename": "archive/Tabled_logic_programming.mediawiki",
+    "url": "wiki/Tabled_logic_programming"
+  },
+  {
+    "title": "Tactical theorem proving",
+    "filename": "archive/Tactical_theorem_proving.mediawiki",
+    "url": "wiki/Tactical_theorem_proving"
+  },
+  {
+    "title": "Termination analysis",
+    "filename": "archive/Termination_analysis.mediawiki",
+    "url": "wiki/Termination_analysis"
+  },
+  {
+    "title": "Termination checking",
+    "filename": "archive/Termination_checking.mediawiki",
+    "url": "wiki/Termination_checking"
+  },
+  {
+    "title": "Tethered Modal Logic",
+    "filename": "archive/Tethered_Modal_Logic.mediawiki",
+    "url": "wiki/Tethered_Modal_Logic"
+  },
+  {
+    "title": "Tethered modal logic",
+    "filename": "archive/Tethered_modal_logic.mediawiki",
+    "url": "wiki/Tethered_modal_logic"
+  },
+  {
+    "title": "The Best Fake cigarette Sold in the market",
+    "filename": "archive/The_Best_Fake_cigarette_Sold_in_the_market.mediawiki",
+    "url": "wiki/The_Best_Fake_cigarette_Sold_in_the_market"
+  },
+  {
+    "title": "The two Twelfs",
+    "filename": "archive/The_two_Twelfs.mediawiki",
+    "url": "wiki/The_two_Twelfs"
+  },
+  {
+    "title": "Theorem prover",
+    "filename": "archive/Theorem_prover.mediawiki",
+    "url": "wiki/Theorem_prover"
+  },
+  {
+    "title": "Totality assertion",
+    "filename": "archive/Totality_assertion.mediawiki",
+    "url": "wiki/Totality_assertion"
+  },
+  {
+    "title": "Totality assertions",
+    "filename": "archive/Totality_assertions.mediawiki",
+    "url": "wiki/Totality_assertions"
+  },
+  {
+    "title": "Try Twelf now",
+    "filename": "archive/Try_Twelf_now.mediawiki",
+    "url": "wiki/Try_Twelf_now"
+  },
+  {
+    "title": "Tutorial",
+    "filename": "archive/Tutorial.mediawiki",
+    "url": "wiki/Tutorial"
+  },
+  {
+    "title": "Tutorials",
+    "filename": "archive/Tutorials.mediawiki",
+    "url": "wiki/Tutorials"
+  },
+  {
+    "title": "Twelf-list",
+    "filename": "archive/Twelf-list.mediawiki",
+    "url": "wiki/Twelf-list"
+  },
+  {
+    "title": "TwelfTag",
+    "filename": "archive/TwelfTag.mediawiki",
+    "url": "wiki/TwelfTag"
+  },
+  {
+    "title": "Twelf Elf Rotation Charter",
+    "filename": "archive/Twelf_Elf_Rotation_Charter.mediawiki",
+    "url": "wiki/Twelf_Elf_Rotation_Charter"
+  },
+  {
+    "title": "Twelf Live",
+    "filename": "archive/Twelf_Live.mediawiki",
+    "url": "wiki/Twelf_Live"
+  },
+  {
+    "title": "Twelf glossary",
+    "filename": "archive/Twelf_glossary.mediawiki",
+    "url": "wiki/Twelf_glossary"
+  },
+  {
+    "title": "Twelf naming conventions",
+    "filename": "archive/Twelf_naming_conventions.mediawiki",
+    "url": "wiki/Twelf_naming_conventions"
+  },
+  {
+    "title": "Twelf signature",
+    "filename": "archive/Twelf_signature.mediawiki",
+    "url": "wiki/Twelf_signature"
+  },
+  {
+    "title": "Twelf style guide",
+    "filename": "archive/Twelf_style_guide.mediawiki",
+    "url": "wiki/Twelf_style_guide"
+  },
+  {
+    "title": "Twelf with Emacs",
+    "filename": "archive/Twelf_with_Emacs.mediawiki",
+    "url": "wiki/Twelf_with_Emacs"
+  },
+  {
+    "title": "Twelf without Emacs",
+    "filename": "archive/Twelf_without_Emacs.mediawiki",
+    "url": "wiki/Twelf_without_Emacs"
+  },
+  {
+    "title": "Type families",
+    "filename": "archive/Type_families.mediawiki",
+    "url": "wiki/Type_families"
+  },
+  {
+    "title": "Type family",
+    "filename": "archive/Type_family.mediawiki",
+    "url": "wiki/Type_family"
+  },
+  {
+    "title": "Typed combinators soundness and completeness",
+    "filename": "archive/Typed_combinators_soundness_and_completeness.mediawiki",
+    "url": "wiki/Typed_combinators_soundness_and_completeness"
+  },
+  {
+    "title": "Unary numbers",
+    "filename": "archive/Unary_numbers.mediawiki",
+    "url": "wiki/Unary_numbers"
+  },
+  {
+    "title": "Unification",
+    "filename": "archive/Unification.mediawiki",
+    "url": "wiki/Unification"
+  },
+  {
+    "title": "Uniqueness lemma",
+    "filename": "archive/Uniqueness_lemma.mediawiki",
+    "url": "wiki/Uniqueness_lemma"
+  },
+  {
+    "title": "Uniqueness lemmas",
+    "filename": "archive/Uniqueness_lemmas.mediawiki",
+    "url": "wiki/Uniqueness_lemmas"
+  },
+  {
+    "title": "Universal quantification",
+    "filename": "archive/Universal_quantification.mediawiki",
+    "url": "wiki/Universal_quantification"
+  },
+  {
+    "title": "Universally quantified",
+    "filename": "archive/Universally_quantified.mediawiki",
+    "url": "wiki/Universally_quantified"
+  },
+  {
+    "title": "Unsafe mode",
+    "filename": "archive/Unsafe_mode.mediawiki",
+    "url": "wiki/Unsafe_mode"
+  },
+  {
+    "title": "User's Guide",
+    "filename": "archive/User's_Guide.mediawiki",
+    "url": "wiki/User%27s_Guide"
+  },
+  {
+    "title": "User-defined constraint domain",
+    "filename": "archive/User-defined_constraint_domain.mediawiki",
+    "url": "wiki/User-defined_constraint_domain"
+  },
+  {
+    "title": "Using a metric",
+    "filename": "archive/Using_a_metric.mediawiki",
+    "url": "wiki/Using_a_metric"
+  },
+  {
+    "title": "Using nat-less with %reduces",
+    "filename": "archive/Using_nat-less_with_%reduces.mediawiki",
+    "url": "wiki/Using_nat-less_with_%25reduces"
+  },
+  {
+    "title": "Verifications and uses",
+    "filename": "archive/Verifications_and_uses.mediawiki",
+    "url": "wiki/Verifications_and_uses"
+  },
+  {
+    "title": "Verifications and uses in HLF",
+    "filename": "archive/Verifications_and_uses_in_HLF.mediawiki",
+    "url": "wiki/Verifications_and_uses_in_HLF"
+  },
+  {
+    "title": "Verifications and uses with zippers",
+    "filename": "archive/Verifications_and_uses_with_zippers.mediawiki",
+    "url": "wiki/Verifications_and_uses_with_zippers"
+  },
+  {
+    "title": "Weak focusing",
+    "filename": "archive/Weak_focusing.mediawiki",
+    "url": "wiki/Weak_focusing"
+  },
+  {
+    "title": "Weakening",
+    "filename": "archive/Weakening.mediawiki",
+    "url": "wiki/Weakening"
+  },
+  {
+    "title": "Weakening lemma",
+    "filename": "archive/Weakening_lemma.mediawiki",
+    "url": "wiki/Weakening_lemma"
+  },
+  {
+    "title": "What's new",
+    "filename": "archive/What's_new.mediawiki",
+    "url": "wiki/What%27s_new"
+  },
+  {
+    "title": "What's new?",
+    "filename": "archive/What's_new?.mediawiki",
+    "url": "wiki/What%27s_new%3F"
+  },
+  {
+    "title": "Working with higher-order judgements",
+    "filename": "archive/Working_with_higher-order_judgements.mediawiki",
+    "url": "wiki/Working_with_higher-order_judgements"
+  },
+  {
+    "title": "World",
+    "filename": "archive/World.mediawiki",
+    "url": "wiki/World"
+  },
+  {
+    "title": "World subsumption",
+    "filename": "archive/World_subsumption.mediawiki",
+    "url": "wiki/World_subsumption"
+  },
+  {
+    "title": "Zermelo Frankel",
+    "filename": "archive/Zermelo_Frankel.mediawiki",
+    "url": "wiki/Zermelo_Frankel"
+  },
+  {
+    "title": "Talk:% define",
+    "filename": "archive/Talk:%_define.mediawiki",
+    "url": "wiki/Talk:%25_define"
+  },
+  {
+    "title": "Talk:%covers",
+    "filename": "archive/Talk:%covers.mediawiki",
+    "url": "wiki/Talk:%25covers"
+  },
+  {
+    "title": "Talk:%freeze",
+    "filename": "archive/Talk:%freeze.mediawiki",
+    "url": "wiki/Talk:%25freeze"
+  },
+  {
+    "title": "Talk:%reduces",
+    "filename": "archive/Talk:%reduces.mediawiki",
+    "url": "wiki/Talk:%25reduces"
+  },
+  {
+    "title": "Talk:%thaw",
+    "filename": "archive/Talk:%thaw.mediawiki",
+    "url": "wiki/Talk:%25thaw"
+  },
+  {
+    "title": "Talk:%theorem",
+    "filename": "archive/Talk:%theorem.mediawiki",
+    "url": "wiki/Talk:%25theorem"
+  },
+  {
+    "title": "Talk:%worlds",
+    "filename": "archive/Talk:%worlds.mediawiki",
+    "url": "wiki/Talk:%25worlds"
+  },
+  {
+    "title": "Talk:Ad hoc binding structures",
+    "filename": "archive/Talk:Ad_hoc_binding_structures.mediawiki",
+    "url": "wiki/Talk:Ad_hoc_binding_structures"
+  },
+  {
+    "title": "Talk:Admissibility of cut",
+    "filename": "archive/Talk:Admissibility_of_cut.mediawiki",
+    "url": "wiki/Talk:Admissibility_of_cut"
+  },
+  {
+    "title": "Talk:Alpha-equivalence",
+    "filename": "archive/Talk:Alpha-equivalence.mediawiki",
+    "url": "wiki/Talk:Alpha-equivalence"
+  },
+  {
+    "title": "Talk:Ask Twelf Elf",
+    "filename": "archive/Talk:Ask_Twelf_Elf.mediawiki",
+    "url": "wiki/Talk:Ask_Twelf_Elf"
+  },
+  {
+    "title": "Talk:Ask Twelf Elf/Archive 1",
+    "filename": "archive/Talk:Ask_Twelf_Elf/Archive_1.mediawiki",
+    "url": "wiki/Talk:Ask_Twelf_Elf/Archive_1"
+  },
+  {
+    "title": "Talk:Ask Twelf Elf/Archive 2",
+    "filename": "archive/Talk:Ask_Twelf_Elf/Archive_2.mediawiki",
+    "url": "wiki/Talk:Ask_Twelf_Elf/Archive_2"
+  },
+  {
+    "title": "Talk:CPS conversion",
+    "filename": "archive/Talk:CPS_conversion.mediawiki",
+    "url": "wiki/Talk:CPS_conversion"
+  },
+  {
+    "title": "Talk:Canonical forms lemma",
+    "filename": "archive/Talk:Canonical_forms_lemma.mediawiki",
+    "url": "wiki/Talk:Canonical_forms_lemma"
+  },
+  {
+    "title": "Talk:Case studies",
+    "filename": "archive/Talk:Case_studies.mediawiki",
+    "url": "wiki/Talk:Case_studies"
+  },
+  {
+    "title": "Talk:Classical S5",
+    "filename": "archive/Talk:Classical_S5.mediawiki",
+    "url": "wiki/Talk:Classical_S5"
+  },
+  {
+    "title": "Talk:Congruence lemma",
+    "filename": "archive/Talk:Congruence_lemma.mediawiki",
+    "url": "wiki/Talk:Congruence_lemma"
+  },
+  {
+    "title": "Talk:Constraint domains and coverage checking",
+    "filename": "archive/Talk:Constraint_domains_and_coverage_checking.mediawiki",
+    "url": "wiki/Talk:Constraint_domains_and_coverage_checking"
+  },
+  {
+    "title": "Talk:Converting between implicit and explicit parameters",
+    "filename": "archive/Talk:Converting_between_implicit_and_explicit_parameters.mediawiki",
+    "url": "wiki/Talk:Converting_between_implicit_and_explicit_parameters"
+  },
+  {
+    "title": "Talk:Coverage checking",
+    "filename": "archive/Talk:Coverage_checking.mediawiki",
+    "url": "wiki/Talk:Coverage_checking"
+  },
+  {
+    "title": "Talk:Debugging coverage errors",
+    "filename": "archive/Talk:Debugging_coverage_errors.mediawiki",
+    "url": "wiki/Talk:Debugging_coverage_errors"
+  },
+  {
+    "title": "Talk:Define declaration",
+    "filename": "archive/Talk:Define_declaration.mediawiki",
+    "url": "wiki/Talk:Define_declaration"
+  },
+  {
+    "title": "Talk:Documentation",
+    "filename": "archive/Talk:Documentation.mediawiki",
+    "url": "wiki/Talk:Documentation"
+  },
+  {
+    "title": "Talk:Download",
+    "filename": "archive/Talk:Download.mediawiki",
+    "url": "wiki/Talk:Download"
+  },
+  {
+    "title": "Talk:Effectiveness lemma",
+    "filename": "archive/Talk:Effectiveness_lemma.mediawiki",
+    "url": "wiki/Talk:Effectiveness_lemma"
+  },
+  {
+    "title": "Talk:Equality",
+    "filename": "archive/Talk:Equality.mediawiki",
+    "url": "wiki/Talk:Equality"
+  },
+  {
+    "title": "Talk:Exchange lemma",
+    "filename": "archive/Talk:Exchange_lemma.mediawiki",
+    "url": "wiki/Talk:Exchange_lemma"
+  },
+  {
+    "title": "Talk:General Description of Twelf",
+    "filename": "archive/Talk:General_Description_of_Twelf.mediawiki",
+    "url": "wiki/Talk:General_Description_of_Twelf"
+  },
+  {
+    "title": "Talk:General description of Twelf",
+    "filename": "archive/Talk:General_description_of_Twelf.mediawiki",
+    "url": "wiki/Talk:General_description_of_Twelf"
+  },
+  {
+    "title": "Talk:Get started",
+    "filename": "archive/Talk:Get_started.mediawiki",
+    "url": "wiki/Talk:Get_started"
+  },
+  {
+    "title": "Talk:Glossary",
+    "filename": "archive/Talk:Glossary.mediawiki",
+    "url": "wiki/Talk:Glossary"
+  },
+  {
+    "title": "Talk:Heterogeneous lists",
+    "filename": "archive/Talk:Heterogeneous_lists.mediawiki",
+    "url": "wiki/Talk:Heterogeneous_lists"
+  },
+  {
+    "title": "Talk:Holes in metatheorems",
+    "filename": "archive/Talk:Holes_in_metatheorems.mediawiki",
+    "url": "wiki/Talk:Holes_in_metatheorems"
+  },
+  {
+    "title": "Talk:Implicit and explicit parameters",
+    "filename": "archive/Talk:Implicit_and_explicit_parameters.mediawiki",
+    "url": "wiki/Talk:Implicit_and_explicit_parameters"
+  },
+  {
+    "title": "Talk:Incremental metatheorem development",
+    "filename": "archive/Talk:Incremental_metatheorem_development.mediawiki",
+    "url": "wiki/Talk:Incremental_metatheorem_development"
+  },
+  {
+    "title": "Talk:Introductions to Twelf",
+    "filename": "archive/Talk:Introductions_to_Twelf.mediawiki",
+    "url": "wiki/Talk:Introductions_to_Twelf"
+  },
+  {
+    "title": "Talk:Language with references",
+    "filename": "archive/Talk:Language_with_references.mediawiki",
+    "url": "wiki/Talk:Language_with_references"
+  },
+  {
+    "title": "Talk:Letrec",
+    "filename": "archive/Talk:Letrec.mediawiki",
+    "url": "wiki/Talk:Letrec"
+  },
+  {
+    "title": "Talk:Lily",
+    "filename": "archive/Talk:Lily.mediawiki",
+    "url": "wiki/Talk:Lily"
+  },
+  {
+    "title": "Talk:Lists",
+    "filename": "archive/Talk:Lists.mediawiki",
+    "url": "wiki/Talk:Lists"
+  },
+  {
+    "title": "Talk:Main Page",
+    "filename": "archive/Talk:Main_Page.mediawiki",
+    "url": "wiki/Talk:Main_Page"
+  },
+  {
+    "title": "Talk:Meta-logic",
+    "filename": "archive/Talk:Meta-logic.mediawiki",
+    "url": "wiki/Talk:Meta-logic"
+  },
+  {
+    "title": "Talk:Metatheorem",
+    "filename": "archive/Talk:Metatheorem.mediawiki",
+    "url": "wiki/Talk:Metatheorem"
+  },
+  {
+    "title": "Talk:Modes of use",
+    "filename": "archive/Talk:Modes_of_use.mediawiki",
+    "url": "wiki/Talk:Modes_of_use"
+  },
+  {
+    "title": "Talk:Mutable state",
+    "filename": "archive/Talk:Mutable_state.mediawiki",
+    "url": "wiki/Talk:Mutable_state"
+  },
+  {
+    "title": "Talk:Natural numbers with inequality",
+    "filename": "archive/Talk:Natural_numbers_with_inequality.mediawiki",
+    "url": "wiki/Talk:Natural_numbers_with_inequality"
+  },
+  {
+    "title": "Talk:Numeric termination metrics",
+    "filename": "archive/Talk:Numeric_termination_metrics.mediawiki",
+    "url": "wiki/Talk:Numeric_termination_metrics"
+  },
+  {
+    "title": "Talk:Output factoring",
+    "filename": "archive/Talk:Output_factoring.mediawiki",
+    "url": "wiki/Talk:Output_factoring"
+  },
+  {
+    "title": "Talk:Output freeness",
+    "filename": "archive/Talk:Output_freeness.mediawiki",
+    "url": "wiki/Talk:Output_freeness"
+  },
+  {
+    "title": "Talk:Programming language theory with Twelf",
+    "filename": "archive/Talk:Programming_language_theory_with_Twelf.mediawiki",
+    "url": "wiki/Talk:Programming_language_theory_with_Twelf"
+  },
+  {
+    "title": "Talk:Proving metatheorems with Twelf",
+    "filename": "archive/Talk:Proving_metatheorems_with_Twelf.mediawiki",
+    "url": "wiki/Talk:Proving_metatheorems_with_Twelf"
+  },
+  {
+    "title": "Talk:Quick introduction",
+    "filename": "archive/Talk:Quick_introduction.mediawiki",
+    "url": "wiki/Talk:Quick_introduction"
+  },
+  {
+    "title": "Talk:Reformulating languages to use hypothetical judgements",
+    "filename": "archive/Talk:Reformulating_languages_to_use_hypothetical_judgements.mediawiki",
+    "url": "wiki/Talk:Reformulating_languages_to_use_hypothetical_judgements"
+  },
+  {
+    "title": "Talk:Respects lemma",
+    "filename": "archive/Talk:Respects_lemma.mediawiki",
+    "url": "wiki/Talk:Respects_lemma"
+  },
+  {
+    "title": "Talk:Software",
+    "filename": "archive/Talk:Software.mediawiki",
+    "url": "wiki/Talk:Software"
+  },
+  {
+    "title": "Talk:Strengthening",
+    "filename": "archive/Talk:Strengthening.mediawiki",
+    "url": "wiki/Talk:Strengthening"
+  },
+  {
+    "title": "Talk:Substitution lemma",
+    "filename": "archive/Talk:Substitution_lemma.mediawiki",
+    "url": "wiki/Talk:Substitution_lemma"
+  },
+  {
+    "title": "Talk:The two Twelfs",
+    "filename": "archive/Talk:The_two_Twelfs.mediawiki",
+    "url": "wiki/Talk:The_two_Twelfs"
+  },
+  {
+    "title": "Talk:Totality assertion",
+    "filename": "archive/Talk:Totality_assertion.mediawiki",
+    "url": "wiki/Talk:Totality_assertion"
+  },
+  {
+    "title": "Talk:Try Twelf now",
+    "filename": "archive/Talk:Try_Twelf_now.mediawiki",
+    "url": "wiki/Talk:Try_Twelf_now"
+  },
+  {
+    "title": "Talk:Tutorials",
+    "filename": "archive/Talk:Tutorials.mediawiki",
+    "url": "wiki/Talk:Tutorials"
+  },
+  {
+    "title": "Talk:Twelf Live",
+    "filename": "archive/Talk:Twelf_Live.mediawiki",
+    "url": "wiki/Talk:Twelf_Live"
+  },
+  {
+    "title": "Talk:Twelf style guide",
+    "filename": "archive/Talk:Twelf_style_guide.mediawiki",
+    "url": "wiki/Talk:Twelf_style_guide"
+  },
+  {
+    "title": "Talk:Twelf with Emacs",
+    "filename": "archive/Talk:Twelf_with_Emacs.mediawiki",
+    "url": "wiki/Talk:Twelf_with_Emacs"
+  },
+  {
+    "title": "Talk:Uniqueness lemma",
+    "filename": "archive/Talk:Uniqueness_lemma.mediawiki",
+    "url": "wiki/Talk:Uniqueness_lemma"
+  },
+  {
+    "title": "Talk:User's Guide",
+    "filename": "archive/Talk:User's_Guide.mediawiki",
+    "url": "wiki/Talk:User%27s_Guide"
+  },
+  {
+    "title": "Talk:UserGuide",
+    "filename": "archive/Talk:UserGuide.mediawiki",
+    "url": "wiki/Talk:UserGuide"
+  },
+  {
+    "title": "Talk:Using nat-less with %reduces",
+    "filename": "archive/Talk:Using_nat-less_with_%reduces.mediawiki",
+    "url": "wiki/Talk:Using_nat-less_with_%25reduces"
+  },
+  {
+    "title": "Talk:What's new",
+    "filename": "archive/Talk:What's_new.mediawiki",
+    "url": "wiki/Talk:What%27s_new"
+  },
+  {
+    "title": "Talk:Working with higher-order judgements",
+    "filename": "archive/Talk:Working_with_higher-order_judgements.mediawiki",
+    "url": "wiki/Talk:Working_with_higher-order_judgements"
+  },
+  {
+    "title": "User:Boyland",
+    "filename": "archive/User:Boyland.mediawiki",
+    "url": "wiki/User:Boyland"
+  },
+  {
+    "title": "User:Carsten",
+    "filename": "archive/User:Carsten.mediawiki",
+    "url": "wiki/User:Carsten"
+  },
+  {
+    "title": "User:Ccasin",
+    "filename": "archive/User:Ccasin.mediawiki",
+    "url": "wiki/User:Ccasin"
+  },
+  {
+    "title": "User:Cmartens",
+    "filename": "archive/User:Cmartens.mediawiki",
+    "url": "wiki/User:Cmartens"
+  },
+  {
+    "title": "User:Crary",
+    "filename": "archive/User:Crary.mediawiki",
+    "url": "wiki/User:Crary"
+  },
+  {
+    "title": "User:DanielKLee",
+    "filename": "archive/User:DanielKLee.mediawiki",
+    "url": "wiki/User:DanielKLee"
+  },
+  {
+    "title": "User:Drl",
+    "filename": "archive/User:Drl.mediawiki",
+    "url": "wiki/User:Drl"
+  },
+  {
+    "title": "User:Hdeyoung",
+    "filename": "archive/User:Hdeyoung.mediawiki",
+    "url": "wiki/User:Hdeyoung"
+  },
+  {
+    "title": "User:Hdeyoung/monweakfoc.elf",
+    "filename": "archive/User:Hdeyoung/monweakfoc.elf.mediawiki",
+    "url": "wiki/User:Hdeyoung/monweakfoc.elf"
+  },
+  {
+    "title": "User:JakeD",
+    "filename": "archive/User:JakeD.mediawiki",
+    "url": "wiki/User:JakeD"
+  },
+  {
+    "title": "User:Jcreed",
+    "filename": "archive/User:Jcreed.mediawiki",
+    "url": "wiki/User:Jcreed"
+  },
+  {
+    "title": "User:Jcreed/Sandbox",
+    "filename": "archive/User:Jcreed/Sandbox.mediawiki",
+    "url": "wiki/User:Jcreed/Sandbox"
+  },
+  {
+    "title": "User:NewTestUser",
+    "filename": "archive/User:NewTestUser.mediawiki",
+    "url": "wiki/User:NewTestUser"
+  },
+  {
+    "title": "User:Rsimmons",
+    "filename": "archive/User:Rsimmons.mediawiki",
+    "url": "wiki/User:Rsimmons"
+  },
+  {
+    "title": "User:Rsimmons/CR2",
+    "filename": "archive/User:Rsimmons/CR2.mediawiki",
+    "url": "wiki/User:Rsimmons/CR2"
+  },
+  {
+    "title": "User:Rsimmons/Fluid binding",
+    "filename": "archive/User:Rsimmons/Fluid_binding.mediawiki",
+    "url": "wiki/User:Rsimmons/Fluid_binding"
+  },
+  {
+    "title": "User:Rsimmons/Handled exceptions",
+    "filename": "archive/User:Rsimmons/Handled_exceptions.mediawiki",
+    "url": "wiki/User:Rsimmons/Handled_exceptions"
+  },
+  {
+    "title": "User:Rsimmons/Homework 6",
+    "filename": "archive/User:Rsimmons/Homework_6.mediawiki",
+    "url": "wiki/User:Rsimmons/Homework_6"
+  },
+  {
+    "title": "User:Rsimmons/Homework 7: Proofs In Twelf",
+    "filename": "archive/User:Rsimmons/Homework_7:_Proofs_In_Twelf.mediawiki",
+    "url": "wiki/User:Rsimmons/Homework_7:_Proofs_In_Twelf"
+  },
+  {
+    "title": "User:Rsimmons/Lecture20",
+    "filename": "archive/User:Rsimmons/Lecture20.mediawiki",
+    "url": "wiki/User:Rsimmons/Lecture20"
+  },
+  {
+    "title": "User:Rsimmons/Lecture 20: Logic Programming",
+    "filename": "archive/User:Rsimmons/Lecture_20:_Logic_Programming.mediawiki",
+    "url": "wiki/User:Rsimmons/Lecture_20:_Logic_Programming"
+  },
+  {
+    "title": "User:Rsimmons/Lecture 22: Proofs In Twelf",
+    "filename": "archive/User:Rsimmons/Lecture_22:_Proofs_In_Twelf.mediawiki",
+    "url": "wiki/User:Rsimmons/Lecture_22:_Proofs_In_Twelf"
+  },
+  {
+    "title": "User:Rsimmons/Lecture 23: Proofs In Twelf",
+    "filename": "archive/User:Rsimmons/Lecture_23:_Proofs_In_Twelf.mediawiki",
+    "url": "wiki/User:Rsimmons/Lecture_23:_Proofs_In_Twelf"
+  },
+  {
+    "title": "User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf",
+    "filename": "archive/User:Rsimmons/Lecture_23:_Typed_Lambda_Calculus_in_Twelf.mediawiki",
+    "url": "wiki/User:Rsimmons/Lecture_23:_Typed_Lambda_Calculus_in_Twelf"
+  },
+  {
+    "title": "User:Rsimmons/fillholes.elf",
+    "filename": "archive/User:Rsimmons/fillholes.elf.mediawiki",
+    "url": "wiki/User:Rsimmons/fillholes.elf"
+  },
+  {
+    "title": "User:Spoons",
+    "filename": "archive/User:Spoons.mediawiki",
+    "url": "wiki/User:Spoons"
+  },
+  {
+    "title": "User:TestUser",
+    "filename": "archive/User:TestUser.mediawiki",
+    "url": "wiki/User:TestUser"
+  },
+  {
+    "title": "User:TheTwelfElf",
+    "filename": "archive/User:TheTwelfElf.mediawiki",
+    "url": "wiki/User:TheTwelfElf"
+  },
+  {
+    "title": "User:Tom7",
+    "filename": "archive/User:Tom7.mediawiki",
+    "url": "wiki/User:Tom7"
+  },
+  {
+    "title": "User:Tom7/test.elf",
+    "filename": "archive/User:Tom7/test.elf.mediawiki",
+    "url": "wiki/User:Tom7/test.elf"
+  },
+  {
+    "title": "User:Twilson",
+    "filename": "archive/User:Twilson.mediawiki",
+    "url": "wiki/User:Twilson"
+  },
+  {
+    "title": "User:Varming",
+    "filename": "archive/User:Varming.mediawiki",
+    "url": "wiki/User:Varming"
+  },
+  {
+    "title": "User:William Lovas",
+    "filename": "archive/User:William_Lovas.mediawiki",
+    "url": "wiki/User:William_Lovas"
+  },
+  {
+    "title": "User talk:128.2.223.28",
+    "filename": "archive/User_talk:128.2.223.28.mediawiki",
+    "url": "wiki/User_talk:128.2.223.28"
+  },
+  {
+    "title": "User talk:128.237.241.108",
+    "filename": "archive/User_talk:128.237.241.108.mediawiki",
+    "url": "wiki/User_talk:128.237.241.108"
+  },
+  {
+    "title": "User talk:Aleffert",
+    "filename": "archive/User_talk:Aleffert.mediawiki",
+    "url": "wiki/User_talk:Aleffert"
+  },
+  {
+    "title": "User talk:Alepa",
+    "filename": "archive/User_talk:Alepa.mediawiki",
+    "url": "wiki/User_talk:Alepa"
+  },
+  {
+    "title": "User talk:Boyland",
+    "filename": "archive/User_talk:Boyland.mediawiki",
+    "url": "wiki/User_talk:Boyland"
+  },
+  {
+    "title": "User talk:Ccasin",
+    "filename": "archive/User_talk:Ccasin.mediawiki",
+    "url": "wiki/User_talk:Ccasin"
+  },
+  {
+    "title": "User talk:Crary",
+    "filename": "archive/User_talk:Crary.mediawiki",
+    "url": "wiki/User_talk:Crary"
+  },
+  {
+    "title": "User talk:DanielKLee",
+    "filename": "archive/User_talk:DanielKLee.mediawiki",
+    "url": "wiki/User_talk:DanielKLee"
+  },
+  {
+    "title": "User talk:Drdreyer",
+    "filename": "archive/User_talk:Drdreyer.mediawiki",
+    "url": "wiki/User_talk:Drdreyer"
+  },
+  {
+    "title": "User talk:Drl",
+    "filename": "archive/User_talk:Drl.mediawiki",
+    "url": "wiki/User_talk:Drl"
+  },
+  {
+    "title": "User talk:Hdeyoung",
+    "filename": "archive/User_talk:Hdeyoung.mediawiki",
+    "url": "wiki/User_talk:Hdeyoung"
+  },
+  {
+    "title": "User talk:JakeD",
+    "filename": "archive/User_talk:JakeD.mediawiki",
+    "url": "wiki/User_talk:JakeD"
+  },
+  {
+    "title": "User talk:Jcreed",
+    "filename": "archive/User_talk:Jcreed.mediawiki",
+    "url": "wiki/User_talk:Jcreed"
+  },
+  {
+    "title": "User talk:Neel",
+    "filename": "archive/User_talk:Neel.mediawiki",
+    "url": "wiki/User_talk:Neel"
+  },
+  {
+    "title": "User talk:Popik",
+    "filename": "archive/User_talk:Popik.mediawiki",
+    "url": "wiki/User_talk:Popik"
+  },
+  {
+    "title": "User talk:Rpollack",
+    "filename": "archive/User_talk:Rpollack.mediawiki",
+    "url": "wiki/User_talk:Rpollack"
+  },
+  {
+    "title": "User talk:Rsimmons",
+    "filename": "archive/User_talk:Rsimmons.mediawiki",
+    "url": "wiki/User_talk:Rsimmons"
+  },
+  {
+    "title": "User talk:Spoons",
+    "filename": "archive/User_talk:Spoons.mediawiki",
+    "url": "wiki/User_talk:Spoons"
+  },
+  {
+    "title": "User talk:Twilson",
+    "filename": "archive/User_talk:Twilson.mediawiki",
+    "url": "wiki/User_talk:Twilson"
+  },
+  {
+    "title": "User talk:Varming",
+    "filename": "archive/User_talk:Varming.mediawiki",
+    "url": "wiki/User_talk:Varming"
+  },
+  {
+    "title": "User talk:William Lovas",
+    "filename": "archive/User_talk:William_Lovas.mediawiki",
+    "url": "wiki/User_talk:William_Lovas"
+  },
+  {
+    "title": "The Twelf Project:1.0",
+    "filename": "archive/The_Twelf_Project:1.0.mediawiki",
+    "url": "wiki/The_Twelf_Project:1.0"
+  },
+  {
+    "title": "The Twelf Project:AJALF",
+    "filename": "archive/The_Twelf_Project:AJALF.mediawiki",
+    "url": "wiki/The_Twelf_Project:AJALF"
+  },
+  {
+    "title": "The Twelf Project:About",
+    "filename": "archive/The_Twelf_Project:About.mediawiki",
+    "url": "wiki/The_Twelf_Project:About"
+  },
+  {
+    "title": "The Twelf Project:Administrators",
+    "filename": "archive/The_Twelf_Project:Administrators.mediawiki",
+    "url": "wiki/The_Twelf_Project:Administrators"
+  },
+  {
+    "title": "The Twelf Project:BY-NC",
+    "filename": "archive/The_Twelf_Project:BY-NC.mediawiki",
+    "url": "wiki/The_Twelf_Project:BY-NC"
+  },
+  {
+    "title": "The Twelf Project:BY-SA",
+    "filename": "archive/The_Twelf_Project:BY-SA.mediawiki",
+    "url": "wiki/The_Twelf_Project:BY-SA"
+  },
+  {
+    "title": "The Twelf Project:Bureaucrats",
+    "filename": "archive/The_Twelf_Project:Bureaucrats.mediawiki",
+    "url": "wiki/The_Twelf_Project:Bureaucrats"
+  },
+  {
+    "title": "The Twelf Project:Contributing",
+    "filename": "archive/The_Twelf_Project:Contributing.mediawiki",
+    "url": "wiki/The_Twelf_Project:Contributing"
+  },
+  {
+    "title": "The Twelf Project:Contributors",
+    "filename": "archive/The_Twelf_Project:Contributors.mediawiki",
+    "url": "wiki/The_Twelf_Project:Contributors"
+  },
+  {
+    "title": "The Twelf Project:Copyright",
+    "filename": "archive/The_Twelf_Project:Copyright.mediawiki",
+    "url": "wiki/The_Twelf_Project:Copyright"
+  },
+  {
+    "title": "The Twelf Project:Copyrights",
+    "filename": "archive/The_Twelf_Project:Copyrights.mediawiki",
+    "url": "wiki/The_Twelf_Project:Copyrights"
+  },
+  {
+    "title": "The Twelf Project:GFDL",
+    "filename": "archive/The_Twelf_Project:GFDL.mediawiki",
+    "url": "wiki/The_Twelf_Project:GFDL"
+  },
+  {
+    "title": "The Twelf Project:GNU Free Documentation License",
+    "filename": "archive/The_Twelf_Project:GNU_Free_Documentation_License.mediawiki",
+    "url": "wiki/The_Twelf_Project:GNU_Free_Documentation_License"
+  },
+  {
+    "title": "The Twelf Project:GPL",
+    "filename": "archive/The_Twelf_Project:GPL.mediawiki",
+    "url": "wiki/The_Twelf_Project:GPL"
+  },
+  {
+    "title": "The Twelf Project:GeSHi Twelf extension",
+    "filename": "archive/The_Twelf_Project:GeSHi_Twelf_extension.mediawiki",
+    "url": "wiki/The_Twelf_Project:GeSHi_Twelf_extension"
+  },
+  {
+    "title": "The Twelf Project:Literate Twelf",
+    "filename": "archive/The_Twelf_Project:Literate_Twelf.mediawiki",
+    "url": "wiki/The_Twelf_Project:Literate_Twelf"
+  },
+  {
+    "title": "The Twelf Project:Literate Twelf/Sample Page",
+    "filename": "archive/The_Twelf_Project:Literate_Twelf/Sample_Page.mediawiki",
+    "url": "wiki/The_Twelf_Project:Literate_Twelf/Sample_Page"
+  },
+  {
+    "title": "The Twelf Project:MIT",
+    "filename": "archive/The_Twelf_Project:MIT.mediawiki",
+    "url": "wiki/The_Twelf_Project:MIT"
+  },
+  {
+    "title": "The Twelf Project:MIT license",
+    "filename": "archive/The_Twelf_Project:MIT_license.mediawiki",
+    "url": "wiki/The_Twelf_Project:MIT_license"
+  },
+  {
+    "title": "The Twelf Project:Policy",
+    "filename": "archive/The_Twelf_Project:Policy.mediawiki",
+    "url": "wiki/The_Twelf_Project:Policy"
+  },
+  {
+    "title": "The Twelf Project:Protected page",
+    "filename": "archive/The_Twelf_Project:Protected_page.mediawiki",
+    "url": "wiki/The_Twelf_Project:Protected_page"
+  },
+  {
+    "title": "The Twelf Project:Style guide",
+    "filename": "archive/The_Twelf_Project:Style_guide.mediawiki",
+    "url": "wiki/The_Twelf_Project:Style_guide"
+  },
+  {
+    "title": "The Twelf Project:Subversion transition",
+    "filename": "archive/The_Twelf_Project:Subversion_transition.mediawiki",
+    "url": "wiki/The_Twelf_Project:Subversion_transition"
+  },
+  {
+    "title": "The Twelf Project:Syntax Highlighting",
+    "filename": "archive/The_Twelf_Project:Syntax_Highlighting.mediawiki",
+    "url": "wiki/The_Twelf_Project:Syntax_Highlighting"
+  },
+  {
+    "title": "The Twelf Project:Syntax highlighting",
+    "filename": "archive/The_Twelf_Project:Syntax_highlighting.mediawiki",
+    "url": "wiki/The_Twelf_Project:Syntax_highlighting"
+  },
+  {
+    "title": "The Twelf Project:To do",
+    "filename": "archive/The_Twelf_Project:To_do.mediawiki",
+    "url": "wiki/The_Twelf_Project:To_do"
+  },
+  {
+    "title": "The Twelf Project:To do/Syntax highlighting",
+    "filename": "archive/The_Twelf_Project:To_do/Syntax_highlighting.mediawiki",
+    "url": "wiki/The_Twelf_Project:To_do/Syntax_highlighting"
+  },
+  {
+    "title": "The Twelf Project:TwelfTag",
+    "filename": "archive/The_Twelf_Project:TwelfTag.mediawiki",
+    "url": "wiki/The_Twelf_Project:TwelfTag"
+  },
+  {
+    "title": "The Twelf Project talk:AJALF",
+    "filename": "archive/The_Twelf_Project_talk:AJALF.mediawiki",
+    "url": "wiki/The_Twelf_Project_talk:AJALF"
+  },
+  {
+    "title": "The Twelf Project talk:Copyright",
+    "filename": "archive/The_Twelf_Project_talk:Copyright.mediawiki",
+    "url": "wiki/The_Twelf_Project_talk:Copyright"
+  },
+  {
+    "title": "The Twelf Project talk:GeSHi Twelf extension",
+    "filename": "archive/The_Twelf_Project_talk:GeSHi_Twelf_extension.mediawiki",
+    "url": "wiki/The_Twelf_Project_talk:GeSHi_Twelf_extension"
+  },
+  {
+    "title": "The Twelf Project talk:Policy",
+    "filename": "archive/The_Twelf_Project_talk:Policy.mediawiki",
+    "url": "wiki/The_Twelf_Project_talk:Policy"
+  },
+  {
+    "title": "The Twelf Project talk:Style guide",
+    "filename": "archive/The_Twelf_Project_talk:Style_guide.mediawiki",
+    "url": "wiki/The_Twelf_Project_talk:Style_guide"
+  },
+  {
+    "title": "The Twelf Project talk:To do",
+    "filename": "archive/The_Twelf_Project_talk:To_do.mediawiki",
+    "url": "wiki/The_Twelf_Project_talk:To_do"
+  },
+  {
+    "title": "The Twelf Project talk:TwelfTag",
+    "filename": "archive/The_Twelf_Project_talk:TwelfTag.mediawiki",
+    "url": "wiki/The_Twelf_Project_talk:TwelfTag"
+  },
+  {
+    "title": "File:Disk download.gif",
+    "filename": "archive/File:Disk_download.gif.mediawiki",
+    "url": "wiki/File:Disk_download.gif"
+  },
+  {
+    "title": "File:ServerOK.png",
+    "filename": "archive/File:ServerOK.png.mediawiki",
+    "url": "wiki/File:ServerOK.png"
+  },
+  {
+    "title": "File:Smalltree.svg",
+    "filename": "archive/File:Smalltree.svg.mediawiki",
+    "url": "wiki/File:Smalltree.svg"
+  },
+  {
+    "title": "File:Sudokuexample.svg",
+    "filename": "archive/File:Sudokuexample.svg.mediawiki",
+    "url": "wiki/File:Sudokuexample.svg"
+  },
+  {
+    "title": "File:TWELFLIVE-1.png",
+    "filename": "archive/File:TWELFLIVE-1.png.mediawiki",
+    "url": "wiki/File:TWELFLIVE-1.png"
+  },
+  {
+    "title": "File:TWELFLIVE-2.png",
+    "filename": "archive/File:TWELFLIVE-2.png.mediawiki",
+    "url": "wiki/File:TWELFLIVE-2.png"
+  },
+  {
+    "title": "File:TWELFLIVE-3.png",
+    "filename": "archive/File:TWELFLIVE-3.png.mediawiki",
+    "url": "wiki/File:TWELFLIVE-3.png"
+  },
+  {
+    "title": "File:Tom Twelfelf2.jpg",
+    "filename": "archive/File:Tom_Twelfelf2.jpg.mediawiki",
+    "url": "wiki/File:Tom_Twelfelf2.jpg"
+  },
+  {
+    "title": "MediaWiki:Copyrightwarning",
+    "filename": "archive/MediaWiki:Copyrightwarning.mediawiki",
+    "url": "wiki/MediaWiki:Copyrightwarning"
+  },
+  {
+    "title": "MediaWiki:Copyrightwarning2",
+    "filename": "archive/MediaWiki:Copyrightwarning2.mediawiki",
+    "url": "wiki/MediaWiki:Copyrightwarning2"
+  },
+  {
+    "title": "MediaWiki:Edittools",
+    "filename": "archive/MediaWiki:Edittools.mediawiki",
+    "url": "wiki/MediaWiki:Edittools"
+  },
+  {
+    "title": "MediaWiki:Fileinfo",
+    "filename": "archive/MediaWiki:Fileinfo.mediawiki",
+    "url": "wiki/MediaWiki:Fileinfo"
+  },
+  {
+    "title": "MediaWiki:Loginreqpagetext",
+    "filename": "archive/MediaWiki:Loginreqpagetext.mediawiki",
+    "url": "wiki/MediaWiki:Loginreqpagetext"
+  },
+  {
+    "title": "MediaWiki:Monobook.css",
+    "filename": "archive/MediaWiki:Monobook.css.mediawiki",
+    "url": "wiki/MediaWiki:Monobook.css"
+  },
+  {
+    "title": "MediaWiki:Newwindow",
+    "filename": "archive/MediaWiki:Newwindow.mediawiki",
+    "url": "wiki/MediaWiki:Newwindow"
+  },
+  {
+    "title": "MediaWiki:Previewnote",
+    "filename": "archive/MediaWiki:Previewnote.mediawiki",
+    "url": "wiki/MediaWiki:Previewnote"
+  },
+  {
+    "title": "MediaWiki:Privacy",
+    "filename": "archive/MediaWiki:Privacy.mediawiki",
+    "url": "wiki/MediaWiki:Privacy"
+  },
+  {
+    "title": "MediaWiki:Privacypage",
+    "filename": "archive/MediaWiki:Privacypage.mediawiki",
+    "url": "wiki/MediaWiki:Privacypage"
+  },
+  {
+    "title": "MediaWiki:Sidebar",
+    "filename": "archive/MediaWiki:Sidebar.mediawiki",
+    "url": "wiki/MediaWiki:Sidebar"
+  },
+  {
+    "title": "MediaWiki talk:Sidebar",
+    "filename": "archive/MediaWiki_talk:Sidebar.mediawiki",
+    "url": "wiki/MediaWiki_talk:Sidebar"
+  },
+  {
+    "title": "Template:Bibtex:af04dependent",
+    "filename": "archive/Template:Bibtex:af04dependent.mediawiki",
+    "url": "wiki/Template:Bibtex:af04dependent"
+  },
+  {
+    "title": "Template:Bibtex:crary03talt",
+    "filename": "archive/Template:Bibtex:crary03talt.mediawiki",
+    "url": "wiki/Template:Bibtex:crary03talt"
+  },
+  {
+    "title": "Template:Bibtex:fm97lax",
+    "filename": "archive/Template:Bibtex:fm97lax.mediawiki",
+    "url": "wiki/Template:Bibtex:fm97lax"
+  },
+  {
+    "title": "Template:Bibtex:hhp93lf",
+    "filename": "archive/Template:Bibtex:hhp93lf.mediawiki",
+    "url": "wiki/Template:Bibtex:hhp93lf"
+  },
+  {
+    "title": "Template:Bibtex:hl07mechanizing",
+    "filename": "archive/Template:Bibtex:hl07mechanizing.mediawiki",
+    "url": "wiki/Template:Bibtex:hl07mechanizing"
+  },
+  {
+    "title": "Template:Bibtex:lch07ml",
+    "filename": "archive/Template:Bibtex:lch07ml.mediawiki",
+    "url": "wiki/Template:Bibtex:lch07ml"
+  },
+  {
+    "title": "Template:Bibtex:pd01modal",
+    "filename": "archive/Template:Bibtex:pd01modal.mediawiki",
+    "url": "wiki/Template:Bibtex:pd01modal"
+  },
+  {
+    "title": "Template:Bibtex:pierce02tapl",
+    "filename": "archive/Template:Bibtex:pierce02tapl.mediawiki",
+    "url": "wiki/Template:Bibtex:pierce02tapl"
+  },
+  {
+    "title": "Template:Bottom",
+    "filename": "archive/Template:Bottom.mediawiki",
+    "url": "wiki/Template:Bottom"
+  },
+  {
+    "title": "Template:Box",
+    "filename": "archive/Template:Box.mediawiki",
+    "url": "wiki/Template:Box"
+  },
+  {
+    "title": "Template:Case study",
+    "filename": "archive/Template:Case_study.mediawiki",
+    "url": "wiki/Template:Case_study"
+  },
+  {
+    "title": "Template:Click-inline",
+    "filename": "archive/Template:Click-inline.mediawiki",
+    "url": "wiki/Template:Click-inline"
+  },
+  {
+    "title": "Template:Darrow",
+    "filename": "archive/Template:Darrow.mediawiki",
+    "url": "wiki/Template:Darrow"
+  },
+  {
+    "title": "Template:Dia",
+    "filename": "archive/Template:Dia.mediawiki",
+    "url": "wiki/Template:Dia"
+  },
+  {
+    "title": "Template:Discuss",
+    "filename": "archive/Template:Discuss.mediawiki",
+    "url": "wiki/Template:Discuss"
+  },
+  {
+    "title": "Template:Draft",
+    "filename": "archive/Template:Draft.mediawiki",
+    "url": "wiki/Template:Draft"
+  },
+  {
+    "title": "Template:Exists",
+    "filename": "archive/Template:Exists.mediawiki",
+    "url": "wiki/Template:Exists"
+  },
+  {
+    "title": "Template:Forall",
+    "filename": "archive/Template:Forall.mediawiki",
+    "url": "wiki/Template:Forall"
+  },
+  {
+    "title": "Template:Front-Blog Updates",
+    "filename": "archive/Template:Front-Blog_Updates.mediawiki",
+    "url": "wiki/Template:Front-Blog_Updates"
+  },
+  {
+    "title": "Template:Front-Getting Started",
+    "filename": "archive/Template:Front-Getting_Started.mediawiki",
+    "url": "wiki/Template:Front-Getting_Started"
+  },
+  {
+    "title": "Template:Front-Release History",
+    "filename": "archive/Template:Front-Release_History.mediawiki",
+    "url": "wiki/Template:Front-Release_History"
+  },
+  {
+    "title": "Template:Front-What's new",
+    "filename": "archive/Template:Front-What's_new.mediawiki",
+    "url": "wiki/Template:Front-What%27s_new"
+  },
+  {
+    "title": "Template:Guide",
+    "filename": "archive/Template:Guide.mediawiki",
+    "url": "wiki/Template:Guide"
+  },
+  {
+    "title": "Template:Keyword",
+    "filename": "archive/Template:Keyword.mediawiki",
+    "url": "wiki/Template:Keyword"
+  },
+  {
+    "title": "Template:License-by-nc",
+    "filename": "archive/Template:License-by-nc.mediawiki",
+    "url": "wiki/Template:License-by-nc"
+  },
+  {
+    "title": "Template:License-by-sa",
+    "filename": "archive/Template:License-by-sa.mediawiki",
+    "url": "wiki/Template:License-by-sa"
+  },
+  {
+    "title": "Template:License-gfdl",
+    "filename": "archive/Template:License-gfdl.mediawiki",
+    "url": "wiki/Template:License-gfdl"
+  },
+  {
+    "title": "Template:License-gpl",
+    "filename": "archive/Template:License-gpl.mediawiki",
+    "url": "wiki/Template:License-gpl"
+  },
+  {
+    "title": "Template:Literatetwelf",
+    "filename": "archive/Template:Literatetwelf.mediawiki",
+    "url": "wiki/Template:Literatetwelf"
+  },
+  {
+    "title": "Template:Lolli",
+    "filename": "archive/Template:Lolli.mediawiki",
+    "url": "wiki/Template:Lolli"
+  },
+  {
+    "title": "Template:Multimap",
+    "filename": "archive/Template:Multimap.mediawiki",
+    "url": "wiki/Template:Multimap"
+  },
+  {
+    "title": "Template:Needs",
+    "filename": "archive/Template:Needs.mediawiki",
+    "url": "wiki/Template:Needs"
+  },
+  {
+    "title": "Template:Needswork",
+    "filename": "archive/Template:Needswork.mediawiki",
+    "url": "wiki/Template:Needswork"
+  },
+  {
+    "title": "Template:Oplus",
+    "filename": "archive/Template:Oplus.mediawiki",
+    "url": "wiki/Template:Oplus"
+  },
+  {
+    "title": "Template:Otimes",
+    "filename": "archive/Template:Otimes.mediawiki",
+    "url": "wiki/Template:Otimes"
+  },
+  {
+    "title": "Template:Proving",
+    "filename": "archive/Template:Proving.mediawiki",
+    "url": "wiki/Template:Proving"
+  },
+  {
+    "title": "Template:Proving metatheorems",
+    "filename": "archive/Template:Proving_metatheorems.mediawiki",
+    "url": "wiki/Template:Proving_metatheorems"
+  },
+  {
+    "title": "Template:Repository",
+    "filename": "archive/Template:Repository.mediawiki",
+    "url": "wiki/Template:Repository"
+  },
+  {
+    "title": "Template:Rule",
+    "filename": "archive/Template:Rule.mediawiki",
+    "url": "wiki/Template:Rule"
+  },
+  {
+    "title": "Template:Stub",
+    "filename": "archive/Template:Stub.mediawiki",
+    "url": "wiki/Template:Stub"
+  },
+  {
+    "title": "Template:Stub tutorial",
+    "filename": "archive/Template:Stub_tutorial.mediawiki",
+    "url": "wiki/Template:Stub_tutorial"
+  },
+  {
+    "title": "Template:Summer school 2008",
+    "filename": "archive/Template:Summer_school_2008.mediawiki",
+    "url": "wiki/Template:Summer_school_2008"
+  },
+  {
+    "title": "Template:The Twelf Project/Blog Updates",
+    "filename": "archive/Template:The_Twelf_Project/Blog_Updates.mediawiki",
+    "url": "wiki/Template:The_Twelf_Project/Blog_Updates"
+  },
+  {
+    "title": "Template:The Twelf Project/Getting Started",
+    "filename": "archive/Template:The_Twelf_Project/Getting_Started.mediawiki",
+    "url": "wiki/Template:The_Twelf_Project/Getting_Started"
+  },
+  {
+    "title": "Template:The Twelf Project/Introduction",
+    "filename": "archive/Template:The_Twelf_Project/Introduction.mediawiki",
+    "url": "wiki/Template:The_Twelf_Project/Introduction"
+  },
+  {
+    "title": "Template:The Twelf Project/Learning Twelf",
+    "filename": "archive/Template:The_Twelf_Project/Learning_Twelf.mediawiki",
+    "url": "wiki/Template:The_Twelf_Project/Learning_Twelf"
+  },
+  {
+    "title": "Template:The Twelf Project/Release History",
+    "filename": "archive/Template:The_Twelf_Project/Release_History.mediawiki",
+    "url": "wiki/Template:The_Twelf_Project/Release_History"
+  },
+  {
+    "title": "Template:The Twelf Project/What's new",
+    "filename": "archive/Template:The_Twelf_Project/What's_new.mediawiki",
+    "url": "wiki/Template:The_Twelf_Project/What%27s_new"
+  },
+  {
+    "title": "Template:Tl",
+    "filename": "archive/Template:Tl.mediawiki",
+    "url": "wiki/Template:Tl"
+  },
+  {
+    "title": "Template:Top",
+    "filename": "archive/Template:Top.mediawiki",
+    "url": "wiki/Template:Top"
+  },
+  {
+    "title": "Template:Tutorial",
+    "filename": "archive/Template:Tutorial.mediawiki",
+    "url": "wiki/Template:Tutorial"
+  },
+  {
+    "title": "Template:Twelf code",
+    "filename": "archive/Template:Twelf_code.mediawiki",
+    "url": "wiki/Template:Twelf_code"
+  },
+  {
+    "title": "Template:Undocumented",
+    "filename": "archive/Template:Undocumented.mediawiki",
+    "url": "wiki/Template:Undocumented"
+  },
+  {
+    "title": "Template:Vdash",
+    "filename": "archive/Template:Vdash.mediawiki",
+    "url": "wiki/Template:Vdash"
+  },
+  {
+    "title": "Template talk:Bibtex:hl07mechanizing",
+    "filename": "archive/Template_talk:Bibtex:hl07mechanizing.mediawiki",
+    "url": "wiki/Template_talk:Bibtex:hl07mechanizing"
+  },
+  {
+    "title": "Template talk:Click-inline",
+    "filename": "archive/Template_talk:Click-inline.mediawiki",
+    "url": "wiki/Template_talk:Click-inline"
+  },
+  {
+    "title": "Template talk:Front-Blog Updates",
+    "filename": "archive/Template_talk:Front-Blog_Updates.mediawiki",
+    "url": "wiki/Template_talk:Front-Blog_Updates"
+  },
+  {
+    "title": "Template talk:Guide",
+    "filename": "archive/Template_talk:Guide.mediawiki",
+    "url": "wiki/Template_talk:Guide"
+  },
+  {
+    "title": "Template talk:The Twelf Project/Introduction",
+    "filename": "archive/Template_talk:The_Twelf_Project/Introduction.mediawiki",
+    "url": "wiki/Template_talk:The_Twelf_Project/Introduction"
+  },
+  {
+    "title": "Help:Contents",
+    "filename": "archive/Help:Contents.mediawiki",
+    "url": "wiki/Help:Contents"
+  },
+  {
+    "title": "Category:Case studies",
+    "filename": "archive/Category:Case_studies.mediawiki",
+    "url": "wiki/Category:Case_studies"
+  },
+  {
+    "title": "Category:Keywords",
+    "filename": "archive/Category:Keywords.mediawiki",
+    "url": "wiki/Category:Keywords"
+  },
+  {
+    "title": "Category:Literate Twelf code",
+    "filename": "archive/Category:Literate_Twelf_code.mediawiki",
+    "url": "wiki/Category:Literate_Twelf_code"
+  },
+  {
+    "title": "Category:Pages needing attention",
+    "filename": "archive/Category:Pages_needing_attention.mediawiki",
+    "url": "wiki/Category:Pages_needing_attention"
+  },
+  {
+    "title": "Category:Stubs",
+    "filename": "archive/Category:Stubs.mediawiki",
+    "url": "wiki/Category:Stubs"
+  },
+  {
+    "title": "Category:Tutorials",
+    "filename": "archive/Category:Tutorials.mediawiki",
+    "url": "wiki/Category:Tutorials"
+  },
+  {
+    "title": "Category:Tutorials needing attention",
+    "filename": "archive/Category:Tutorials_needing_attention.mediawiki",
+    "url": "wiki/Category:Tutorials_needing_attention"
+  },
+  {
+    "title": "Category:Twelf code",
+    "filename": "archive/Category:Twelf_code.mediawiki",
+    "url": "wiki/Category:Twelf_code"
+  },
+  {
+    "title": "Category:Undocumented features",
+    "filename": "archive/Category:Undocumented_features.mediawiki",
+    "url": "wiki/Category:Undocumented_features"
+  },
+  {
+    "title": "Elves:Main Page",
+    "filename": "archive/Elves:Main_Page.mediawiki",
+    "url": "wiki/Elves:Main_Page"
+  },
+  {
+    "title": "Elves talk:Main Page",
+    "filename": "archive/Elves_talk:Main_Page.mediawiki",
+    "url": "wiki/Elves_talk:Main_Page"
+  },
+  {
+    "title": "Proving metatheorems:Full LF",
+    "filename": "archive/Proving_metatheorems:Full_LF.mediawiki",
+    "url": "wiki/Proving_metatheorems:Full_LF"
+  },
+  {
+    "title": "Proving metatheorems:Natural numbers:Answers to exercises",
+    "filename": "archive/Proving_metatheorems:Natural_numbers:Answers_to_exercises.mediawiki",
+    "url": "wiki/Proving_metatheorems:Natural_numbers:Answers_to_exercises"
+  },
+  {
+    "title": "Proving metatheorems:Natural numbers: Answers to exercises",
+    "filename": "archive/Proving_metatheorems:Natural_numbers:_Answers_to_exercises.mediawiki",
+    "url": "wiki/Proving_metatheorems:Natural_numbers:_Answers_to_exercises"
+  },
+  {
+    "title": "Proving metatheorems:Proving metatheorems about the STLC",
+    "filename": "archive/Proving_metatheorems:Proving_metatheorems_about_the_STLC.mediawiki",
+    "url": "wiki/Proving_metatheorems:Proving_metatheorems_about_the_STLC"
+  },
+  {
+    "title": "Proving metatheorems:Proving metatheorems about the natural numbers",
+    "filename": "archive/Proving_metatheorems:Proving_metatheorems_about_the_natural_numbers.mediawiki",
+    "url": "wiki/Proving_metatheorems:Proving_metatheorems_about_the_natural_numbers"
+  },
+  {
+    "title": "Proving metatheorems:Proving metatheorems in non-empty contexts",
+    "filename": "archive/Proving_metatheorems:Proving_metatheorems_in_non-empty_contexts.mediawiki",
+    "url": "wiki/Proving_metatheorems:Proving_metatheorems_in_non-empty_contexts"
+  },
+  {
+    "title": "Proving metatheorems:Proving totality assertions about the natural numbers",
+    "filename": "archive/Proving_metatheorems:Proving_totality_assertions_about_the_natural_numbers.mediawiki",
+    "url": "wiki/Proving_metatheorems:Proving_totality_assertions_about_the_natural_numbers"
+  },
+  {
+    "title": "Proving metatheorems:Proving totality assertions in non-empty contexts",
+    "filename": "archive/Proving_metatheorems:Proving_totality_assertions_in_non-empty_contexts.mediawiki",
+    "url": "wiki/Proving_metatheorems:Proving_totality_assertions_in_non-empty_contexts"
+  },
+  {
+    "title": "Proving metatheorems:Representing the judgements of the STLC",
+    "filename": "archive/Proving_metatheorems:Representing_the_judgements_of_the_STLC.mediawiki",
+    "url": "wiki/Proving_metatheorems:Representing_the_judgements_of_the_STLC"
+  },
+  {
+    "title": "Proving metatheorems:Representing the judgements of the natural numbers",
+    "filename": "archive/Proving_metatheorems:Representing_the_judgements_of_the_natural_numbers.mediawiki",
+    "url": "wiki/Proving_metatheorems:Representing_the_judgements_of_the_natural_numbers"
+  },
+  {
+    "title": "Proving metatheorems:Representing the syntax of the STLC",
+    "filename": "archive/Proving_metatheorems:Representing_the_syntax_of_the_STLC.mediawiki",
+    "url": "wiki/Proving_metatheorems:Representing_the_syntax_of_the_STLC"
+  },
+  {
+    "title": "Proving metatheorems:Representing the syntax of the natural numbers",
+    "filename": "archive/Proving_metatheorems:Representing_the_syntax_of_the_natural_numbers.mediawiki",
+    "url": "wiki/Proving_metatheorems:Representing_the_syntax_of_the_natural_numbers"
+  },
+  {
+    "title": "Proving metatheorems:STLC: Answers to exercises",
+    "filename": "archive/Proving_metatheorems:STLC:_Answers_to_exercises.mediawiki",
+    "url": "wiki/Proving_metatheorems:STLC:_Answers_to_exercises"
+  },
+  {
+    "title": "Proving metatheorems:Simply typed LF",
+    "filename": "archive/Proving_metatheorems:Simply_typed_LF.mediawiki",
+    "url": "wiki/Proving_metatheorems:Simply_typed_LF"
+  },
+  {
+    "title": "Proving metatheorems:Summary: the STLC",
+    "filename": "archive/Proving_metatheorems:Summary:_the_STLC.mediawiki",
+    "url": "wiki/Proving_metatheorems:Summary:_the_STLC"
+  },
+  {
+    "title": "Proving metatheorems:Summary: the natural numbers",
+    "filename": "archive/Proving_metatheorems:Summary:_the_natural_numbers.mediawiki",
+    "url": "wiki/Proving_metatheorems:Summary:_the_natural_numbers"
+  },
+  {
+    "title": "Proving metatheorems talk:Representing the judgements of the STLC",
+    "filename": "archive/Proving_metatheorems_talk:Representing_the_judgements_of_the_STLC.mediawiki",
+    "url": "wiki/Proving_metatheorems_talk:Representing_the_judgements_of_the_STLC"
+  },
+  {
+    "title": "Proving metatheorems talk:Representing the judgements of the natural numbers",
+    "filename": "archive/Proving_metatheorems_talk:Representing_the_judgements_of_the_natural_numbers.mediawiki",
+    "url": "wiki/Proving_metatheorems_talk:Representing_the_judgements_of_the_natural_numbers"
+  },
+  {
+    "title": "Proving metatheorems talk:Representing the syntax of the STLC",
+    "filename": "archive/Proving_metatheorems_talk:Representing_the_syntax_of_the_STLC.mediawiki",
+    "url": "wiki/Proving_metatheorems_talk:Representing_the_syntax_of_the_STLC"
+  },
+  {
+    "title": "Proving metatheorems talk:Simply typed LF",
+    "filename": "archive/Proving_metatheorems_talk:Simply_typed_LF.mediawiki",
+    "url": "wiki/Proving_metatheorems_talk:Simply_typed_LF"
+  }
+]
