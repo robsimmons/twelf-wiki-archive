@@ -161,6 +161,7 @@ if (
 const FILE_PAGES = new Set();
 const PAGES_IN_DUMP = new Set();
 const REDIRECTS = new Map();
+const OMITTED = new Set();
 
 if (!existsSync("archive")) {
   mkdirSync("archive");
@@ -198,6 +199,7 @@ for (const page of dumpJson.mediawiki.page) {
     );
   } else {
     console.log(`Omitting non-text page: ${page.title}`);
+    OMITTED.add(page.title);
   }
 }
 
@@ -227,11 +229,13 @@ writeFileSync(
 writeFileSync(
   "twelfwiki-all-content.json",
   JSON.stringify(
-    [...CONTENT_PAGES].map((title) => ({
-      title,
-      filename: `archive/${title.replaceAll(" ", "_")}.mediawiki`,
-      url: `wiki/${convTitle(title)}`,
-    })),
+    [...CONTENT_PAGES]
+      .filter((page) => !OMITTED.has(page))
+      .map((title) => ({
+        title,
+        filename: `archive/${title.replaceAll(" ", "_")}.mediawiki`,
+        url: `wiki/${convTitle(title)}`,
+      })),
     undefined,
     2
   )
