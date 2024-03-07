@@ -153,7 +153,7 @@ const mappings = [...MAP_TITLE_TO_SLUG.entries()].sort(([k1, v1], [k2, v2]) =>
 const redirects = {};
 for (const [title, slug] of MAP_TITLE_TO_SLUG.entries()) {
   if (!MAP_SLUG_TO_TITLE.has(title)) {
-    redirects[`/wiki/${title}`] = `/wiki/${slug}/`;
+    redirects[`/wiki/${title.replace(":", "%3A")}`] = `/wiki/${slug}/`;
   }
 }
 /*
@@ -189,12 +189,12 @@ services:
     buildCommand: cd wiki; npm install; npm run build
     staticPublishPath: ./wiki/dist
     routes:${Object.entries(redirects)
-  .map(
-    ([prev, canonical]) => `
+      .map(
+        ([prev, canonical]) => `
       - type: redirect
         source: "${prev}"
         destination: "${canonical}"`
-  )
-  .join("")}
+      )
+      .join("")}
 `
 );
