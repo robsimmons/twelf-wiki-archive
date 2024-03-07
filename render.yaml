@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: twelf
+    runtime: static
+    repo: https://github.com/standardml/twelf.git
+    branch: wiki
+    buildCommand: cd wiki; npm install; npm run build
+    staticPublishPath: ./wiki/dist
+    routes:
+      - type: redirect
+        source: "/wiki/User:Rsimmons"
+        destination: /wiki/user-rsimmons

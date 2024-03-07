@@ -148,8 +148,15 @@ const mappings = [...MAP_TITLE_TO_SLUG.entries()].sort(([k1, v1], [k2, v2]) =>
   v1 > v2 ? 1 : v1 < v2 ? -1 : k1 === k2 ? 0 : k1 > k2 ? 1 : -1
 );
 
-for (const [k, v] of mappings) {
-  console.log(`${v} -> ${k}`);
+const redirects = {};
+for (const [title, slug] of MAP_TITLE_TO_SLUG.entries()) {
+  if (!MAP_SLUG_TO_NEW_NAME.has(title)) {
+    redirects[`/wiki/${title.replaceAll(":", "%3A")}`] = `/wiki/${slug}/`;
+  }
 }
+writeFileSync(
+  "../twelf/wiki/wiki-redirects.json",
+  JSON.stringify(redirects, undefined, 2)
+);
 
 // console.log([...MAP_SLUG_TO_NEW_NAME.keys()].sort().join("\n"));
