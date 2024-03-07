@@ -5,9 +5,13 @@ import { mediawikiToElf } from "./translator.mjs";
 const REDIRECTS = JSON.parse(readFileSync("twelfwiki-all-redirects.json"));
 const CONTENT = JSON.parse(readFileSync("twelfwiki-all-content.json"));
 
-const MAP_SLUG_TO_NEW_NAME = new Map();
+const MAP_SLUG_TO_TITLE = new Map();
 const MAP_TITLE_TO_SLUG = new Map();
 const MAP_LOWERCASE_TITLE_TO_SLUG = new Map();
+const MAP_TITLE_TO_OLD_URL = new Map();
+for (const { title, url } of CONTENT) {
+  MAP_TITLE_TO_OLD_URL.set(title, url);
+}
 
 function convertTitle(title) {
   let converted =
@@ -36,12 +40,10 @@ function convertTitle(title) {
 
 for (const { title } of CONTENT) {
   const slug = convertTitle(title);
-  if (MAP_SLUG_TO_NEW_NAME.has(slug)) {
+  if (MAP_SLUG_TO_TITLE.has(slug)) {
     // This scheme fails if there are two pages that automap to the same slug
     throw new Error(
-      `${slug} applies to both "${title}" and "${MAP_SLUG_TO_NEW_NAME.get(
-        slug
-      )}"`
+      `${slug} applies to both "${title}" and "${MAP_SLUG_TO_TITLE.get(slug)}"`
     );
   }
   if (
@@ -51,7 +53,7 @@ for (const { title } of CONTENT) {
   ) {
     throw new Error(title);
   }
-  MAP_SLUG_TO_NEW_NAME.set(slug, title);
+  MAP_SLUG_TO_TITLE.set(slug, title);
   MAP_TITLE_TO_SLUG.set(title, slug);
   MAP_TITLE_TO_SLUG.set(title.replaceAll(" ", "_"), slug);
   MAP_LOWERCASE_TITLE_TO_SLUG.set(
@@ -64,7 +66,7 @@ for (const { src, dst } of REDIRECTS) {
   const slugFromTitle = convertTitle(src);
   const slugFromLookup = MAP_TITLE_TO_SLUG.get(dst);
   if (
-    MAP_SLUG_TO_NEW_NAME.has(slugFromTitle) &&
+    MAP_SLUG_TO_TITLE.has(slugFromTitle) &&
     slugFromTitle !== slugFromLookup
   ) {
     throw new Error(
@@ -129,9 +131,9 @@ for (const { title, filename } of CONTENT) {
             "/)",
             linky[1]
           );
-        } else if (!DEAD_LINKS.has(linkTitle)) {
+        } else {
           DEAD_LINKS.add(linkTitle);
-          output.push(segment);
+          output.push("[[", segment);
         }
       }
     }
@@ -140,7 +142,7 @@ for (const { title, filename } of CONTENT) {
   const slug = MAP_TITLE_TO_SLUG.get(title);
   writeFileSync(
     `../twelf/wiki/src/content/twelf/${slug}.elf`,
-    mediawikiToElf(title, output.join(""))
+    mediawikiToElf(title, MAP_TITLE_TO_OLD_URL.get(title), output.join(""))
   );
 }
 
@@ -150,13 +152,49 @@ const mappings = [...MAP_TITLE_TO_SLUG.entries()].sort(([k1, v1], [k2, v2]) =>
 
 const redirects = {};
 for (const [title, slug] of MAP_TITLE_TO_SLUG.entries()) {
-  if (!MAP_SLUG_TO_NEW_NAME.has(title)) {
-    redirects[`/wiki/${title.replaceAll(":", "%3A")}`] = `/wiki/${slug}/`;
+  if (!MAP_SLUG_TO_TITLE.has(title)) {
+    redirects[`/wiki/${title}`] = `/wiki/${slug}/`;
   }
 }
+/*
 writeFileSync(
   "../twelf/wiki/wiki-redirects.json",
   JSON.stringify(redirects, undefined, 2)
 );
+*/
 
 // console.log([...MAP_SLUG_TO_NEW_NAME.keys()].sort().join("\n"));
+
+writeFileSync(
+  "../twelf/wiki/src/content/docs/index.mdx",
+  `---
+title: It's an actual index
+---
+
+${[...MAP_TITLE_TO_SLUG.entries()]
+  .sort(([a], [b]) => (a > b ? 1 : -1))
+  .map(([title, slug]) => ` - [${title}](/wiki/${slug}/)`)
+  .join("\n")}`
+);
+
+writeFileSync(
+  "render.yaml",
+  `
+services:
+  - type: web
+    name: twelf
+    runtime: static
+    repo: https://github.com/standardml/twelf.git
+    branch: wiki
+    buildCommand: cd wiki; npm install; npm run build
+    staticPublishPath: ./wiki/dist
+    routes:${Object.entries(redirects)
+  .map(
+    ([prev, canonical]) => `
+      - type: redirect
+        source: "${prev}"
+        destination: "${canonical}"`
+  )
+  .join("")}
+`
+);

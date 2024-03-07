@@ -1,3 +1,4 @@
+
 services:
   - type: web
     name: twelf
@@ -8,5 +9,4061 @@ services:
     staticPublishPath: ./wiki/dist
     routes:
       - type: redirect
+        source: "/wiki/%."
+        destination: "/wiki/percent-eof/"
+      - type: redirect
+        source: "/wiki/%assert"
+        destination: "/wiki/percent-assert/"
+      - type: redirect
+        source: "/wiki/%block"
+        destination: "/wiki/percent-block/"
+      - type: redirect
+        source: "/wiki/%clause"
+        destination: "/wiki/percent-clause/"
+      - type: redirect
+        source: "/wiki/%covers"
+        destination: "/wiki/percent-covers/"
+      - type: redirect
+        source: "/wiki/%establish"
+        destination: "/wiki/percent-establish/"
+      - type: redirect
+        source: "/wiki/%freeze"
+        destination: "/wiki/percent-freeze/"
+      - type: redirect
+        source: "/wiki/%mode"
+        destination: "/wiki/percent-mode/"
+      - type: redirect
+        source: "/wiki/%name"
+        destination: "/wiki/percent-name/"
+      - type: redirect
+        source: "/wiki/%prove"
+        destination: "/wiki/percent-prove/"
+      - type: redirect
+        source: "/wiki/%query"
+        destination: "/wiki/percent-query/"
+      - type: redirect
+        source: "/wiki/%querytabled"
+        destination: "/wiki/percent-querytabled/"
+      - type: redirect
+        source: "/wiki/%reduces"
+        destination: "/wiki/percent-reduces/"
+      - type: redirect
+        source: "/wiki/%solve"
+        destination: "/wiki/percent-solve/"
+      - type: redirect
+        source: "/wiki/%subord"
+        destination: "/wiki/percent-subord/"
+      - type: redirect
+        source: "/wiki/%tabled"
+        destination: "/wiki/percent-tabled/"
+      - type: redirect
+        source: "/wiki/%terminates"
+        destination: "/wiki/percent-terminates/"
+      - type: redirect
+        source: "/wiki/%thaw"
+        destination: "/wiki/percent-thaw/"
+      - type: redirect
+        source: "/wiki/%theorem"
+        destination: "/wiki/percent-theorem/"
+      - type: redirect
+        source: "/wiki/%total"
+        destination: "/wiki/percent-total/"
+      - type: redirect
+        source: "/wiki/%trustme"
+        destination: "/wiki/percent-trustme/"
+      - type: redirect
+        source: "/wiki/%unique"
+        destination: "/wiki/percent-unique/"
+      - type: redirect
+        source: "/wiki/%use"
+        destination: "/wiki/percent-use/"
+      - type: redirect
+        source: "/wiki/%worlds"
+        destination: "/wiki/percent-worlds/"
+      - type: redirect
+        source: "/wiki/Abbrev declaration"
+        destination: "/wiki/abbrev-declaration/"
+      - type: redirect
+        source: "/wiki/Abbrev_declaration"
+        destination: "/wiki/abbrev-declaration/"
+      - type: redirect
+        source: "/wiki/About The Twelf Project"
+        destination: "/wiki/about-the-twelf-project/"
+      - type: redirect
+        source: "/wiki/About_The_Twelf_Project"
+        destination: "/wiki/about-the-twelf-project/"
+      - type: redirect
+        source: "/wiki/Abstract syntax"
+        destination: "/wiki/abstract-syntax/"
+      - type: redirect
+        source: "/wiki/Abstract_syntax"
+        destination: "/wiki/abstract-syntax/"
+      - type: redirect
+        source: "/wiki/Ad hoc binding structures"
+        destination: "/wiki/ad-hoc-binding-structures/"
+      - type: redirect
+        source: "/wiki/Ad_hoc_binding_structures"
+        destination: "/wiki/ad-hoc-binding-structures/"
+      - type: redirect
+        source: "/wiki/Adequacy"
+        destination: "/wiki/adequacy/"
+      - type: redirect
+        source: "/wiki/Admissibility of cut"
+        destination: "/wiki/admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/Admissibility_of_cut"
+        destination: "/wiki/admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/Alpha-equivalence"
+        destination: "/wiki/alpha-equivalence/"
+      - type: redirect
+        source: "/wiki/Ambiguous hyperkind"
+        destination: "/wiki/ambiguous-hyperkind/"
+      - type: redirect
+        source: "/wiki/Ambiguous_hyperkind"
+        destination: "/wiki/ambiguous-hyperkind/"
+      - type: redirect
+        source: "/wiki/Ask Twelf Elf"
+        destination: "/wiki/ask-twelf-elf/"
+      - type: redirect
+        source: "/wiki/Ask_Twelf_Elf"
+        destination: "/wiki/ask-twelf-elf/"
+      - type: redirect
+        source: "/wiki/Ask Twelf Elf:Short answers"
+        destination: "/wiki/ask-twelf-elf-short-answers/"
+      - type: redirect
+        source: "/wiki/Ask_Twelf_Elf:Short_answers"
+        destination: "/wiki/ask-twelf-elf-short-answers/"
+      - type: redirect
+        source: "/wiki/Beta-equivalence"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/Bibliography of LF"
+        destination: "/wiki/bibliography-of-lf/"
+      - type: redirect
+        source: "/wiki/Bibliography_of_LF"
+        destination: "/wiki/bibliography-of-lf/"
+      - type: redirect
+        source: "/wiki/Big algebraic solver"
+        destination: "/wiki/big-algebraic-solver/"
+      - type: redirect
+        source: "/wiki/Big_algebraic_solver"
+        destination: "/wiki/big-algebraic-solver/"
+      - type: redirect
+        source: "/wiki/Bracket abstraction"
+        destination: "/wiki/bracket-abstraction/"
+      - type: redirect
+        source: "/wiki/Bracket_abstraction"
+        destination: "/wiki/bracket-abstraction/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial"
+        destination: "/wiki/cade-tutorial/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial"
+        destination: "/wiki/cade-tutorial/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/Basic error messages"
+        destination: "/wiki/cade-tutorial-basic-error-messages/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/Basic_error_messages"
+        destination: "/wiki/cade-tutorial-basic-error-messages/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/Basics"
+        destination: "/wiki/cade-tutorial-basics/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/Basics"
+        destination: "/wiki/cade-tutorial-basics/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/Basics Answer"
+        destination: "/wiki/cade-tutorial-basics-answer/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/Basics_Answer"
+        destination: "/wiki/cade-tutorial-basics-answer/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/Combinators"
+        destination: "/wiki/cade-tutorial-combinators/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/Combinators"
+        destination: "/wiki/cade-tutorial-combinators/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/Combinators Answer"
+        destination: "/wiki/cade-tutorial-combinators-answer/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/Combinators_Answer"
+        destination: "/wiki/cade-tutorial-combinators-answer/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/Combinators Support"
+        destination: "/wiki/cade-tutorial-combinators-support/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/Combinators_Support"
+        destination: "/wiki/cade-tutorial-combinators-support/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/MinML"
+        destination: "/wiki/cade-tutorial-minml/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/MinML"
+        destination: "/wiki/cade-tutorial-minml/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/MinML Answer"
+        destination: "/wiki/cade-tutorial-minml-answer/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/MinML_Answer"
+        destination: "/wiki/cade-tutorial-minml-answer/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/MinML encoding"
+        destination: "/wiki/cade-tutorial-minml-encoding/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/MinML_encoding"
+        destination: "/wiki/cade-tutorial-minml-encoding/"
+      - type: redirect
+        source: "/wiki/CADE Tutorial/Next"
+        destination: "/wiki/cade-tutorial-next/"
+      - type: redirect
+        source: "/wiki/CADE_Tutorial/Next"
+        destination: "/wiki/cade-tutorial-next/"
+      - type: redirect
+        source: "/wiki/CPS conversion"
+        destination: "/wiki/cps-conversion/"
+      - type: redirect
+        source: "/wiki/CPS_conversion"
+        destination: "/wiki/cps-conversion/"
+      - type: redirect
+        source: "/wiki/C machine and focusing"
+        destination: "/wiki/c-machine-and-focusing/"
+      - type: redirect
+        source: "/wiki/C_machine_and_focusing"
+        destination: "/wiki/c-machine-and-focusing/"
+      - type: redirect
+        source: "/wiki/C machine and focusing (composition in machine state)"
+        destination: "/wiki/c-machine-and-focusing-composition-in-machine-state/"
+      - type: redirect
+        source: "/wiki/C_machine_and_focusing_(composition_in_machine_state)"
+        destination: "/wiki/c-machine-and-focusing-composition-in-machine-state/"
+      - type: redirect
+        source: "/wiki/C machine and focusing (internalized compositon)"
+        destination: "/wiki/c-machine-and-focusing-internalized-compositon/"
+      - type: redirect
+        source: "/wiki/C_machine_and_focusing_(internalized_compositon)"
+        destination: "/wiki/c-machine-and-focusing-internalized-compositon/"
+      - type: redirect
+        source: "/wiki/Canonical form"
+        destination: "/wiki/canonical-form/"
+      - type: redirect
+        source: "/wiki/Canonical_form"
+        destination: "/wiki/canonical-form/"
+      - type: redirect
+        source: "/wiki/Canonical forms lemma"
+        destination: "/wiki/canonical-forms-lemma/"
+      - type: redirect
+        source: "/wiki/Canonical_forms_lemma"
+        destination: "/wiki/canonical-forms-lemma/"
+      - type: redirect
+        source: "/wiki/Case studies"
+        destination: "/wiki/case-studies/"
+      - type: redirect
+        source: "/wiki/Case_studies"
+        destination: "/wiki/case-studies/"
+      - type: redirect
+        source: "/wiki/Catch-all case"
+        destination: "/wiki/catch-all-case/"
+      - type: redirect
+        source: "/wiki/Catch-all_case"
+        destination: "/wiki/catch-all-case/"
+      - type: redirect
+        source: "/wiki/Church-Rosser (w/ catch-all case)"
+        destination: "/wiki/church-rosser-w-catch-all-case/"
+      - type: redirect
+        source: "/wiki/Church-Rosser_(w/_catch-all_case)"
+        destination: "/wiki/church-rosser-w-catch-all-case/"
+      - type: redirect
+        source: "/wiki/Church-Rosser (w/ identity reduction)"
+        destination: "/wiki/church-rosser-w-identity-reduction/"
+      - type: redirect
+        source: "/wiki/Church-Rosser_(w/_identity_reduction)"
+        destination: "/wiki/church-rosser-w-identity-reduction/"
+      - type: redirect
+        source: "/wiki/Church-Rosser via complete development"
+        destination: "/wiki/church-rosser-via-complete-development/"
+      - type: redirect
+        source: "/wiki/Church-Rosser_via_complete_development"
+        destination: "/wiki/church-rosser-via-complete-development/"
+      - type: redirect
+        source: "/wiki/Classical S5"
+        destination: "/wiki/classical-s5/"
+      - type: redirect
+        source: "/wiki/Classical_S5"
+        destination: "/wiki/classical-s5/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009"
+        destination: "/wiki/computation-and-deduction-2009/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009"
+        destination: "/wiki/computation-and-deduction-2009/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090203"
+        destination: "/wiki/computation-and-deduction-2009-20090203/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090203"
+        destination: "/wiki/computation-and-deduction-2009-20090203/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090204"
+        destination: "/wiki/computation-and-deduction-2009-20090204/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090204"
+        destination: "/wiki/computation-and-deduction-2009-20090204/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090209"
+        destination: "/wiki/computation-and-deduction-2009-20090209/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090209"
+        destination: "/wiki/computation-and-deduction-2009-20090209/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090223"
+        destination: "/wiki/computation-and-deduction-2009-20090223/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090223"
+        destination: "/wiki/computation-and-deduction-2009-20090223/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090304"
+        destination: "/wiki/computation-and-deduction-2009-20090304/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090304"
+        destination: "/wiki/computation-and-deduction-2009-20090304/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090304-support"
+        destination: "/wiki/computation-and-deduction-2009-20090304-support/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090304-support"
+        destination: "/wiki/computation-and-deduction-2009-20090304-support/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090316"
+        destination: "/wiki/computation-and-deduction-2009-20090316/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090316"
+        destination: "/wiki/computation-and-deduction-2009-20090316/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090318"
+        destination: "/wiki/computation-and-deduction-2009-20090318/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090318"
+        destination: "/wiki/computation-and-deduction-2009-20090318/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090325"
+        destination: "/wiki/computation-and-deduction-2009-20090325/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090325"
+        destination: "/wiki/computation-and-deduction-2009-20090325/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090330"
+        destination: "/wiki/computation-and-deduction-2009-20090330/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090330"
+        destination: "/wiki/computation-and-deduction-2009-20090330/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090401"
+        destination: "/wiki/computation-and-deduction-2009-20090401/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090401"
+        destination: "/wiki/computation-and-deduction-2009-20090401/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090406"
+        destination: "/wiki/computation-and-deduction-2009-20090406/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090406"
+        destination: "/wiki/computation-and-deduction-2009-20090406/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090408"
+        destination: "/wiki/computation-and-deduction-2009-20090408/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090408"
+        destination: "/wiki/computation-and-deduction-2009-20090408/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090413"
+        destination: "/wiki/computation-and-deduction-2009-20090413/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090413"
+        destination: "/wiki/computation-and-deduction-2009-20090413/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090415"
+        destination: "/wiki/computation-and-deduction-2009-20090415/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090415"
+        destination: "/wiki/computation-and-deduction-2009-20090415/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090420"
+        destination: "/wiki/computation-and-deduction-2009-20090420/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090420"
+        destination: "/wiki/computation-and-deduction-2009-20090420/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090422"
+        destination: "/wiki/computation-and-deduction-2009-20090422/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090422"
+        destination: "/wiki/computation-and-deduction-2009-20090422/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090427"
+        destination: "/wiki/computation-and-deduction-2009-20090427/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090427"
+        destination: "/wiki/computation-and-deduction-2009-20090427/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/20090429"
+        destination: "/wiki/computation-and-deduction-2009-20090429/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/20090429"
+        destination: "/wiki/computation-and-deduction-2009-20090429/"
+      - type: redirect
+        source: "/wiki/Computation and Deduction 2009/Test Page 1"
+        destination: "/wiki/computation-and-deduction-2009-test-page-1/"
+      - type: redirect
+        source: "/wiki/Computation_and_Deduction_2009/Test_Page_1"
+        destination: "/wiki/computation-and-deduction-2009-test-page-1/"
+      - type: redirect
+        source: "/wiki/Concrete representation"
+        destination: "/wiki/concrete-representation/"
+      - type: redirect
+        source: "/wiki/Concrete_representation"
+        destination: "/wiki/concrete-representation/"
+      - type: redirect
+        source: "/wiki/Congruence relation"
+        destination: "/wiki/congruence-relation/"
+      - type: redirect
+        source: "/wiki/Congruence_relation"
+        destination: "/wiki/congruence-relation/"
+      - type: redirect
+        source: "/wiki/Constraint domain"
+        destination: "/wiki/constraint-domain/"
+      - type: redirect
+        source: "/wiki/Constraint_domain"
+        destination: "/wiki/constraint-domain/"
+      - type: redirect
+        source: "/wiki/Constraint domains and coverage checking"
+        destination: "/wiki/constraint-domains-and-coverage-checking/"
+      - type: redirect
+        source: "/wiki/Constraint_domains_and_coverage_checking"
+        destination: "/wiki/constraint-domains-and-coverage-checking/"
+      - type: redirect
+        source: "/wiki/ConstructiveSemantics"
+        destination: "/wiki/constructivesemantics/"
+      - type: redirect
+        source: "/wiki/Converting between implicit and explicit parameters"
+        destination: "/wiki/converting-between-implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Converting_between_implicit_and_explicit_parameters"
+        destination: "/wiki/converting-between-implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Correctness of mergesort"
+        destination: "/wiki/correctness-of-mergesort/"
+      - type: redirect
+        source: "/wiki/Correctness_of_mergesort"
+        destination: "/wiki/correctness-of-mergesort/"
+      - type: redirect
+        source: "/wiki/Coverage checking"
+        destination: "/wiki/coverage-checking/"
+      - type: redirect
+        source: "/wiki/Coverage_checking"
+        destination: "/wiki/coverage-checking/"
+      - type: redirect
+        source: "/wiki/Debugging coverage errors"
+        destination: "/wiki/debugging-coverage-errors/"
+      - type: redirect
+        source: "/wiki/Debugging_coverage_errors"
+        destination: "/wiki/debugging-coverage-errors/"
+      - type: redirect
+        source: "/wiki/Define declaration"
+        destination: "/wiki/define-declaration/"
+      - type: redirect
+        source: "/wiki/Define_declaration"
+        destination: "/wiki/define-declaration/"
+      - type: redirect
+        source: "/wiki/Dependent types"
+        destination: "/wiki/dependent-types/"
+      - type: redirect
+        source: "/wiki/Dependent_types"
+        destination: "/wiki/dependent-types/"
+      - type: redirect
+        source: "/wiki/Deterministic declaration"
+        destination: "/wiki/deterministic-declaration/"
+      - type: redirect
+        source: "/wiki/Deterministic_declaration"
+        destination: "/wiki/deterministic-declaration/"
+      - type: redirect
+        source: "/wiki/Division over the natural numbers"
+        destination: "/wiki/division-over-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Division_over_the_natural_numbers"
+        destination: "/wiki/division-over-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Documentation"
+        destination: "/wiki/documentation/"
+      - type: redirect
+        source: "/wiki/Double-negation translation"
+        destination: "/wiki/double-negation-translation/"
+      - type: redirect
+        source: "/wiki/Double-negation_translation"
+        destination: "/wiki/double-negation-translation/"
+      - type: redirect
+        source: "/wiki/Download"
+        destination: "/wiki/download/"
+      - type: redirect
+        source: "/wiki/Effectiveness lemma"
+        destination: "/wiki/effectiveness-lemma/"
+      - type: redirect
+        source: "/wiki/Effectiveness_lemma"
+        destination: "/wiki/effectiveness-lemma/"
+      - type: redirect
+        source: "/wiki/Equality"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Equivalence relation"
+        destination: "/wiki/equivalence-relation/"
+      - type: redirect
+        source: "/wiki/Equivalence_relation"
+        destination: "/wiki/equivalence-relation/"
+      - type: redirect
+        source: "/wiki/Error messages"
+        destination: "/wiki/error-messages/"
+      - type: redirect
+        source: "/wiki/Error_messages"
+        destination: "/wiki/error-messages/"
+      - type: redirect
+        source: "/wiki/Eta-equivalence"
+        destination: "/wiki/eta-equivalence/"
+      - type: redirect
+        source: "/wiki/Evaluation contexts"
+        destination: "/wiki/evaluation-contexts/"
+      - type: redirect
+        source: "/wiki/Evaluation_contexts"
+        destination: "/wiki/evaluation-contexts/"
+      - type: redirect
+        source: "/wiki/Exchange lemma"
+        destination: "/wiki/exchange-lemma/"
+      - type: redirect
+        source: "/wiki/Exchange_lemma"
+        destination: "/wiki/exchange-lemma/"
+      - type: redirect
+        source: "/wiki/Explicit context"
+        destination: "/wiki/explicit-context/"
+      - type: redirect
+        source: "/wiki/Explicit_context"
+        destination: "/wiki/explicit-context/"
+      - type: redirect
+        source: "/wiki/First-order encodings"
+        destination: "/wiki/first-order-encodings/"
+      - type: redirect
+        source: "/wiki/First-order_encodings"
+        destination: "/wiki/first-order-encodings/"
+      - type: redirect
+        source: "/wiki/Fixity declaration"
+        destination: "/wiki/fixity-declaration/"
+      - type: redirect
+        source: "/wiki/Fixity_declaration"
+        destination: "/wiki/fixity-declaration/"
+      - type: redirect
+        source: "/wiki/Focusing"
+        destination: "/wiki/focusing/"
+      - type: redirect
+        source: "/wiki/Function"
+        destination: "/wiki/function/"
+      - type: redirect
+        source: "/wiki/General description of Twelf"
+        destination: "/wiki/general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/General_description_of_Twelf"
+        destination: "/wiki/general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Glossary"
+        destination: "/wiki/glossary/"
+      - type: redirect
+        source: "/wiki/Ground"
+        destination: "/wiki/ground/"
+      - type: redirect
+        source: "/wiki/HOAS nat bijection"
+        destination: "/wiki/hoas-nat-bijection/"
+      - type: redirect
+        source: "/wiki/HOAS_nat_bijection"
+        destination: "/wiki/hoas-nat-bijection/"
+      - type: redirect
+        source: "/wiki/Hereditary substitution"
+        destination: "/wiki/hereditary-substitution/"
+      - type: redirect
+        source: "/wiki/Hereditary_substitution"
+        destination: "/wiki/hereditary-substitution/"
+      - type: redirect
+        source: "/wiki/Hereditary substitution for the STLC"
+        destination: "/wiki/hereditary-substitution-for-the-stlc/"
+      - type: redirect
+        source: "/wiki/Hereditary_substitution_for_the_STLC"
+        destination: "/wiki/hereditary-substitution-for-the-stlc/"
+      - type: redirect
+        source: "/wiki/Hereditary substitution for the STLC (part 2)"
+        destination: "/wiki/hereditary-substitution-for-the-stlc-part-2/"
+      - type: redirect
+        source: "/wiki/Hereditary_substitution_for_the_STLC_(part_2)"
+        destination: "/wiki/hereditary-substitution-for-the-stlc-part-2/"
+      - type: redirect
+        source: "/wiki/Hereditary substitution with a zipper"
+        destination: "/wiki/hereditary-substitution-with-a-zipper/"
+      - type: redirect
+        source: "/wiki/Hereditary_substitution_with_a_zipper"
+        destination: "/wiki/hereditary-substitution-with-a-zipper/"
+      - type: redirect
+        source: "/wiki/Higher-order abstract syntax"
+        destination: "/wiki/higher-order-abstract-syntax/"
+      - type: redirect
+        source: "/wiki/Higher-order_abstract_syntax"
+        destination: "/wiki/higher-order-abstract-syntax/"
+      - type: redirect
+        source: "/wiki/Higher-order judgements"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/Higher-order_judgements"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/Hypothetical judgment"
+        destination: "/wiki/hypothetical-judgment/"
+      - type: redirect
+        source: "/wiki/Hypothetical_judgment"
+        destination: "/wiki/hypothetical-judgment/"
+      - type: redirect
+        source: "/wiki/Implicit and explicit parameters"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Implicit_and_explicit_parameters"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Incremental metatheorem development"
+        destination: "/wiki/incremental-metatheorem-development/"
+      - type: redirect
+        source: "/wiki/Incremental_metatheorem_development"
+        destination: "/wiki/incremental-metatheorem-development/"
+      - type: redirect
+        source: "/wiki/Indexed HOAS nat bijection"
+        destination: "/wiki/indexed-hoas-nat-bijection/"
+      - type: redirect
+        source: "/wiki/Indexed_HOAS_nat_bijection"
+        destination: "/wiki/indexed-hoas-nat-bijection/"
+      - type: redirect
+        source: "/wiki/Indexed lists"
+        destination: "/wiki/indexed-lists/"
+      - type: redirect
+        source: "/wiki/Indexed_lists"
+        destination: "/wiki/indexed-lists/"
+      - type: redirect
+        source: "/wiki/Intrinsic and extrinsic encodings"
+        destination: "/wiki/intrinsic-and-extrinsic-encodings/"
+      - type: redirect
+        source: "/wiki/Intrinsic_and_extrinsic_encodings"
+        destination: "/wiki/intrinsic-and-extrinsic-encodings/"
+      - type: redirect
+        source: "/wiki/Introductions to Twelf"
+        destination: "/wiki/introductions-to-twelf/"
+      - type: redirect
+        source: "/wiki/Introductions_to_Twelf"
+        destination: "/wiki/introductions-to-twelf/"
+      - type: redirect
+        source: "/wiki/Iterated Let Bindings"
+        destination: "/wiki/iterated-let-bindings/"
+      - type: redirect
+        source: "/wiki/Iterated_Let_Bindings"
+        destination: "/wiki/iterated-let-bindings/"
+      - type: redirect
+        source: "/wiki/Iterated inductive definitions and defunctionalization"
+        destination: "/wiki/iterated-inductive-definitions-and-defunctionalization/"
+      - type: redirect
+        source: "/wiki/Iterated_inductive_definitions_and_defunctionalization"
+        destination: "/wiki/iterated-inductive-definitions-and-defunctionalization/"
+      - type: redirect
+        source: "/wiki/Judgment"
+        destination: "/wiki/judgment/"
+      - type: redirect
+        source: "/wiki/LF"
+        destination: "/wiki/lf/"
+      - type: redirect
+        source: "/wiki/Lax logic"
+        destination: "/wiki/lax-logic/"
+      - type: redirect
+        source: "/wiki/Lax_logic"
+        destination: "/wiki/lax-logic/"
+      - type: redirect
+        source: "/wiki/Letrec"
+        destination: "/wiki/letrec/"
+      - type: redirect
+        source: "/wiki/Lexicographical orderings with density"
+        destination: "/wiki/lexicographical-orderings-with-density/"
+      - type: redirect
+        source: "/wiki/Lexicographical_orderings_with_density"
+        destination: "/wiki/lexicographical-orderings-with-density/"
+      - type: redirect
+        source: "/wiki/Lily"
+        destination: "/wiki/lily/"
+      - type: redirect
+        source: "/wiki/Linear logic"
+        destination: "/wiki/linear-logic/"
+      - type: redirect
+        source: "/wiki/Linear_logic"
+        destination: "/wiki/linear-logic/"
+      - type: redirect
+        source: "/wiki/Lists"
+        destination: "/wiki/lists/"
+      - type: redirect
+        source: "/wiki/Logic programming"
+        destination: "/wiki/logic-programming/"
+      - type: redirect
+        source: "/wiki/Logic_programming"
+        destination: "/wiki/logic-programming/"
+      - type: redirect
+        source: "/wiki/Mailing lists"
+        destination: "/wiki/mailing-lists/"
+      - type: redirect
+        source: "/wiki/Mailing_lists"
+        destination: "/wiki/mailing-lists/"
+      - type: redirect
+        source: "/wiki/Main Page"
+        destination: "/wiki/main-page/"
+      - type: redirect
+        source: "/wiki/Main_Page"
+        destination: "/wiki/main-page/"
+      - type: redirect
+        source: "/wiki/Manipulating proof witnesses as inputs"
+        destination: "/wiki/manipulating-proof-witnesses-as-inputs/"
+      - type: redirect
+        source: "/wiki/Manipulating_proof_witnesses_as_inputs"
+        destination: "/wiki/manipulating-proof-witnesses-as-inputs/"
+      - type: redirect
+        source: "/wiki/MediaWiki formatting description"
+        destination: "/wiki/mediawiki-formatting-description/"
+      - type: redirect
+        source: "/wiki/MediaWiki_formatting_description"
+        destination: "/wiki/mediawiki-formatting-description/"
+      - type: redirect
+        source: "/wiki/Meta-logic"
+        destination: "/wiki/meta-logic/"
+      - type: redirect
+        source: "/wiki/Metatheorem"
+        destination: "/wiki/metatheorem/"
+      - type: redirect
+        source: "/wiki/MinMLToMinHaskell"
+        destination: "/wiki/minmltominhaskell/"
+      - type: redirect
+        source: "/wiki/Modal logic"
+        destination: "/wiki/modal-logic/"
+      - type: redirect
+        source: "/wiki/Modal_logic"
+        destination: "/wiki/modal-logic/"
+      - type: redirect
+        source: "/wiki/Modally Propositional Logic"
+        destination: "/wiki/modally-propositional-logic/"
+      - type: redirect
+        source: "/wiki/Modally_Propositional_Logic"
+        destination: "/wiki/modally-propositional-logic/"
+      - type: redirect
+        source: "/wiki/Modes of use"
+        destination: "/wiki/modes-of-use/"
+      - type: redirect
+        source: "/wiki/Modes_of_use"
+        destination: "/wiki/modes-of-use/"
+      - type: redirect
+        source: "/wiki/Mutable state"
+        destination: "/wiki/mutable-state/"
+      - type: redirect
+        source: "/wiki/Mutable_state"
+        destination: "/wiki/mutable-state/"
+      - type: redirect
+        source: "/wiki/Mutual induction"
+        destination: "/wiki/mutual-induction/"
+      - type: redirect
+        source: "/wiki/Mutual_induction"
+        destination: "/wiki/mutual-induction/"
+      - type: redirect
+        source: "/wiki/Naming conventions"
+        destination: "/wiki/naming-conventions/"
+      - type: redirect
+        source: "/wiki/Naming_conventions"
+        destination: "/wiki/naming-conventions/"
+      - type: redirect
+        source: "/wiki/Natural numbers"
+        destination: "/wiki/natural-numbers/"
+      - type: redirect
+        source: "/wiki/Natural_numbers"
+        destination: "/wiki/natural-numbers/"
+      - type: redirect
+        source: "/wiki/Natural numbers with inequality"
+        destination: "/wiki/natural-numbers-with-inequality/"
+      - type: redirect
+        source: "/wiki/Natural_numbers_with_inequality"
+        destination: "/wiki/natural-numbers-with-inequality/"
+      - type: redirect
+        source: "/wiki/Negation as failure"
+        destination: "/wiki/negation-as-failure/"
+      - type: redirect
+        source: "/wiki/Negation_as_failure"
+        destination: "/wiki/negation-as-failure/"
+      - type: redirect
+        source: "/wiki/Numeric termination metrics"
+        destination: "/wiki/numeric-termination-metrics/"
+      - type: redirect
+        source: "/wiki/Numeric_termination_metrics"
+        destination: "/wiki/numeric-termination-metrics/"
+      - type: redirect
+        source: "/wiki/Object logic"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/Object_logic"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/Output factoring"
+        destination: "/wiki/output-factoring/"
+      - type: redirect
+        source: "/wiki/Output_factoring"
+        destination: "/wiki/output-factoring/"
+      - type: redirect
+        source: "/wiki/Output freeness"
+        destination: "/wiki/output-freeness/"
+      - type: redirect
+        source: "/wiki/Output_freeness"
+        destination: "/wiki/output-freeness/"
+      - type: redirect
+        source: "/wiki/PLTheory:Introduction to Twelf"
+        destination: "/wiki/pltheory-introduction-to-twelf/"
+      - type: redirect
+        source: "/wiki/PLTheory:Introduction_to_Twelf"
+        destination: "/wiki/pltheory-introduction-to-twelf/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial"
+        destination: "/wiki/popl-tutorial/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial"
+        destination: "/wiki/popl-tutorial/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Basic error messages"
+        destination: "/wiki/popl-tutorial-basic-error-messages/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Basic_error_messages"
+        destination: "/wiki/popl-tutorial-basic-error-messages/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Basics"
+        destination: "/wiki/popl-tutorial-basics/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Basics"
+        destination: "/wiki/popl-tutorial-basics/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Basics Answer"
+        destination: "/wiki/popl-tutorial-basics-answer/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Basics_Answer"
+        destination: "/wiki/popl-tutorial-basics-answer/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Basics Starter"
+        destination: "/wiki/popl-tutorial-basics-starter/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Basics_Starter"
+        destination: "/wiki/popl-tutorial-basics-starter/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Big step, small step"
+        destination: "/wiki/popl-tutorial-big-step-small-step/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Big_step,_small_step"
+        destination: "/wiki/popl-tutorial-big-step-small-step/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Big step, small step: Solution"
+        destination: "/wiki/popl-tutorial-big-step-small-step-solution/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Big_step,_small_step:_Solution"
+        destination: "/wiki/popl-tutorial-big-step-small-step-solution/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/CPS Solution2"
+        destination: "/wiki/popl-tutorial-cps-solution2/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/CPS_Solution2"
+        destination: "/wiki/popl-tutorial-cps-solution2/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/CPS Solutions"
+        destination: "/wiki/popl-tutorial-cps-solutions/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/CPS_Solutions"
+        destination: "/wiki/popl-tutorial-cps-solutions/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Church Rosser (Problem)"
+        destination: "/wiki/popl-tutorial-church-rosser-problem/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Church_Rosser_(Problem)"
+        destination: "/wiki/popl-tutorial-church-rosser-problem/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Combinators"
+        destination: "/wiki/popl-tutorial-combinators/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Combinators"
+        destination: "/wiki/popl-tutorial-combinators/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Combinators (karl)"
+        destination: "/wiki/popl-tutorial-combinators-karl/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Combinators_(karl)"
+        destination: "/wiki/popl-tutorial-combinators-karl/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Combinators Answer"
+        destination: "/wiki/popl-tutorial-combinators-answer/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Combinators_Answer"
+        destination: "/wiki/popl-tutorial-combinators-answer/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Combinators Support"
+        destination: "/wiki/popl-tutorial-combinators-support/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Combinators_Support"
+        destination: "/wiki/popl-tutorial-combinators-support/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Combinators session"
+        destination: "/wiki/popl-tutorial-combinators-session/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Combinators_session"
+        destination: "/wiki/popl-tutorial-combinators-session/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Combinators session (answers)"
+        destination: "/wiki/popl-tutorial-combinators-session-answers/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Combinators_session_(answers)"
+        destination: "/wiki/popl-tutorial-combinators-session-answers/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Control machine"
+        destination: "/wiki/popl-tutorial-control-machine/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Control_machine"
+        destination: "/wiki/popl-tutorial-control-machine/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Cost semantics"
+        destination: "/wiki/popl-tutorial-cost-semantics/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Cost_semantics"
+        destination: "/wiki/popl-tutorial-cost-semantics/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Evaluation Contexts Intrinsic"
+        destination: "/wiki/popl-tutorial-evaluation-contexts-intrinsic/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Evaluation_Contexts_Intrinsic"
+        destination: "/wiki/popl-tutorial-evaluation-contexts-intrinsic/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Exceptions"
+        destination: "/wiki/popl-tutorial-exceptions/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Exceptions"
+        destination: "/wiki/popl-tutorial-exceptions/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Exceptions-problem"
+        destination: "/wiki/popl-tutorial-exceptions-problem/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Exceptions-problem"
+        destination: "/wiki/popl-tutorial-exceptions-problem/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/MinML"
+        destination: "/wiki/popl-tutorial-minml/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/MinML"
+        destination: "/wiki/popl-tutorial-minml/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/MinML Answer"
+        destination: "/wiki/popl-tutorial-minml-answer/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/MinML_Answer"
+        destination: "/wiki/popl-tutorial-minml-answer/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/MinML Preservation Theorem"
+        destination: "/wiki/popl-tutorial-minml-preservation-theorem/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/MinML_Preservation_Theorem"
+        destination: "/wiki/popl-tutorial-minml-preservation-theorem/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/MinML Preservation Theorem: Solution"
+        destination: "/wiki/popl-tutorial-minml-preservation-theorem-solution/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/MinML_Preservation_Theorem:_Solution"
+        destination: "/wiki/popl-tutorial-minml-preservation-theorem-solution/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/MinML Starter"
+        destination: "/wiki/popl-tutorial-minml-starter/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/MinML_Starter"
+        destination: "/wiki/popl-tutorial-minml-starter/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/MinML encoding"
+        destination: "/wiki/popl-tutorial-minml-encoding/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/MinML_encoding"
+        destination: "/wiki/popl-tutorial-minml-encoding/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Nat"
+        destination: "/wiki/popl-tutorial-nat/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Nat"
+        destination: "/wiki/popl-tutorial-nat/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/New language"
+        destination: "/wiki/popl-tutorial-new-language/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/New_language"
+        destination: "/wiki/popl-tutorial-new-language/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Next"
+        destination: "/wiki/popl-tutorial-next/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Next"
+        destination: "/wiki/popl-tutorial-next/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Pattern matching"
+        destination: "/wiki/popl-tutorial-pattern-matching/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Pattern_matching"
+        destination: "/wiki/popl-tutorial-pattern-matching/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Problems"
+        destination: "/wiki/popl-tutorial-problems/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Problems"
+        destination: "/wiki/popl-tutorial-problems/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Properties of Typing and Reduction"
+        destination: "/wiki/popl-tutorial-properties-of-typing-and-reduction/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Properties_of_Typing_and_Reduction"
+        destination: "/wiki/popl-tutorial-properties-of-typing-and-reduction/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Saturday"
+        destination: "/wiki/popl-tutorial-saturday/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Saturday"
+        destination: "/wiki/popl-tutorial-saturday/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Sequent vs Natural Deduction"
+        destination: "/wiki/popl-tutorial-sequent-vs-natural-deduction/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Sequent_vs_Natural_Deduction"
+        destination: "/wiki/popl-tutorial-sequent-vs-natural-deduction/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Sequent vs Natural Deduction: Solution"
+        destination: "/wiki/popl-tutorial-sequent-vs-natural-deduction-solution/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Sequent_vs_Natural_Deduction:_Solution"
+        destination: "/wiki/popl-tutorial-sequent-vs-natural-deduction-solution/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session 2"
+        destination: "/wiki/popl-tutorial-session-2/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session_2"
+        destination: "/wiki/popl-tutorial-session-2/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session 2 Answer"
+        destination: "/wiki/popl-tutorial-session-2-answer/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session_2_Answer"
+        destination: "/wiki/popl-tutorial-session-2-answer/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session 2 Script"
+        destination: "/wiki/popl-tutorial-session-2-script/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session_2_Script"
+        destination: "/wiki/popl-tutorial-session-2-script/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session 2 Starter"
+        destination: "/wiki/popl-tutorial-session-2-starter/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session_2_Starter"
+        destination: "/wiki/popl-tutorial-session-2-starter/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session 4"
+        destination: "/wiki/popl-tutorial-session-4/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session_4"
+        destination: "/wiki/popl-tutorial-session-4/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session 4 Answer"
+        destination: "/wiki/popl-tutorial-session-4-answer/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session_4_Answer"
+        destination: "/wiki/popl-tutorial-session-4-answer/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session 4 Live"
+        destination: "/wiki/popl-tutorial-session-4-live/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session_4_Live"
+        destination: "/wiki/popl-tutorial-session-4-live/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session 4 Starter"
+        destination: "/wiki/popl-tutorial-session-4-starter/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session_4_Starter"
+        destination: "/wiki/popl-tutorial-session-4-starter/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session 5"
+        destination: "/wiki/popl-tutorial-session-5/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session_5"
+        destination: "/wiki/popl-tutorial-session-5/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Thursday"
+        destination: "/wiki/popl-tutorial-thursday/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Thursday"
+        destination: "/wiki/popl-tutorial-thursday/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Typed bracket abstraction"
+        destination: "/wiki/popl-tutorial-typed-bracket-abstraction/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Typed_bracket_abstraction"
+        destination: "/wiki/popl-tutorial-typed-bracket-abstraction/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Typed bracket abstraction (solution)"
+        destination: "/wiki/popl-tutorial-typed-bracket-abstraction-solution/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Typed_bracket_abstraction_(solution)"
+        destination: "/wiki/popl-tutorial-typed-bracket-abstraction-solution/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Typed bracket abstraction with equivalence"
+        destination: "/wiki/popl-tutorial-typed-bracket-abstraction-with-equivalence/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Typed_bracket_abstraction_with_equivalence"
+        destination: "/wiki/popl-tutorial-typed-bracket-abstraction-with-equivalence/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/cps"
+        destination: "/wiki/popl-tutorial-cps/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/cps"
+        destination: "/wiki/popl-tutorial-cps/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/cps-ctp"
+        destination: "/wiki/popl-tutorial-cps-ctp/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/cps-ctp"
+        destination: "/wiki/popl-tutorial-cps-ctp/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/cps-problem"
+        destination: "/wiki/popl-tutorial-cps-problem/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/cps-problem"
+        destination: "/wiki/popl-tutorial-cps-problem/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/cps-problem2"
+        destination: "/wiki/popl-tutorial-cps-problem2/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/cps-problem2"
+        destination: "/wiki/popl-tutorial-cps-problem2/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/cps-rp"
+        destination: "/wiki/popl-tutorial-cps-rp/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/cps-rp"
+        destination: "/wiki/popl-tutorial-cps-rp/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/cps-truefalse"
+        destination: "/wiki/popl-tutorial-cps-truefalse/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/cps-truefalse"
+        destination: "/wiki/popl-tutorial-cps-truefalse/"
+      - type: redirect
+        source: "/wiki/Pattern matching"
+        destination: "/wiki/pattern-matching/"
+      - type: redirect
+        source: "/wiki/Pattern_matching"
+        destination: "/wiki/pattern-matching/"
+      - type: redirect
+        source: "/wiki/Polarized PCF"
+        destination: "/wiki/polarized-pcf/"
+      - type: redirect
+        source: "/wiki/Polarized_PCF"
+        destination: "/wiki/polarized-pcf/"
+      - type: redirect
+        source: "/wiki/Programming language theory with Twelf"
+        destination: "/wiki/programming-language-theory-with-twelf/"
+      - type: redirect
+        source: "/wiki/Programming_language_theory_with_Twelf"
+        destination: "/wiki/programming-language-theory-with-twelf/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems with Twelf"
+        destination: "/wiki/proving-metatheorems-with-twelf/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems_with_Twelf"
+        destination: "/wiki/proving-metatheorems-with-twelf/"
+      - type: redirect
+        source: "/wiki/Reasoning from false"
+        destination: "/wiki/reasoning-from-false/"
+      - type: redirect
+        source: "/wiki/Reasoning_from_false"
+        destination: "/wiki/reasoning-from-false/"
+      - type: redirect
+        source: "/wiki/Reformulating languages to use hypothetical judgements"
+        destination: "/wiki/reformulating-languages-to-use-hypothetical-judgements/"
+      - type: redirect
+        source: "/wiki/Reformulating_languages_to_use_hypothetical_judgements"
+        destination: "/wiki/reformulating-languages-to-use-hypothetical-judgements/"
+      - type: redirect
+        source: "/wiki/Relation"
+        destination: "/wiki/relation/"
+      - type: redirect
+        source: "/wiki/Release history"
+        destination: "/wiki/release-history/"
+      - type: redirect
+        source: "/wiki/Release_history"
+        destination: "/wiki/release-history/"
+      - type: redirect
+        source: "/wiki/Research projects using Twelf"
+        destination: "/wiki/research-projects-using-twelf/"
+      - type: redirect
+        source: "/wiki/Research_projects_using_Twelf"
+        destination: "/wiki/research-projects-using-twelf/"
+      - type: redirect
+        source: "/wiki/Respects lemma"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Respects_lemma"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Sets and supersets"
+        destination: "/wiki/sets-and-supersets/"
+      - type: redirect
+        source: "/wiki/Sets_and_supersets"
+        destination: "/wiki/sets-and-supersets/"
+      - type: redirect
+        source: "/wiki/Signature checking"
+        destination: "/wiki/signature-checking/"
+      - type: redirect
+        source: "/wiki/Signature_checking"
+        destination: "/wiki/signature-checking/"
+      - type: redirect
+        source: "/wiki/Signatures as logic programs"
+        destination: "/wiki/signatures-as-logic-programs/"
+      - type: redirect
+        source: "/wiki/Signatures_as_logic_programs"
+        destination: "/wiki/signatures-as-logic-programs/"
+      - type: redirect
+        source: "/wiki/Simplifying dynamic clauses"
+        destination: "/wiki/simplifying-dynamic-clauses/"
+      - type: redirect
+        source: "/wiki/Simplifying_dynamic_clauses"
+        destination: "/wiki/simplifying-dynamic-clauses/"
+      - type: redirect
+        source: "/wiki/Simply-typed lambda calculus"
+        destination: "/wiki/simply-typed-lambda-calculus/"
+      - type: redirect
+        source: "/wiki/Simply-typed_lambda_calculus"
+        destination: "/wiki/simply-typed-lambda-calculus/"
+      - type: redirect
+        source: "/wiki/Strengthening"
+        destination: "/wiki/strengthening/"
+      - type: redirect
+        source: "/wiki/Structural metrics"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/Structural_metrics"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/Subordination"
+        destination: "/wiki/subordination/"
+      - type: redirect
+        source: "/wiki/Substitution lemma"
+        destination: "/wiki/substitution-lemma/"
+      - type: redirect
+        source: "/wiki/Substitution_lemma"
+        destination: "/wiki/substitution-lemma/"
+      - type: redirect
+        source: "/wiki/Sudoku"
+        destination: "/wiki/sudoku/"
+      - type: redirect
+        source: "/wiki/Summer school 2008"
+        destination: "/wiki/summer-school-2008/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008"
+        destination: "/wiki/summer-school-2008/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Alternate typed arithmetic expressions with sums"
+        destination: "/wiki/summer-school-2008-alternate-typed-arithmetic-expressions-with-sums/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Alternate_typed_arithmetic_expressions_with_sums"
+        destination: "/wiki/summer-school-2008-alternate-typed-arithmetic-expressions-with-sums/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Arithmetic expressions"
+        destination: "/wiki/summer-school-2008-arithmetic-expressions/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Arithmetic_expressions"
+        destination: "/wiki/summer-school-2008-arithmetic-expressions/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Arithmetic expressions with call-by-value let-binding"
+        destination: "/wiki/summer-school-2008-arithmetic-expressions-with-call-by-value-let-binding/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Arithmetic_expressions_with_call-by-value_let-binding"
+        destination: "/wiki/summer-school-2008-arithmetic-expressions-with-call-by-value-let-binding/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Arithmetic expressions with let-binding"
+        destination: "/wiki/summer-school-2008-arithmetic-expressions-with-let-binding/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Arithmetic_expressions_with_let-binding"
+        destination: "/wiki/summer-school-2008-arithmetic-expressions-with-let-binding/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Arithmetic expressions with let-binding (hypothetical evaluation)"
+        destination: "/wiki/summer-school-2008-arithmetic-expressions-with-let-binding-hypothetical-evaluation/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Arithmetic_expressions_with_let-binding_(hypothetical_evaluation)"
+        destination: "/wiki/summer-school-2008-arithmetic-expressions-with-let-binding-hypothetical-evaluation/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Encoding of System F"
+        destination: "/wiki/summer-school-2008-encoding-of-system-f/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Encoding_of_System_F"
+        destination: "/wiki/summer-school-2008-encoding-of-system-f/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Exercises 1"
+        destination: "/wiki/summer-school-2008-exercises-1/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Exercises_1"
+        destination: "/wiki/summer-school-2008-exercises-1/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Exercises 2"
+        destination: "/wiki/summer-school-2008-exercises-2/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Exercises_2"
+        destination: "/wiki/summer-school-2008-exercises-2/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Exercises 3"
+        destination: "/wiki/summer-school-2008-exercises-3/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Exercises_3"
+        destination: "/wiki/summer-school-2008-exercises-3/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Type safety for MinML (extrinsic encoding)"
+        destination: "/wiki/summer-school-2008-type-safety-for-minml-extrinsic-encoding/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Type_safety_for_MinML_(extrinsic_encoding)"
+        destination: "/wiki/summer-school-2008-type-safety-for-minml-extrinsic-encoding/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Type safety for MinML (intrinsic encoding)"
+        destination: "/wiki/summer-school-2008-type-safety-for-minml-intrinsic-encoding/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Type_safety_for_MinML_(intrinsic_encoding)"
+        destination: "/wiki/summer-school-2008-type-safety-for-minml-intrinsic-encoding/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Type safety for MinML with monadic effects"
+        destination: "/wiki/summer-school-2008-type-safety-for-minml-with-monadic-effects/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Type_safety_for_MinML_with_monadic_effects"
+        destination: "/wiki/summer-school-2008-type-safety-for-minml-with-monadic-effects/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Type safety for MinML with monadic effects (putngetn)"
+        destination: "/wiki/summer-school-2008-type-safety-for-minml-with-monadic-effects-putngetn/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Type_safety_for_MinML_with_monadic_effects_(putngetn)"
+        destination: "/wiki/summer-school-2008-type-safety-for-minml-with-monadic-effects-putngetn/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Type safety for polymorphic MinML (intrinsic encoding)"
+        destination: "/wiki/summer-school-2008-type-safety-for-polymorphic-minml-intrinsic-encoding/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Type_safety_for_polymorphic_MinML_(intrinsic_encoding)"
+        destination: "/wiki/summer-school-2008-type-safety-for-polymorphic-minml-intrinsic-encoding/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Typed arithmetic expressions"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Typed_arithmetic_expressions"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Typed arithmetic expressions (extrinsic encoding)"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-extrinsic-encoding/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Typed_arithmetic_expressions_(extrinsic_encoding)"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-extrinsic-encoding/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Typed arithmetic expressions (value)"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-value/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Typed_arithmetic_expressions_(value)"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-value/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Typed arithmetic expressions with pairs"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-with-pairs/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Typed_arithmetic_expressions_with_pairs"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-with-pairs/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Typed arithmetic expressions with sums"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-with-sums/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Typed_arithmetic_expressions_with_sums"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-with-sums/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Typed arithmetic expressions with sums 2"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-with-sums-2/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Typed_arithmetic_expressions_with_sums_2"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-with-sums-2/"
+      - type: redirect
+        source: "/wiki/Syntax (Object logic)"
+        destination: "/wiki/syntax-object-logic/"
+      - type: redirect
+        source: "/wiki/Syntax_(Object_logic)"
+        destination: "/wiki/syntax-object-logic/"
+      - type: redirect
+        source: "/wiki/TAT/church.elf"
+        destination: "/wiki/tat-church-elf/"
+      - type: redirect
+        source: "/wiki/TAT/plus.elf"
+        destination: "/wiki/tat-plus-elf/"
+      - type: redirect
+        source: "/wiki/Tabled logic programming"
+        destination: "/wiki/tabled-logic-programming/"
+      - type: redirect
+        source: "/wiki/Tabled_logic_programming"
+        destination: "/wiki/tabled-logic-programming/"
+      - type: redirect
+        source: "/wiki/Tactical theorem proving"
+        destination: "/wiki/tactical-theorem-proving/"
+      - type: redirect
+        source: "/wiki/Tactical_theorem_proving"
+        destination: "/wiki/tactical-theorem-proving/"
+      - type: redirect
+        source: "/wiki/Tethered modal logic"
+        destination: "/wiki/tethered-modal-logic/"
+      - type: redirect
+        source: "/wiki/Tethered_modal_logic"
+        destination: "/wiki/tethered-modal-logic/"
+      - type: redirect
+        source: "/wiki/Theorem prover"
+        destination: "/wiki/theorem-prover/"
+      - type: redirect
+        source: "/wiki/Theorem_prover"
+        destination: "/wiki/theorem-prover/"
+      - type: redirect
+        source: "/wiki/Totality assertion"
+        destination: "/wiki/totality-assertion/"
+      - type: redirect
+        source: "/wiki/Totality_assertion"
+        destination: "/wiki/totality-assertion/"
+      - type: redirect
+        source: "/wiki/Tutorials"
+        destination: "/wiki/tutorials/"
+      - type: redirect
+        source: "/wiki/TwelfTag"
+        destination: "/wiki/twelftag/"
+      - type: redirect
+        source: "/wiki/Twelf Elf Rotation Charter"
+        destination: "/wiki/twelf-elf-rotation-charter/"
+      - type: redirect
+        source: "/wiki/Twelf_Elf_Rotation_Charter"
+        destination: "/wiki/twelf-elf-rotation-charter/"
+      - type: redirect
+        source: "/wiki/Twelf Live"
+        destination: "/wiki/twelf-live/"
+      - type: redirect
+        source: "/wiki/Twelf_Live"
+        destination: "/wiki/twelf-live/"
+      - type: redirect
+        source: "/wiki/Twelf signature"
+        destination: "/wiki/twelf-signature/"
+      - type: redirect
+        source: "/wiki/Twelf_signature"
+        destination: "/wiki/twelf-signature/"
+      - type: redirect
+        source: "/wiki/Twelf style guide"
+        destination: "/wiki/twelf-style-guide/"
+      - type: redirect
+        source: "/wiki/Twelf_style_guide"
+        destination: "/wiki/twelf-style-guide/"
+      - type: redirect
+        source: "/wiki/Twelf with Emacs"
+        destination: "/wiki/twelf-with-emacs/"
+      - type: redirect
+        source: "/wiki/Twelf_with_Emacs"
+        destination: "/wiki/twelf-with-emacs/"
+      - type: redirect
+        source: "/wiki/Twelf without Emacs"
+        destination: "/wiki/twelf-without-emacs/"
+      - type: redirect
+        source: "/wiki/Twelf_without_Emacs"
+        destination: "/wiki/twelf-without-emacs/"
+      - type: redirect
+        source: "/wiki/Type family"
+        destination: "/wiki/type-family/"
+      - type: redirect
+        source: "/wiki/Type_family"
+        destination: "/wiki/type-family/"
+      - type: redirect
+        source: "/wiki/Typed combinators soundness and completeness"
+        destination: "/wiki/typed-combinators-soundness-and-completeness/"
+      - type: redirect
+        source: "/wiki/Typed_combinators_soundness_and_completeness"
+        destination: "/wiki/typed-combinators-soundness-and-completeness/"
+      - type: redirect
+        source: "/wiki/Unification"
+        destination: "/wiki/unification/"
+      - type: redirect
+        source: "/wiki/Uniqueness lemma"
+        destination: "/wiki/uniqueness-lemma/"
+      - type: redirect
+        source: "/wiki/Uniqueness_lemma"
+        destination: "/wiki/uniqueness-lemma/"
+      - type: redirect
+        source: "/wiki/Unsafe mode"
+        destination: "/wiki/unsafe-mode/"
+      - type: redirect
+        source: "/wiki/Unsafe_mode"
+        destination: "/wiki/unsafe-mode/"
+      - type: redirect
+        source: "/wiki/User's Guide"
+        destination: "/wiki/users-guide/"
+      - type: redirect
+        source: "/wiki/User's_Guide"
+        destination: "/wiki/users-guide/"
+      - type: redirect
+        source: "/wiki/User-defined constraint domain"
+        destination: "/wiki/user-defined-constraint-domain/"
+      - type: redirect
+        source: "/wiki/User-defined_constraint_domain"
+        destination: "/wiki/user-defined-constraint-domain/"
+      - type: redirect
+        source: "/wiki/Using nat-less with %reduces"
+        destination: "/wiki/using-nat-less-with-reduces/"
+      - type: redirect
+        source: "/wiki/Using_nat-less_with_%reduces"
+        destination: "/wiki/using-nat-less-with-reduces/"
+      - type: redirect
+        source: "/wiki/Verifications and uses"
+        destination: "/wiki/verifications-and-uses/"
+      - type: redirect
+        source: "/wiki/Verifications_and_uses"
+        destination: "/wiki/verifications-and-uses/"
+      - type: redirect
+        source: "/wiki/Verifications and uses in HLF"
+        destination: "/wiki/verifications-and-uses-in-hlf/"
+      - type: redirect
+        source: "/wiki/Verifications_and_uses_in_HLF"
+        destination: "/wiki/verifications-and-uses-in-hlf/"
+      - type: redirect
+        source: "/wiki/Verifications and uses with zippers"
+        destination: "/wiki/verifications-and-uses-with-zippers/"
+      - type: redirect
+        source: "/wiki/Verifications_and_uses_with_zippers"
+        destination: "/wiki/verifications-and-uses-with-zippers/"
+      - type: redirect
+        source: "/wiki/Weak focusing"
+        destination: "/wiki/weak-focusing/"
+      - type: redirect
+        source: "/wiki/Weak_focusing"
+        destination: "/wiki/weak-focusing/"
+      - type: redirect
+        source: "/wiki/Weakening lemma"
+        destination: "/wiki/weakening-lemma/"
+      - type: redirect
+        source: "/wiki/Weakening_lemma"
+        destination: "/wiki/weakening-lemma/"
+      - type: redirect
+        source: "/wiki/What's new"
+        destination: "/wiki/whats-new/"
+      - type: redirect
+        source: "/wiki/What's_new"
+        destination: "/wiki/whats-new/"
+      - type: redirect
+        source: "/wiki/World subsumption"
+        destination: "/wiki/world-subsumption/"
+      - type: redirect
+        source: "/wiki/World_subsumption"
+        destination: "/wiki/world-subsumption/"
+      - type: redirect
+        source: "/wiki/Zermelo Frankel"
+        destination: "/wiki/zermelo-frankel/"
+      - type: redirect
+        source: "/wiki/Zermelo_Frankel"
+        destination: "/wiki/zermelo-frankel/"
+      - type: redirect
+        source: "/wiki/Talk:%covers"
+        destination: "/wiki/talk-covers/"
+      - type: redirect
+        source: "/wiki/Talk:%freeze"
+        destination: "/wiki/talk-freeze/"
+      - type: redirect
+        source: "/wiki/Talk:%reduces"
+        destination: "/wiki/talk-reduces/"
+      - type: redirect
+        source: "/wiki/Talk:%thaw"
+        destination: "/wiki/talk-thaw/"
+      - type: redirect
+        source: "/wiki/Talk:%theorem"
+        destination: "/wiki/talk-theorem/"
+      - type: redirect
+        source: "/wiki/Talk:%worlds"
+        destination: "/wiki/talk-worlds/"
+      - type: redirect
+        source: "/wiki/Talk:Ad hoc binding structures"
+        destination: "/wiki/talk-ad-hoc-binding-structures/"
+      - type: redirect
+        source: "/wiki/Talk:Ad_hoc_binding_structures"
+        destination: "/wiki/talk-ad-hoc-binding-structures/"
+      - type: redirect
+        source: "/wiki/Talk:Admissibility of cut"
+        destination: "/wiki/talk-admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/Talk:Admissibility_of_cut"
+        destination: "/wiki/talk-admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/Talk:Alpha-equivalence"
+        destination: "/wiki/talk-alpha-equivalence/"
+      - type: redirect
+        source: "/wiki/Talk:Ask Twelf Elf"
+        destination: "/wiki/talk-ask-twelf-elf/"
+      - type: redirect
+        source: "/wiki/Talk:Ask_Twelf_Elf"
+        destination: "/wiki/talk-ask-twelf-elf/"
+      - type: redirect
+        source: "/wiki/Talk:Ask Twelf Elf/Archive 1"
+        destination: "/wiki/talk-ask-twelf-elf-archive-1/"
+      - type: redirect
+        source: "/wiki/Talk:Ask_Twelf_Elf/Archive_1"
+        destination: "/wiki/talk-ask-twelf-elf-archive-1/"
+      - type: redirect
+        source: "/wiki/Talk:Ask Twelf Elf/Archive 2"
+        destination: "/wiki/talk-ask-twelf-elf-archive-2/"
+      - type: redirect
+        source: "/wiki/Talk:Ask_Twelf_Elf/Archive_2"
+        destination: "/wiki/talk-ask-twelf-elf-archive-2/"
+      - type: redirect
+        source: "/wiki/Talk:CPS conversion"
+        destination: "/wiki/talk-cps-conversion/"
+      - type: redirect
+        source: "/wiki/Talk:CPS_conversion"
+        destination: "/wiki/talk-cps-conversion/"
+      - type: redirect
+        source: "/wiki/Talk:Canonical forms lemma"
+        destination: "/wiki/talk-canonical-forms-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Canonical_forms_lemma"
+        destination: "/wiki/talk-canonical-forms-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Case studies"
+        destination: "/wiki/talk-case-studies/"
+      - type: redirect
+        source: "/wiki/Talk:Case_studies"
+        destination: "/wiki/talk-case-studies/"
+      - type: redirect
+        source: "/wiki/Talk:Classical S5"
+        destination: "/wiki/talk-classical-s5/"
+      - type: redirect
+        source: "/wiki/Talk:Classical_S5"
+        destination: "/wiki/talk-classical-s5/"
+      - type: redirect
+        source: "/wiki/Talk:Constraint domains and coverage checking"
+        destination: "/wiki/talk-constraint-domains-and-coverage-checking/"
+      - type: redirect
+        source: "/wiki/Talk:Constraint_domains_and_coverage_checking"
+        destination: "/wiki/talk-constraint-domains-and-coverage-checking/"
+      - type: redirect
+        source: "/wiki/Talk:Converting between implicit and explicit parameters"
+        destination: "/wiki/talk-converting-between-implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Talk:Converting_between_implicit_and_explicit_parameters"
+        destination: "/wiki/talk-converting-between-implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Talk:Coverage checking"
+        destination: "/wiki/talk-coverage-checking/"
+      - type: redirect
+        source: "/wiki/Talk:Coverage_checking"
+        destination: "/wiki/talk-coverage-checking/"
+      - type: redirect
+        source: "/wiki/Talk:Debugging coverage errors"
+        destination: "/wiki/talk-debugging-coverage-errors/"
+      - type: redirect
+        source: "/wiki/Talk:Debugging_coverage_errors"
+        destination: "/wiki/talk-debugging-coverage-errors/"
+      - type: redirect
+        source: "/wiki/Talk:Define declaration"
+        destination: "/wiki/talk-define-declaration/"
+      - type: redirect
+        source: "/wiki/Talk:Define_declaration"
+        destination: "/wiki/talk-define-declaration/"
+      - type: redirect
+        source: "/wiki/Talk:Documentation"
+        destination: "/wiki/talk-documentation/"
+      - type: redirect
+        source: "/wiki/Talk:Download"
+        destination: "/wiki/talk-download/"
+      - type: redirect
+        source: "/wiki/Talk:Effectiveness lemma"
+        destination: "/wiki/talk-effectiveness-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Effectiveness_lemma"
+        destination: "/wiki/talk-effectiveness-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Equality"
+        destination: "/wiki/talk-equality/"
+      - type: redirect
+        source: "/wiki/Talk:Exchange lemma"
+        destination: "/wiki/talk-exchange-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Exchange_lemma"
+        destination: "/wiki/talk-exchange-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:General description of Twelf"
+        destination: "/wiki/talk-general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:General_description_of_Twelf"
+        destination: "/wiki/talk-general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Glossary"
+        destination: "/wiki/talk-glossary/"
+      - type: redirect
+        source: "/wiki/Talk:Implicit and explicit parameters"
+        destination: "/wiki/talk-implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Talk:Implicit_and_explicit_parameters"
+        destination: "/wiki/talk-implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Talk:Incremental metatheorem development"
+        destination: "/wiki/talk-incremental-metatheorem-development/"
+      - type: redirect
+        source: "/wiki/Talk:Incremental_metatheorem_development"
+        destination: "/wiki/talk-incremental-metatheorem-development/"
+      - type: redirect
+        source: "/wiki/Talk:Introductions to Twelf"
+        destination: "/wiki/talk-introductions-to-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Introductions_to_Twelf"
+        destination: "/wiki/talk-introductions-to-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Letrec"
+        destination: "/wiki/talk-letrec/"
+      - type: redirect
+        source: "/wiki/Talk:Lily"
+        destination: "/wiki/talk-lily/"
+      - type: redirect
+        source: "/wiki/Talk:Lists"
+        destination: "/wiki/talk-lists/"
+      - type: redirect
+        source: "/wiki/Talk:Main Page"
+        destination: "/wiki/talk-main-page/"
+      - type: redirect
+        source: "/wiki/Talk:Main_Page"
+        destination: "/wiki/talk-main-page/"
+      - type: redirect
+        source: "/wiki/Talk:Meta-logic"
+        destination: "/wiki/talk-meta-logic/"
+      - type: redirect
+        source: "/wiki/Talk:Metatheorem"
+        destination: "/wiki/talk-metatheorem/"
+      - type: redirect
+        source: "/wiki/Talk:Modes of use"
+        destination: "/wiki/talk-modes-of-use/"
+      - type: redirect
+        source: "/wiki/Talk:Modes_of_use"
+        destination: "/wiki/talk-modes-of-use/"
+      - type: redirect
+        source: "/wiki/Talk:Mutable state"
+        destination: "/wiki/talk-mutable-state/"
+      - type: redirect
+        source: "/wiki/Talk:Mutable_state"
+        destination: "/wiki/talk-mutable-state/"
+      - type: redirect
+        source: "/wiki/Talk:Natural numbers with inequality"
+        destination: "/wiki/talk-natural-numbers-with-inequality/"
+      - type: redirect
+        source: "/wiki/Talk:Natural_numbers_with_inequality"
+        destination: "/wiki/talk-natural-numbers-with-inequality/"
+      - type: redirect
+        source: "/wiki/Talk:Numeric termination metrics"
+        destination: "/wiki/talk-numeric-termination-metrics/"
+      - type: redirect
+        source: "/wiki/Talk:Numeric_termination_metrics"
+        destination: "/wiki/talk-numeric-termination-metrics/"
+      - type: redirect
+        source: "/wiki/Talk:Output factoring"
+        destination: "/wiki/talk-output-factoring/"
+      - type: redirect
+        source: "/wiki/Talk:Output_factoring"
+        destination: "/wiki/talk-output-factoring/"
+      - type: redirect
+        source: "/wiki/Talk:Output freeness"
+        destination: "/wiki/talk-output-freeness/"
+      - type: redirect
+        source: "/wiki/Talk:Output_freeness"
+        destination: "/wiki/talk-output-freeness/"
+      - type: redirect
+        source: "/wiki/Talk:Programming language theory with Twelf"
+        destination: "/wiki/talk-programming-language-theory-with-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Programming_language_theory_with_Twelf"
+        destination: "/wiki/talk-programming-language-theory-with-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Proving metatheorems with Twelf"
+        destination: "/wiki/talk-proving-metatheorems-with-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Proving_metatheorems_with_Twelf"
+        destination: "/wiki/talk-proving-metatheorems-with-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Reformulating languages to use hypothetical judgements"
+        destination: "/wiki/talk-reformulating-languages-to-use-hypothetical-judgements/"
+      - type: redirect
+        source: "/wiki/Talk:Reformulating_languages_to_use_hypothetical_judgements"
+        destination: "/wiki/talk-reformulating-languages-to-use-hypothetical-judgements/"
+      - type: redirect
+        source: "/wiki/Talk:Respects lemma"
+        destination: "/wiki/talk-respects-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Respects_lemma"
+        destination: "/wiki/talk-respects-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Strengthening"
+        destination: "/wiki/talk-strengthening/"
+      - type: redirect
+        source: "/wiki/Talk:Substitution lemma"
+        destination: "/wiki/talk-substitution-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Substitution_lemma"
+        destination: "/wiki/talk-substitution-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Totality assertion"
+        destination: "/wiki/talk-totality-assertion/"
+      - type: redirect
+        source: "/wiki/Talk:Totality_assertion"
+        destination: "/wiki/talk-totality-assertion/"
+      - type: redirect
+        source: "/wiki/Talk:Tutorials"
+        destination: "/wiki/talk-tutorials/"
+      - type: redirect
+        source: "/wiki/Talk:Twelf Live"
+        destination: "/wiki/talk-twelf-live/"
+      - type: redirect
+        source: "/wiki/Talk:Twelf_Live"
+        destination: "/wiki/talk-twelf-live/"
+      - type: redirect
+        source: "/wiki/Talk:Twelf style guide"
+        destination: "/wiki/talk-twelf-style-guide/"
+      - type: redirect
+        source: "/wiki/Talk:Twelf_style_guide"
+        destination: "/wiki/talk-twelf-style-guide/"
+      - type: redirect
+        source: "/wiki/Talk:Twelf with Emacs"
+        destination: "/wiki/talk-twelf-with-emacs/"
+      - type: redirect
+        source: "/wiki/Talk:Twelf_with_Emacs"
+        destination: "/wiki/talk-twelf-with-emacs/"
+      - type: redirect
+        source: "/wiki/Talk:Uniqueness lemma"
+        destination: "/wiki/talk-uniqueness-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Uniqueness_lemma"
+        destination: "/wiki/talk-uniqueness-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:User's Guide"
+        destination: "/wiki/talk-users-guide/"
+      - type: redirect
+        source: "/wiki/Talk:User's_Guide"
+        destination: "/wiki/talk-users-guide/"
+      - type: redirect
+        source: "/wiki/Talk:Using nat-less with %reduces"
+        destination: "/wiki/talk-using-nat-less-with-reduces/"
+      - type: redirect
+        source: "/wiki/Talk:Using_nat-less_with_%reduces"
+        destination: "/wiki/talk-using-nat-less-with-reduces/"
+      - type: redirect
+        source: "/wiki/Talk:What's new"
+        destination: "/wiki/talk-whats-new/"
+      - type: redirect
+        source: "/wiki/Talk:What's_new"
+        destination: "/wiki/talk-whats-new/"
+      - type: redirect
+        source: "/wiki/User:Boyland"
+        destination: "/wiki/user-boyland/"
+      - type: redirect
+        source: "/wiki/User:Carsten"
+        destination: "/wiki/user-carsten/"
+      - type: redirect
+        source: "/wiki/User:Ccasin"
+        destination: "/wiki/user-ccasin/"
+      - type: redirect
+        source: "/wiki/User:Cmartens"
+        destination: "/wiki/user-cmartens/"
+      - type: redirect
+        source: "/wiki/User:Crary"
+        destination: "/wiki/user-crary/"
+      - type: redirect
+        source: "/wiki/User:DanielKLee"
+        destination: "/wiki/user-danielklee/"
+      - type: redirect
+        source: "/wiki/User:Drl"
+        destination: "/wiki/user-drl/"
+      - type: redirect
+        source: "/wiki/User:Hdeyoung"
+        destination: "/wiki/user-hdeyoung/"
+      - type: redirect
+        source: "/wiki/User:Hdeyoung/monweakfoc.elf"
+        destination: "/wiki/user-hdeyoung-monweakfoc-elf/"
+      - type: redirect
+        source: "/wiki/User:JakeD"
+        destination: "/wiki/user-jaked/"
+      - type: redirect
+        source: "/wiki/User:Jcreed"
+        destination: "/wiki/user-jcreed/"
+      - type: redirect
+        source: "/wiki/User:Jcreed/Sandbox"
+        destination: "/wiki/user-jcreed-sandbox/"
+      - type: redirect
+        source: "/wiki/User:NewTestUser"
+        destination: "/wiki/user-newtestuser/"
+      - type: redirect
         source: "/wiki/User:Rsimmons"
-        destination: /wiki/user-rsimmons
+        destination: "/wiki/user-rsimmons/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/CR2"
+        destination: "/wiki/user-rsimmons-cr2/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Fluid binding"
+        destination: "/wiki/user-rsimmons-fluid-binding/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Fluid_binding"
+        destination: "/wiki/user-rsimmons-fluid-binding/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Handled exceptions"
+        destination: "/wiki/user-rsimmons-handled-exceptions/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Handled_exceptions"
+        destination: "/wiki/user-rsimmons-handled-exceptions/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Homework 6"
+        destination: "/wiki/user-rsimmons-homework-6/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Homework_6"
+        destination: "/wiki/user-rsimmons-homework-6/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Homework 7: Proofs In Twelf"
+        destination: "/wiki/user-rsimmons-homework-7-proofs-in-twelf/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Homework_7:_Proofs_In_Twelf"
+        destination: "/wiki/user-rsimmons-homework-7-proofs-in-twelf/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Lecture 20: Logic Programming"
+        destination: "/wiki/user-rsimmons-lecture-20-logic-programming/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Lecture_20:_Logic_Programming"
+        destination: "/wiki/user-rsimmons-lecture-20-logic-programming/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf"
+        destination: "/wiki/user-rsimmons-lecture-23-typed-lambda-calculus-in-twelf/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Lecture_23:_Typed_Lambda_Calculus_in_Twelf"
+        destination: "/wiki/user-rsimmons-lecture-23-typed-lambda-calculus-in-twelf/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/fillholes.elf"
+        destination: "/wiki/user-rsimmons-fillholes-elf/"
+      - type: redirect
+        source: "/wiki/User:Spoons"
+        destination: "/wiki/user-spoons/"
+      - type: redirect
+        source: "/wiki/User:TestUser"
+        destination: "/wiki/user-testuser/"
+      - type: redirect
+        source: "/wiki/User:TheTwelfElf"
+        destination: "/wiki/user-thetwelfelf/"
+      - type: redirect
+        source: "/wiki/User:Tom7"
+        destination: "/wiki/user-tom7/"
+      - type: redirect
+        source: "/wiki/User:Tom7/test.elf"
+        destination: "/wiki/user-tom7-test-elf/"
+      - type: redirect
+        source: "/wiki/User:Twilson"
+        destination: "/wiki/user-twilson/"
+      - type: redirect
+        source: "/wiki/User:Varming"
+        destination: "/wiki/user-varming/"
+      - type: redirect
+        source: "/wiki/User:William Lovas"
+        destination: "/wiki/user-william-lovas/"
+      - type: redirect
+        source: "/wiki/User:William_Lovas"
+        destination: "/wiki/user-william-lovas/"
+      - type: redirect
+        source: "/wiki/User talk:128.2.223.28"
+        destination: "/wiki/user-talk-128-2-223-28/"
+      - type: redirect
+        source: "/wiki/User_talk:128.2.223.28"
+        destination: "/wiki/user-talk-128-2-223-28/"
+      - type: redirect
+        source: "/wiki/User talk:128.237.241.108"
+        destination: "/wiki/user-talk-128-237-241-108/"
+      - type: redirect
+        source: "/wiki/User_talk:128.237.241.108"
+        destination: "/wiki/user-talk-128-237-241-108/"
+      - type: redirect
+        source: "/wiki/User talk:Aleffert"
+        destination: "/wiki/user-talk-aleffert/"
+      - type: redirect
+        source: "/wiki/User_talk:Aleffert"
+        destination: "/wiki/user-talk-aleffert/"
+      - type: redirect
+        source: "/wiki/User talk:Alepa"
+        destination: "/wiki/user-talk-alepa/"
+      - type: redirect
+        source: "/wiki/User_talk:Alepa"
+        destination: "/wiki/user-talk-alepa/"
+      - type: redirect
+        source: "/wiki/User talk:Boyland"
+        destination: "/wiki/user-talk-boyland/"
+      - type: redirect
+        source: "/wiki/User_talk:Boyland"
+        destination: "/wiki/user-talk-boyland/"
+      - type: redirect
+        source: "/wiki/User talk:Ccasin"
+        destination: "/wiki/user-talk-ccasin/"
+      - type: redirect
+        source: "/wiki/User_talk:Ccasin"
+        destination: "/wiki/user-talk-ccasin/"
+      - type: redirect
+        source: "/wiki/User talk:Crary"
+        destination: "/wiki/user-talk-crary/"
+      - type: redirect
+        source: "/wiki/User_talk:Crary"
+        destination: "/wiki/user-talk-crary/"
+      - type: redirect
+        source: "/wiki/User talk:DanielKLee"
+        destination: "/wiki/user-talk-danielklee/"
+      - type: redirect
+        source: "/wiki/User_talk:DanielKLee"
+        destination: "/wiki/user-talk-danielklee/"
+      - type: redirect
+        source: "/wiki/User talk:Drdreyer"
+        destination: "/wiki/user-talk-drdreyer/"
+      - type: redirect
+        source: "/wiki/User_talk:Drdreyer"
+        destination: "/wiki/user-talk-drdreyer/"
+      - type: redirect
+        source: "/wiki/User talk:Drl"
+        destination: "/wiki/user-talk-drl/"
+      - type: redirect
+        source: "/wiki/User_talk:Drl"
+        destination: "/wiki/user-talk-drl/"
+      - type: redirect
+        source: "/wiki/User talk:Hdeyoung"
+        destination: "/wiki/user-talk-hdeyoung/"
+      - type: redirect
+        source: "/wiki/User_talk:Hdeyoung"
+        destination: "/wiki/user-talk-hdeyoung/"
+      - type: redirect
+        source: "/wiki/User talk:JakeD"
+        destination: "/wiki/user-talk-jaked/"
+      - type: redirect
+        source: "/wiki/User_talk:JakeD"
+        destination: "/wiki/user-talk-jaked/"
+      - type: redirect
+        source: "/wiki/User talk:Jcreed"
+        destination: "/wiki/user-talk-jcreed/"
+      - type: redirect
+        source: "/wiki/User_talk:Jcreed"
+        destination: "/wiki/user-talk-jcreed/"
+      - type: redirect
+        source: "/wiki/User talk:Neel"
+        destination: "/wiki/user-talk-neel/"
+      - type: redirect
+        source: "/wiki/User_talk:Neel"
+        destination: "/wiki/user-talk-neel/"
+      - type: redirect
+        source: "/wiki/User talk:Popik"
+        destination: "/wiki/user-talk-popik/"
+      - type: redirect
+        source: "/wiki/User_talk:Popik"
+        destination: "/wiki/user-talk-popik/"
+      - type: redirect
+        source: "/wiki/User talk:Rpollack"
+        destination: "/wiki/user-talk-rpollack/"
+      - type: redirect
+        source: "/wiki/User_talk:Rpollack"
+        destination: "/wiki/user-talk-rpollack/"
+      - type: redirect
+        source: "/wiki/User talk:Rsimmons"
+        destination: "/wiki/user-talk-rsimmons/"
+      - type: redirect
+        source: "/wiki/User_talk:Rsimmons"
+        destination: "/wiki/user-talk-rsimmons/"
+      - type: redirect
+        source: "/wiki/User talk:Spoons"
+        destination: "/wiki/user-talk-spoons/"
+      - type: redirect
+        source: "/wiki/User_talk:Spoons"
+        destination: "/wiki/user-talk-spoons/"
+      - type: redirect
+        source: "/wiki/User talk:Twilson"
+        destination: "/wiki/user-talk-twilson/"
+      - type: redirect
+        source: "/wiki/User_talk:Twilson"
+        destination: "/wiki/user-talk-twilson/"
+      - type: redirect
+        source: "/wiki/User talk:Varming"
+        destination: "/wiki/user-talk-varming/"
+      - type: redirect
+        source: "/wiki/User_talk:Varming"
+        destination: "/wiki/user-talk-varming/"
+      - type: redirect
+        source: "/wiki/User talk:William Lovas"
+        destination: "/wiki/user-talk-william-lovas/"
+      - type: redirect
+        source: "/wiki/User_talk:William_Lovas"
+        destination: "/wiki/user-talk-william-lovas/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:1.0"
+        destination: "/wiki/the-twelf-project-1-0/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:1.0"
+        destination: "/wiki/the-twelf-project-1-0/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:AJALF"
+        destination: "/wiki/the-twelf-project-ajalf/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:AJALF"
+        destination: "/wiki/the-twelf-project-ajalf/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:BY-NC"
+        destination: "/wiki/the-twelf-project-by-nc/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:BY-NC"
+        destination: "/wiki/the-twelf-project-by-nc/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:BY-SA"
+        destination: "/wiki/the-twelf-project-by-sa/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:BY-SA"
+        destination: "/wiki/the-twelf-project-by-sa/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Contributing"
+        destination: "/wiki/the-twelf-project-contributing/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Contributing"
+        destination: "/wiki/the-twelf-project-contributing/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Contributors"
+        destination: "/wiki/the-twelf-project-contributors/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Contributors"
+        destination: "/wiki/the-twelf-project-contributors/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Copyright"
+        destination: "/wiki/the-twelf-project-copyright/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Copyright"
+        destination: "/wiki/the-twelf-project-copyright/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:GFDL"
+        destination: "/wiki/the-twelf-project-gfdl/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:GFDL"
+        destination: "/wiki/the-twelf-project-gfdl/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:GPL"
+        destination: "/wiki/the-twelf-project-gpl/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:GPL"
+        destination: "/wiki/the-twelf-project-gpl/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:GeSHi Twelf extension"
+        destination: "/wiki/the-twelf-project-geshi-twelf-extension/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:GeSHi_Twelf_extension"
+        destination: "/wiki/the-twelf-project-geshi-twelf-extension/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Literate Twelf"
+        destination: "/wiki/the-twelf-project-literate-twelf/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Literate_Twelf"
+        destination: "/wiki/the-twelf-project-literate-twelf/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Literate Twelf/Sample Page"
+        destination: "/wiki/the-twelf-project-literate-twelf-sample-page/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Literate_Twelf/Sample_Page"
+        destination: "/wiki/the-twelf-project-literate-twelf-sample-page/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:MIT license"
+        destination: "/wiki/the-twelf-project-mit-license/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:MIT_license"
+        destination: "/wiki/the-twelf-project-mit-license/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Policy"
+        destination: "/wiki/the-twelf-project-policy/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Policy"
+        destination: "/wiki/the-twelf-project-policy/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Protected page"
+        destination: "/wiki/the-twelf-project-protected-page/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Protected_page"
+        destination: "/wiki/the-twelf-project-protected-page/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Style guide"
+        destination: "/wiki/the-twelf-project-style-guide/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Style_guide"
+        destination: "/wiki/the-twelf-project-style-guide/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Subversion transition"
+        destination: "/wiki/the-twelf-project-subversion-transition/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Subversion_transition"
+        destination: "/wiki/the-twelf-project-subversion-transition/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Syntax highlighting"
+        destination: "/wiki/the-twelf-project-syntax-highlighting/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Syntax_highlighting"
+        destination: "/wiki/the-twelf-project-syntax-highlighting/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:To do"
+        destination: "/wiki/the-twelf-project-to-do/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:To_do"
+        destination: "/wiki/the-twelf-project-to-do/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:To do/Syntax highlighting"
+        destination: "/wiki/the-twelf-project-to-do-syntax-highlighting/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:To_do/Syntax_highlighting"
+        destination: "/wiki/the-twelf-project-to-do-syntax-highlighting/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:TwelfTag"
+        destination: "/wiki/the-twelf-project-twelftag/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:TwelfTag"
+        destination: "/wiki/the-twelf-project-twelftag/"
+      - type: redirect
+        source: "/wiki/The Twelf Project talk:AJALF"
+        destination: "/wiki/the-twelf-project-talk-ajalf/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project_talk:AJALF"
+        destination: "/wiki/the-twelf-project-talk-ajalf/"
+      - type: redirect
+        source: "/wiki/The Twelf Project talk:Copyright"
+        destination: "/wiki/the-twelf-project-talk-copyright/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project_talk:Copyright"
+        destination: "/wiki/the-twelf-project-talk-copyright/"
+      - type: redirect
+        source: "/wiki/The Twelf Project talk:GeSHi Twelf extension"
+        destination: "/wiki/the-twelf-project-talk-geshi-twelf-extension/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project_talk:GeSHi_Twelf_extension"
+        destination: "/wiki/the-twelf-project-talk-geshi-twelf-extension/"
+      - type: redirect
+        source: "/wiki/The Twelf Project talk:Policy"
+        destination: "/wiki/the-twelf-project-talk-policy/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project_talk:Policy"
+        destination: "/wiki/the-twelf-project-talk-policy/"
+      - type: redirect
+        source: "/wiki/The Twelf Project talk:Style guide"
+        destination: "/wiki/the-twelf-project-talk-style-guide/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project_talk:Style_guide"
+        destination: "/wiki/the-twelf-project-talk-style-guide/"
+      - type: redirect
+        source: "/wiki/The Twelf Project talk:To do"
+        destination: "/wiki/the-twelf-project-talk-to-do/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project_talk:To_do"
+        destination: "/wiki/the-twelf-project-talk-to-do/"
+      - type: redirect
+        source: "/wiki/The Twelf Project talk:TwelfTag"
+        destination: "/wiki/the-twelf-project-talk-twelftag/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project_talk:TwelfTag"
+        destination: "/wiki/the-twelf-project-talk-twelftag/"
+      - type: redirect
+        source: "/wiki/File:Disk download.gif"
+        destination: "/wiki/file-disk-download-gif/"
+      - type: redirect
+        source: "/wiki/File:Disk_download.gif"
+        destination: "/wiki/file-disk-download-gif/"
+      - type: redirect
+        source: "/wiki/File:ServerOK.png"
+        destination: "/wiki/file-serverok-png/"
+      - type: redirect
+        source: "/wiki/File:Smalltree.svg"
+        destination: "/wiki/file-smalltree-svg/"
+      - type: redirect
+        source: "/wiki/File:Sudokuexample.svg"
+        destination: "/wiki/file-sudokuexample-svg/"
+      - type: redirect
+        source: "/wiki/File:TWELFLIVE-1.png"
+        destination: "/wiki/file-twelflive-1-png/"
+      - type: redirect
+        source: "/wiki/File:TWELFLIVE-2.png"
+        destination: "/wiki/file-twelflive-2-png/"
+      - type: redirect
+        source: "/wiki/File:TWELFLIVE-3.png"
+        destination: "/wiki/file-twelflive-3-png/"
+      - type: redirect
+        source: "/wiki/File:Tom Twelfelf2.jpg"
+        destination: "/wiki/file-tom-twelfelf2-jpg/"
+      - type: redirect
+        source: "/wiki/File:Tom_Twelfelf2.jpg"
+        destination: "/wiki/file-tom-twelfelf2-jpg/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Copyrightwarning"
+        destination: "/wiki/mediawiki-copyrightwarning/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Copyrightwarning2"
+        destination: "/wiki/mediawiki-copyrightwarning2/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Edittools"
+        destination: "/wiki/mediawiki-edittools/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Fileinfo"
+        destination: "/wiki/mediawiki-fileinfo/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Loginreqpagetext"
+        destination: "/wiki/mediawiki-loginreqpagetext/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Monobook.css"
+        destination: "/wiki/mediawiki-monobook-css/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Newwindow"
+        destination: "/wiki/mediawiki-newwindow/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Previewnote"
+        destination: "/wiki/mediawiki-previewnote/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Privacy"
+        destination: "/wiki/mediawiki-privacy/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Privacypage"
+        destination: "/wiki/mediawiki-privacypage/"
+      - type: redirect
+        source: "/wiki/MediaWiki:Sidebar"
+        destination: "/wiki/mediawiki-sidebar/"
+      - type: redirect
+        source: "/wiki/MediaWiki talk:Sidebar"
+        destination: "/wiki/mediawiki-talk-sidebar/"
+      - type: redirect
+        source: "/wiki/MediaWiki_talk:Sidebar"
+        destination: "/wiki/mediawiki-talk-sidebar/"
+      - type: redirect
+        source: "/wiki/Template:Bibtex:af04dependent"
+        destination: "/wiki/template-bibtex-af04dependent/"
+      - type: redirect
+        source: "/wiki/Template:Bibtex:crary03talt"
+        destination: "/wiki/template-bibtex-crary03talt/"
+      - type: redirect
+        source: "/wiki/Template:Bibtex:fm97lax"
+        destination: "/wiki/template-bibtex-fm97lax/"
+      - type: redirect
+        source: "/wiki/Template:Bibtex:hhp93lf"
+        destination: "/wiki/template-bibtex-hhp93lf/"
+      - type: redirect
+        source: "/wiki/Template:Bibtex:hl07mechanizing"
+        destination: "/wiki/template-bibtex-hl07mechanizing/"
+      - type: redirect
+        source: "/wiki/Template:Bibtex:lch07ml"
+        destination: "/wiki/template-bibtex-lch07ml/"
+      - type: redirect
+        source: "/wiki/Template:Bibtex:pd01modal"
+        destination: "/wiki/template-bibtex-pd01modal/"
+      - type: redirect
+        source: "/wiki/Template:Bibtex:pierce02tapl"
+        destination: "/wiki/template-bibtex-pierce02tapl/"
+      - type: redirect
+        source: "/wiki/Template:Bottom"
+        destination: "/wiki/template-bottom/"
+      - type: redirect
+        source: "/wiki/Template:Box"
+        destination: "/wiki/template-box/"
+      - type: redirect
+        source: "/wiki/Template:Case study"
+        destination: "/wiki/template-case-study/"
+      - type: redirect
+        source: "/wiki/Template:Case_study"
+        destination: "/wiki/template-case-study/"
+      - type: redirect
+        source: "/wiki/Template:Click-inline"
+        destination: "/wiki/template-click-inline/"
+      - type: redirect
+        source: "/wiki/Template:Darrow"
+        destination: "/wiki/template-darrow/"
+      - type: redirect
+        source: "/wiki/Template:Dia"
+        destination: "/wiki/template-dia/"
+      - type: redirect
+        source: "/wiki/Template:Discuss"
+        destination: "/wiki/template-discuss/"
+      - type: redirect
+        source: "/wiki/Template:Draft"
+        destination: "/wiki/template-draft/"
+      - type: redirect
+        source: "/wiki/Template:Exists"
+        destination: "/wiki/template-exists/"
+      - type: redirect
+        source: "/wiki/Template:Forall"
+        destination: "/wiki/template-forall/"
+      - type: redirect
+        source: "/wiki/Template:Front-Getting Started"
+        destination: "/wiki/template-front-getting-started/"
+      - type: redirect
+        source: "/wiki/Template:Front-Getting_Started"
+        destination: "/wiki/template-front-getting-started/"
+      - type: redirect
+        source: "/wiki/Template:Front-Release History"
+        destination: "/wiki/template-front-release-history/"
+      - type: redirect
+        source: "/wiki/Template:Front-Release_History"
+        destination: "/wiki/template-front-release-history/"
+      - type: redirect
+        source: "/wiki/Template:Front-What's new"
+        destination: "/wiki/template-front-whats-new/"
+      - type: redirect
+        source: "/wiki/Template:Front-What's_new"
+        destination: "/wiki/template-front-whats-new/"
+      - type: redirect
+        source: "/wiki/Template:Guide"
+        destination: "/wiki/template-guide/"
+      - type: redirect
+        source: "/wiki/Template:Keyword"
+        destination: "/wiki/template-keyword/"
+      - type: redirect
+        source: "/wiki/Template:License-by-nc"
+        destination: "/wiki/template-license-by-nc/"
+      - type: redirect
+        source: "/wiki/Template:License-by-sa"
+        destination: "/wiki/template-license-by-sa/"
+      - type: redirect
+        source: "/wiki/Template:License-gfdl"
+        destination: "/wiki/template-license-gfdl/"
+      - type: redirect
+        source: "/wiki/Template:License-gpl"
+        destination: "/wiki/template-license-gpl/"
+      - type: redirect
+        source: "/wiki/Template:Literatetwelf"
+        destination: "/wiki/template-literatetwelf/"
+      - type: redirect
+        source: "/wiki/Template:Lolli"
+        destination: "/wiki/template-lolli/"
+      - type: redirect
+        source: "/wiki/Template:Needs"
+        destination: "/wiki/template-needs/"
+      - type: redirect
+        source: "/wiki/Template:Needswork"
+        destination: "/wiki/template-needswork/"
+      - type: redirect
+        source: "/wiki/Template:Oplus"
+        destination: "/wiki/template-oplus/"
+      - type: redirect
+        source: "/wiki/Template:Otimes"
+        destination: "/wiki/template-otimes/"
+      - type: redirect
+        source: "/wiki/Template:Proving"
+        destination: "/wiki/template-proving/"
+      - type: redirect
+        source: "/wiki/Template:Proving metatheorems"
+        destination: "/wiki/template-proving-metatheorems/"
+      - type: redirect
+        source: "/wiki/Template:Proving_metatheorems"
+        destination: "/wiki/template-proving-metatheorems/"
+      - type: redirect
+        source: "/wiki/Template:Repository"
+        destination: "/wiki/template-repository/"
+      - type: redirect
+        source: "/wiki/Template:Rule"
+        destination: "/wiki/template-rule/"
+      - type: redirect
+        source: "/wiki/Template:Stub"
+        destination: "/wiki/template-stub/"
+      - type: redirect
+        source: "/wiki/Template:Stub tutorial"
+        destination: "/wiki/template-stub-tutorial/"
+      - type: redirect
+        source: "/wiki/Template:Stub_tutorial"
+        destination: "/wiki/template-stub-tutorial/"
+      - type: redirect
+        source: "/wiki/Template:Summer school 2008"
+        destination: "/wiki/template-summer-school-2008/"
+      - type: redirect
+        source: "/wiki/Template:Summer_school_2008"
+        destination: "/wiki/template-summer-school-2008/"
+      - type: redirect
+        source: "/wiki/Template:The Twelf Project/Getting Started"
+        destination: "/wiki/template-the-twelf-project-getting-started/"
+      - type: redirect
+        source: "/wiki/Template:The_Twelf_Project/Getting_Started"
+        destination: "/wiki/template-the-twelf-project-getting-started/"
+      - type: redirect
+        source: "/wiki/Template:The Twelf Project/Introduction"
+        destination: "/wiki/template-the-twelf-project-introduction/"
+      - type: redirect
+        source: "/wiki/Template:The_Twelf_Project/Introduction"
+        destination: "/wiki/template-the-twelf-project-introduction/"
+      - type: redirect
+        source: "/wiki/Template:Tl"
+        destination: "/wiki/template-tl/"
+      - type: redirect
+        source: "/wiki/Template:Top"
+        destination: "/wiki/template-top/"
+      - type: redirect
+        source: "/wiki/Template:Tutorial"
+        destination: "/wiki/template-tutorial/"
+      - type: redirect
+        source: "/wiki/Template:Twelf code"
+        destination: "/wiki/template-twelf-code/"
+      - type: redirect
+        source: "/wiki/Template:Twelf_code"
+        destination: "/wiki/template-twelf-code/"
+      - type: redirect
+        source: "/wiki/Template:Undocumented"
+        destination: "/wiki/template-undocumented/"
+      - type: redirect
+        source: "/wiki/Template:Vdash"
+        destination: "/wiki/template-vdash/"
+      - type: redirect
+        source: "/wiki/Template talk:Bibtex:hl07mechanizing"
+        destination: "/wiki/template-talk-bibtex-hl07mechanizing/"
+      - type: redirect
+        source: "/wiki/Template_talk:Bibtex:hl07mechanizing"
+        destination: "/wiki/template-talk-bibtex-hl07mechanizing/"
+      - type: redirect
+        source: "/wiki/Template talk:Click-inline"
+        destination: "/wiki/template-talk-click-inline/"
+      - type: redirect
+        source: "/wiki/Template_talk:Click-inline"
+        destination: "/wiki/template-talk-click-inline/"
+      - type: redirect
+        source: "/wiki/Template talk:Guide"
+        destination: "/wiki/template-talk-guide/"
+      - type: redirect
+        source: "/wiki/Template_talk:Guide"
+        destination: "/wiki/template-talk-guide/"
+      - type: redirect
+        source: "/wiki/Template talk:The Twelf Project/Introduction"
+        destination: "/wiki/template-talk-the-twelf-project-introduction/"
+      - type: redirect
+        source: "/wiki/Template_talk:The_Twelf_Project/Introduction"
+        destination: "/wiki/template-talk-the-twelf-project-introduction/"
+      - type: redirect
+        source: "/wiki/Category:Case studies"
+        destination: "/wiki/category-case-studies/"
+      - type: redirect
+        source: "/wiki/Category:Case_studies"
+        destination: "/wiki/category-case-studies/"
+      - type: redirect
+        source: "/wiki/Category:Keywords"
+        destination: "/wiki/category-keywords/"
+      - type: redirect
+        source: "/wiki/Category:Literate Twelf code"
+        destination: "/wiki/category-literate-twelf-code/"
+      - type: redirect
+        source: "/wiki/Category:Literate_Twelf_code"
+        destination: "/wiki/category-literate-twelf-code/"
+      - type: redirect
+        source: "/wiki/Category:Pages needing attention"
+        destination: "/wiki/category-pages-needing-attention/"
+      - type: redirect
+        source: "/wiki/Category:Pages_needing_attention"
+        destination: "/wiki/category-pages-needing-attention/"
+      - type: redirect
+        source: "/wiki/Category:Stubs"
+        destination: "/wiki/category-stubs/"
+      - type: redirect
+        source: "/wiki/Category:Tutorials"
+        destination: "/wiki/category-tutorials/"
+      - type: redirect
+        source: "/wiki/Category:Tutorials needing attention"
+        destination: "/wiki/category-tutorials-needing-attention/"
+      - type: redirect
+        source: "/wiki/Category:Tutorials_needing_attention"
+        destination: "/wiki/category-tutorials-needing-attention/"
+      - type: redirect
+        source: "/wiki/Category:Twelf code"
+        destination: "/wiki/category-twelf-code/"
+      - type: redirect
+        source: "/wiki/Category:Twelf_code"
+        destination: "/wiki/category-twelf-code/"
+      - type: redirect
+        source: "/wiki/Category:Undocumented features"
+        destination: "/wiki/category-undocumented-features/"
+      - type: redirect
+        source: "/wiki/Category:Undocumented_features"
+        destination: "/wiki/category-undocumented-features/"
+      - type: redirect
+        source: "/wiki/Elves:Main Page"
+        destination: "/wiki/elves-main-page/"
+      - type: redirect
+        source: "/wiki/Elves:Main_Page"
+        destination: "/wiki/elves-main-page/"
+      - type: redirect
+        source: "/wiki/Elves talk:Main Page"
+        destination: "/wiki/elves-talk-main-page/"
+      - type: redirect
+        source: "/wiki/Elves_talk:Main_Page"
+        destination: "/wiki/elves-talk-main-page/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Full LF"
+        destination: "/wiki/proving-metatheorems-full-lf/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Full_LF"
+        destination: "/wiki/proving-metatheorems-full-lf/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Natural numbers: Answers to exercises"
+        destination: "/wiki/proving-metatheorems-natural-numbers-answers-to-exercises/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Natural_numbers:_Answers_to_exercises"
+        destination: "/wiki/proving-metatheorems-natural-numbers-answers-to-exercises/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Proving metatheorems about the STLC"
+        destination: "/wiki/proving-metatheorems-proving-metatheorems-about-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Proving_metatheorems_about_the_STLC"
+        destination: "/wiki/proving-metatheorems-proving-metatheorems-about-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Proving metatheorems about the natural numbers"
+        destination: "/wiki/proving-metatheorems-proving-metatheorems-about-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Proving_metatheorems_about_the_natural_numbers"
+        destination: "/wiki/proving-metatheorems-proving-metatheorems-about-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Proving metatheorems in non-empty contexts"
+        destination: "/wiki/proving-metatheorems-proving-metatheorems-in-non-empty-contexts/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Proving_metatheorems_in_non-empty_contexts"
+        destination: "/wiki/proving-metatheorems-proving-metatheorems-in-non-empty-contexts/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Proving totality assertions about the natural numbers"
+        destination: "/wiki/proving-metatheorems-proving-totality-assertions-about-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Proving_totality_assertions_about_the_natural_numbers"
+        destination: "/wiki/proving-metatheorems-proving-totality-assertions-about-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Proving totality assertions in non-empty contexts"
+        destination: "/wiki/proving-metatheorems-proving-totality-assertions-in-non-empty-contexts/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Proving_totality_assertions_in_non-empty_contexts"
+        destination: "/wiki/proving-metatheorems-proving-totality-assertions-in-non-empty-contexts/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Representing the judgements of the STLC"
+        destination: "/wiki/proving-metatheorems-representing-the-judgements-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Representing_the_judgements_of_the_STLC"
+        destination: "/wiki/proving-metatheorems-representing-the-judgements-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Representing the judgements of the natural numbers"
+        destination: "/wiki/proving-metatheorems-representing-the-judgements-of-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Representing_the_judgements_of_the_natural_numbers"
+        destination: "/wiki/proving-metatheorems-representing-the-judgements-of-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Representing the syntax of the STLC"
+        destination: "/wiki/proving-metatheorems-representing-the-syntax-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Representing_the_syntax_of_the_STLC"
+        destination: "/wiki/proving-metatheorems-representing-the-syntax-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Representing the syntax of the natural numbers"
+        destination: "/wiki/proving-metatheorems-representing-the-syntax-of-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Representing_the_syntax_of_the_natural_numbers"
+        destination: "/wiki/proving-metatheorems-representing-the-syntax-of-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:STLC: Answers to exercises"
+        destination: "/wiki/proving-metatheorems-stlc-answers-to-exercises/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:STLC:_Answers_to_exercises"
+        destination: "/wiki/proving-metatheorems-stlc-answers-to-exercises/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Simply typed LF"
+        destination: "/wiki/proving-metatheorems-simply-typed-lf/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Simply_typed_LF"
+        destination: "/wiki/proving-metatheorems-simply-typed-lf/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Summary: the STLC"
+        destination: "/wiki/proving-metatheorems-summary-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Summary:_the_STLC"
+        destination: "/wiki/proving-metatheorems-summary-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Summary: the natural numbers"
+        destination: "/wiki/proving-metatheorems-summary-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Summary:_the_natural_numbers"
+        destination: "/wiki/proving-metatheorems-summary-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems talk:Representing the judgements of the STLC"
+        destination: "/wiki/proving-metatheorems-talk-representing-the-judgements-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems_talk:Representing_the_judgements_of_the_STLC"
+        destination: "/wiki/proving-metatheorems-talk-representing-the-judgements-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems talk:Representing the judgements of the natural numbers"
+        destination: "/wiki/proving-metatheorems-talk-representing-the-judgements-of-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems_talk:Representing_the_judgements_of_the_natural_numbers"
+        destination: "/wiki/proving-metatheorems-talk-representing-the-judgements-of-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems talk:Representing the syntax of the STLC"
+        destination: "/wiki/proving-metatheorems-talk-representing-the-syntax-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems_talk:Representing_the_syntax_of_the_STLC"
+        destination: "/wiki/proving-metatheorems-talk-representing-the-syntax-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems talk:Simply typed LF"
+        destination: "/wiki/proving-metatheorems-talk-simply-typed-lf/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems_talk:Simply_typed_LF"
+        destination: "/wiki/proving-metatheorems-talk-simply-typed-lf/"
+      - type: redirect
+        source: "/wiki/%infix"
+        destination: "/wiki/fixity-declaration/"
+      - type: redirect
+        source: "/wiki/%postfix"
+        destination: "/wiki/fixity-declaration/"
+      - type: redirect
+        source: "/wiki/%prefix"
+        destination: "/wiki/fixity-declaration/"
+      - type: redirect
+        source: "/wiki/Adequate"
+        destination: "/wiki/adequacy/"
+      - type: redirect
+        source: "/wiki/Ask Twelf Elf:Short Answers"
+        destination: "/wiki/ask-twelf-elf-short-answers/"
+      - type: redirect
+        source: "/wiki/Ask_Twelf_Elf:Short_Answers"
+        destination: "/wiki/ask-twelf-elf-short-answers/"
+      - type: redirect
+        source: "/wiki/Auto-freezing"
+        destination: "/wiki/percent-freeze/"
+      - type: redirect
+        source: "/wiki/Autofreeze"
+        destination: "/wiki/percent-freeze/"
+      - type: redirect
+        source: "/wiki/Beta-equivalent"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/Beta-normal"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/Beta-reduction"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/Beta equivalence"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/Beta_equivalence"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/Beta equivalent"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/Beta_equivalent"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/Block"
+        destination: "/wiki/percent-block/"
+      - type: redirect
+        source: "/wiki/Blocks"
+        destination: "/wiki/percent-block/"
+      - type: redirect
+        source: "/wiki/Canonical forms"
+        destination: "/wiki/canonical-form/"
+      - type: redirect
+        source: "/wiki/Canonical_forms"
+        destination: "/wiki/canonical-form/"
+      - type: redirect
+        source: "/wiki/Church-Rosser via Complete Development"
+        destination: "/wiki/church-rosser-via-complete-development/"
+      - type: redirect
+        source: "/wiki/Church-Rosser_via_Complete_Development"
+        destination: "/wiki/church-rosser-via-complete-development/"
+      - type: redirect
+        source: "/wiki/Compatibility lemma"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Compatibility_lemma"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Compositional bijection"
+        destination: "/wiki/adequacy/"
+      - type: redirect
+        source: "/wiki/Compositional_bijection"
+        destination: "/wiki/adequacy/"
+      - type: redirect
+        source: "/wiki/Concrete representations"
+        destination: "/wiki/concrete-representation/"
+      - type: redirect
+        source: "/wiki/Concrete_representations"
+        destination: "/wiki/concrete-representation/"
+      - type: redirect
+        source: "/wiki/Congruence lemma"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Congruence_lemma"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Congruence lemmas"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Congruence_lemmas"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Constraint domains"
+        destination: "/wiki/constraint-domain/"
+      - type: redirect
+        source: "/wiki/Constraint_domains"
+        destination: "/wiki/constraint-domain/"
+      - type: redirect
+        source: "/wiki/Cut"
+        destination: "/wiki/admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/Cut elimination"
+        destination: "/wiki/admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/Cut_elimination"
+        destination: "/wiki/admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/Deductive system"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/Deductive_system"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/Deductive systems"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/Deductive_systems"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/Deep equality"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Deep_equality"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Dense lexicographical orderings"
+        destination: "/wiki/lexicographical-orderings-with-density/"
+      - type: redirect
+        source: "/wiki/Dense_lexicographical_orderings"
+        destination: "/wiki/lexicographical-orderings-with-density/"
+      - type: redirect
+        source: "/wiki/Dependent type"
+        destination: "/wiki/dependent-types/"
+      - type: redirect
+        source: "/wiki/Dependent_type"
+        destination: "/wiki/dependent-types/"
+      - type: redirect
+        source: "/wiki/Developers"
+        destination: "/wiki/about-the-twelf-project/"
+      - type: redirect
+        source: "/wiki/Editing Summer school 2008:Alternate typed arithmetic expressions with sums"
+        destination: "/wiki/summer-school-2008-alternate-typed-arithmetic-expressions-with-sums/"
+      - type: redirect
+        source: "/wiki/Editing_Summer_school_2008:Alternate_typed_arithmetic_expressions_with_sums"
+        destination: "/wiki/summer-school-2008-alternate-typed-arithmetic-expressions-with-sums/"
+      - type: redirect
+        source: "/wiki/Effectiveness"
+        destination: "/wiki/effectiveness-lemma/"
+      - type: redirect
+        source: "/wiki/Effectiveness lemmas"
+        destination: "/wiki/effectiveness-lemma/"
+      - type: redirect
+        source: "/wiki/Effectiveness_lemmas"
+        destination: "/wiki/effectiveness-lemma/"
+      - type: redirect
+        source: "/wiki/Equivalence relations"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Equivalence_relations"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Eta-expansion"
+        destination: "/wiki/eta-equivalence/"
+      - type: redirect
+        source: "/wiki/Eta-long"
+        destination: "/wiki/eta-equivalence/"
+      - type: redirect
+        source: "/wiki/Eta-long form"
+        destination: "/wiki/eta-equivalence/"
+      - type: redirect
+        source: "/wiki/Eta-long_form"
+        destination: "/wiki/eta-equivalence/"
+      - type: redirect
+        source: "/wiki/Exchange"
+        destination: "/wiki/exchange-lemma/"
+      - type: redirect
+        source: "/wiki/Explicit parameter"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Explicit_parameter"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Extrinsic encoding"
+        destination: "/wiki/intrinsic-and-extrinsic-encodings/"
+      - type: redirect
+        source: "/wiki/Extrinsic_encoding"
+        destination: "/wiki/intrinsic-and-extrinsic-encodings/"
+      - type: redirect
+        source: "/wiki/Factoring"
+        destination: "/wiki/output-factoring/"
+      - type: redirect
+        source: "/wiki/Freeze"
+        destination: "/wiki/percent-freeze/"
+      - type: redirect
+        source: "/wiki/Frozen"
+        destination: "/wiki/percent-freeze/"
+      - type: redirect
+        source: "/wiki/Function (relation)"
+        destination: "/wiki/function/"
+      - type: redirect
+        source: "/wiki/Function_(relation)"
+        destination: "/wiki/function/"
+      - type: redirect
+        source: "/wiki/General Description of Twelf"
+        destination: "/wiki/general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/General_Description_of_Twelf"
+        destination: "/wiki/general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Hauptsatz"
+        destination: "/wiki/admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/Hereditary substitution with zippers"
+        destination: "/wiki/hereditary-substitution-with-a-zipper/"
+      - type: redirect
+        source: "/wiki/Hereditary_substitution_with_zippers"
+        destination: "/wiki/hereditary-substitution-with-a-zipper/"
+      - type: redirect
+        source: "/wiki/Heterogeneous lists"
+        destination: "/wiki/lists/"
+      - type: redirect
+        source: "/wiki/Heterogeneous_lists"
+        destination: "/wiki/lists/"
+      - type: redirect
+        source: "/wiki/Higher-order judgement"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/Higher-order_judgement"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/Higher-order judgment"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/Higher-order_judgment"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/Higher-order judgments"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/Higher-order_judgments"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/Holes in metatheorems"
+        destination: "/wiki/incremental-metatheorem-development/"
+      - type: redirect
+        source: "/wiki/Holes_in_metatheorems"
+        destination: "/wiki/incremental-metatheorem-development/"
+      - type: redirect
+        source: "/wiki/Homogeneous lists"
+        destination: "/wiki/indexed-lists/"
+      - type: redirect
+        source: "/wiki/Homogeneous_lists"
+        destination: "/wiki/indexed-lists/"
+      - type: redirect
+        source: "/wiki/Hypothetical judgement"
+        destination: "/wiki/hypothetical-judgment/"
+      - type: redirect
+        source: "/wiki/Hypothetical_judgement"
+        destination: "/wiki/hypothetical-judgment/"
+      - type: redirect
+        source: "/wiki/Identity"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Implicit parameter"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Implicit_parameter"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Implicit parameters"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Implicit_parameters"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Input coverage"
+        destination: "/wiki/coverage-checking/"
+      - type: redirect
+        source: "/wiki/Input_coverage"
+        destination: "/wiki/coverage-checking/"
+      - type: redirect
+        source: "/wiki/Intrinsic encoding"
+        destination: "/wiki/intrinsic-and-extrinsic-encodings/"
+      - type: redirect
+        source: "/wiki/Intrinsic_encoding"
+        destination: "/wiki/intrinsic-and-extrinsic-encodings/"
+      - type: redirect
+        source: "/wiki/Judgement"
+        destination: "/wiki/judgment/"
+      - type: redirect
+        source: "/wiki/Judgments"
+        destination: "/wiki/judgment/"
+      - type: redirect
+        source: "/wiki/Judgments as types"
+        destination: "/wiki/judgment/"
+      - type: redirect
+        source: "/wiki/Judgments_as_types"
+        destination: "/wiki/judgment/"
+      - type: redirect
+        source: "/wiki/Language with references"
+        destination: "/wiki/mutable-state/"
+      - type: redirect
+        source: "/wiki/Language_with_references"
+        destination: "/wiki/mutable-state/"
+      - type: redirect
+        source: "/wiki/Let*"
+        destination: "/wiki/iterated-let-bindings/"
+      - type: redirect
+        source: "/wiki/Logic program"
+        destination: "/wiki/logic-programming/"
+      - type: redirect
+        source: "/wiki/Logic_program"
+        destination: "/wiki/logic-programming/"
+      - type: redirect
+        source: "/wiki/Main page"
+        destination: "/wiki/main-page/"
+      - type: redirect
+        source: "/wiki/Main_page"
+        destination: "/wiki/main-page/"
+      - type: redirect
+        source: "/wiki/Manipulating proof witnesses"
+        destination: "/wiki/manipulating-proof-witnesses-as-inputs/"
+      - type: redirect
+        source: "/wiki/Manipulating_proof_witnesses"
+        destination: "/wiki/manipulating-proof-witnesses-as-inputs/"
+      - type: redirect
+        source: "/wiki/Meta-language"
+        destination: "/wiki/meta-logic/"
+      - type: redirect
+        source: "/wiki/Metatheorems"
+        destination: "/wiki/metatheorem/"
+      - type: redirect
+        source: "/wiki/Mode"
+        destination: "/wiki/percent-mode/"
+      - type: redirect
+        source: "/wiki/Mode checking"
+        destination: "/wiki/percent-mode/"
+      - type: redirect
+        source: "/wiki/Mode_checking"
+        destination: "/wiki/percent-mode/"
+      - type: redirect
+        source: "/wiki/Natural number"
+        destination: "/wiki/natural-numbers/"
+      - type: redirect
+        source: "/wiki/Natural_number"
+        destination: "/wiki/natural-numbers/"
+      - type: redirect
+        source: "/wiki/Numeric termination metric"
+        destination: "/wiki/numeric-termination-metrics/"
+      - type: redirect
+        source: "/wiki/Numeric_termination_metric"
+        destination: "/wiki/numeric-termination-metrics/"
+      - type: redirect
+        source: "/wiki/Object language"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/Object_language"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/Object logic syntax"
+        destination: "/wiki/syntax-object-logic/"
+      - type: redirect
+        source: "/wiki/Object_logic_syntax"
+        destination: "/wiki/syntax-object-logic/"
+      - type: redirect
+        source: "/wiki/Output coverage"
+        destination: "/wiki/coverage-checking/"
+      - type: redirect
+        source: "/wiki/Output_coverage"
+        destination: "/wiki/coverage-checking/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Church Rosser"
+        destination: "/wiki/church-rosser-w-identity-reduction/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Church_Rosser"
+        destination: "/wiki/church-rosser-w-identity-reduction/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Combinators Starter"
+        destination: "/wiki/popl-tutorial-combinators-support/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Combinators_Starter"
+        destination: "/wiki/popl-tutorial-combinators-support/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Cost Semantics"
+        destination: "/wiki/popl-tutorial-cost-semantics/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Cost_Semantics"
+        destination: "/wiki/popl-tutorial-cost-semantics/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/MinML Encoding"
+        destination: "/wiki/popl-tutorial-minml-encoding/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/MinML_Encoding"
+        destination: "/wiki/popl-tutorial-minml-encoding/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/MinML Preservation Theorem Answer"
+        destination: "/wiki/popl-tutorial-minml-preservation-theorem-solution/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/MinML_Preservation_Theorem_Answer"
+        destination: "/wiki/popl-tutorial-minml-preservation-theorem-solution/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Nat Starter"
+        destination: "/wiki/popl-tutorial-basics-starter/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Nat_Starter"
+        destination: "/wiki/popl-tutorial-basics-starter/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Pattern Matching"
+        destination: "/wiki/popl-tutorial-pattern-matching/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Pattern_Matching"
+        destination: "/wiki/popl-tutorial-pattern-matching/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Session2"
+        destination: "/wiki/popl-tutorial-session-2-answer/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session2"
+        destination: "/wiki/popl-tutorial-session-2-answer/"
+      - type: redirect
+        source: "/wiki/Pattern Matching (Case Study)"
+        destination: "/wiki/pattern-matching/"
+      - type: redirect
+        source: "/wiki/Pattern_Matching_(Case_Study)"
+        destination: "/wiki/pattern-matching/"
+      - type: redirect
+        source: "/wiki/Polarized PCF Better"
+        destination: "/wiki/polarized-pcf/"
+      - type: redirect
+        source: "/wiki/Polarized_PCF_Better"
+        destination: "/wiki/polarized-pcf/"
+      - type: redirect
+        source: "/wiki/Progress"
+        destination: "/wiki/canonical-forms-lemma/"
+      - type: redirect
+        source: "/wiki/Proofs by reductio ad absurdum"
+        destination: "/wiki/reasoning-from-false/"
+      - type: redirect
+        source: "/wiki/Proofs_by_reductio_ad_absurdum"
+        destination: "/wiki/reasoning-from-false/"
+      - type: redirect
+        source: "/wiki/Quick introduction"
+        destination: "/wiki/general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Quick_introduction"
+        destination: "/wiki/general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Real-world binding structures"
+        destination: "/wiki/ad-hoc-binding-structures/"
+      - type: redirect
+        source: "/wiki/Real-world_binding_structures"
+        destination: "/wiki/ad-hoc-binding-structures/"
+      - type: redirect
+        source: "/wiki/Real World Binding Structures"
+        destination: "/wiki/ad-hoc-binding-structures/"
+      - type: redirect
+        source: "/wiki/Real_World_Binding_Structures"
+        destination: "/wiki/ad-hoc-binding-structures/"
+      - type: redirect
+        source: "/wiki/Reasoning from equality"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Reasoning_from_equality"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Regular world"
+        destination: "/wiki/percent-worlds/"
+      - type: redirect
+        source: "/wiki/Regular_world"
+        destination: "/wiki/percent-worlds/"
+      - type: redirect
+        source: "/wiki/Regular worlds"
+        destination: "/wiki/percent-worlds/"
+      - type: redirect
+        source: "/wiki/Regular_worlds"
+        destination: "/wiki/percent-worlds/"
+      - type: redirect
+        source: "/wiki/Respects lemmas"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Respects_lemmas"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Revision history"
+        destination: "/wiki/release-history/"
+      - type: redirect
+        source: "/wiki/Revision_history"
+        destination: "/wiki/release-history/"
+      - type: redirect
+        source: "/wiki/Shallow equality"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Shallow_equality"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/Signature"
+        destination: "/wiki/twelf-signature/"
+      - type: redirect
+        source: "/wiki/Software"
+        destination: "/wiki/download/"
+      - type: redirect
+        source: "/wiki/Structural metric"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/Structural_metric"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/Structural termination metrics"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/Structural_termination_metrics"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/Style guide"
+        destination: "/wiki/twelf-style-guide/"
+      - type: redirect
+        source: "/wiki/Style_guide"
+        destination: "/wiki/twelf-style-guide/"
+      - type: redirect
+        source: "/wiki/Substitution"
+        destination: "/wiki/substitution-lemma/"
+      - type: redirect
+        source: "/wiki/Substitution Lemma"
+        destination: "/wiki/substitution-lemma/"
+      - type: redirect
+        source: "/wiki/Substitution_Lemma"
+        destination: "/wiki/substitution-lemma/"
+      - type: redirect
+        source: "/wiki/Summer school 2008:Arithmetic expressions with pairs (value)"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-value/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:Arithmetic_expressions_with_pairs_(value)"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-value/"
+      - type: redirect
+        source: "/wiki/Summer school 2008: Exercise: Typed arithmetic expressions with pairs"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-with-pairs/"
+      - type: redirect
+        source: "/wiki/Summer_school_2008:_Exercise:_Typed_arithmetic_expressions_with_pairs"
+        destination: "/wiki/summer-school-2008-typed-arithmetic-expressions-with-pairs/"
+      - type: redirect
+        source: "/wiki/Termination analysis"
+        destination: "/wiki/percent-terminates/"
+      - type: redirect
+        source: "/wiki/Termination_analysis"
+        destination: "/wiki/percent-terminates/"
+      - type: redirect
+        source: "/wiki/Termination checking"
+        destination: "/wiki/percent-terminates/"
+      - type: redirect
+        source: "/wiki/Termination_checking"
+        destination: "/wiki/percent-terminates/"
+      - type: redirect
+        source: "/wiki/Tethered Modal Logic"
+        destination: "/wiki/tethered-modal-logic/"
+      - type: redirect
+        source: "/wiki/Tethered_Modal_Logic"
+        destination: "/wiki/tethered-modal-logic/"
+      - type: redirect
+        source: "/wiki/The two Twelfs"
+        destination: "/wiki/modes-of-use/"
+      - type: redirect
+        source: "/wiki/The_two_Twelfs"
+        destination: "/wiki/modes-of-use/"
+      - type: redirect
+        source: "/wiki/Totality assertions"
+        destination: "/wiki/totality-assertion/"
+      - type: redirect
+        source: "/wiki/Totality_assertions"
+        destination: "/wiki/totality-assertion/"
+      - type: redirect
+        source: "/wiki/Try Twelf now"
+        destination: "/wiki/twelf-live/"
+      - type: redirect
+        source: "/wiki/Try_Twelf_now"
+        destination: "/wiki/twelf-live/"
+      - type: redirect
+        source: "/wiki/Tutorial"
+        destination: "/wiki/tutorials/"
+      - type: redirect
+        source: "/wiki/Twelf-list"
+        destination: "/wiki/mailing-lists/"
+      - type: redirect
+        source: "/wiki/Twelf glossary"
+        destination: "/wiki/glossary/"
+      - type: redirect
+        source: "/wiki/Twelf_glossary"
+        destination: "/wiki/glossary/"
+      - type: redirect
+        source: "/wiki/Twelf naming conventions"
+        destination: "/wiki/naming-conventions/"
+      - type: redirect
+        source: "/wiki/Twelf_naming_conventions"
+        destination: "/wiki/naming-conventions/"
+      - type: redirect
+        source: "/wiki/Type families"
+        destination: "/wiki/type-family/"
+      - type: redirect
+        source: "/wiki/Type_families"
+        destination: "/wiki/type-family/"
+      - type: redirect
+        source: "/wiki/Unary numbers"
+        destination: "/wiki/natural-numbers/"
+      - type: redirect
+        source: "/wiki/Unary_numbers"
+        destination: "/wiki/natural-numbers/"
+      - type: redirect
+        source: "/wiki/Uniqueness lemmas"
+        destination: "/wiki/uniqueness-lemma/"
+      - type: redirect
+        source: "/wiki/Uniqueness_lemmas"
+        destination: "/wiki/uniqueness-lemma/"
+      - type: redirect
+        source: "/wiki/Universal quantification"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Universal_quantification"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Universally quantified"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Universally_quantified"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/Using a metric"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/Using_a_metric"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/Weakening"
+        destination: "/wiki/weakening-lemma/"
+      - type: redirect
+        source: "/wiki/What's new?"
+        destination: "/wiki/whats-new/"
+      - type: redirect
+        source: "/wiki/What's_new?"
+        destination: "/wiki/whats-new/"
+      - type: redirect
+        source: "/wiki/Working with higher-order judgements"
+        destination: "/wiki/reformulating-languages-to-use-hypothetical-judgements/"
+      - type: redirect
+        source: "/wiki/Working_with_higher-order_judgements"
+        destination: "/wiki/reformulating-languages-to-use-hypothetical-judgements/"
+      - type: redirect
+        source: "/wiki/World"
+        destination: "/wiki/percent-worlds/"
+      - type: redirect
+        source: "/wiki/Talk:% define"
+        destination: "/wiki/talk-define-declaration/"
+      - type: redirect
+        source: "/wiki/Talk:%_define"
+        destination: "/wiki/talk-define-declaration/"
+      - type: redirect
+        source: "/wiki/Talk:Congruence lemma"
+        destination: "/wiki/talk-respects-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:Congruence_lemma"
+        destination: "/wiki/talk-respects-lemma/"
+      - type: redirect
+        source: "/wiki/Talk:General Description of Twelf"
+        destination: "/wiki/talk-general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:General_Description_of_Twelf"
+        destination: "/wiki/talk-general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Get started"
+        destination: "/wiki/talk-introductions-to-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Get_started"
+        destination: "/wiki/talk-introductions-to-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Heterogeneous lists"
+        destination: "/wiki/talk-lists/"
+      - type: redirect
+        source: "/wiki/Talk:Heterogeneous_lists"
+        destination: "/wiki/talk-lists/"
+      - type: redirect
+        source: "/wiki/Talk:Holes in metatheorems"
+        destination: "/wiki/talk-incremental-metatheorem-development/"
+      - type: redirect
+        source: "/wiki/Talk:Holes_in_metatheorems"
+        destination: "/wiki/talk-incremental-metatheorem-development/"
+      - type: redirect
+        source: "/wiki/Talk:Language with references"
+        destination: "/wiki/talk-mutable-state/"
+      - type: redirect
+        source: "/wiki/Talk:Language_with_references"
+        destination: "/wiki/talk-mutable-state/"
+      - type: redirect
+        source: "/wiki/Talk:Quick introduction"
+        destination: "/wiki/talk-general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Quick_introduction"
+        destination: "/wiki/talk-general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Talk:Software"
+        destination: "/wiki/talk-download/"
+      - type: redirect
+        source: "/wiki/Talk:The two Twelfs"
+        destination: "/wiki/talk-modes-of-use/"
+      - type: redirect
+        source: "/wiki/Talk:The_two_Twelfs"
+        destination: "/wiki/talk-modes-of-use/"
+      - type: redirect
+        source: "/wiki/Talk:Try Twelf now"
+        destination: "/wiki/talk-twelf-live/"
+      - type: redirect
+        source: "/wiki/Talk:Try_Twelf_now"
+        destination: "/wiki/talk-twelf-live/"
+      - type: redirect
+        source: "/wiki/Talk:UserGuide"
+        destination: "/wiki/talk-users-guide/"
+      - type: redirect
+        source: "/wiki/Talk:Working with higher-order judgements"
+        destination: "/wiki/talk-reformulating-languages-to-use-hypothetical-judgements/"
+      - type: redirect
+        source: "/wiki/Talk:Working_with_higher-order_judgements"
+        destination: "/wiki/talk-reformulating-languages-to-use-hypothetical-judgements/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Lecture20"
+        destination: "/wiki/user-rsimmons-lecture-20-logic-programming/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Lecture 22: Proofs In Twelf"
+        destination: "/wiki/user-rsimmons-homework-7-proofs-in-twelf/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Lecture_22:_Proofs_In_Twelf"
+        destination: "/wiki/user-rsimmons-homework-7-proofs-in-twelf/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Lecture 23: Proofs In Twelf"
+        destination: "/wiki/user-rsimmons-lecture-23-typed-lambda-calculus-in-twelf/"
+      - type: redirect
+        source: "/wiki/User:Rsimmons/Lecture_23:_Proofs_In_Twelf"
+        destination: "/wiki/user-rsimmons-lecture-23-typed-lambda-calculus-in-twelf/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:About"
+        destination: "/wiki/about-the-twelf-project/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:About"
+        destination: "/wiki/about-the-twelf-project/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Administrators"
+        destination: "/wiki/the-twelf-project-contributors/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Administrators"
+        destination: "/wiki/the-twelf-project-contributors/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Bureaucrats"
+        destination: "/wiki/the-twelf-project-contributors/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Bureaucrats"
+        destination: "/wiki/the-twelf-project-contributors/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Copyrights"
+        destination: "/wiki/the-twelf-project-copyright/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Copyrights"
+        destination: "/wiki/the-twelf-project-copyright/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:GNU Free Documentation License"
+        destination: "/wiki/the-twelf-project-gfdl/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:GNU_Free_Documentation_License"
+        destination: "/wiki/the-twelf-project-gfdl/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:MIT"
+        destination: "/wiki/the-twelf-project-mit-license/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:MIT"
+        destination: "/wiki/the-twelf-project-mit-license/"
+      - type: redirect
+        source: "/wiki/The Twelf Project:Syntax Highlighting"
+        destination: "/wiki/the-twelf-project-syntax-highlighting/"
+      - type: redirect
+        source: "/wiki/The_Twelf_Project:Syntax_Highlighting"
+        destination: "/wiki/the-twelf-project-syntax-highlighting/"
+      - type: redirect
+        source: "/wiki/Template:Front-Blog Updates"
+        destination: "/wiki/whats-new/"
+      - type: redirect
+        source: "/wiki/Template:Front-Blog_Updates"
+        destination: "/wiki/whats-new/"
+      - type: redirect
+        source: "/wiki/Template:Multimap"
+        destination: "/wiki/template-lolli/"
+      - type: redirect
+        source: "/wiki/Template:The Twelf Project/Blog Updates"
+        destination: "/wiki/whats-new/"
+      - type: redirect
+        source: "/wiki/Template:The_Twelf_Project/Blog_Updates"
+        destination: "/wiki/whats-new/"
+      - type: redirect
+        source: "/wiki/Template:The Twelf Project/Learning Twelf"
+        destination: "/wiki/template-the-twelf-project-getting-started/"
+      - type: redirect
+        source: "/wiki/Template:The_Twelf_Project/Learning_Twelf"
+        destination: "/wiki/template-the-twelf-project-getting-started/"
+      - type: redirect
+        source: "/wiki/Template:The Twelf Project/Release History"
+        destination: "/wiki/template-front-release-history/"
+      - type: redirect
+        source: "/wiki/Template:The_Twelf_Project/Release_History"
+        destination: "/wiki/template-front-release-history/"
+      - type: redirect
+        source: "/wiki/Template:The Twelf Project/What's new"
+        destination: "/wiki/template-front-whats-new/"
+      - type: redirect
+        source: "/wiki/Template:The_Twelf_Project/What's_new"
+        destination: "/wiki/template-front-whats-new/"
+      - type: redirect
+        source: "/wiki/Template talk:Front-Blog Updates"
+        destination: "/wiki/talk-whats-new/"
+      - type: redirect
+        source: "/wiki/Template_talk:Front-Blog_Updates"
+        destination: "/wiki/talk-whats-new/"
+      - type: redirect
+        source: "/wiki/Help:Contents"
+        destination: "/wiki/the-twelf-project-style-guide/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Natural numbers:Answers to exercises"
+        destination: "/wiki/proving-metatheorems-natural-numbers-answers-to-exercises/"
+      - type: redirect
+        source: "/wiki/Proving_metatheorems:Natural_numbers:Answers_to_exercises"
+        destination: "/wiki/proving-metatheorems-natural-numbers-answers-to-exercises/"
+      - type: redirect
+        source: "/wiki/theorem prover"
+        destination: "/wiki/theorem-prover/"
+      - type: redirect
+        source: "/wiki/unsafe mode"
+        destination: "/wiki/unsafe-mode/"
+      - type: redirect
+        source: "/wiki/regular worlds"
+        destination: "/wiki/percent-worlds/"
+      - type: redirect
+        source: "/wiki/define declaration"
+        destination: "/wiki/define-declaration/"
+      - type: redirect
+        source: "/wiki/signature"
+        destination: "/wiki/twelf-signature/"
+      - type: redirect
+        source: "/wiki/metatheorems"
+        destination: "/wiki/metatheorem/"
+      - type: redirect
+        source: "/wiki/totality assertions"
+        destination: "/wiki/totality-assertion/"
+      - type: redirect
+        source: "/wiki/tactical theorem proving"
+        destination: "/wiki/tactical-theorem-proving/"
+      - type: redirect
+        source: "/wiki/input coverage"
+        destination: "/wiki/coverage-checking/"
+      - type: redirect
+        source: "/wiki/coverage checking"
+        destination: "/wiki/coverage-checking/"
+      - type: redirect
+        source: "/wiki/output coverage"
+        destination: "/wiki/coverage-checking/"
+      - type: redirect
+        source: "/wiki/output freeness"
+        destination: "/wiki/output-freeness/"
+      - type: redirect
+        source: "/wiki/totality assertion"
+        destination: "/wiki/totality-assertion/"
+      - type: redirect
+        source: "/wiki/natural numbers"
+        destination: "/wiki/natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:Proving_totality_assertions_about_the_natural_numbers"
+        destination: "/wiki/proving-metatheorems-proving-totality-assertions-about-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/universally quantified"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/judgments as types"
+        destination: "/wiki/judgment/"
+      - type: redirect
+        source: "/wiki/logic programming"
+        destination: "/wiki/logic-programming/"
+      - type: redirect
+        source: "/wiki/tabled logic programming"
+        destination: "/wiki/tabled-logic-programming/"
+      - type: redirect
+        source: "/wiki/division over the natural numbers"
+        destination: "/wiki/division-over-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/using nat-less with %reduces"
+        destination: "/wiki/using-nat-less-with-reduces/"
+      - type: redirect
+        source: "/wiki/mode"
+        destination: "/wiki/percent-mode/"
+      - type: redirect
+        source: "/wiki/frozen"
+        destination: "/wiki/percent-freeze/"
+      - type: redirect
+        source: "/wiki/canonical forms"
+        destination: "/wiki/canonical-form/"
+      - type: redirect
+        source: "/wiki/type family"
+        destination: "/wiki/type-family/"
+      - type: redirect
+        source: "/wiki/logic program"
+        destination: "/wiki/logic-programming/"
+      - type: redirect
+        source: "/wiki/introductions to Twelf"
+        destination: "/wiki/introductions-to-twelf/"
+      - type: redirect
+        source: "/wiki/holes in metatheorems"
+        destination: "/wiki/incremental-metatheorem-development/"
+      - type: redirect
+        source: "/wiki/uniqueness lemma"
+        destination: "/wiki/uniqueness-lemma/"
+      - type: redirect
+        source: "/wiki/identity"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/constraint domain"
+        destination: "/wiki/constraint-domain/"
+      - type: redirect
+        source: "/wiki/object language"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/adequate"
+        destination: "/wiki/adequacy/"
+      - type: redirect
+        source: "/wiki/hypothetical judgement"
+        destination: "/wiki/hypothetical-judgment/"
+      - type: redirect
+        source: "/wiki/error messages"
+        destination: "/wiki/error-messages/"
+      - type: redirect
+        source: "/wiki/world subsumption"
+        destination: "/wiki/world-subsumption/"
+      - type: redirect
+        source: "/wiki/higher-order abstract syntax"
+        destination: "/wiki/higher-order-abstract-syntax/"
+      - type: redirect
+        source: "/wiki/case studies"
+        destination: "/wiki/case-studies/"
+      - type: redirect
+        source: "/wiki/object logic"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/higher-order judgment"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/congruence relation"
+        destination: "/wiki/congruence-relation/"
+      - type: redirect
+        source: "/wiki/effectiveness lemmas"
+        destination: "/wiki/effectiveness-lemma/"
+      - type: redirect
+        source: "/wiki/higher-order judgements"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/canonical form"
+        destination: "/wiki/canonical-form/"
+      - type: redirect
+        source: "/wiki/deductive systems"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/mutual induction"
+        destination: "/wiki/mutual-induction/"
+      - type: redirect
+        source: "/wiki/extrinsic encoding"
+        destination: "/wiki/intrinsic-and-extrinsic-encodings/"
+      - type: redirect
+        source: "/wiki/implicit parameter"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/function (relation)"
+        destination: "/wiki/function/"
+      - type: redirect
+        source: "/wiki/effectiveness lemma"
+        destination: "/wiki/effectiveness-lemma/"
+      - type: redirect
+        source: "/wiki/converting between implicit and explicit parameters"
+        destination: "/wiki/converting-between-implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/canonical forms lemma"
+        destination: "/wiki/canonical-forms-lemma/"
+      - type: redirect
+        source: "/wiki/progress"
+        destination: "/wiki/canonical-forms-lemma/"
+      - type: redirect
+        source: "/wiki/hereditary substitution"
+        destination: "/wiki/hereditary-substitution/"
+      - type: redirect
+        source: "/wiki/beta-reduction"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/eta-expansion"
+        destination: "/wiki/eta-equivalence/"
+      - type: redirect
+        source: "/wiki/output factoring"
+        destination: "/wiki/output-factoring/"
+      - type: redirect
+        source: "/wiki/shallow equality"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/reasoning from equality"
+        destination: "/wiki/equality/"
+      - type: redirect
+        source: "/wiki/bracket abstraction"
+        destination: "/wiki/bracket-abstraction/"
+      - type: redirect
+        source: "/wiki/User:drl"
+        destination: "/wiki/user-drl/"
+      - type: redirect
+        source: "/wiki/regular world"
+        destination: "/wiki/percent-worlds/"
+      - type: redirect
+        source: "/wiki/heterogeneous lists"
+        destination: "/wiki/lists/"
+      - type: redirect
+        source: "/wiki/natural numbers with inequality"
+        destination: "/wiki/natural-numbers-with-inequality/"
+      - type: redirect
+        source: "/wiki/catch-all case"
+        destination: "/wiki/catch-all-case/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Proving metatheorems in non-empty contexts"
+        destination: "/wiki/proving-metatheorems-proving-metatheorems-in-non-empty-contexts/"
+      - type: redirect
+        source: "/wiki/modal logic"
+        destination: "/wiki/modal-logic/"
+      - type: redirect
+        source: "/wiki/admissibility of cut"
+        destination: "/wiki/admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/intrinsic encoding"
+        destination: "/wiki/intrinsic-and-extrinsic-encodings/"
+      - type: redirect
+        source: "/wiki/cut elimination"
+        destination: "/wiki/admissibility-of-cut/"
+      - type: redirect
+        source: "/wiki/structural metric"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/reasoning from false"
+        destination: "/wiki/reasoning-from-false/"
+      - type: redirect
+        source: "/wiki/autofreeze"
+        destination: "/wiki/percent-freeze/"
+      - type: redirect
+        source: "/wiki/equivalence relation"
+        destination: "/wiki/equivalence-relation/"
+      - type: redirect
+        source: "/wiki/constraint domains and coverage checking"
+        destination: "/wiki/constraint-domains-and-coverage-checking/"
+      - type: redirect
+        source: "/wiki/constraint domains"
+        destination: "/wiki/constraint-domain/"
+      - type: redirect
+        source: "/wiki/implicit and explicit parameters"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/naming conventions"
+        destination: "/wiki/naming-conventions/"
+      - type: redirect
+        source: "/wiki/mailing lists"
+        destination: "/wiki/mailing-lists/"
+      - type: redirect
+        source: "/wiki/research projects using Twelf"
+        destination: "/wiki/research-projects-using-twelf/"
+      - type: redirect
+        source: "/wiki/revision history"
+        destination: "/wiki/release-history/"
+      - type: redirect
+        source: "/wiki/structural metrics"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/respects lemma"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/ambiguous hyperkind"
+        destination: "/wiki/ambiguous-hyperkind/"
+      - type: redirect
+        source: "/wiki/mode checking"
+        destination: "/wiki/percent-mode/"
+      - type: redirect
+        source: "/wiki/substitution lemma"
+        destination: "/wiki/substitution-lemma/"
+      - type: redirect
+        source: "/wiki/dependent types"
+        destination: "/wiki/dependent-types/"
+      - type: redirect
+        source: "/wiki/hereditary substitution for the STLC"
+        destination: "/wiki/hereditary-substitution-for-the-stlc/"
+      - type: redirect
+        source: "/wiki/verifications and uses"
+        destination: "/wiki/verifications-and-uses/"
+      - type: redirect
+        source: "/wiki/beta-normal"
+        destination: "/wiki/beta-equivalence/"
+      - type: redirect
+        source: "/wiki/eta-long"
+        destination: "/wiki/eta-equivalence/"
+      - type: redirect
+        source: "/wiki/verifications and uses with zippers"
+        destination: "/wiki/verifications-and-uses-with-zippers/"
+      - type: redirect
+        source: "/wiki/concrete representation"
+        destination: "/wiki/concrete-representation/"
+      - type: redirect
+        source: "/wiki/abstract syntax"
+        destination: "/wiki/abstract-syntax/"
+      - type: redirect
+        source: "/wiki/meta-language"
+        destination: "/wiki/meta-logic/"
+      - type: redirect
+        source: "/wiki/weakening"
+        destination: "/wiki/weakening-lemma/"
+      - type: redirect
+        source: "/wiki/exchange"
+        destination: "/wiki/exchange-lemma/"
+      - type: redirect
+        source: "/wiki/substitution"
+        destination: "/wiki/substitution-lemma/"
+      - type: redirect
+        source: "/wiki/hypothetical judgment"
+        destination: "/wiki/hypothetical-judgment/"
+      - type: redirect
+        source: "/wiki/simply-typed lambda calculus"
+        destination: "/wiki/simply-typed-lambda-calculus/"
+      - type: redirect
+        source: "/wiki/style guide"
+        destination: "/wiki/twelf-style-guide/"
+      - type: redirect
+        source: "/wiki/natural number"
+        destination: "/wiki/natural-numbers/"
+      - type: redirect
+        source: "/wiki/dependent type"
+        destination: "/wiki/dependent-types/"
+      - type: redirect
+        source: "/wiki/higher-order judgement"
+        destination: "/wiki/higher-order-judgements/"
+      - type: redirect
+        source: "/wiki/deductive system"
+        destination: "/wiki/object-logic/"
+      - type: redirect
+        source: "/wiki/using a metric"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/linear logic"
+        destination: "/wiki/linear-logic/"
+      - type: redirect
+        source: "/wiki/User:varming"
+        destination: "/wiki/user-varming/"
+      - type: redirect
+        source: "/wiki/congruence lemma"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/language with references"
+        destination: "/wiki/mutable-state/"
+      - type: redirect
+        source: "/wiki/explicit parameter"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/proving metatheorems with Twelf"
+        destination: "/wiki/proving-metatheorems-with-twelf/"
+      - type: redirect
+        source: "/wiki/block"
+        destination: "/wiki/percent-block/"
+      - type: redirect
+        source: "/wiki/proofs by reductio ad absurdum"
+        destination: "/wiki/reasoning-from-false/"
+      - type: redirect
+        source: "/wiki/deterministic declaration"
+        destination: "/wiki/deterministic-declaration/"
+      - type: redirect
+        source: "/wiki/structural termination metrics"
+        destination: "/wiki/structural-metrics/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/CPS_Solution2"
+        destination: "/wiki/popl-tutorial-cps-solution2/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/CPS_Solutions"
+        destination: "/wiki/popl-tutorial-cps-solutions/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Control machine"
+        destination: "/wiki/popl-tutorial-control-machine/"
+      - type: redirect
+        source: "/wiki/POPL Tutorial/Evaluation_Contexts_Intrinsic"
+        destination: "/wiki/popl-tutorial-evaluation-contexts-intrinsic/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session 2"
+        destination: "/wiki/popl-tutorial-session-2/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session 4"
+        destination: "/wiki/popl-tutorial-session-4/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session 5"
+        destination: "/wiki/popl-tutorial-session-5/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Session 4 Starter"
+        destination: "/wiki/popl-tutorial-session-4-starter/"
+      - type: redirect
+        source: "/wiki/POPL_Tutorial/Combinators session"
+        destination: "/wiki/popl-tutorial-combinators-session/"
+      - type: redirect
+        source: "/wiki/intrinsic and extrinsic encodings"
+        destination: "/wiki/intrinsic-and-extrinsic-encodings/"
+      - type: redirect
+        source: "/wiki/judgement"
+        destination: "/wiki/judgment/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Representing the syntax of the natural numbers"
+        destination: "/wiki/proving-metatheorems-representing-the-syntax-of-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Simply typed LF"
+        destination: "/wiki/proving-metatheorems-simply-typed-lf/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Representing the judgements of the natural numbers"
+        destination: "/wiki/proving-metatheorems-representing-the-judgements-of-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Full LF"
+        destination: "/wiki/proving-metatheorems-full-lf/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Proving totality assertions about the natural numbers"
+        destination: "/wiki/proving-metatheorems-proving-totality-assertions-about-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Proving metatheorems about the natural numbers"
+        destination: "/wiki/proving-metatheorems-proving-metatheorems-about-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Summary: the natural numbers"
+        destination: "/wiki/proving-metatheorems-summary-the-natural-numbers/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Natural numbers: Answers to exercises"
+        destination: "/wiki/proving-metatheorems-natural-numbers-answers-to-exercises/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Representing the syntax of the STLC"
+        destination: "/wiki/proving-metatheorems-representing-the-syntax-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Representing the judgements of the STLC"
+        destination: "/wiki/proving-metatheorems-representing-the-judgements-of-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Proving metatheorems about the STLC"
+        destination: "/wiki/proving-metatheorems-proving-metatheorems-about-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Proving totality assertions in non-empty contexts"
+        destination: "/wiki/proving-metatheorems-proving-totality-assertions-in-non-empty-contexts/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: Summary: the STLC"
+        destination: "/wiki/proving-metatheorems-summary-the-stlc/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems: STLC: Answers to exercises"
+        destination: "/wiki/proving-metatheorems-stlc-answers-to-exercises/"
+      - type: redirect
+        source: "/wiki/numeric termination metrics"
+        destination: "/wiki/numeric-termination-metrics/"
+      - type: redirect
+        source: "/wiki/type families"
+        destination: "/wiki/type-family/"
+      - type: redirect
+        source: "/wiki/numeric termination metric"
+        destination: "/wiki/numeric-termination-metrics/"
+      - type: redirect
+        source: "/wiki/world"
+        destination: "/wiki/percent-worlds/"
+      - type: redirect
+        source: "/wiki/freeze"
+        destination: "/wiki/percent-freeze/"
+      - type: redirect
+        source: "/wiki/big algebraic solver"
+        destination: "/wiki/big-algebraic-solver/"
+      - type: redirect
+        source: "/wiki/implicit parameters"
+        destination: "/wiki/implicit-and-explicit-parameters/"
+      - type: redirect
+        source: "/wiki/object logic syntax"
+        destination: "/wiki/syntax-object-logic/"
+      - type: redirect
+        source: "/wiki/judgments"
+        destination: "/wiki/judgment/"
+      - type: redirect
+        source: "/wiki/respects_lemma"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/uniqueness_lemma"
+        destination: "/wiki/uniqueness-lemma/"
+      - type: redirect
+        source: "/wiki/hereditary substitution with zippers"
+        destination: "/wiki/hereditary-substitution-with-a-zipper/"
+      - type: redirect
+        source: "/wiki/termination checking"
+        destination: "/wiki/percent-terminates/"
+      - type: redirect
+        source: "/wiki/lax logic"
+        destination: "/wiki/lax-logic/"
+      - type: redirect
+        source: "/wiki/tutorial"
+        destination: "/wiki/tutorials/"
+      - type: redirect
+        source: "/wiki/user-defined constraint domain"
+        destination: "/wiki/user-defined-constraint-domain/"
+      - type: redirect
+        source: "/wiki/quick introduction"
+        destination: "/wiki/general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/User:rsimmons"
+        destination: "/wiki/user-rsimmons/"
+      - type: redirect
+        source: "/wiki/User talk:rsimmons"
+        destination: "/wiki/user-talk-rsimmons/"
+      - type: redirect
+        source: "/wiki/User:boyland"
+        destination: "/wiki/user-boyland/"
+      - type: redirect
+        source: "/wiki/manipulating proof witnesses as inputs"
+        destination: "/wiki/manipulating-proof-witnesses-as-inputs/"
+      - type: redirect
+        source: "/wiki/abbrev declaration"
+        destination: "/wiki/abbrev-declaration/"
+      - type: redirect
+        source: "/wiki/mutable state"
+        destination: "/wiki/mutable-state/"
+      - type: redirect
+        source: "/wiki/blocks"
+        destination: "/wiki/percent-block/"
+      - type: redirect
+        source: "/wiki/The Twelf Project: To do"
+        destination: "/wiki/the-twelf-project-to-do/"
+      - type: redirect
+        source: "/wiki/congruence lemmas"
+        destination: "/wiki/respects-lemma/"
+      - type: redirect
+        source: "/wiki/Mediawiki:sidebar"
+        destination: "/wiki/mediawiki-sidebar/"
+      - type: redirect
+        source: "/wiki/main page"
+        destination: "/wiki/main-page/"
+      - type: redirect
+        source: "/wiki/bibliography of LF"
+        destination: "/wiki/bibliography-of-lf/"
+      - type: redirect
+        source: "/wiki/software"
+        destination: "/wiki/download/"
+      - type: redirect
+        source: "/wiki/release history"
+        destination: "/wiki/release-history/"
+      - type: redirect
+        source: "/wiki/factoring"
+        destination: "/wiki/output-factoring/"
+      - type: redirect
+        source: "/wiki/fixity declaration"
+        destination: "/wiki/fixity-declaration/"
+      - type: redirect
+        source: "/wiki/general description of Twelf"
+        destination: "/wiki/general-description-of-twelf/"
+      - type: redirect
+        source: "/wiki/Template:vdash"
+        destination: "/wiki/template-vdash/"
+      - type: redirect
+        source: "/wiki/compositional bijection"
+        destination: "/wiki/adequacy/"
+      - type: redirect
+        source: "/wiki/Proving metatheorems:representing the syntax of the STLC"
+        destination: "/wiki/proving-metatheorems-representing-the-syntax-of-the-stlc/"
