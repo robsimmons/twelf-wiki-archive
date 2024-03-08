@@ -145,6 +145,7 @@ function literateTwelfToElf(input) {
 
 function wayback(oldUrl) {
   return `
+-----
 This page was copied from the MediaWiki version of the Twelf Wiki.
 If anything looks wrong, you can refer to the
 [wayback machine's version here](https://web.archive.org/web/20240303030303/http://twelf.org/${oldUrl}).
