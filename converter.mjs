@@ -110,7 +110,7 @@ for (const { title, filename } of CONTENT) {
       if (MAP_TITLE_TO_SLUG.has(linkTitle)) {
         output.push(
           "[",
-          linkTitle,
+          linkText,
           "](/wiki/",
           MAP_TITLE_TO_SLUG.get(linkTitle),
           "/)",
@@ -125,7 +125,7 @@ for (const { title, filename } of CONTENT) {
           MAP_TITLE_TO_SLUG.set(linkTitle, normalizedTitleSlug);
           output.push(
             "[",
-            linkTitle,
+            linkText,
             "](/wiki/",
             MAP_TITLE_TO_SLUG.get(linkTitle),
             "/)",
@@ -156,14 +156,6 @@ for (const [title, slug] of MAP_TITLE_TO_SLUG.entries()) {
     redirects[`/wiki/${title.replaceAll("%", "%25")}`] = `/wiki/${slug}/`;
   }
 }
-/*
-writeFileSync(
-  "../twelf/wiki/wiki-redirects.json",
-  JSON.stringify(redirects, undefined, 2)
-);
-*/
-
-// console.log([...MAP_SLUG_TO_NEW_NAME.keys()].sort().join("\n"));
 
 writeFileSync(
   "../twelf/wiki/src/content/docs/index.mdx",
@@ -171,9 +163,9 @@ writeFileSync(
 title: It's an actual index
 ---
 
-${[...MAP_TITLE_TO_SLUG.entries()]
-  .sort(([a], [b]) => (a > b ? 1 : -1))
-  .map(([title, slug]) => ` - [${title}](/wiki/${slug}/)`)
+${[...MAP_SLUG_TO_TITLE.entries()]
+  .sort(([_a, a], [_b, b]) => (a > b ? 1 : -1))
+  .map(([slug, title]) => ` - [ ] [${title}](/wiki/${slug}/)`)
   .join("\n")}`
 );
 

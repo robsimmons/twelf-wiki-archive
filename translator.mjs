@@ -89,7 +89,9 @@ function wikiTextToElf(title, input) {
 ${twelf.join(">").trim()}
 `);
   }
-  output.push(`%{! ${end.trim().split("\n").map(escapeLine).join("\n")} !}%`);
+  if (end.trim() !== "") {
+    output.push(`%{! ${end.trim().split("\n").map(escapeLine).join("\n")} !}%`);
+  }
 
   return output.join("\n");
 }
@@ -115,7 +117,7 @@ function literateTwelfToElf(input) {
           while (heading[heading.length - 1] === "=") {
             heading = heading.slice(0, heading.length - 1);
           }
-          output.push(`%%${prefix} ${escape(heading.trim())}`);
+          output.push(`%{! ${prefix} ${escape(heading.trim())} !}%`);
         }
       } else if (trimmedLine.startsWith("%{")) {
         state = "wikitext";
@@ -125,12 +127,16 @@ function literateTwelfToElf(input) {
       }
     } else {
       if (line.trimEnd().endsWith("}%")) {
-        const trimmedEndLine = line.trimEnd();
-        output.push(
-          `${escapeLine(
-            trimmedEndLine.slice(0, trimmedEndLine.length - 2).trimEnd()
-          )} !}%`
-        );
+        if (line.startsWith("}%")) {
+          output.push("!}%");
+        } else {
+          const trimmedEndLine = line.trimEnd();
+          output.push(
+            `${escapeLine(
+              trimmedEndLine.slice(0, trimmedEndLine.length - 2).trimEnd()
+            )} !}%`
+          );
+        }
         state = "twelf";
       } else {
         output.push(escapeLine(line));
