@@ -24,7 +24,13 @@ for page_title, contributors in all_pages.items():
     for contributor in contributors:
         all_contributors[contributor].add(page_title)
 
-for contributor, pages in all_contributors.items():
-    print(contributor + " contributed to " + str(len(pages)) + " page(s)")
-    for page in sorted(pages):
-        print("  " + page)
+for contributor in sorted(all_contributors.keys()):
+    pages = all_contributors[contributor]
+    show = False
+    for page in pages:
+        if not page.startswith("User") and not page.startswith("Talk"):
+            show = True
+    if show:
+        print(contributor + " contributed to " + str(len(pages)) + " page(s)")
+        for page in sorted(pages):
+            print("  " + page)

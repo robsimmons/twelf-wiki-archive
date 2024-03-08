@@ -1,233 +1,578 @@
-Tom7 contributed to 229 page(s)
-  %.
-  %block
-  %covers
-  %freeze
-  %infix
-  %mode
-  %name
-  %postfix
-  %prefix
-  %query
+Adahmad contributed to 2 page(s)
+  POPL Tutorial/cps-problem
+  POPL Tutorial/cps-problem2
+Aleffert contributed to 1 page(s)
+  Download
+Amepu contributed to 1 page(s)
+  MediaWiki formatting description
+Ashabcmg5e9 contributed to 1 page(s)
+  Constraint domains and coverage checking
+Blaisorblade contributed to 1 page(s)
+  Twelf with Emacs
+Bodywell contributed to 1 page(s)
+  About The Twelf Project
+Boyland contributed to 27 page(s)
+  Constraint domains and coverage checking
+  Debugging coverage errors
+  Error messages
+  HOAS nat bijection
+  Indexed HOAS nat bijection
+  Introductions to Twelf
+  Substitution lemma
+  Talk:%reduces
+  Talk:%theorem
+  Talk:Ask Twelf Elf
+  Talk:Converting between implicit and explicit parameters
+  Talk:Debugging coverage errors
+  Talk:Documentation
+  Talk:Effectiveness lemma
+  Talk:Equality
+  Talk:Introductions to Twelf
+  Talk:Metatheorem
+  Talk:Proving metatheorems with Twelf
+  Talk:Twelf style guide
+  Talk:Twelf with Emacs
+  The Twelf Project:Contributors
+  Twelf with Emacs
+  User talk:Boyland
+  User:Boyland
+  User:Cmartens
+  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
+  User:TheTwelfElf
+Carsten contributed to 15 page(s)
+  CADE Tutorial
+  CADE Tutorial/Basic error messages
+  CADE Tutorial/Basics
+  CADE Tutorial/Basics Answer
+  CADE Tutorial/Combinators
+  CADE Tutorial/Combinators Answer
+  CADE Tutorial/Combinators Support
+  CADE Tutorial/MinML
+  CADE Tutorial/MinML Answer
+  CADE Tutorial/MinML encoding
+  CADE Tutorial/Next
+  File:Demtech.png
+  Introductions to Twelf
+  User:Carsten
+  What's new
+Ccasin contributed to 4 page(s)
+  Exchange lemma
+  Proving metatheorems:Natural numbers: Answers to exercises
+  Talk:Ask Twelf Elf
+  User:Ccasin
+Clinton102 contributed to 1 page(s)
+  About The Twelf Project
+Cmartens contributed to 15 page(s)
+  CADE Tutorial
+  Computation and Deduction 2009
+  Editing Summer school 2008:Alternate typed arithmetic expressions with sums
+  POPL Tutorial/Combinators session
+  POPL Tutorial/Sequent vs Natural Deduction
+  POPL Tutorial/Sequent vs Natural Deduction: Solution
+  POPL Tutorial/Typed bracket abstraction
+  POPL Tutorial/Typed bracket abstraction (solution)
+  Summer school 2008:Alternate typed arithmetic expressions with sums
+  Summer school 2008:Exercises 1
+  Summer school 2008:Typed arithmetic expressions with sums
+  TAT/church.elf
+  TAT/plus.elf
+  User:Cmartens
+  Verifications and uses
+Crary contributed to 19 page(s)
+  Computation and Deduction 2009
+  Computation and Deduction 2009/20090203
+  Computation and Deduction 2009/20090209
+  Computation and Deduction 2009/20090223
+  Computation and Deduction 2009/20090316
+  Computation and Deduction 2009/20090318
+  Computation and Deduction 2009/20090325
+  Computation and Deduction 2009/20090330
+  Computation and Deduction 2009/20090401
+  Computation and Deduction 2009/20090406
+  Computation and Deduction 2009/20090408
+  Computation and Deduction 2009/20090413
+  Computation and Deduction 2009/20090415
+  Computation and Deduction 2009/20090420
+  Computation and Deduction 2009/20090422
+  Computation and Deduction 2009/20090427
+  Computation and Deduction 2009/20090429
+  Linear logic
+  What's new
+D contributed to 1 page(s)
+  %terminates
+DanielKLee contributed to 91 page(s)
   %reduces
-  %thaw
-  %total
-  %trustme
-  %use
-  %worlds
-  Abbrev declaration
+  About The Twelf Project
   Ad hoc binding structures
-  Admissibility of cut
-  Ambiguous hyperkind
-  Beta equivalence
-  Beta equivalent
-  Beta-equivalence
-  Beta-equivalent
-  Bibliography of LF
-  Block
-  Blocks
+  Ask Twelf Elf
   CPS conversion
-  Canonical form
   Canonical forms lemma
   Case studies
-  Category:Case studies
-  Category:Keywords
-  Category:Twelf code
-  Category:Undocumented features
-  Classical S5
-  Compatibility lemma
-  Congruence lemma
-  Congruence lemmas
-  Constraint domain
-  Constraint domains
-  Converting between implicit and explicit parameters
-  Cut
-  Cut elimination
-  Define declaration
-  Deterministic declaration
+  Correctness of mergesort
+  Dense lexicographical orderings
+  Dependent types
+  Developers
   Division over the natural numbers
   Documentation
   Download
-  Effectiveness
   Effectiveness lemma
   Elves talk:Main Page
   Elves:Main Page
-  Equality
-  Error messages
+  Exchange
   Exchange lemma
   Explicit context
-  File:Disk download.gif
-  File:Sudokuexample.svg
-  Fixity declaration
   Function
-  Function (relation)
-  General Description of Twelf
+  Glossary
+  Higher-order abstract syntax
+  Incremental metatheorem development
+  Judgment
+  Judgments
+  Judgments as types
+  Letrec
+  Lexicographical orderings with density
+  Mailing lists
+  Meta-logic
+  Naming conventions
+  Natural numbers
+  Negation as failure
+  Object logic
+  Object logic syntax
+  POPL Tutorial/Exceptions
+  POPL Tutorial/Exceptions-problem
+  POPL Tutorial/New language
+  POPL Tutorial/Pattern matching
+  POPL Tutorial/Problems
+  POPL Tutorial/cps-rp
+  Pattern matching
+  Real-world binding structures
+  Reasoning from false
+  Relation
+  Research projects using Twelf
+  Structural metrics
+  Substitution lemma
+  Syntax (Object logic)
+  Talk:%reduces
+  Talk:Ask Twelf Elf
+  Talk:CPS conversion
+  Talk:Canonical forms lemma
+  Talk:Case studies
+  Talk:Download
+  Talk:Equality
+  Talk:Exchange lemma
+  Talk:Glossary
+  Talk:Incremental metatheorem development
+  Talk:Lists
+  Talk:Substitution lemma
+  Talk:Twelf style guide
+  Talk:User's Guide
+  Talk:Using nat-less with %reduces
+  Template:Front-Getting Started
+  Template:The Twelf Project/Getting Started
+  Template:The Twelf Project/Introduction
+  The Twelf Project talk:AJALF
+  The Twelf Project talk:To do
+  The Twelf Project:AJALF
+  The Twelf Project:Contributors
+  The Twelf Project:Style guide
+  The Twelf Project:To do
+  Tutorials
+  Twelf Elf Rotation Charter
+  Twelf Live
+  Twelf style guide
+  Type families
+  Type family
+  Uniqueness lemma
+  User talk:DanielKLee
+  User talk:Drl
+  User talk:Rsimmons
+  User's Guide
+  User:DanielKLee
+  Using a metric
+  Using nat-less with %reduces
+  Weakening
+  Weakening lemma
+  What's new
+Doriangrand contributed to 1 page(s)
+  Respects lemma
+Drdreyer contributed to 1 page(s)
+  Proving metatheorems with Twelf
+Drl contributed to 231 page(s)
+  %block
+  %terminates
+  %total
+  %worlds
+  Adequacy
+  Alpha-equivalence
+  Ask Twelf Elf
+  Ask Twelf Elf:Short Answers
+  Ask Twelf Elf:Short answers
+  Auto-freezing
+  Beta-normal
+  Beta-reduction
+  C machine and focusing
+  C machine and focusing (composition in machine state)
+  C machine and focusing (internalized compositon)
+  Canonical form
+  Canonical forms
+  Canonical forms lemma
+  Case studies
+  Catch-all case
+  Church-Rosser (w/ identity reduction)
+  Church-Rosser via Complete Development
+  Church-Rosser via complete development
+  Compositional bijection
+  Constraint domains and coverage checking
+  Converting between implicit and explicit parameters
+  Coverage checking
+  Debugging coverage errors
+  Documentation
+  Double-negation translation
+  Download
+  Effectiveness lemma
+  Equality
+  Equivalence relation
+  Eta-expansion
+  Eta-long
+  Eta-long form
+  Evaluation contexts
+  Exchange lemma
+  File:POPL Tutorial-IBM.jpg
+  File:POPL Tutorial-cmu.gif
+  File:POPL Tutorial-docomo-logo.gif
+  File:POPL Tutorial-google-logo.gif
+  File:POPL Tutorial-intel.jpg
+  File:POPL Tutorial-mozilla.jpg
+  File:POPL Tutorial-msr.jpg
+  File:POPL Tutorial-scslogo.gif
+  Frozen
   General description of Twelf
   Glossary
-  Ground
-  Hauptsatz
-  Help:Contents
+  Hereditary substitution
+  Hereditary substitution for the STLC
+  Hereditary substitution for the STLC (part 2)
   Higher-order abstract syntax
-  Implicit and explicit parameters
+  Higher-order judgements
+  Hypothetical judgement
   Incremental metatheorem development
-  Intrinsic and extrinsic encodings
   Introductions to Twelf
+  Iterated Let Bindings
+  Judgement
+  Judgment
+  Judgments as types
   LF
   Lexicographical orderings with density
-  Lily
   Lists
+  Main Page
+  MediaWiki talk:Sidebar
+  MediaWiki:Monobook.css
+  MediaWiki:Sidebar
+  MinMLToMinHaskell
+  Modally Propositional Logic
+  Mutual induction
+  Natural numbers with inequality
+  Numeric termination metric
+  Numeric termination metrics
+  Object logic
+  Output factoring
+  Output freeness
+  POPL Tutorial
+  POPL Tutorial/Basic error messages
+  POPL Tutorial/Basics
+  POPL Tutorial/Basics Answer
+  POPL Tutorial/Basics Starter
+  POPL Tutorial/Big step, small step
+  POPL Tutorial/Combinators
+  POPL Tutorial/Combinators (karl)
+  POPL Tutorial/Combinators Starter
+  POPL Tutorial/Combinators Support
+  POPL Tutorial/Cost Semantics
+  POPL Tutorial/Cost semantics
+  POPL Tutorial/Evaluation Contexts Intrinsic
+  POPL Tutorial/Exceptions
+  POPL Tutorial/Exceptions-problem
+  POPL Tutorial/MinML
+  POPL Tutorial/MinML Answer
+  POPL Tutorial/MinML Preservation Theorem
+  POPL Tutorial/MinML Preservation Theorem: Solution
+  POPL Tutorial/MinML Starter
+  POPL Tutorial/Nat
+  POPL Tutorial/Nat Starter
+  POPL Tutorial/Next
+  POPL Tutorial/Pattern Matching
+  POPL Tutorial/Pattern matching
+  POPL Tutorial/Problems
+  POPL Tutorial/Saturday
+  POPL Tutorial/Session 2
+  POPL Tutorial/Session 2 Answer
+  POPL Tutorial/Session 2 Script
+  POPL Tutorial/Session 2 Starter
+  POPL Tutorial/Session 4
+  POPL Tutorial/Session 4 Answer
+  POPL Tutorial/Session 4 Live
+  POPL Tutorial/Session 4 Starter
+  POPL Tutorial/Session2
+  POPL Tutorial/Thursday
+  POPL Tutorial/cps
+  Polarized PCF
+  Polarized PCF Better
+  Proving metatheorems talk:Representing the judgements of the STLC
+  Proving metatheorems talk:Representing the judgements of the natural numbers
+  Proving metatheorems talk:Simply typed LF
+  Proving metatheorems with Twelf
+  Proving metatheorems:Full LF
+  Proving metatheorems:Natural numbers: Answers to exercises
+  Proving metatheorems:Natural numbers:Answers to exercises
+  Proving metatheorems:Proving metatheorems about the STLC
+  Proving metatheorems:Proving metatheorems about the natural numbers
+  Proving metatheorems:Proving metatheorems in non-empty contexts
+  Proving metatheorems:Proving totality assertions about the natural numbers
+  Proving metatheorems:Proving totality assertions in non-empty contexts
+  Proving metatheorems:Representing the judgements of the STLC
+  Proving metatheorems:Representing the judgements of the natural numbers
+  Proving metatheorems:Representing the syntax of the STLC
+  Proving metatheorems:Representing the syntax of the natural numbers
+  Proving metatheorems:STLC: Answers to exercises
+  Proving metatheorems:Simply typed LF
+  Proving metatheorems:Summary: the STLC
+  Proving metatheorems:Summary: the natural numbers
+  Quick introduction
+  Reasoning from false
+  Reformulating languages to use hypothetical judgements
+  Regular world
+  Regular worlds
+  Relation
+  Research projects using Twelf
+  Respects lemma
+  Simplifying dynamic clauses
+  Simply-typed lambda calculus
+  Strengthening
+  Structural metrics
+  Structural termination metrics
+  Subordination
+  Substitution lemma
+  Summer school 2008
+  Summer school 2008: Exercise: Typed arithmetic expressions with pairs
+  Summer school 2008:Alternate typed arithmetic expressions with sums
+  Summer school 2008:Arithmetic expressions
+  Summer school 2008:Arithmetic expressions with call-by-value let-binding
+  Summer school 2008:Arithmetic expressions with let-binding
+  Summer school 2008:Arithmetic expressions with let-binding (hypothetical evaluation)
+  Summer school 2008:Arithmetic expressions with pairs (value)
+  Summer school 2008:Encoding of System F
+  Summer school 2008:Exercises 1
+  Summer school 2008:Exercises 2
+  Summer school 2008:Exercises 3
+  Summer school 2008:Type safety for MinML (extrinsic encoding)
+  Summer school 2008:Type safety for MinML (intrinsic encoding)
+  Summer school 2008:Type safety for MinML with monadic effects
+  Summer school 2008:Type safety for MinML with monadic effects (putngetn)
+  Summer school 2008:Type safety for polymorphic MinML (intrinsic encoding)
+  Summer school 2008:Typed arithmetic expressions
+  Summer school 2008:Typed arithmetic expressions (extrinsic encoding)
+  Summer school 2008:Typed arithmetic expressions (value)
+  Summer school 2008:Typed arithmetic expressions with pairs
+  Summer school 2008:Typed arithmetic expressions with sums
+  Syntax (Object logic)
+  Talk:Admissibility of cut
+  Talk:Alpha-equivalence
+  Talk:Ask Twelf Elf
+  Talk:Constraint domains and coverage checking
+  Talk:Documentation
+  Talk:Effectiveness lemma
+  Talk:General description of Twelf
+  Talk:Get started
+  Talk:Glossary
+  Talk:Implicit and explicit parameters
+  Talk:Introductions to Twelf
+  Talk:Letrec
+  Talk:Main Page
+  Talk:Metatheorem
+  Talk:Mutable state
+  Talk:Numeric termination metrics
+  Talk:Output factoring
+  Talk:Programming language theory with Twelf
+  Talk:Quick introduction
+  Talk:Reformulating languages to use hypothetical judgements
+  Talk:Respects lemma
+  Talk:Strengthening
+  Talk:Totality assertion
+  Talk:Tutorials
+  Talk:Twelf style guide
+  Talk:Uniqueness lemma
+  Talk:Working with higher-order judgements
+  Template talk:The Twelf Project/Introduction
+  Template:Bibtex:hl07mechanizing
+  Template:Proving metatheorems
+  Template:Summer school 2008
+  Template:The Twelf Project/Getting Started
+  Template:The Twelf Project/Introduction
+  Template:Tutorial
+  The Twelf Project talk:GeSHi Twelf extension
+  The Twelf Project talk:Style guide
+  The Twelf Project:1.0
+  The Twelf Project:Style guide
+  The Twelf Project:To do
+  Totality assertion
+  Tutorials
+  Twelf signature
+  Twelf with Emacs
+  Type family
+  Unification
+  Uniqueness lemma
+  User talk:Drl
+  User talk:Jcreed
+  User talk:Rsimmons
+  User:Drl
+  Weakening lemma
+  What's new
+  Working with higher-order judgements
+  World
+  World subsumption
+EthelTanner contributed to 1 page(s)
+  Research projects using Twelf
+Evelinna contributed to 1 page(s)
+  Tutorials
+Fp contributed to 1 page(s)
+  %unique
+Frabe contributed to 1 page(s)
+  Research projects using Twelf
+Geoffw contributed to 2 page(s)
+  %subord
+  Template:Keyword
+Graceclifford contributed to 1 page(s)
+  The Twelf Project:Style guide
+Gusl contributed to 1 page(s)
+  Twelf Live
+Harmon contributed to 2 page(s)
+  %mode
+  Research projects using Twelf
+Hibou57 contributed to 3 page(s)
+  Research projects using Twelf
+  Talk:Ask Twelf Elf
+  Talk:Download
+Inbmac contributed to 2 page(s)
+  About The Twelf Project
+  Research projects using Twelf
+Jacintheford contributed to 1 page(s)
+  Bibliography of LF
+JakeD contributed to 11 page(s)
+  Intrinsic and extrinsic encodings
+  Logic programming
+  Research projects using Twelf
+  Strengthening
+  Talk:Effectiveness lemma
+  Talk:Strengthening
+  Template:The Twelf Project/Introduction
+  Tutorials
+  Twelf with Emacs
+  User:JakeD
+  What's new
+Jcreed contributed to 9 page(s)
+  ConstructiveSemantics
+  POPL Tutorial/cps
+  Simplifying dynamic clauses
+  Talk:Classical S5
+  Tethered modal logic
+  User talk:128.237.241.108
+  User talk:Jcreed
+  User:Jcreed
+  User:Jcreed/Sandbox
+JeremiahVause contributed to 1 page(s)
+  Logic programming
+Jeremywagner83 contributed to 1 page(s)
+  Research projects using Twelf
+JoeSat contributed to 1 page(s)
+  Research projects using Twelf
+Johnohiggson contributed to 1 page(s)
+  About The Twelf Project
+Joshua contributed to 1 page(s)
+  Research projects using Twelf
+Kartik contributed to 1 page(s)
+  Proving metatheorems with Twelf
+KateHoffman contributed to 1 page(s)
+  The Twelf Project:Style guide
+Klobucar contributed to 1 page(s)
+  Research projects using Twelf
+Larsberg contributed to 1 page(s)
+  Research projects using Twelf
+LeannaBrooks contributed to 1 page(s)
+  Research projects using Twelf
+LenoraMcdonald contributed to 1 page(s)
+  Research projects using Twelf
+LillianRamsey contributed to 1 page(s)
+  Research projects using Twelf
+Luke Maurer contributed to 2 page(s)
+  CPS conversion
+  Catch-all case
+MaryannePaul contributed to 1 page(s)
+  Research projects using Twelf
+Mcoblenz contributed to 1 page(s)
+  Proving metatheorems:Proving metatheorems about the natural numbers
+MediaWiki default contributed to 10 page(s)
   Main Page
   MediaWiki:Copyrightwarning
   MediaWiki:Copyrightwarning2
   MediaWiki:Edittools
   MediaWiki:Fileinfo
+  MediaWiki:Loginreqpagetext
   MediaWiki:Monobook.css
   MediaWiki:Newwindow
   MediaWiki:Previewnote
-  Meta-logic
-  Metatheorem
-  Mode
-  Mutable state
+  MediaWiki:Sidebar
+Miguels contributed to 1 page(s)
+  Modal logic
+Mpa contributed to 1 page(s)
+  POPL Tutorial/Cost semantics
+Namin contributed to 3 page(s)
   Mutual induction
-  Natural number
-  Natural numbers
-  Natural numbers with inequality
-  Negation as failure
-  Object language
-  Object logic
-  Output factoring
-  Output freeness
-  Proofs by reductio ad absurdum
-  Proving metatheorems with Twelf
-  Proving metatheorems:Full LF
-  Proving metatheorems:Proving totality assertions about the natural numbers
-  Proving metatheorems:Representing the judgements of the natural numbers
-  Proving metatheorems:Representing the syntax of the natural numbers
-  Proving metatheorems:Simply typed LF
-  Real World Binding Structures
-  Relation
-  Research projects using Twelf
-  Respects lemma
-  Sets and supersets
-  Simplifying dynamic clauses
-  Simply-typed lambda calculus
-  Strengthening
-  Structural metrics
-  Substitution
-  Substitution lemma
-  Sudoku
-  Tabled logic programming
-  Talk:% define
-  Talk:%covers
-  Talk:%freeze
-  Talk:%reduces
-  Talk:%thaw
-  Talk:%worlds
-  Talk:Admissibility of cut
+  POPL Tutorial/Basics
+  POPL Tutorial/MinML
+Neel contributed to 1 page(s)
+  Hypothetical judgment
+NewTestUser contributed to 2 page(s)
+  Concrete representation
+  User:Rsimmons
+Niksa contributed to 1 page(s)
+  About The Twelf Project
+Noam contributed to 2 page(s)
+  Iterated inductive definitions and defunctionalization
   Talk:Ask Twelf Elf
-  Talk:CPS conversion
-  Talk:Canonical forms lemma
-  Talk:Case studies
-  Talk:Congruence lemma
-  Talk:Constraint domains and coverage checking
-  Talk:Converting between implicit and explicit parameters
-  Talk:Define declaration
-  Talk:Download
-  Talk:Effectiveness lemma
-  Talk:Equality
-  Talk:General Description of Twelf
-  Talk:General description of Twelf
-  Talk:Implicit and explicit parameters
-  Talk:Incremental metatheorem development
-  Talk:Lily
-  Talk:Lists
-  Talk:Main Page
-  Talk:Metatheorem
-  Talk:Mutable state
-  Talk:Natural numbers with inequality
-  Talk:Output freeness
-  Talk:Respects lemma
-  Talk:Totality assertion
-  Talk:Tutorials
-  Talk:Twelf style guide
-  Talk:User's Guide
-  Talk:UserGuide
-  Talk:Using nat-less with %reduces
-  Template talk:Bibtex:hl07mechanizing
-  Template talk:Click-inline
-  Template:Bottom
-  Template:Box
-  Template:Click-inline
-  Template:Darrow
-  Template:Dia
-  Template:Discuss
-  Template:Draft
-  Template:Exists
-  Template:Forall
-  Template:Guide
-  Template:Keyword
-  Template:Lolli
-  Template:Multimap
-  Template:Needs
-  Template:Oplus
-  Template:Otimes
-  Template:Proving metatheorems
-  Template:Rule
-  Template:Stub
-  Template:The Twelf Project/Getting Started
-  Template:The Twelf Project/Introduction
-  Template:The Twelf Project/Learning Twelf
-  Template:Tl
-  Template:Top
-  Template:Tutorial
-  Template:Twelf code
-  Template:Undocumented
-  Template:Vdash
-  The Twelf Project talk:AJALF
-  The Twelf Project talk:Copyright
-  The Twelf Project talk:GeSHi Twelf extension
-  The Twelf Project talk:Policy
-  The Twelf Project talk:Style guide
-  The Twelf Project talk:TwelfTag
-  The Twelf Project:1.0
-  The Twelf Project:AJALF
-  The Twelf Project:Contributing
-  The Twelf Project:Contributors
-  The Twelf Project:Copyright
-  The Twelf Project:MIT
-  The Twelf Project:MIT license
-  The Twelf Project:Style guide
-  The Twelf Project:To do
-  The Twelf Project:To do/Syntax highlighting
-  The Twelf Project:TwelfTag
-  Theorem prover
-  Totality assertion
+Nolrai contributed to 1 page(s)
+  Proving metatheorems:Representing the judgements of the STLC
+OpheliaFuller contributed to 1 page(s)
+  Research projects using Twelf
+Peterbb contributed to 1 page(s)
+  Proving metatheorems:Full LF
+Plmday contributed to 1 page(s)
+  Subordination
+Popik contributed to 8 page(s)
+  Admissibility of cut
+  Bibliography of LF
+  Case studies
+  Concrete representation
+  Higher-order abstract syntax
+  LF
+  Lists
   Tutorials
-  Twelf Live
-  Twelf style guide
-  TwelfTag
+Ppospos contributed to 1 page(s)
+  The Twelf Project:Copyright
+Pronesto contributed to 6 page(s)
+  Proving metatheorems:Natural numbers: Answers to exercises
+  Proving metatheorems:Proving metatheorems about the STLC
+  Proving metatheorems:Summary: the natural numbers
+  Reasoning from false
+  Talk:Ask Twelf Elf
   Uniqueness lemma
-  Universally quantified
-  User talk:128.2.223.28
-  User talk:128.237.241.108
-  User talk:Aleffert
-  User talk:Ccasin
-  User talk:Crary
-  User talk:DanielKLee
-  User talk:JakeD
-  User talk:Rsimmons
-  User talk:Spoons
-  User talk:Varming
-  User talk:William Lovas
-  User's Guide
-  User:Crary
-  User:Tom7
-  User:Tom7/test.elf
-  User:Twilson
-  User:William Lovas
-  Weakening lemma
-  What's new
-  Zermelo Frankel
+Qu1j0t3 contributed to 1 page(s)
+  Research projects using Twelf
+R contributed to 1 page(s)
+  Proving metatheorems:Simply typed LF
+Rowandavies contributed to 1 page(s)
+  Hereditary substitution
+Rpollack contributed to 3 page(s)
+  Reformulating languages to use hypothetical judgements
+  Talk:Ask Twelf Elf
+  Talk:Reformulating languages to use hypothetical judgements
 Rsimmons contributed to 385 page(s)
   %.
   %assert
@@ -614,241 +959,312 @@ Rsimmons contributed to 385 page(s)
   What's new
   What's new?
   Zermelo Frankel
-Drl contributed to 231 page(s)
-  %block
-  %terminates
-  %total
-  %worlds
-  Adequacy
-  Alpha-equivalence
-  Ask Twelf Elf
-  Ask Twelf Elf:Short Answers
-  Ask Twelf Elf:Short answers
-  Auto-freezing
-  Beta-normal
-  Beta-reduction
-  C machine and focusing
-  C machine and focusing (composition in machine state)
-  C machine and focusing (internalized compositon)
-  Canonical form
-  Canonical forms
-  Canonical forms lemma
-  Case studies
-  Catch-all case
-  Church-Rosser (w/ identity reduction)
-  Church-Rosser via Complete Development
-  Church-Rosser via complete development
-  Compositional bijection
-  Constraint domains and coverage checking
-  Converting between implicit and explicit parameters
-  Coverage checking
-  Debugging coverage errors
-  Documentation
-  Double-negation translation
-  Download
-  Effectiveness lemma
-  Equality
-  Equivalence relation
-  Eta-expansion
-  Eta-long
-  Eta-long form
-  Evaluation contexts
-  Exchange lemma
-  File:POPL Tutorial-IBM.jpg
-  File:POPL Tutorial-cmu.gif
-  File:POPL Tutorial-docomo-logo.gif
-  File:POPL Tutorial-google-logo.gif
-  File:POPL Tutorial-intel.jpg
-  File:POPL Tutorial-mozilla.jpg
-  File:POPL Tutorial-msr.jpg
-  File:POPL Tutorial-scslogo.gif
-  Frozen
-  General description of Twelf
-  Glossary
-  Hereditary substitution
-  Hereditary substitution for the STLC
-  Hereditary substitution for the STLC (part 2)
-  Higher-order abstract syntax
-  Higher-order judgements
-  Hypothetical judgement
-  Incremental metatheorem development
-  Introductions to Twelf
-  Iterated Let Bindings
-  Judgement
+Rwh contributed to 3 page(s)
+  Talk:Substitution lemma
+  The Twelf Project:To do
+  Twelf style guide
+Saintali contributed to 2 page(s)
   Judgment
-  Judgments as types
-  LF
-  Lexicographical orderings with density
-  Lists
-  Main Page
-  MediaWiki talk:Sidebar
-  MediaWiki:Monobook.css
-  MediaWiki:Sidebar
-  MinMLToMinHaskell
-  Modally Propositional Logic
-  Mutual induction
-  Natural numbers with inequality
-  Numeric termination metric
-  Numeric termination metrics
-  Object logic
+  Totality assertion
+Solen contributed to 1 page(s)
+  Bibliography of LF
+Spoons contributed to 6 page(s)
+  CPS conversion
+  Error messages
+  Glossary
+  The Twelf Project:To do
+  User talk:Spoons
+  User:Spoons
+Sully contributed to 8 page(s)
+  Debugging coverage errors
+  Natural numbers
   Output factoring
-  Output freeness
-  POPL Tutorial
-  POPL Tutorial/Basic error messages
-  POPL Tutorial/Basics
-  POPL Tutorial/Basics Answer
-  POPL Tutorial/Basics Starter
-  POPL Tutorial/Big step, small step
-  POPL Tutorial/Combinators
-  POPL Tutorial/Combinators (karl)
-  POPL Tutorial/Combinators Starter
-  POPL Tutorial/Combinators Support
-  POPL Tutorial/Cost Semantics
-  POPL Tutorial/Cost semantics
-  POPL Tutorial/Evaluation Contexts Intrinsic
-  POPL Tutorial/Exceptions
-  POPL Tutorial/Exceptions-problem
-  POPL Tutorial/MinML
-  POPL Tutorial/MinML Answer
-  POPL Tutorial/MinML Preservation Theorem
-  POPL Tutorial/MinML Preservation Theorem: Solution
-  POPL Tutorial/MinML Starter
-  POPL Tutorial/Nat
-  POPL Tutorial/Nat Starter
-  POPL Tutorial/Next
-  POPL Tutorial/Pattern Matching
-  POPL Tutorial/Pattern matching
-  POPL Tutorial/Problems
-  POPL Tutorial/Saturday
-  POPL Tutorial/Session 2
-  POPL Tutorial/Session 2 Answer
-  POPL Tutorial/Session 2 Script
-  POPL Tutorial/Session 2 Starter
-  POPL Tutorial/Session 4
-  POPL Tutorial/Session 4 Answer
-  POPL Tutorial/Session 4 Live
-  POPL Tutorial/Session 4 Starter
-  POPL Tutorial/Session2
-  POPL Tutorial/Thursday
-  POPL Tutorial/cps
-  Polarized PCF
-  Polarized PCF Better
-  Proving metatheorems talk:Representing the judgements of the STLC
-  Proving metatheorems talk:Representing the judgements of the natural numbers
-  Proving metatheorems talk:Simply typed LF
-  Proving metatheorems with Twelf
-  Proving metatheorems:Full LF
   Proving metatheorems:Natural numbers: Answers to exercises
-  Proving metatheorems:Natural numbers:Answers to exercises
-  Proving metatheorems:Proving metatheorems about the STLC
   Proving metatheorems:Proving metatheorems about the natural numbers
   Proving metatheorems:Proving metatheorems in non-empty contexts
   Proving metatheorems:Proving totality assertions about the natural numbers
   Proving metatheorems:Proving totality assertions in non-empty contexts
-  Proving metatheorems:Representing the judgements of the STLC
+SummerMills contributed to 1 page(s)
+  Research projects using Twelf
+Sunshine contributed to 2 page(s)
+  Summer school 2008:Exercises 1
+  Twelf with Emacs
+Svererenov contributed to 1 page(s)
+  The Twelf Project:Style guide
+Tausbn contributed to 2 page(s)
+  CADE Tutorial
+  POPL Tutorial/Basics
+TestUser contributed to 2 page(s)
+  Object logic
+  User:TestUser
+TheTwelfElf contributed to 7 page(s)
+  Main Page
+  MediaWiki:Loginreqpagetext
+  Natural numbers with inequality
+  Talk:Natural numbers with inequality
+  The Twelf Project:Contributors
+  User:Rsimmons
+  User:TheTwelfElf
+Tom7 contributed to 229 page(s)
+  %.
+  %block
+  %covers
+  %freeze
+  %infix
+  %mode
+  %name
+  %postfix
+  %prefix
+  %query
+  %reduces
+  %thaw
+  %total
+  %trustme
+  %use
+  %worlds
+  Abbrev declaration
+  Ad hoc binding structures
+  Admissibility of cut
+  Ambiguous hyperkind
+  Beta equivalence
+  Beta equivalent
+  Beta-equivalence
+  Beta-equivalent
+  Bibliography of LF
+  Block
+  Blocks
+  CPS conversion
+  Canonical form
+  Canonical forms lemma
+  Case studies
+  Category:Case studies
+  Category:Keywords
+  Category:Twelf code
+  Category:Undocumented features
+  Classical S5
+  Compatibility lemma
+  Congruence lemma
+  Congruence lemmas
+  Constraint domain
+  Constraint domains
+  Converting between implicit and explicit parameters
+  Cut
+  Cut elimination
+  Define declaration
+  Deterministic declaration
+  Division over the natural numbers
+  Documentation
+  Download
+  Effectiveness
+  Effectiveness lemma
+  Elves talk:Main Page
+  Elves:Main Page
+  Equality
+  Error messages
+  Exchange lemma
+  Explicit context
+  File:Disk download.gif
+  File:Sudokuexample.svg
+  Fixity declaration
+  Function
+  Function (relation)
+  General Description of Twelf
+  General description of Twelf
+  Glossary
+  Ground
+  Hauptsatz
+  Help:Contents
+  Higher-order abstract syntax
+  Implicit and explicit parameters
+  Incremental metatheorem development
+  Intrinsic and extrinsic encodings
+  Introductions to Twelf
+  LF
+  Lexicographical orderings with density
+  Lily
+  Lists
+  Main Page
+  MediaWiki:Copyrightwarning
+  MediaWiki:Copyrightwarning2
+  MediaWiki:Edittools
+  MediaWiki:Fileinfo
+  MediaWiki:Monobook.css
+  MediaWiki:Newwindow
+  MediaWiki:Previewnote
+  Meta-logic
+  Metatheorem
+  Mode
+  Mutable state
+  Mutual induction
+  Natural number
+  Natural numbers
+  Natural numbers with inequality
+  Negation as failure
+  Object language
+  Object logic
+  Output factoring
+  Output freeness
+  Proofs by reductio ad absurdum
+  Proving metatheorems with Twelf
+  Proving metatheorems:Full LF
+  Proving metatheorems:Proving totality assertions about the natural numbers
   Proving metatheorems:Representing the judgements of the natural numbers
-  Proving metatheorems:Representing the syntax of the STLC
   Proving metatheorems:Representing the syntax of the natural numbers
-  Proving metatheorems:STLC: Answers to exercises
   Proving metatheorems:Simply typed LF
-  Proving metatheorems:Summary: the STLC
-  Proving metatheorems:Summary: the natural numbers
-  Quick introduction
-  Reasoning from false
-  Reformulating languages to use hypothetical judgements
-  Regular world
-  Regular worlds
+  Real World Binding Structures
   Relation
   Research projects using Twelf
   Respects lemma
+  Sets and supersets
   Simplifying dynamic clauses
   Simply-typed lambda calculus
   Strengthening
   Structural metrics
-  Structural termination metrics
-  Subordination
+  Substitution
   Substitution lemma
-  Summer school 2008
-  Summer school 2008: Exercise: Typed arithmetic expressions with pairs
-  Summer school 2008:Alternate typed arithmetic expressions with sums
-  Summer school 2008:Arithmetic expressions
-  Summer school 2008:Arithmetic expressions with call-by-value let-binding
-  Summer school 2008:Arithmetic expressions with let-binding
-  Summer school 2008:Arithmetic expressions with let-binding (hypothetical evaluation)
-  Summer school 2008:Arithmetic expressions with pairs (value)
-  Summer school 2008:Encoding of System F
-  Summer school 2008:Exercises 1
-  Summer school 2008:Exercises 2
-  Summer school 2008:Exercises 3
-  Summer school 2008:Type safety for MinML (extrinsic encoding)
-  Summer school 2008:Type safety for MinML (intrinsic encoding)
-  Summer school 2008:Type safety for MinML with monadic effects
-  Summer school 2008:Type safety for MinML with monadic effects (putngetn)
-  Summer school 2008:Type safety for polymorphic MinML (intrinsic encoding)
-  Summer school 2008:Typed arithmetic expressions
-  Summer school 2008:Typed arithmetic expressions (extrinsic encoding)
-  Summer school 2008:Typed arithmetic expressions (value)
-  Summer school 2008:Typed arithmetic expressions with pairs
-  Summer school 2008:Typed arithmetic expressions with sums
-  Syntax (Object logic)
+  Sudoku
+  Tabled logic programming
+  Talk:% define
+  Talk:%covers
+  Talk:%freeze
+  Talk:%reduces
+  Talk:%thaw
+  Talk:%worlds
   Talk:Admissibility of cut
-  Talk:Alpha-equivalence
   Talk:Ask Twelf Elf
+  Talk:CPS conversion
+  Talk:Canonical forms lemma
+  Talk:Case studies
+  Talk:Congruence lemma
   Talk:Constraint domains and coverage checking
-  Talk:Documentation
+  Talk:Converting between implicit and explicit parameters
+  Talk:Define declaration
+  Talk:Download
   Talk:Effectiveness lemma
+  Talk:Equality
+  Talk:General Description of Twelf
   Talk:General description of Twelf
-  Talk:Get started
-  Talk:Glossary
   Talk:Implicit and explicit parameters
-  Talk:Introductions to Twelf
-  Talk:Letrec
+  Talk:Incremental metatheorem development
+  Talk:Lily
+  Talk:Lists
   Talk:Main Page
   Talk:Metatheorem
   Talk:Mutable state
-  Talk:Numeric termination metrics
-  Talk:Output factoring
-  Talk:Programming language theory with Twelf
-  Talk:Quick introduction
-  Talk:Reformulating languages to use hypothetical judgements
+  Talk:Natural numbers with inequality
+  Talk:Output freeness
   Talk:Respects lemma
-  Talk:Strengthening
   Talk:Totality assertion
   Talk:Tutorials
   Talk:Twelf style guide
-  Talk:Uniqueness lemma
-  Talk:Working with higher-order judgements
-  Template talk:The Twelf Project/Introduction
-  Template:Bibtex:hl07mechanizing
+  Talk:User's Guide
+  Talk:UserGuide
+  Talk:Using nat-less with %reduces
+  Template talk:Bibtex:hl07mechanizing
+  Template talk:Click-inline
+  Template:Bottom
+  Template:Box
+  Template:Click-inline
+  Template:Darrow
+  Template:Dia
+  Template:Discuss
+  Template:Draft
+  Template:Exists
+  Template:Forall
+  Template:Guide
+  Template:Keyword
+  Template:Lolli
+  Template:Multimap
+  Template:Needs
+  Template:Oplus
+  Template:Otimes
   Template:Proving metatheorems
-  Template:Summer school 2008
+  Template:Rule
+  Template:Stub
   Template:The Twelf Project/Getting Started
   Template:The Twelf Project/Introduction
+  Template:The Twelf Project/Learning Twelf
+  Template:Tl
+  Template:Top
   Template:Tutorial
+  Template:Twelf code
+  Template:Undocumented
+  Template:Vdash
+  The Twelf Project talk:AJALF
+  The Twelf Project talk:Copyright
   The Twelf Project talk:GeSHi Twelf extension
+  The Twelf Project talk:Policy
   The Twelf Project talk:Style guide
+  The Twelf Project talk:TwelfTag
   The Twelf Project:1.0
+  The Twelf Project:AJALF
+  The Twelf Project:Contributing
+  The Twelf Project:Contributors
+  The Twelf Project:Copyright
+  The Twelf Project:MIT
+  The Twelf Project:MIT license
   The Twelf Project:Style guide
   The Twelf Project:To do
+  The Twelf Project:To do/Syntax highlighting
+  The Twelf Project:TwelfTag
+  Theorem prover
   Totality assertion
   Tutorials
-  Twelf signature
-  Twelf with Emacs
-  Type family
-  Unification
+  Twelf Live
+  Twelf style guide
+  TwelfTag
   Uniqueness lemma
-  User talk:Drl
-  User talk:Jcreed
+  Universally quantified
+  User talk:128.2.223.28
+  User talk:128.237.241.108
+  User talk:Aleffert
+  User talk:Ccasin
+  User talk:Crary
+  User talk:DanielKLee
+  User talk:JakeD
   User talk:Rsimmons
-  User:Drl
+  User talk:Spoons
+  User talk:Varming
+  User talk:William Lovas
+  User's Guide
+  User:Crary
+  User:Tom7
+  User:Tom7/test.elf
+  User:Twilson
+  User:William Lovas
   Weakening lemma
   What's new
-  Working with higher-order judgements
-  World
-  World subsumption
-Harmon contributed to 2 page(s)
-  %mode
+  Zermelo Frankel
+Tonyguards contributed to 1 page(s)
+  Introductions to Twelf
+Twilson contributed to 13 page(s)
+  First-order encodings
+  PLTheory:Introduction to Twelf
+  POPL Tutorial/Problems
+  POPL Tutorial/Properties of Typing and Reduction
+  Programming language theory with Twelf
+  Proving metatheorems:Proving totality assertions in non-empty contexts
+  Proving metatheorems:Representing the judgements of the STLC
+  Proving metatheorems:Representing the judgements of the natural numbers
+  Proving metatheorems:Representing the syntax of the STLC
+  Signature checking
+  Signatures as logic programs
+  Talk:Substitution lemma
+  User-defined constraint domain
+UlrikRasmussen contributed to 1 page(s)
   Research projects using Twelf
+User 6a58815ca3b629c contributed to 1 page(s)
+  Coverage checking
+Varming contributed to 9 page(s)
+  Case studies
+  Indexed lists
+  Lily
+  Lists
+  Sets and supersets
+  The Twelf Project:To do/Syntax highlighting
+  Tutorials
+  User:Varming
+  What's new
 William Lovas contributed to 42 page(s)
   %query
   %unique
@@ -892,1479 +1308,7 @@ William Lovas contributed to 42 page(s)
   Typed combinators soundness and completeness
   Uniqueness lemma
   User talk:William Lovas
-DanielKLee contributed to 91 page(s)
-  %reduces
-  About The Twelf Project
-  Ad hoc binding structures
-  Ask Twelf Elf
-  CPS conversion
-  Canonical forms lemma
-  Case studies
-  Correctness of mergesort
-  Dense lexicographical orderings
-  Dependent types
-  Developers
-  Division over the natural numbers
-  Documentation
-  Download
-  Effectiveness lemma
-  Elves talk:Main Page
-  Elves:Main Page
-  Exchange
-  Exchange lemma
-  Explicit context
-  Function
-  Glossary
-  Higher-order abstract syntax
-  Incremental metatheorem development
-  Judgment
-  Judgments
-  Judgments as types
-  Letrec
-  Lexicographical orderings with density
-  Mailing lists
-  Meta-logic
-  Naming conventions
-  Natural numbers
-  Negation as failure
-  Object logic
-  Object logic syntax
-  POPL Tutorial/Exceptions
-  POPL Tutorial/Exceptions-problem
-  POPL Tutorial/New language
-  POPL Tutorial/Pattern matching
-  POPL Tutorial/Problems
-  POPL Tutorial/cps-rp
-  Pattern matching
-  Real-world binding structures
-  Reasoning from false
-  Relation
-  Research projects using Twelf
-  Structural metrics
-  Substitution lemma
-  Syntax (Object logic)
-  Talk:%reduces
-  Talk:Ask Twelf Elf
-  Talk:CPS conversion
-  Talk:Canonical forms lemma
-  Talk:Case studies
-  Talk:Download
-  Talk:Equality
-  Talk:Exchange lemma
-  Talk:Glossary
-  Talk:Incremental metatheorem development
-  Talk:Lists
-  Talk:Substitution lemma
-  Talk:Twelf style guide
-  Talk:User's Guide
-  Talk:Using nat-less with %reduces
-  Template:Front-Getting Started
-  Template:The Twelf Project/Getting Started
-  Template:The Twelf Project/Introduction
-  The Twelf Project talk:AJALF
-  The Twelf Project talk:To do
-  The Twelf Project:AJALF
-  The Twelf Project:Contributors
-  The Twelf Project:Style guide
-  The Twelf Project:To do
-  Tutorials
-  Twelf Elf Rotation Charter
-  Twelf Live
-  Twelf style guide
-  Type families
-  Type family
-  Uniqueness lemma
-  User talk:DanielKLee
-  User talk:Drl
-  User talk:Rsimmons
-  User's Guide
-  User:DanielKLee
-  Using a metric
-  Using nat-less with %reduces
-  Weakening
-  Weakening lemma
-  What's new
-Geoffw contributed to 2 page(s)
-  %subord
-  Template:Keyword
-D contributed to 1 page(s)
-  %terminates
-Fp contributed to 1 page(s)
-  %unique
 Wniiimperial contributed to 3 page(s)
   Abbrev declaration
   About The Twelf Project
   Ad hoc binding structures
-Johnohiggson contributed to 1 page(s)
-  About The Twelf Project
-Niksa contributed to 1 page(s)
-  About The Twelf Project
-Clinton102 contributed to 1 page(s)
-  About The Twelf Project
-Inbmac contributed to 2 page(s)
-  About The Twelf Project
-  Research projects using Twelf
-Bodywell contributed to 1 page(s)
-  About The Twelf Project
-Popik contributed to 8 page(s)
-  Admissibility of cut
-  Bibliography of LF
-  Case studies
-  Concrete representation
-  Higher-order abstract syntax
-  LF
-  Lists
-  Tutorials
-Jacintheford contributed to 1 page(s)
-  Bibliography of LF
-Solen contributed to 1 page(s)
-  Bibliography of LF
-Carsten contributed to 15 page(s)
-  CADE Tutorial
-  CADE Tutorial/Basic error messages
-  CADE Tutorial/Basics
-  CADE Tutorial/Basics Answer
-  CADE Tutorial/Combinators
-  CADE Tutorial/Combinators Answer
-  CADE Tutorial/Combinators Support
-  CADE Tutorial/MinML
-  CADE Tutorial/MinML Answer
-  CADE Tutorial/MinML encoding
-  CADE Tutorial/Next
-  File:Demtech.png
-  Introductions to Twelf
-  User:Carsten
-  What's new
-Tausbn contributed to 2 page(s)
-  CADE Tutorial
-  POPL Tutorial/Basics
-Cmartens contributed to 15 page(s)
-  CADE Tutorial
-  Computation and Deduction 2009
-  Editing Summer school 2008:Alternate typed arithmetic expressions with sums
-  POPL Tutorial/Combinators session
-  POPL Tutorial/Sequent vs Natural Deduction
-  POPL Tutorial/Sequent vs Natural Deduction: Solution
-  POPL Tutorial/Typed bracket abstraction
-  POPL Tutorial/Typed bracket abstraction (solution)
-  Summer school 2008:Alternate typed arithmetic expressions with sums
-  Summer school 2008:Exercises 1
-  Summer school 2008:Typed arithmetic expressions with sums
-  TAT/church.elf
-  TAT/plus.elf
-  User:Cmartens
-  Verifications and uses
-Spoons contributed to 6 page(s)
-  CPS conversion
-  Error messages
-  Glossary
-  The Twelf Project:To do
-  User talk:Spoons
-  User:Spoons
-Luke Maurer contributed to 2 page(s)
-  CPS conversion
-  Catch-all case
-Varming contributed to 9 page(s)
-  Case studies
-  Indexed lists
-  Lily
-  Lists
-  Sets and supersets
-  The Twelf Project:To do/Syntax highlighting
-  Tutorials
-  User:Varming
-  What's new
-Crary contributed to 19 page(s)
-  Computation and Deduction 2009
-  Computation and Deduction 2009/20090203
-  Computation and Deduction 2009/20090209
-  Computation and Deduction 2009/20090223
-  Computation and Deduction 2009/20090316
-  Computation and Deduction 2009/20090318
-  Computation and Deduction 2009/20090325
-  Computation and Deduction 2009/20090330
-  Computation and Deduction 2009/20090401
-  Computation and Deduction 2009/20090406
-  Computation and Deduction 2009/20090408
-  Computation and Deduction 2009/20090413
-  Computation and Deduction 2009/20090415
-  Computation and Deduction 2009/20090420
-  Computation and Deduction 2009/20090422
-  Computation and Deduction 2009/20090427
-  Computation and Deduction 2009/20090429
-  Linear logic
-  What's new
-NewTestUser contributed to 2 page(s)
-  Concrete representation
-  User:Rsimmons
-Ashabcmg5e9 contributed to 1 page(s)
-  Constraint domains and coverage checking
-Boyland contributed to 27 page(s)
-  Constraint domains and coverage checking
-  Debugging coverage errors
-  Error messages
-  HOAS nat bijection
-  Indexed HOAS nat bijection
-  Introductions to Twelf
-  Substitution lemma
-  Talk:%reduces
-  Talk:%theorem
-  Talk:Ask Twelf Elf
-  Talk:Converting between implicit and explicit parameters
-  Talk:Debugging coverage errors
-  Talk:Documentation
-  Talk:Effectiveness lemma
-  Talk:Equality
-  Talk:Introductions to Twelf
-  Talk:Metatheorem
-  Talk:Proving metatheorems with Twelf
-  Talk:Twelf style guide
-  Talk:Twelf with Emacs
-  The Twelf Project:Contributors
-  Twelf with Emacs
-  User talk:Boyland
-  User:Boyland
-  User:Cmartens
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-  User:TheTwelfElf
-Jcreed contributed to 9 page(s)
-  ConstructiveSemantics
-  POPL Tutorial/cps
-  Simplifying dynamic clauses
-  Talk:Classical S5
-  Tethered modal logic
-  User talk:128.237.241.108
-  User talk:Jcreed
-  User:Jcreed
-  User:Jcreed/Sandbox
-User 6a58815ca3b629c contributed to 1 page(s)
-  Coverage checking
-Sully contributed to 8 page(s)
-  Debugging coverage errors
-  Natural numbers
-  Output factoring
-  Proving metatheorems:Natural numbers: Answers to exercises
-  Proving metatheorems:Proving metatheorems about the natural numbers
-  Proving metatheorems:Proving metatheorems in non-empty contexts
-  Proving metatheorems:Proving totality assertions about the natural numbers
-  Proving metatheorems:Proving totality assertions in non-empty contexts
-Aleffert contributed to 1 page(s)
-  Download
-Ccasin contributed to 4 page(s)
-  Exchange lemma
-  Proving metatheorems:Natural numbers: Answers to exercises
-  Talk:Ask Twelf Elf
-  User:Ccasin
-Twilson contributed to 13 page(s)
-  First-order encodings
-  PLTheory:Introduction to Twelf
-  POPL Tutorial/Problems
-  POPL Tutorial/Properties of Typing and Reduction
-  Programming language theory with Twelf
-  Proving metatheorems:Proving totality assertions in non-empty contexts
-  Proving metatheorems:Representing the judgements of the STLC
-  Proving metatheorems:Representing the judgements of the natural numbers
-  Proving metatheorems:Representing the syntax of the STLC
-  Signature checking
-  Signatures as logic programs
-  Talk:Substitution lemma
-  User-defined constraint domain
-Rowandavies contributed to 1 page(s)
-  Hereditary substitution
-Neel contributed to 1 page(s)
-  Hypothetical judgment
-JakeD contributed to 11 page(s)
-  Intrinsic and extrinsic encodings
-  Logic programming
-  Research projects using Twelf
-  Strengthening
-  Talk:Effectiveness lemma
-  Talk:Strengthening
-  Template:The Twelf Project/Introduction
-  Tutorials
-  Twelf with Emacs
-  User:JakeD
-  What's new
-Tonyguards contributed to 1 page(s)
-  Introductions to Twelf
-Noam contributed to 2 page(s)
-  Iterated inductive definitions and defunctionalization
-  Talk:Ask Twelf Elf
-Saintali contributed to 2 page(s)
-  Judgment
-  Totality assertion
-JeremiahVause contributed to 1 page(s)
-  Logic programming
-MediaWiki default contributed to 10 page(s)
-  Main Page
-  MediaWiki:Copyrightwarning
-  MediaWiki:Copyrightwarning2
-  MediaWiki:Edittools
-  MediaWiki:Fileinfo
-  MediaWiki:Loginreqpagetext
-  MediaWiki:Monobook.css
-  MediaWiki:Newwindow
-  MediaWiki:Previewnote
-  MediaWiki:Sidebar
-TheTwelfElf contributed to 7 page(s)
-  Main Page
-  MediaWiki:Loginreqpagetext
-  Natural numbers with inequality
-  Talk:Natural numbers with inequality
-  The Twelf Project:Contributors
-  User:Rsimmons
-  User:TheTwelfElf
-Amepu contributed to 1 page(s)
-  MediaWiki formatting description
-Miguels contributed to 1 page(s)
-  Modal logic
-Namin contributed to 3 page(s)
-  Mutual induction
-  POPL Tutorial/Basics
-  POPL Tutorial/MinML
-TestUser contributed to 2 page(s)
-  Object logic
-  User:TestUser
-Mpa contributed to 1 page(s)
-  POPL Tutorial/Cost semantics
-Adahmad contributed to 2 page(s)
-  POPL Tutorial/cps-problem
-  POPL Tutorial/cps-problem2
-Drdreyer contributed to 1 page(s)
-  Proving metatheorems with Twelf
-Kartik contributed to 1 page(s)
-  Proving metatheorems with Twelf
-Pronesto contributed to 6 page(s)
-  Proving metatheorems:Natural numbers: Answers to exercises
-  Proving metatheorems:Proving metatheorems about the STLC
-  Proving metatheorems:Summary: the natural numbers
-  Reasoning from false
-  Talk:Ask Twelf Elf
-  Uniqueness lemma
-Rpollack contributed to 3 page(s)
-  Reformulating languages to use hypothetical judgements
-  Talk:Ask Twelf Elf
-  Talk:Reformulating languages to use hypothetical judgements
-Frabe contributed to 1 page(s)
-  Research projects using Twelf
-LenoraMcdonald contributed to 1 page(s)
-  Research projects using Twelf
-OpheliaFuller contributed to 1 page(s)
-  Research projects using Twelf
-LillianRamsey contributed to 1 page(s)
-  Research projects using Twelf
-SummerMills contributed to 1 page(s)
-  Research projects using Twelf
-EthelTanner contributed to 1 page(s)
-  Research projects using Twelf
-Larsberg contributed to 1 page(s)
-  Research projects using Twelf
-MaryannePaul contributed to 1 page(s)
-  Research projects using Twelf
-Qu1j0t3 contributed to 1 page(s)
-  Research projects using Twelf
-LeannaBrooks contributed to 1 page(s)
-  Research projects using Twelf
-Jeremywagner83 contributed to 1 page(s)
-  Research projects using Twelf
-Klobucar contributed to 1 page(s)
-  Research projects using Twelf
-Joshua contributed to 1 page(s)
-  Research projects using Twelf
-UlrikRasmussen contributed to 1 page(s)
-  Research projects using Twelf
-JoeSat contributed to 1 page(s)
-  Research projects using Twelf
-Hibou57 contributed to 3 page(s)
-  Research projects using Twelf
-  Talk:Ask Twelf Elf
-  Talk:Download
-Doriangrand contributed to 1 page(s)
-  Respects lemma
-Plmday contributed to 1 page(s)
-  Subordination
-Sunshine contributed to 2 page(s)
-  Summer school 2008:Exercises 1
-  Twelf with Emacs
-Evelinna contributed to 1 page(s)
-  Tutorials
-Gusl contributed to 1 page(s)
-  Twelf Live
-Rwh contributed to 3 page(s)
-  Talk:Substitution lemma
-  The Twelf Project:To do
-  Twelf style guide
-Blaisorblade contributed to 1 page(s)
-  Twelf with Emacs
-Mrd contributed to 1 page(s)
-  Talk:Ask Twelf Elf
-Robby contributed to 1 page(s)
-  Talk:Ask Twelf Elf
-Jbapple contributed to 1 page(s)
-  Talk:Ask Twelf Elf
-Tsans contributed to 1 page(s)
-  Talk:Ask Twelf Elf
-Ali contributed to 1 page(s)
-  Talk:Ask Twelf Elf
-Fairflow contributed to 1 page(s)
-  Talk:Ask Twelf Elf
-Euisuny contributed to 1 page(s)
-  Talk:Ask Twelf Elf
-Ssuu contributed to 3 page(s)
-  Talk:Documentation
-  Talk:Download
-  Talk:Main Page
-Pflanze contributed to 1 page(s)
-  Talk:Download
-RickFleischer contributed to 1 page(s)
-  Talk:Glossary
-Giselle contributed to 1 page(s)
-  Talk:Introductions to Twelf
-Stefan O'Rear contributed to 1 page(s)
-  Talk:Lists
-Pinkour0355 contributed to 1 page(s)
-  Talk:Main Page
-Waqas mirza6 contributed to 1 page(s)
-  Talk:Main Page
-Clements contributed to 1 page(s)
-  Talk:Output factoring
-TermPaperServices contributed to 1 page(s)
-  User:Boyland
-DorothySwomo contributed to 1 page(s)
-  User:Cmartens
-Hdeyoung contributed to 2 page(s)
-  User:Hdeyoung
-  User:Hdeyoung/monweakfoc.elf
-NjjxjcBlubs contributed to 1 page(s)
-  User:Rsimmons/Fluid binding
-Elajemillunda contributed to 1 page(s)
-  User:Rsimmons/Fluid binding
-Mkfmav485 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Qcdctl591 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Entpfl520 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Rqmhqy255 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Jzwrav353 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Bkljub196 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Efgcqp447 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Gvylrb875 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Vruyvu722 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Wknkft233 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Bheznh444 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Ajyval666 contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-CharlesPef contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Reviahaifs contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Darinsquak contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Jeffreypauff contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Stevedenty contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Jaimescemo contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Feorgelon contributed to 1 page(s)
-  User:Rsimmons/Lecture 23: Typed Lambda Calculus in Twelf
-Judithlob contributed to 1 page(s)
-  User:TheTwelfElf
-Hua220 contributed to 2 page(s)
-  User talk:Drl
-  User talk:Twilson
-Adamjohn553 contributed to 1 page(s)
-  User talk:Rsimmons
-Sinwbdmqxbeo contributed to 1 page(s)
-  User talk:Rsimmons
-Kinsdzgkwfwpof contributed to 1 page(s)
-  User talk:Rsimmons
-BreeKnudsen contributed to 1 page(s)
-  User talk:Rsimmons
-Rumwgahdijualgh contributed to 1 page(s)
-  User talk:Rsimmons
-Spicabwnclasse contributed to 1 page(s)
-  User talk:Rsimmons
-Spayxanmasszpe contributed to 1 page(s)
-  User talk:Rsimmons
-Phogrnenxgsear contributed to 1 page(s)
-  User talk:Rsimmons
-Watqarxerdamaz contributed to 1 page(s)
-  User talk:Rsimmons
-Ocaxllanationa contributed to 1 page(s)
-  User talk:Rsimmons
-Spaoljmassqnxg contributed to 1 page(s)
-  User talk:Rsimmons
-TerdpminatXc5g contributed to 1 page(s)
-  User talk:Rsimmons
-Sumbzlcmeecanr contributed to 1 page(s)
-  User talk:Rsimmons
-Buyh1tch4 contributed to 1 page(s)
-  User talk:Rsimmons
-Vasheds76 contributed to 1 page(s)
-  User talk:Rsimmons
-Solegarefwopme contributed to 1 page(s)
-  User talk:Rsimmons
-Intbarns75 contributed to 1 page(s)
-  User talk:Rsimmons
-Daytona180 contributed to 1 page(s)
-  User talk:Rsimmons
-Qinyuglickmanr contributed to 1 page(s)
-  User talk:Rsimmons
-Philacon548 contributed to 1 page(s)
-  User talk:Rsimmons
-Andbrhrewsgard contributed to 1 page(s)
-  User talk:Rsimmons
-Egress845 contributed to 1 page(s)
-  User talk:Rsimmons
-Giftbask73 contributed to 1 page(s)
-  User talk:Rsimmons
-Landscapn162 contributed to 1 page(s)
-  User talk:Rsimmons
-Memjlsornhxylo contributed to 1 page(s)
-  User talk:Rsimmons
-Lancshop6821 contributed to 1 page(s)
-  User talk:Rsimmons
-Recycling99 contributed to 1 page(s)
-  User talk:Rsimmons
-Tourstatt907 contributed to 1 page(s)
-  User talk:Rsimmons
-Pangjbxiczxeci contributed to 1 page(s)
-  User talk:Rsimmons
-BacprjkpaiJq3 contributed to 1 page(s)
-  User talk:Rsimmons
-Smaqpgllbusine contributed to 1 page(s)
-  User talk:Rsimmons
-Recoqognitiono contributed to 1 page(s)
-  User talk:Rsimmons
-Mobsmznilehomf contributed to 1 page(s)
-  User talk:Rsimmons
-Masycssagether contributed to 1 page(s)
-  User talk:Rsimmons
-FlytC contributed to 1 page(s)
-  User talk:Rsimmons
-Vidfxzoeodkpga contributed to 1 page(s)
-  User talk:Rsimmons
-Jewagkishqmgst contributed to 1 page(s)
-  User talk:Rsimmons
-LyobheenesTd contributed to 1 page(s)
-  User talk:Rsimmons
-Scijrboaticqjy contributed to 1 page(s)
-  User talk:Rsimmons
-Ajlouny contributed to 1 page(s)
-  User talk:Rsimmons
-Famxlyfousrklt contributed to 1 page(s)
-  User talk:Rsimmons
-Dripklvingfebh contributed to 1 page(s)
-  User talk:Rsimmons
-Abbey contributed to 1 page(s)
-  User talk:Rsimmons
-Juaoaljxlrumah contributed to 1 page(s)
-  User talk:Rsimmons
-Exetbgcutivede contributed to 1 page(s)
-  User talk:Rsimmons
-Ledpknmlbulb contributed to 1 page(s)
-  User talk:Rsimmons
-Garyfettke2013 contributed to 1 page(s)
-  User talk:Rsimmons
-Longfdongarden contributed to 1 page(s)
-  User talk:Rsimmons
-Mlmobjbleadzrp contributed to 1 page(s)
-  User talk:Rsimmons
-Isrbfmaeltkaqx contributed to 1 page(s)
-  User talk:Rsimmons
-Chifxcrnoem8 contributed to 1 page(s)
-  User talk:Rsimmons
-Doacwntiageing contributed to 1 page(s)
-  User talk:Rsimmons
-Croelgwssstqsd contributed to 1 page(s)
-  User talk:Rsimmons
-Naixgtlfungude contributed to 1 page(s)
-  User talk:Rsimmons
-Socybajialmedi contributed to 1 page(s)
-  User talk:Rsimmons
-Besjgdatmassag contributed to 1 page(s)
-  User talk:Rsimmons
-Diawgyrbetzqpa contributed to 1 page(s)
-  User talk:Rsimmons
-Weirdswghtloss contributed to 1 page(s)
-  User talk:Rsimmons
-Cosfatptandpay contributed to 1 page(s)
-  User talk:Rsimmons
-Rengjtsttoowne contributed to 1 page(s)
-  User talk:Rsimmons
-BibleStudyIn111 contributed to 1 page(s)
-  User talk:Rsimmons
-Boutbncycastleh contributed to 1 page(s)
-  User talk:Rsimmons
-Acupuncture0vzx contributed to 1 page(s)
-  User talk:Rsimmons
-Spaqfrcmassaml contributed to 1 page(s)
-  User talk:Rsimmons
-Trapkpvelphgnf contributed to 1 page(s)
-  User talk:Rsimmons
-MenrgafownQb6 contributed to 1 page(s)
-  User talk:Rsimmons
-Lifeway187 contributed to 1 page(s)
-  User talk:Rsimmons
-Solgapdonwaigd contributed to 1 page(s)
-  User talk:Rsimmons
-Proqbperihty contributed to 1 page(s)
-  User talk:Rsimmons
-Relckdyievejxq contributed to 1 page(s)
-  User talk:Rsimmons
-Natcsrjurephsg contributed to 1 page(s)
-  User talk:Rsimmons
-Glaqqzsspawshc contributed to 1 page(s)
-  User talk:Rsimmons
-Chedhkapfqfare contributed to 1 page(s)
-  User talk:Rsimmons
-Dubekstepjtzz contributed to 1 page(s)
-  User talk:Rsimmons
-Mobjhilehomkgr contributed to 1 page(s)
-  User talk:Rsimmons
-Remgmotewholeyn contributed to 1 page(s)
-  User talk:Rsimmons
-Conzcdrference contributed to 1 page(s)
-  User talk:Rsimmons
-Eyecenter33 contributed to 1 page(s)
-  User talk:Rsimmons
-Lancins83 contributed to 1 page(s)
-  User talk:Rsimmons
-GospelProject11 contributed to 1 page(s)
-  User talk:Rsimmons
-Customshed83 contributed to 1 page(s)
-  User talk:Rsimmons
-Ocafdmlanation contributed to 1 page(s)
-  User talk:Rsimmons
-Comprepm3m contributed to 1 page(s)
-  User talk:Rsimmons
-Delshed833 contributed to 1 page(s)
-  User talk:Rsimmons
-Besjsdtwaytoofd contributed to 1 page(s)
-  User talk:Rsimmons
-ThomRainer149 contributed to 1 page(s)
-  User talk:Rsimmons
-Intiakqernetit contributed to 1 page(s)
-  User talk:Rsimmons
-Rvpdnjeyparks contributed to 1 page(s)
-  User talk:Rsimmons
-Hotoswflushepj contributed to 1 page(s)
-  User talk:Rsimmons
-Spikaytnclasse contributed to 1 page(s)
-  User talk:Rsimmons
-Caryjfxowqloans contributed to 1 page(s)
-  User talk:Rsimmons
-Coufwrsesinnlp, contributed to 1 page(s)
-  User talk:Rsimmons
-Ricdbcartoepef contributed to 1 page(s)
-  User talk:Rsimmons
-TLW105 contributed to 1 page(s)
-  User talk:Rsimmons
-SpaqfrcmasPk52 contributed to 1 page(s)
-  User talk:Rsimmons
-Scapxltteringo contributed to 1 page(s)
-  User talk:Rsimmons
-Rumthtrahdijuo contributed to 1 page(s)
-  User talk:Rsimmons
-Ausejtralianwi contributed to 1 page(s)
-  User talk:Rsimmons
-Seofmbazjdjmck contributed to 1 page(s)
-  User talk:Rsimmons
-Relncgyievs5G contributed to 1 page(s)
-  User talk:Rsimmons
-Sewasaapfypjar contributed to 1 page(s)
-  User talk:Rsimmons
-Mlmeanleademzg contributed to 1 page(s)
-  User talk:Rsimmons
-Chimxropractor contributed to 1 page(s)
-  User talk:Rsimmons
-Famxaousnlxwrq contributed to 1 page(s)
-  User talk:Rsimmons
-Ligonxzysyetvtr contributed to 1 page(s)
-  User talk:Rsimmons
-Delktonghidfag contributed to 1 page(s)
-  User talk:Rsimmons
-Rumpcdahdijual contributed to 1 page(s)
-  User talk:Rsimmons
-Panrgsiczykpuz contributed to 1 page(s)
-  User talk:Rsimmons
-Feaifrofgwcrjdr contributed to 1 page(s)
-  User talk:Rsimmons
-Envkfcewhtblop contributed to 1 page(s)
-  User talk:Rsimmons
-Spagemassoqkdz contributed to 1 page(s)
-  User talk:Rsimmons
-Pinipgozwtfresh contributed to 1 page(s)
-  User talk:Rsimmons
-Eesatdjmw contributed to 1 page(s)
-  User talk:Rsimmons
-Zeroaoclearank contributed to 1 page(s)
-  User talk:Rsimmons
-Spaktmassrldzb contributed to 1 page(s)
-  User talk:Rsimmons
-Socialmediamix contributed to 1 page(s)
-  User talk:Rsimmons
-Hotelallen5 contributed to 1 page(s)
-  User talk:Rsimmons
-Rumosahdijuales contributed to 1 page(s)
-  User talk:Rsimmons
-Jewmxishfqcsto contributed to 1 page(s)
-  User talk:Rsimmons
-Itsupport065 contributed to 1 page(s)
-  User talk:Rsimmons
-Pestcntrl3 contributed to 1 page(s)
-  User talk:Rsimmons
-Iptbxgrydad contributed to 1 page(s)
-  User talk:Rsimmons
-Funswings35 contributed to 1 page(s)
-  User talk:Rsimmons
-Enclsdtr176 contributed to 1 page(s)
-  User talk:Rsimmons
-Basqyaeballuni contributed to 1 page(s)
-  User talk:Rsimmons
-Zebos7189 contributed to 1 page(s)
-  User talk:Rsimmons
-Gazeboss2X3 contributed to 1 page(s)
-  User talk:Rsimmons
-Houcdkjstonmod contributed to 1 page(s)
-  User talk:Rsimmons
-Curacaot contributed to 1 page(s)
-  User talk:Rsimmons
-Spaidpxmassmph contributed to 1 page(s)
-  User talk:Rsimmons
-Iaarcndhysssct contributed to 1 page(s)
-  User talk:Rsimmons
-Eatiyhinghealt contributed to 1 page(s)
-  User talk:Rsimmons
-Acheykqievefin contributed to 1 page(s)
-  User talk:Rsimmons
-Solarpnl74 contributed to 1 page(s)
-  User talk:Rsimmons
-Keykbnwzfrrema contributed to 1 page(s)
-  User talk:Rsimmons
-TanBloome contributed to 1 page(s)
-  User talk:Rsimmons
-Ktchnlanc079 contributed to 1 page(s)
-  User talk:Rsimmons
-Weightwtch8 contributed to 1 page(s)
-  User talk:Rsimmons
-Webdes1ng7 contributed to 1 page(s)
-  User talk:Rsimmons
-Prixckvateequi contributed to 1 page(s)
-  User talk:Rsimmons
-EvaMendez contributed to 1 page(s)
-  User talk:Rsimmons
-Incontpad790 contributed to 1 page(s)
-  User talk:Rsimmons
-Cyclingap089 contributed to 1 page(s)
-  User talk:Rsimmons
-Vinylcup9057 contributed to 1 page(s)
-  User talk:Rsimmons
-Deckssqr084 contributed to 1 page(s)
-  User talk:Rsimmons
-Worklkwithumxlk contributed to 1 page(s)
-  User talk:Rsimmons
-Itspprt4048 contributed to 1 page(s)
-  User talk:Rsimmons
-BaczlzykpaCs4e contributed to 1 page(s)
-  User talk:Rsimmons
-60fxbereestanj contributed to 1 page(s)
-  User talk:Rsimmons
-Tamdbfpachidtl contributed to 1 page(s)
-  User talk:Rsimmons
-Rflancstr907 contributed to 1 page(s)
-  User talk:Rsimmons
-Tinjzbanituscy contributed to 1 page(s)
-  User talk:Rsimmons
-Lowccerbackebtj contributed to 1 page(s)
-  User talk:Rsimmons
-Nlpncltraining contributed to 1 page(s)
-  User talk:Rsimmons
-Comctpputerrep contributed to 1 page(s)
-  User talk:Rsimmons
-Acusepuncturrb contributed to 1 page(s)
-  User talk:Rsimmons
-Jamghesmrqxfal contributed to 1 page(s)
-  User talk:Rsimmons
-Nzhdemngrlp contributed to 1 page(s)
-  User talk:Rsimmons
-Tinfpnitubabms contributed to 1 page(s)
-  User talk:Rsimmons
-Rumnrahdijualks contributed to 1 page(s)
-  User talk:Rsimmons
-Quizxckestwaydd contributed to 1 page(s)
-  User talk:Rsimmons
-Burqlialzdpfats contributed to 1 page(s)
-  User talk:Rsimmons
-Howxxdntomakes contributed to 1 page(s)
-  User talk:Rsimmons
-Hghxywjpnlbtmk contributed to 1 page(s)
-  User talk:Rsimmons
-Betwqbterphbqs contributed to 1 page(s)
-  User talk:Rsimmons
-GraceWillers contributed to 1 page(s)
-  User talk:Rsimmons
-Cobmhxzertorbd contributed to 1 page(s)
-  User talk:Rsimmons
-Selgtrklinggtj contributed to 1 page(s)
-  User talk:Rsimmons
-Rumtdnahdijual contributed to 1 page(s)
-  User talk:Rsimmons
-Batterycan3 contributed to 1 page(s)
-  User talk:Rsimmons
-Cusalrtomewgsb contributed to 1 page(s)
-  User talk:Rsimmons
-Rooferstyle3 contributed to 1 page(s)
-  User talk:Rsimmons
-Honscgkonnwpges contributed to 1 page(s)
-  User talk:Rsimmons
-Lawyerlanc8 contributed to 1 page(s)
-  User talk:Rsimmons
-Revztersibleba contributed to 1 page(s)
-  User talk:Rsimmons
-Venxjtasonidoz contributed to 1 page(s)
-  User talk:Rsimmons
-Comoxtmercialf contributed to 1 page(s)
-  User talk:Rsimmons
-Homez4sl2 contributed to 1 page(s)
-  User talk:Rsimmons
-Pcrepairz99 contributed to 1 page(s)
-  User talk:Rsimmons
-Grdnsh3dz8 contributed to 1 page(s)
-  User talk:Rsimmons
-Griqpytndingdq contributed to 1 page(s)
-  User talk:Rsimmons
-Garagebld726 contributed to 1 page(s)
-  User talk:Rsimmons
-Chispeed195 contributed to 1 page(s)
-  User talk:Rsimmons
-Ohiocpa487 contributed to 1 page(s)
-  User talk:Rsimmons
-Storage874 contributed to 1 page(s)
-  User talk:Rsimmons
-Genralcon3 contributed to 1 page(s)
-  User talk:Rsimmons
-Bestrestr065 contributed to 1 page(s)
-  User talk:Rsimmons
-Zebosr7RK contributed to 1 page(s)
-  User talk:Rsimmons
-Supportchar3 contributed to 1 page(s)
-  User talk:Rsimmons
-Jacksonit079 contributed to 1 page(s)
-  User talk:Rsimmons
-Lcrucescr975 contributed to 1 page(s)
-  User talk:Rsimmons
-Housclen419 contributed to 1 page(s)
-  User talk:Rsimmons
-Bouzmnncycastl contributed to 1 page(s)
-  User talk:Rsimmons
-Funrlhom709 contributed to 1 page(s)
-  User talk:Rsimmons
-Metthalbuildqc contributed to 1 page(s)
-  User talk:Rsimmons
-Satkqariereals contributed to 1 page(s)
-  User talk:Rsimmons
-Wattcxqerdamad contributed to 1 page(s)
-  User talk:Rsimmons
-Evezsjntmoderb contributed to 1 page(s)
-  User talk:Rsimmons
-Howigntogetdwkj contributed to 1 page(s)
-  User talk:Rsimmons
-Aspirhaltdrith contributed to 1 page(s)
-  User talk:Rsimmons
-Isgymaviscongoo contributed to 1 page(s)
-  User talk:Rsimmons
-Watjderdamq3 contributed to 1 page(s)
-  User talk:Rsimmons
-Fammeoustynwdw contributed to 1 page(s)
-  User talk:Rsimmons
-StudentLifo6J9 contributed to 1 page(s)
-  User talk:Rsimmons
-Forzmajeppmcis contributed to 1 page(s)
-  User talk:Rsimmons
-SolxhdonwaiQw7k contributed to 1 page(s)
-  User talk:Rsimmons
-Hygcfsgienicwa contributed to 1 page(s)
-  User talk:Rsimmons
-Powylerfulworj contributed to 1 page(s)
-  User talk:Rsimmons
-Recycling83 contributed to 1 page(s)
-  User talk:Rsimmons
-Ledobfaegeqbwb contributed to 1 page(s)
-  User talk:Rsimmons
-Carerafxbnbqlo contributed to 1 page(s)
-  User talk:Rsimmons
-Chegmkyapfqnre contributed to 1 page(s)
-  User talk:Rsimmons
-Connecticut9 contributed to 1 page(s)
-  User talk:Rsimmons
-Land4s8le contributed to 1 page(s)
-  User talk:Rsimmons
-Defcon5st contributed to 1 page(s)
-  User talk:Rsimmons
-Supportdenv8 contributed to 1 page(s)
-  User talk:Rsimmons
-Cosmoline185 contributed to 1 page(s)
-  User talk:Rsimmons
-Pcsuptil7 contributed to 1 page(s)
-  User talk:Rsimmons
-WordSearch157 contributed to 1 page(s)
-  User talk:Rsimmons
-Ocasglanats8 contributed to 1 page(s)
-  User talk:Rsimmons
-Barnwedding3 contributed to 1 page(s)
-  User talk:Rsimmons
-AlumtrlrT contributed to 1 page(s)
-  User talk:Rsimmons
-FunrlhoRg5 contributed to 1 page(s)
-  User talk:Rsimmons
-Pooldsgn172 contributed to 1 page(s)
-  User talk:Rsimmons
-Funstuff3 contributed to 1 page(s)
-  User talk:Rsimmons
-Infertil74 contributed to 1 page(s)
-  User talk:Rsimmons
-Cabinets111 contributed to 1 page(s)
-  User talk:Rsimmons
-B00kk33pr contributed to 1 page(s)
-  User talk:Rsimmons
-Weddphoto098 contributed to 1 page(s)
-  User talk:Rsimmons
-EricGeiger137 contributed to 1 page(s)
-  User talk:Rsimmons
-Fireplace277 contributed to 1 page(s)
-  User talk:Rsimmons
-Replacmtw623 contributed to 1 page(s)
-  User talk:Rsimmons
-AmishlaAf9e contributed to 1 page(s)
-  User talk:Rsimmons
-At01gc02 contributed to 1 page(s)
-  User talk:Rsimmons
-Cuplaznm640 contributed to 1 page(s)
-  User talk:Rsimmons
-Mathtut1843 contributed to 1 page(s)
-  User talk:Rsimmons
-Rvpbctqjgemear contributed to 1 page(s)
-  User talk:Rsimmons
-Nlpodqgtrainin contributed to 1 page(s)
-  User talk:Rsimmons
-Ricslwcartoezd contributed to 1 page(s)
-  User talk:Rsimmons
-Sciecfmaticxfp contributed to 1 page(s)
-  User talk:Rsimmons
-Rumjspwahdijxl contributed to 1 page(s)
-  User talk:Rsimmons
-Orlmpandowaxgd contributed to 1 page(s)
-  User talk:Rsimmons
-Howgnkctobuyaa contributed to 1 page(s)
-  User talk:Rsimmons
-Rumaeahdc5T contributed to 1 page(s)
-  User talk:Rsimmons
-Webzmhggwosting contributed to 1 page(s)
-  User talk:Rsimmons
-Chixwnkropract contributed to 1 page(s)
-  User talk:Rsimmons
-Chiro839 contributed to 1 page(s)
-  User talk:Rsimmons
-Timwnbberrntfl contributed to 1 page(s)
-  User talk:Rsimmons
-Healthins33 contributed to 1 page(s)
-  User talk:Rsimmons
-Fixmypcz6 contributed to 1 page(s)
-  User talk:Rsimmons
-AssrlcqistJj5x contributed to 1 page(s)
-  User talk:Rsimmons
-Pvgcontrct7 contributed to 1 page(s)
-  User talk:Rsimmons
-Spaczmassekcsf contributed to 1 page(s)
-  User talk:Rsimmons
-Familylaw8 contributed to 1 page(s)
-  User talk:Rsimmons
-Natcsrjurew3TN contributed to 1 page(s)
-  User talk:Rsimmons
-Biggmsqideakln contributed to 1 page(s)
-  User talk:Rsimmons
-Comppremem7 contributed to 1 page(s)
-  User talk:Rsimmons
-Paorchard8 contributed to 1 page(s)
-  User talk:Rsimmons
-Locmpaalphilak contributed to 1 page(s)
-  User talk:Rsimmons
-Churchltz9 contributed to 1 page(s)
-  User talk:Rsimmons
-Lnfloor734 contributed to 1 page(s)
-  User talk:Rsimmons
-Sewnjtiaapontx contributed to 1 page(s)
-  User talk:Rsimmons
-Directml972 contributed to 1 page(s)
-  User talk:Rsimmons
-Staycmffingage contributed to 1 page(s)
-  User talk:Rsimmons
-Pav1ngnj2 contributed to 1 page(s)
-  User talk:Rsimmons
-Cinbexycing5FP contributed to 1 page(s)
-  User talk:Rsimmons
-ObewrcedieWb3 contributed to 1 page(s)
-  User talk:Rsimmons
-Lunwcettesctry contributed to 1 page(s)
-  User talk:Rsimmons
-Metalroof4 contributed to 1 page(s)
-  User talk:Rsimmons
-Tirelanc802 contributed to 1 page(s)
-  User talk:Rsimmons
-Rodxjdholxslwb contributed to 1 page(s)
-  User talk:Rsimmons
-Autorepair9 contributed to 1 page(s)
-  User talk:Rsimmons
-Imigin2231 contributed to 1 page(s)
-  User talk:Rsimmons
-Hrdwood0744 contributed to 1 page(s)
-  User talk:Rsimmons
-CuplaznQm39 contributed to 1 page(s)
-  User talk:Rsimmons
-Bigahmideasnjm contributed to 1 page(s)
-  User talk:Rsimmons
-Diaprzes662 contributed to 1 page(s)
-  User talk:Rsimmons
-1mastercleanser contributed to 1 page(s)
-  User talk:Rsimmons
-Golgdjfdmedatx contributed to 1 page(s)
-  User talk:Rsimmons
-Metolwjalbuild contributed to 1 page(s)
-  User talk:Rsimmons
-Divqsorceanrga contributed to 1 page(s)
-  User talk:Rsimmons
-Nur00fing3 contributed to 1 page(s)
-  User talk:Rsimmons
-Garjpaagedn8LX contributed to 1 page(s)
-  User talk:Rsimmons
-Visaekjittkpls contributed to 1 page(s)
-  User talk:Rsimmons
-Honttwxgkonreg contributed to 1 page(s)
-  User talk:Rsimmons
-Banefbrkruptcy contributed to 1 page(s)
-  User talk:Rsimmons
-Mouobgntvernon contributed to 1 page(s)
-  User talk:Rsimmons
-Homnqebusiness contributed to 1 page(s)
-  User talk:Rsimmons
-NorxnhthcaKr contributed to 1 page(s)
-  User talk:Rsimmons
-LifeWayWorsf8H contributed to 1 page(s)
-  User talk:Rsimmons
-Petidcwerkell, contributed to 1 page(s)
-  User talk:Rsimmons
-Orldzandowacxq contributed to 1 page(s)
-  User talk:Rsimmons
-Houptstonmodey contributed to 1 page(s)
-  User talk:Rsimmons
-Jewtrzoishecrs contributed to 1 page(s)
-  User talk:Rsimmons
-Feaseserofwjhd contributed to 1 page(s)
-  User talk:Rsimmons
-Troqbzgtwoodpw contributed to 1 page(s)
-  User talk:Rsimmons
-Bifxjcgolzandd contributed to 1 page(s)
-  User talk:Rsimmons
-Ostdaeopatmzng contributed to 1 page(s)
-  User talk:Rsimmons
-Scaxbtterinzap contributed to 1 page(s)
-  User talk:Rsimmons
-518aaebf6HP contributed to 1 page(s)
-  User talk:Rsimmons
-Rumtdpoahdijua contributed to 1 page(s)
-  User talk:Rsimmons
-Flyte112 contributed to 1 page(s)
-  User talk:Rsimmons
-Saysfcwryg9 contributed to 1 page(s)
-  User talk:Rsimmons
-Weazcreterk5XC contributed to 1 page(s)
-  User talk:Rsimmons
-StudentLife152 contributed to 1 page(s)
-  User talk:Rsimmons
-Ligasnxaqlbtvtr contributed to 1 page(s)
-  User talk:Rsimmons
-BurqlialzdpMo contributed to 1 page(s)
-  User talk:Rsimmons
-Chefqapnaturalg contributed to 1 page(s)
-  User talk:Rsimmons
-Weirtcoghtloss contributed to 1 page(s)
-  User talk:Rsimmons
-WordSearch152 contributed to 1 page(s)
-  User talk:Rsimmons
-Meadrendemvqnco contributed to 1 page(s)
-  User talk:Rsimmons
-Resjbktaurs8 contributed to 1 page(s)
-  User talk:Rsimmons
-Selokqwfcomyes contributed to 1 page(s)
-  User talk:Rsimmons
-LifeWayWomen125 contributed to 1 page(s)
-  User talk:Rsimmons
-Synzsbeo contributed to 1 page(s)
-  User talk:Rsimmons
-Uppqeerarlinnj contributed to 1 page(s)
-  User talk:Rsimmons
-Norfdhthrii8 contributed to 1 page(s)
-  User talk:Rsimmons
-Pcrepa1rz8 contributed to 1 page(s)
-  User talk:Rsimmons
-Freddjpeinstaz contributed to 1 page(s)
-  User talk:Rsimmons
-Compsupt22 contributed to 1 page(s)
-  User talk:Rsimmons
-Rumjkcahdijual contributed to 1 page(s)
-  User talk:Rsimmons
-Contactlnz2 contributed to 1 page(s)
-  User talk:Rsimmons
-Concconpa3 contributed to 1 page(s)
-  User talk:Rsimmons
-Trojdtwooytads contributed to 1 page(s)
-  User talk:Rsimmons
-Logcabine33 contributed to 1 page(s)
-  User talk:Rsimmons
-Parkmode83 contributed to 1 page(s)
-  User talk:Rsimmons
-Selotpfcoibytc contributed to 1 page(s)
-  User talk:Rsimmons
-Outdo0rfur7 contributed to 1 page(s)
-  User talk:Rsimmons
-SwingsEs8w contributed to 1 page(s)
-  User talk:Rsimmons
-Cuplazns contributed to 1 page(s)
-  User talk:Rsimmons
-L4ndscap32 contributed to 1 page(s)
-  User talk:Rsimmons
-Exexrxscutived contributed to 1 page(s)
-  User talk:Rsimmons
-Rensmjttoownfe contributed to 1 page(s)
-  User talk:Rsimmons
-Outsourcing3RS contributed to 1 page(s)
-  User talk:Rsimmons
-Gnecktrlr185 contributed to 1 page(s)
-  User talk:Rsimmons
-Newgmkfranklxb contributed to 1 page(s)
-  User talk:Rsimmons
-Woodperg042 contributed to 1 page(s)
-  User talk:Rsimmons
-Kilgnslarnppdw contributed to 1 page(s)
-  User talk:Rsimmons
-Schimucobiy7S contributed to 1 page(s)
-  User talk:Rsimmons
-Deckdeck7474 contributed to 1 page(s)
-  User talk:Rsimmons
-Kansasspd360 contributed to 1 page(s)
-  User talk:Rsimmons
-Prntcomp781 contributed to 1 page(s)
-  User talk:Rsimmons
-Petgr00mz7 contributed to 1 page(s)
-  User talk:Rsimmons
-Howpbmuchisqwn contributed to 1 page(s)
-  User talk:Rsimmons
-Stlports50 contributed to 1 page(s)
-  User talk:Rsimmons
-Meneqoctewd4M contributed to 1 page(s)
-  User talk:Rsimmons
-Temjflpagencie contributed to 1 page(s)
-  User talk:Rsimmons
-Kilealarnsbjij contributed to 1 page(s)
-  User talk:Rsimmons
-Garagez099 contributed to 1 page(s)
-  User talk:Rsimmons
-Oxffafeordrepl contributed to 1 page(s)
-  User talk:Rsimmons
-Frazroofr074 contributed to 1 page(s)
-  User talk:Rsimmons
-Uppeknerarling contributed to 1 page(s)
-  User talk:Rsimmons
-Bikejersy691 contributed to 1 page(s)
-  User talk:Rsimmons
-Gttybhotl947 contributed to 1 page(s)
-  User talk:Rsimmons
-Mtlcupola707 contributed to 1 page(s)
-  User talk:Rsimmons
-Dumnfpsterrent contributed to 1 page(s)
-  User talk:Rsimmons
-Miabemjmionlin contributed to 1 page(s)
-  User talk:Rsimmons
-Oradxctngecoun contributed to 1 page(s)
-  User talk:Rsimmons
-Relrmjievefqsy contributed to 1 page(s)
-  User talk:Rsimmons
-Assqklistedliv contributed to 1 page(s)
-  User talk:Rsimmons
-Midiefgdleburg contributed to 1 page(s)
-  User talk:Rsimmons
-Desykignerxygj contributed to 1 page(s)
-  User talk:Rsimmons
-Forcdmajepmpzy contributed to 1 page(s)
-  User talk:Rsimmons
-Gabbwdzrieybso contributed to 1 page(s)
-  User talk:Rsimmons
-Besdrmtlasvega contributed to 1 page(s)
-  User talk:Rsimmons
-Selpzlrmeqsccar contributed to 1 page(s)
-  User talk:Rsimmons
-Cosypktsddgzfr contributed to 1 page(s)
-  User talk:Rsimmons
-Midinpdleburgh contributed to 1 page(s)
-  User talk:Rsimmons
-Masjglsagepgfs contributed to 1 page(s)
-  User talk:Rsimmons
-Spakpfmasspgzw contributed to 1 page(s)
-  User talk:Rsimmons
-Gabwhazrieynaw contributed to 1 page(s)
-  User talk:Rsimmons
-Intbaernetengd contributed to 1 page(s)
-  User talk:Rsimmons
-Sarahwatson7782 contributed to 1 page(s)
-  User talk:Rsimmons
-Hotohkdflushea contributed to 1 page(s)
-  User talk:Rsimmons
-Heaorlthyry4K contributed to 1 page(s)
-  User talk:Rsimmons
-Negnlsiativeew contributed to 1 page(s)
-  User talk:Rsimmons
-Cheydapelectric contributed to 1 page(s)
-  User talk:Rsimmons
-Spitwynclasses contributed to 1 page(s)
-  User talk:Rsimmons
-Chikqropractor contributed to 1 page(s)
-  User talk:Rsimmons
-Chewgfsapelect contributed to 1 page(s)
-  User talk:Rsimmons
-TraycfficgWo62 contributed to 1 page(s)
-  User talk:Rsimmons
-Arcnrnbhitectu contributed to 1 page(s)
-  User talk:Rsimmons
-Drgaryfettke1 contributed to 1 page(s)
-  User talk:Rsimmons
-Ecixrhogrreilas contributed to 1 page(s)
-  User talk:Rsimmons
-Rictdgcartormn contributed to 1 page(s)
-  User talk:Rsimmons
-Unibrformsdgdn contributed to 1 page(s)
-  User talk:Rsimmons
-JackSnHf4 contributed to 1 page(s)
-  User talk:Rsimmons
-Exekxmcutivede contributed to 1 page(s)
-  User talk:Rsimmons
-Lowxperbackkfqe contributed to 1 page(s)
-  User talk:Rsimmons
-Trajnebfficget contributed to 1 page(s)
-  User talk:Rsimmons
-Spaidpxmasc8 contributed to 1 page(s)
-  User talk:Rsimmons
-Sztpthd contributed to 1 page(s)
-  User talk:Rsimmons
-Ocafblanationa contributed to 1 page(s)
-  User talk:Rsimmons
-Crossstitchjh65 contributed to 1 page(s)
-  User talk:Rsimmons
-Mobtmyailehomd contributed to 1 page(s)
-  User talk:Rsimmons
-Ecotedyjswoiqig contributed to 1 page(s)
-  User talk:Rsimmons
-Cheiaepapelect contributed to 1 page(s)
-  User talk:Rsimmons
-Chiryropracclm contributed to 1 page(s)
-  User talk:Rsimmons
-Memfeorycarwnq contributed to 1 page(s)
-  User talk:Rsimmons
-Metjzealbuildk contributed to 1 page(s)
-  User talk:Rsimmons
-Relesbieveoxbb contributed to 1 page(s)
-  User talk:Rsimmons
-Tinacdnitutpmx contributed to 1 page(s)
-  User talk:Rsimmons
-Weibzhghtlm6 contributed to 1 page(s)
-  User talk:Rsimmons
-Rvpsftdrnharks contributed to 1 page(s)
-  User talk:Rsimmons
-Boudxhoncycast contributed to 1 page(s)
-  User talk:Rsimmons
-Dumatwtpsterre contributed to 1 page(s)
-  User talk:Rsimmons
-Rumskahdijualrh contributed to 1 page(s)
-  User talk:Rsimmons
-Solpmcdonwaitr contributed to 1 page(s)
-  User talk:Rsimmons
-Somghzzedeo contributed to 1 page(s)
-  User talk:Rsimmons
-Norxmtzwoodqfj contributed to 1 page(s)
-  User talk:Rsimmons
-Rumcxeahdijual contributed to 1 page(s)
-  User talk:Rsimmons
-Buidpnldyourow contributed to 1 page(s)
-  User talk:Rsimmons
-Keyprwxeniords contributed to 1 page(s)
-  User talk:Rsimmons
-Panemdwamaonli contributed to 1 page(s)
-  User talk:Rsimmons
-Syletfvanis5 contributed to 1 page(s)
-  User talk:Rsimmons
-Dalmlcylasbtdr contributed to 1 page(s)
-  User talk:Rsimmons
-Appbfbiliancer contributed to 1 page(s)
-  User talk:Rsimmons
-Trozpddykbwdaq contributed to 1 page(s)
-  User talk:Rsimmons
-Recitxargastkm contributed to 1 page(s)
-  User talk:Rsimmons
-Phoaemotoediti contributed to 1 page(s)
-  User talk:Rsimmons
-Appmhkliancere contributed to 1 page(s)
-  User talk:Rsimmons
-Carwqjtqsxnloa contributed to 1 page(s)
-  User talk:Rsimmons
-Troahyropasoof contributed to 1 page(s)
-  User talk:Rsimmons
-Appttliancerep contributed to 1 page(s)
-  User talk:Rsimmons
-Roossjpfingcon contributed to 1 page(s)
-  User talk:Rsimmons
-Trojjeyreplace contributed to 1 page(s)
-  User talk:Rsimmons
-Appqkliancerep contributed to 1 page(s)
-  User talk:Rsimmons
-Revrhrersibleb contributed to 1 page(s)
-  User talk:Rsimmons
-Mobgmewilehomm contributed to 1 page(s)
-  User talk:Rsimmons
-Appencliancere contributed to 1 page(s)
-  User talk:Rsimmons
-Chidrropractof contributed to 1 page(s)
-  User talk:Rsimmons
-Appbkdqliancer contributed to 1 page(s)
-  User talk:Rsimmons
-Comocputerrepa contributed to 1 page(s)
-  User talk:Rsimmons
-Facemyrebookco contributed to 1 page(s)
-  User talk:Rsimmons
-Homqlrsesforsa contributed to 1 page(s)
-  User talk:Rsimmons
-Carmatuseirtkw contributed to 1 page(s)
-  User talk:Rsimmons
-Appanjliancere contributed to 1 page(s)
-  User talk:Rsimmons
-Masnbsagethera contributed to 1 page(s)
-  User talk:Rsimmons
-Isrxmsbaelbnda contributed to 1 page(s)
-  User talk:Rsimmons
-Quafslntityerq contributed to 1 page(s)
-  User talk:Rsimmons
-Bacxlkpaiglnonr contributed to 1 page(s)
-  User talk:Rsimmons
-Cheqxapelectric contributed to 1 page(s)
-  User talk:Rsimmons
-Ricslcartocnkz contributed to 1 page(s)
-  User talk:Rsimmons
-Awgxnsqdd contributed to 1 page(s)
-  User talk:Rsimmons
-Vardy contributed to 1 page(s)
-  User talk:Rsimmons
-Bacnewkpaigczn contributed to 1 page(s)
-  User talk:Rsimmons
-Exezqjacutijcf contributed to 1 page(s)
-  User talk:Rsimmons
-Spikwlnclasses contributed to 1 page(s)
-  User talk:Rsimmons
-Alzreheimer’sc contributed to 1 page(s)
-  User talk:Rsimmons
-Juanskaliebmru contributed to 1 page(s)
-  User talk:Rsimmons
-ChaiseGentner contributed to 1 page(s)
-  User talk:Rsimmons
-Exeejnbcutivam contributed to 1 page(s)
-  User talk:Rsimmons
-Mlmqbnpleadwjc contributed to 1 page(s)
-  User talk:Rsimmons
-Exeimcutivnlez contributed to 1 page(s)
-  User talk:Rsimmons
-Sewpeqaapshdka contributed to 1 page(s)
-  User talk:Rsimmons
-Embbtroidereyq contributed to 1 page(s)
-  User talk:Rsimmons
-Srschleo contributed to 1 page(s)
-  User talk:Rsimmons
-Wesmktlakbwzky contributed to 1 page(s)
-  User talk:Rsimmons
-Carrrxdtuseind contributed to 1 page(s)
-  User talk:Rsimmons
-Norbpthroyy3J contributed to 1 page(s)
-  User talk:Rsimmons
-Wesbktlakejnzr contributed to 1 page(s)
-  User talk:Rsimmons
-Twigpyxnsburmq contributed to 1 page(s)
-  User talk:Rsimmons
-Wesozftlakerep contributed to 1 page(s)
-  User talk:Rsimmons
-Besjyjtwaytoxj contributed to 1 page(s)
-  User talk:Rsimmons
-Norihdthlondon contributed to 1 page(s)
-  User talk:Rsimmons
-Schimsucobifol contributed to 1 page(s)
-  User talk:Rsimmons
-Beszsztcadntir contributed to 1 page(s)
-  User talk:Rsimmons
-Stafkqgersmkhf contributed to 1 page(s)
-  User talk:Rsimmons
-Whiittehalkbpq contributed to 1 page(s)
-  User talk:Rsimmons
-Miabbmionlinebu contributed to 1 page(s)
-  User talk:Rsimmons
-Twipzbnsburxbs contributed to 1 page(s)
-  User talk:Rsimmons
-Rimedssandtirt contributed to 1 page(s)
-  User talk:Rsimmons
-Sk1nresurfc8 contributed to 1 page(s)
-  User talk:Rsimmons
-Fulfillmnt8 contributed to 1 page(s)
-  User talk:Rsimmons
-Termite83 contributed to 1 page(s)
-  User talk:Rsimmons
-Whiwtwctehaljt contributed to 1 page(s)
-  User talk:Rsimmons
-Getfit478 contributed to 1 page(s)
-  User talk:Rsimmons
-Netw0rkng9 contributed to 1 page(s)
-  User talk:Rsimmons
-Ecifkmqgareyqlw contributed to 1 page(s)
-  User talk:Rsimmons
-Egresswin34 contributed to 1 page(s)
-  User talk:Rsimmons
-Webdev0l0p contributed to 1 page(s)
-  User talk:Rsimmons
-Masonrsagekjes contributed to 1 page(s)
-  User talk:Rsimmons
-Heawqnjdgehpqa contributed to 1 page(s)
-  User talk:Rsimmons
-Norihdthlom5T contributed to 1 page(s)
-  User talk:Rsimmons
-Lebtdyxanonsbx contributed to 1 page(s)
-  User talk:Rsimmons
-Ppospos contributed to 1 page(s)
-  The Twelf Project:Copyright
-KateHoffman contributed to 1 page(s)
-  The Twelf Project:Style guide
-Svererenov contributed to 1 page(s)
-  The Twelf Project:Style guide
-Graceclifford contributed to 1 page(s)
-  The Twelf Project:Style guide
-Peterbb contributed to 1 page(s)
-  Proving metatheorems:Full LF
-Mcoblenz contributed to 1 page(s)
-  Proving metatheorems:Proving metatheorems about the natural numbers
-Nolrai contributed to 1 page(s)
-  Proving metatheorems:Representing the judgements of the STLC
-R contributed to 1 page(s)
-  Proving metatheorems:Simply typed LF
